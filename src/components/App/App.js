@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Header from '../Header/Header';
 import Routes from '../Routes/Routes';
 import './App.css';
