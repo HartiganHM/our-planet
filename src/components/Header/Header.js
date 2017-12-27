@@ -27,7 +27,7 @@ export const mapStateToProps =() => {
 
 export const mapDispatchToProps = (dispatch) => {
   return {
-    populateData: () => dispatch(actions.fetchAllData)
+    populateData: () => dispatch(actions.fetchAllData())
   }
 }
 
