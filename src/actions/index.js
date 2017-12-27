@@ -2,7 +2,6 @@ import fetchAnimalsData from '../helpers/fetchAnimalsData';
 import fetchContinentsData from '../helpers/fetchContinentsData';
 
 export const fetchAllData = () => async dispatch => {
-  console.log('hi')
   const animalsData = await fetchAnimalsData();
   const continentsData = await fetchContinentsData();
   dispatch(storeAnimalData(animalsData));
