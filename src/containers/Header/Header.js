@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom';
 import * as actions from '../../actions';
 import './Header.css';
 
-class Header extends Component {
+export class Header extends Component {
   componentDidMount() {
     this.props.populateData();
   }
@@ -29,8 +29,6 @@ class Header extends Component {
     );
   }
 }
-
-export const mapStateToProps = () => {};
 
 export const mapDispatchToProps = dispatch => {
   return {
