@@ -1,4 +1,3 @@
-import fethcAnimalsData from './fetchAnimalsData';
 import mockAnimalsArray from '../../data/mockAnimalsArray';
 import fetchAnimalsData from './fetchAnimalsData';
 
@@ -30,7 +29,7 @@ describe('fetchAnimalsData tests', () => {
         status: 500
       })
     );
-    const mockAnimalsData = await fethcAnimalsData();
+    const mockAnimalsData = await fetchAnimalsData();
     const expected = Error('Error fetching animals data: [object Object]');
 
     expect(mockAnimalsData).toEqual(expected)
