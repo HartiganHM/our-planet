@@ -9,26 +9,33 @@ class Header extends Component {
     this.props.populateData();
   }
 
+  renderLogo() {
+    return <div className="headerLogo" />;
+  }
+
   render() {
     return (
       <div className="Header">
-        <NavLink to="/">
-          <img src="../images/Our-Planet-Text.png" alt="our-planet-wordmark" />
-        </NavLink>
-        <NavLink to="/about">About</NavLink>
+        {this.renderLogo()}
+        <div className="nav-bar">
+          <NavLink className="nav-button" to="/">
+            Home
+          </NavLink>
+          <NavLink className="nav-button" to="/about">
+            About
+          </NavLink>
+        </div>
       </div>
     );
   }
 }
 
-export const mapStateToProps =() => {
+export const mapStateToProps = () => {};
 
-}
-
-export const mapDispatchToProps = (dispatch) => {
+export const mapDispatchToProps = dispatch => {
   return {
     populateData: () => dispatch(actions.fetchAllData())
-  }
-}
+  };
+};
 
 export default connect(null, mapDispatchToProps)(Header);
