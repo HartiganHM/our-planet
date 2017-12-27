@@ -3,6 +3,11 @@ import { NavLink } from 'react-router-dom';
 import './Header.css';
 
 class Header extends Component {
+  componentDidMount() {
+    this.props.populateAnimalsData();
+    this.props.populateContinentsData();
+  }
+
   render() {
     return (
       <div className="Header">
