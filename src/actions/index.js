@@ -1,5 +1,5 @@
-import fetchAnimalsData from '../helpers/fetchAnimalsData';
-import fetchContinentsData from '../helpers/fetchContinentsData';
+import fetchAnimalsData from '../helpers/fetchAnimalsData/fetchAnimalsData';
+import fetchContinentsData from '../helpers/fetchContinentsData/fetchContinentsData';
 
 export const fetchAllData = () => async dispatch => {
   const animalsData = await fetchAnimalsData();
