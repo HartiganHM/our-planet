@@ -1,11 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { shallow } from 'enzyme';
-import Header from './Header';
+import { Header, mapDispatchToProps } from './Header';
 
 describe('Header tests', () => {
   it('Should exist', () => {
-    const renderedHeader = shallow(<Header />);
+    const mockPopulateData = jest.fn();
+    const renderedHeader = shallow(<Header populateData={mockPopulateData}/>);
     expect(renderedHeader).toBeDefined();
   });
 });
