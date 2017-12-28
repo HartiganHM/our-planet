@@ -1,8 +1,6 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import { shallow } from 'enzyme';
 import { Header, mapDispatchToProps } from './Header';
-import * as actions from '../../actions';
 
 describe('Header tests', () => {
   it('Should match the snapshot', () => {

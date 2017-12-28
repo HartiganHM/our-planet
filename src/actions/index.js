@@ -19,5 +19,5 @@ export const storeContinentsData = continentsData => {
   return {
     type: 'STORE_CONTINENTS_DATA',
     continentsData
-  }
-}
+  };
+};

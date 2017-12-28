@@ -11,7 +11,7 @@ window.fetch = jest.fn().mockImplementation(() =>
 describe('fetchAnimalsData tests', () => {
   let mockAnimalsData;
 
-  beforeEach( async () => {
+  beforeEach(async () => {
     mockAnimalsData = await fetchAnimalsData();
   });
 
@@ -32,6 +32,6 @@ describe('fetchAnimalsData tests', () => {
     const mockAnimalsData = await fetchAnimalsData();
     const expected = Error('Error fetching animals data: [object Object]');
 
-    expect(mockAnimalsData).toEqual(expected)
+    expect(mockAnimalsData).toEqual(expected);
   });
 });
