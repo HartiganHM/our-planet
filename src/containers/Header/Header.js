@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { NavLink } from 'react-router-dom';
 import * as actions from '../../actions';
+import PropTypes from 'prop-types';
 import './Header.css';
 
 export class Header extends Component {
@@ -37,3 +38,7 @@ export const mapDispatchToProps = dispatch => {
 };
 
 export default connect(null, mapDispatchToProps)(Header);
+
+Header.propTypes = {
+  populateData: PropTypes.func
+};
