@@ -4,8 +4,9 @@ import { shallow } from 'enzyme';
 import App from './App';
 
 describe('App tests', () => {
-  it('Should exist', () => {
+  it('Should match the snapshot', () => {
     const renderedApp = shallow(<App />);
-    expect(renderedApp).toBeDefined();
+
+    expect(renderedApp).toMatchSnapshot();
   });
 });
