@@ -7,7 +7,7 @@ const addImageToContinents = continentsArray => {
   });
 };
 
-export const removeNonAlphaNumeric = name => {
+const removeNonAlphaNumeric = name => {
   return name.split(' /').join('').toLowerCase()
 }
 
