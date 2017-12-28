@@ -1,6 +1,6 @@
 import React from 'react';
 import { Route } from 'react-router-dom';
-import CardContainer from '../CardContainer/CardContainer';
+import CardContainer from '../../containers/CardContainer/CardContainer';
 
 const Routes = () => {
   return (
