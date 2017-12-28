@@ -21,4 +21,18 @@ describe('addImageToContinent tests', () => {
     expect(continentsArray[0].image).toEqual(firstExpectedImage);
     expect(continentsArray[1].image).toEqual(secondExpectedImage);
   });
+
+  describe('removeNonAlphaNumeric tests', () => {
+    it('Should be a function', () => {
+
+    });
+
+    it('Should return a string', () => {
+
+    });
+
+    it('Should remove a forward slash', () => {
+
+    });
+  });
 });
