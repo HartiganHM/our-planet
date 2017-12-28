@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Card from '../Card/Card';
 import { connect } from 'react-redux';
 import * as actions from '../../actions';
 import PropTypes from 'prop-types';
@@ -6,7 +7,11 @@ import './CardContainer.css';
 
 export class CardContainer extends Component {
   render() {
-    return <div className="CardContainer">I am an CardContainer</div>;
+    const animalCards = this.props.animals.map(animal => (
+      <Card animalData={animal} />
+    ));
+
+    return <div className="CardContainer">{animalCards}</div>;
   }
 }
 
