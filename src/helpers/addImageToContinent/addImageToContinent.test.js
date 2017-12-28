@@ -1,6 +1,5 @@
 import addImageToContinent from './addImageToContinent';
 import mockContinentsArray from '../../data/mockContinentsArray';
-import removeNonAlphaNumeric from './addImageToContinent';
 
 describe('addImageToContinent tests', () => {
   it('Should be a function', () => {
