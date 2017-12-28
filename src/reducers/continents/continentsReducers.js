@@ -1,7 +1,7 @@
 const continentsReducers = (store = [], action) => {
   switch (action.type) {
   case 'STORE_CONTINENTS_DATA':
-    return action;
+    return action.continentsData;
   default:
     return store;
   }
