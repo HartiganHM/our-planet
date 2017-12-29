@@ -24,11 +24,12 @@ export const storeContinentsData = continentsData => {
 
 export const filterAnimals = (inputValue, animals) => {
   const searchValue = inputValue.toLowerCase();
-  const filteredAnimals = animals.filter(animal =>
-    animal.name.toLowerCase().includes(searchValue)
+  animals.forEach(animal =>
+    animal.name.toLowerCase().includes(searchValue) ? animal.display = true : animal.display = false
   );
+
   return {
     type: 'SEARCH_ANIMALS',
-    filteredAnimals
+    animals
   };
 };
