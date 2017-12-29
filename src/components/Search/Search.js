@@ -1,6 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import * as actions from '../../actions';
+import { PropTypes } from 'prop-types';
 import './Search.css';
 
 export const Search = props => {
@@ -32,3 +33,8 @@ export const mapDispatchToProps = dispatch => {
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(Search);
+
+Search.propTypes = {
+  searchAnimals: PropTypes.func,
+  animals: PropTypes.array
+};
