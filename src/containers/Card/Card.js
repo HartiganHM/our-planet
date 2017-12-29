@@ -2,23 +2,17 @@ import React, { Component } from 'react';
 import './Card.css';
 
 const Card = props => {
-  const {
-    name,
-    status,
-    population,
-    scientific_name,
-    height,
-    weight,
-    length,
-    habitat,
-    facts,
-    human_benefit,
-    image
-  } = props.animalData;
+  const { name } = props.animalData;
+
+  const image = name.toLowerCase();
+  console.log(typeof image);
   return (
     <div className="Card">
-      <img src={require(image)} />
-      {image}
+      <img
+        className="animal-image"
+        src={require(`../../images/animals/${image}.jpg`)}
+      />
+      <span>{name}</span>
     </div>
   );
 };
