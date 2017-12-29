@@ -3,7 +3,7 @@
     @include width(29.8);
     @include margin(1);
     border: 1px solid black;
-    border-radius: 0 20px 0 20px;
+    border-radius: 0 20px;
     overflow: hidden;
     display: flex;
     flex-direction: column;
