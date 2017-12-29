@@ -1,9 +1,18 @@
 @import '../../styles/mixins.scss';
 .Card {
-    @include width(30);
-    @include height(30);
+    @include width(29.8);
     @include margin(1);
+    border: 1px solid black;
+    border-radius: 0 20px 0 20px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
     .animal-image {
         @include width(30);
+    }
+    .animal-name {
+      font-size: 1.4rem;
+      text-align: center;
+      padding: 10px;
     }
 }
