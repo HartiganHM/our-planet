@@ -1,0 +1,16 @@
+@mixin height($height) {
+    height: convertRem($height)
+}
+
+@mixin width($width) {
+    width: convertRem($width);
+}
+
+@mixin margin($margin) {
+    margin: convertRem($margin);
+}
+
+@function convertRem($size) {
+    $remSize: $size * 0.625;
+    @return #{$remSize}rem;
+}
