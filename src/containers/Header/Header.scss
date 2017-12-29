@@ -1,27 +1,29 @@
+@import '../../styles/mixins.scss';
+
 .Header {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
   padding: 1rem;
   .headerLogo {
+    flex: 1;
     background: {
       image: url('../../images/Our-Planet-Wordmark-Small.png');
-      position: center;
       repeat: no-repeat;
-      size: 30rem;
+      size: contain;
     }
-    height: 6rem;
-    width: 30rem;
+    @include height(6);
+    @include width(30);
   }
   .nav-bar {
     display: flex;
     align-items: center;
     .nav-button {
       border: 1px solid grey;
-      border-radius: 1rem;
-      font-size: 1.4rem;
-      margin: 0.5rem;
-      padding: 0.5rem;
+      border-radius: 0 5px;
+      font-size: 1rem;
+      @include margin(0.5);
+      @include padding(0.5);
       text: {
         align: center;
         decoration: none;
