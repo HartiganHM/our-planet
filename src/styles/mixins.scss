@@ -10,6 +10,10 @@
     margin: convertRem($margin);
 }
 
+@mixin padding($padding) {
+    padding: convertRem($padding)
+}
+
 @function convertRem($size) {
     $remSize: $size * 0.625;
     @return #{$remSize}rem;
