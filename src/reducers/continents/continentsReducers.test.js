@@ -10,10 +10,7 @@ describe('continentsReducers tests', () => {
   });
 
   it('Should return a new store with continents', () => {
-    const expected = {
-      continentsData: mockContinentsArray,
-      type: 'STORE_CONTINENTS_DATA'
-    };
+    const expected = mockContinentsArray;
 
     expect(
       continentsReducers(
