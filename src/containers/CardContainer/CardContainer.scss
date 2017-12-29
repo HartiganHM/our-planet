@@ -1,9 +1,10 @@
 @import '../../styles/mixins.scss';
+@import '../../styles/variables.scss';
 .CardContainer {
     display: flex;
     flex-wrap: wrap;
-    margin: auto;
     @include width(160);
+    margin: auto;
 }
 
 @media screen and (max-width: 1599px) {
