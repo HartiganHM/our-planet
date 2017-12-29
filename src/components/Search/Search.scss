@@ -1,0 +1,12 @@
+@import '../../styles/mixins.scss';
+@import '../../styles/variables.scss';
+
+.Search {
+  display: flex;
+  @include margin(2);
+  .search-field {
+    flex: 1;
+    @include padding(1);
+    font-size: 1rem;
+  }
+}
