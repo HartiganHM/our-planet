@@ -1,0 +1,31 @@
+@import '../../styles/mixins.scss';
+.CardContainer {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    @include width(160);
+}
+
+@media screen and (max-width: 1599px) {
+    .CardContainer {
+        @include width(128);
+    }
+}
+
+@media screen and (max-width: 1279px) {
+    .CardContainer {
+        @include width(96);
+    }
+}
+
+@media screen and (max-width: 959px) {
+    .CardContainer {
+        @include width(64);
+    }
+}
+
+@media screen and (max-width: 639px) {
+    .CardContainer {
+        @include width(32);
+    }
+}
