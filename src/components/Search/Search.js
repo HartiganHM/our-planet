@@ -1,23 +1,40 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import * as actions from '../../actions';
 import './Search.css';
 
-export const Search = props => {
-  const { searchAnimals, animals } = props;
-  console.log(animals)
+export class Search extends Component {
+  constructor() {
+    super();
+    this.state = {
+      searchInput: ''
+    }
+  }
 
-  return (
-    <div className="Search">
-      <input
-        className="search-field"
-        onChange={event => searchAnimals(event.target.value, animals)}
-        type="text"
-        placeholder="Search"
-        value=''
-      />
-    </div>
-  );
+  handleChange() {
+    console.log(event)
+    const { searchAnimals, animals } = this.props;
+    let inputValue = event.target.value;
+    this.setState({ searchInput: inputValue })
+
+    searchAnimals(inputValue, animals)
+  }
+
+  render() {
+    let { searchInput } = this.state;
+
+    return (
+      <div className="Search">
+        <input
+          className="search-field"
+          onChange={() => this.handleChange()}
+          type="text"
+          placeholder="Search"
+          value={searchInput}
+        />
+      </div>
+    );
+  }
 };
 
 export const mapStateToProps = store => {
