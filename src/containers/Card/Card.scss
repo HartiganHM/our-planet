@@ -1,18 +1,26 @@
+//Layout, Box, Visual, Typography, Misc
 @import '../../styles/mixins.scss';
+@import '../../styles/variables.scss';
 .Card {
+    display: flex;
+    flex-direction: column;
     @include width(29.8);
     @include margin(1);
     border: 1px solid black;
     border-radius: 0 20px;
+    background-color: $accent-color-light;
     overflow: hidden;
-    display: flex;
-    flex-direction: column;
     .animal-image {
         @include width(30);
+        border-radius: 0 0 0 20px;
+        box-shadow: $drop-shadow;
+        z-index: 2;
     }
     .animal-name {
-      font-size: 1.4rem;
-      text-align: center;
-      padding: 10px;
+        @include padding(1);
+        color: $accent-color-dark;
+        font-family: $accent-font;
+        font-size: 1.4rem;
+        text-align: center;
     }
 }
