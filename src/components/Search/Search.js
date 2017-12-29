@@ -3,43 +3,25 @@ import { connect } from 'react-redux';
 import * as actions from '../../actions';
 import './Search.css';
 
-export class Search extends Component {
-  constructor() {
-    super();
-    this.state = {
-      inputValue: ''
-    }
-  }
+export const Search = props => {
+  const { searchAnimals, animals } = props;
 
-  handleChange(inputValue) {
-    console.log(inputValue)
-    const { searchAnimals, animals } = this.props;
-    this.setState({ inputValue })
-
-    searchAnimals(inputValue, animals)
-  }
-
-  render() {
-    let { inputValue } = this.state;
-
-    return (
-      <div className="Search">
-        <input
-          className="search-field"
-          onChange={event => this.handleChange(event.target.value)}
-          type="text"
-          placeholder="Search"
-          value={inputValue}
-        />
-      </div>
-    );
-  }
+  return (
+    <div className="Search">
+      <input
+        className="search-field"
+        onChange={event => searchAnimals(event.target.value, animals)}
+        type="text"
+        placeholder="Search"
+      />
+    </div>
+  );
 };
 
 export const mapStateToProps = store => {
   return {
     animals: store.animals
-  }
+  };
 };
 
 export const mapDispatchToProps = dispatch => {
