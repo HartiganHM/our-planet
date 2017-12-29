@@ -1,39 +1,45 @@
+//Layout, Box, Visual, Typography, Misc
 @import '../../styles/mixins.scss';
-
+@import '../../styles/variables.scss';
 .Header {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  padding: 1rem;
-  .headerLogo {
-    flex: 1;
-    background: {
-      image: url('../../images/Our-Planet-Wordmark-Small.png');
-      repeat: no-repeat;
-      size: contain;
-    }
-    @include height(6);
-    @include width(30);
-  }
-  .nav-bar {
     display: flex;
-    align-items: center;
-    .nav-button {
-      border: 1px solid grey;
-      border-radius: 0 5px;
-      font-size: 1rem;
-      @include margin(0.5);
-      @include padding(0.5);
-      text: {
-        align: center;
-        decoration: none;
-      }
-      transition: 0.3s background-color, color ease-in-out;
-
-      &:hover {
-        background-color: blue;
-        color:white
-      }
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 20px;
+    @include padding(1);
+    background-color: $snow;
+    box-shadow: $drop-shadow;
+    .headerLogo {
+        flex: 1;
+        @include height(6);
+        @include width(30);
+        background: {
+            image: url('../../images/Our-Planet-Wordmark-Small.png');
+            repeat: no-repeat;
+            size: contain;
+        }
     }
-  }
+    .nav-bar {
+        display: flex;
+        align-items: center;
+        .nav-button {
+            @include margin(0.5);
+            @include padding(0.5);
+            border: 1px solid grey;
+            border-radius: 0 5px;
+            background-color: $accent-color-light;
+            color: $accent-color-dark;
+            font-size: 1rem;
+            text: {
+                align: center;
+                decoration: none;
+            }
+            transition: 0.3s background-color,
+            color ease-in-out;
+            &:hover {
+                background-color: $myrtle-green;
+                color: white;
+            }
+        }
+    }
 }
