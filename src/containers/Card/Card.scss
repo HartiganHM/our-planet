@@ -1,7 +1,9 @@
+@import '../../styles/mixins.scss';
 .Card {
-  width: 30rem;
-  height: 30rem;
-  .animal-image {
-    width: 30rem;
-  }
+    @include width(30);
+    @include height(30);
+    @include margin(1);
+    .animal-image {
+        @include width(30);
+    }
 }
