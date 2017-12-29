@@ -4,7 +4,7 @@ const animalsReducers = (store = [], action) => {
     return action.animalsData;
 
   case 'SEARCH_ANIMALS':
-    return action.animals;
+    return action.filteredAnimals;
 
   default:
     return store;
