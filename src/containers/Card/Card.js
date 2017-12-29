@@ -1,4 +1,5 @@
-import React, { Component } from 'react';
+import React from 'react';
+import { PropTypes } from 'prop-types';
 import './Card.css';
 
 const Card = props => {
@@ -6,14 +7,19 @@ const Card = props => {
   const image = name.toLowerCase();
 
   return (
-    <div className="Card">
+    <div className='Card'>
       <img
-        className="animal-image"
+        className='animal-image'
         src={require(`../../images/animals/${image}.jpg`)}
+        alt={`${name}-endangered-species`}
       />
-      <span>{name}</span>
+      <span className='animal-name'>{name}</span>
     </div>
   );
 };
 
 export default Card;
+
+Card.propTypes = {
+  animalData: PropTypes.obj
+};
