@@ -21,3 +21,14 @@ export const storeContinentsData = continentsData => {
     continentsData
   };
 };
+
+export const filterAnimals = (inputValue, animals) => {
+  const searchValue = inputValue.toLowerCase();
+  const filteredAnimals = animals.filter(animal =>
+    animal.name.toLowerCase().includes(searchValue)
+  );
+  return {
+    type: 'SEARCH_ANIMALS',
+    filteredAnimals
+  };
+};
