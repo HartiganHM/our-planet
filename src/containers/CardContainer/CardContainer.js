@@ -11,9 +11,7 @@ export class CardContainer extends Component {
 
   render() {
     const animalCards = this.props.animals.map((animal, index) => {
-      if (animal.display) {
-        return <Card key={index} animalData={animal} />;
-      }
+        return animal.display ?  (<Card key={index} animalData={animal} />) : undefined;
     });
 
     return <div className="CardContainer">{animalCards}</div>;
