@@ -1,17 +1,24 @@
-import React from 'react';
+import React, { Component } from 'react';
 import Card from '../Card/Card';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import './CardContainer.css';
 
-export const CardContainer = props => {
-  const animalCards = props.animals.map((animal, index) => {
-    if (animal.display) {
-      return <Card key={index} animalData={animal} />;
-    }
-  });
+export class CardContainer extends Component {
+  componentWillReceiveProps(nextProps) {
+    console.log(nextProps)
+  }
 
-  return <div className="CardContainer">{animalCards}</div>;
+  render() {
+    const animalCards = this.props.animals.map((animal, index) => {
+      if (animal.display) {
+        return <Card key={index} animalData={animal} />;
+      }
+    });
+
+    return <div className="CardContainer">{animalCards}</div>;
+
+  }
 };
 
 export const mapStateToProps = store => {
