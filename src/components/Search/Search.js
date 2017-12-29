@@ -7,30 +7,29 @@ export class Search extends Component {
   constructor() {
     super();
     this.state = {
-      searchInput: ''
+      inputValue: ''
     }
   }
 
-  handleChange() {
-    console.log(event)
+  handleChange(inputValue) {
+    console.log(inputValue)
     const { searchAnimals, animals } = this.props;
-    let inputValue = event.target.value;
-    this.setState({ searchInput: inputValue })
+    this.setState({ inputValue })
 
     searchAnimals(inputValue, animals)
   }
 
   render() {
-    let { searchInput } = this.state;
+    let { inputValue } = this.state;
 
     return (
       <div className="Search">
         <input
           className="search-field"
-          onChange={() => this.handleChange()}
+          onChange={event => this.handleChange(event.target.value)}
           type="text"
           placeholder="Search"
-          value={searchInput}
+          value={inputValue}
         />
       </div>
     );
@@ -43,10 +42,10 @@ export const mapStateToProps = store => {
   }
 };
 
-export const mapDispatchToProps = dispath => {
+export const mapDispatchToProps = dispatch => {
   return {
     searchAnimals: (inputValue, animals) =>
-      dispatchEvent(actions.filterAnimals(inputValue, animals))
+      dispatch(actions.filterAnimals(inputValue, animals))
   };
 };
 
