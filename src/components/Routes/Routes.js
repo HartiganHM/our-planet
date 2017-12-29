@@ -1,11 +1,23 @@
 import React from 'react';
 import { Route } from 'react-router-dom';
+import Search from '../../components/Search/Search';
 import CardContainer from '../../containers/CardContainer/CardContainer';
 
 const Routes = () => {
   return (
     <div>
-      <Route exact path="/" component={CardContainer} />
+      <Route
+        exact
+        path="/"
+        render={() => {
+          return (
+            <div>
+              <Search />
+              <CardContainer />
+            </div>
+          );
+        }}
+      />
     </div>
   );
 };

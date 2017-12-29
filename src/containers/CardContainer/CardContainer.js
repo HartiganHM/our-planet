@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 import './CardContainer.css';
 
 export const CardContainer = props => {
-  const animalCards = props.animals.map( (animal, index) => (
+  const animalCards = props.animals.map((animal, index) => (
     <Card key={index} animalData={animal} />
   ));
 
