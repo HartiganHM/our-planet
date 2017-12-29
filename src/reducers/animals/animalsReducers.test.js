@@ -10,10 +10,7 @@ describe('animalsReducers tests', () => {
   });
 
   it('Should return a new store with animals', () => {
-    const expected = {
-      animalsData: mockAnimalsArray,
-      type: 'STORE_ANIMAL_DATA'}
-      ;
+    const expected = mockAnimalsArray;
 
     expect(
       animalsReducers(undefined, actions.storeAnimalData(mockAnimalsArray))
