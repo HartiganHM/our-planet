@@ -3,9 +3,8 @@ import './Card.css';
 
 const Card = props => {
   const { name } = props.animalData;
-
   const image = name.toLowerCase();
-  console.log(typeof image);
+
   return (
     <div className="Card">
       <img
