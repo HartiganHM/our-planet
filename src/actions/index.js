@@ -22,7 +22,7 @@ export const storeContinentsData = continentsData => {
   };
 };
 
-export const filterAnimals = (inputValue, animals) => {
+export const searchAnimals = (inputValue, animals) => {
   const searchValue = inputValue.toLowerCase();
   const filteredAnimals = animals.reduce((filteredAnimals, animal) => {
     animal.name.toLowerCase().includes(searchValue)

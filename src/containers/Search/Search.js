@@ -28,7 +28,7 @@ export const mapStateToProps = store => {
 export const mapDispatchToProps = dispatch => {
   return {
     searchAnimals: (inputValue, animals) =>
-      dispatch(actions.filterAnimals(inputValue, animals))
+      dispatch(actions.searchAnimals(inputValue, animals))
   };
 };
 
