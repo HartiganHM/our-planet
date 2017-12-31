@@ -1,4 +1,4 @@
-const addImageToContinents = continentsArray => {
+const addPropertiesToContinent = continentsArray => {
   return continentsArray.map(continent => {
     const name = continent.name.includes('/')
       ? removeNonAlphaNumeric(continent.name)
@@ -16,4 +16,4 @@ const removeNonAlphaNumeric = name => {
     .toLowerCase();
 };
 
-export default addImageToContinents;
+export default addPropertiesToContinent;
