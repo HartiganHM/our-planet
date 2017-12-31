@@ -1,5 +1,6 @@
 import fetchAnimalsData from '../helpers/fetchAnimalsData/fetchAnimalsData';
 import fetchContinentsData from '../helpers/fetchContinentsData/fetchContinentsData';
+import filterAnimals from '../helpers/filterAnimals/filterAnimals';
 
 export const fetchAllData = () => async dispatch => {
   const animalsData = await fetchAnimalsData();
@@ -22,17 +23,8 @@ export const storeContinentsData = continentsData => {
   };
 };
 
-export const filterAnimals = (inputValue, animals) => {
-  const searchValue = inputValue.toLowerCase();
-  const filteredAnimals = animals.reduce((filteredAnimals, animal) => {
-    animal.name.toLowerCase().includes(searchValue)
-      ? (animal.display = true)
-      : (animal.display = false);
-
-    filteredAnimals.push(animal);
-
-    return filteredAnimals;
-  }, []);
+export const searchAnimals = (inputValue, animals) => {
+  const filteredAnimals = filterAnimals(inputValue, animals);
 
   return {
     type: 'SEARCH_ANIMALS',

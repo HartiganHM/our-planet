@@ -22,4 +22,14 @@ describe('Actions tests', () => {
 
     expect(actions.storeContinentsData(continentsData)).toEqual(expected);
   });
+
+  it('searchAnimals should have a type of SEARCH_ANIMALS', () => {
+    const filteredAnimals = mockAnimalsArray;
+    const expected = {
+      type: 'SEARCH_ANIMALS',
+      filteredAnimals
+    };
+
+    expect(actions.searchAnimals('fox', filteredAnimals)).toEqual(expected);
+  });
 });

@@ -1,13 +1,13 @@
-import addImageToAnimal from './addImageToAnimal';
+import addPropertiesToAnimal from './addPropertiesToAnimal';
 import mockAnimalsArray from '../../data/mockAnimalsArray';
 
-describe('addImageToAnimal tests', () => {
+describe('addPropertiesToAnimal tests', () => {
   it('Should be a function', () => {
-    expect(addImageToAnimal).toBeAFunction;
+    expect(addPropertiesToAnimal).toBeAFunction;
   });
 
   it('Should return an array', () => {
-    const animalsArray = addImageToAnimal(mockAnimalsArray);
+    const animalsArray = addPropertiesToAnimal(mockAnimalsArray);
 
     expect(typeof animalsArray).toEqual('object');
   });
@@ -15,7 +15,7 @@ describe('addImageToAnimal tests', () => {
   it('Should add an image matching each animals name', () => {
     const firstExpectedImage = '../../images/animals/arctic fox.jpg';
     const secondExpectedImage = '../../images/animals/arctic wolf.jpg';
-    const animalsArray = addImageToAnimal(mockAnimalsArray);
+    const animalsArray = addPropertiesToAnimal(mockAnimalsArray);
 
     expect(animalsArray[0].image).toEqual(firstExpectedImage);
     expect(animalsArray[1].image).toEqual(secondExpectedImage);

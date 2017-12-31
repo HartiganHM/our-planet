@@ -21,5 +21,5 @@ const Card = props => {
 export default Card;
 
 Card.propTypes = {
-  animalData: PropTypes.obj
+  animalData: PropTypes.object
 };

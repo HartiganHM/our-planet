@@ -1,4 +1,4 @@
-const addImageToAnimal = animalArray => {
+const addPropertiesToAnimal = animalArray => {
   return animalArray.map(animal => {
     const name = animal.name.toLowerCase();
     const image = `../../images/animals/${name}.jpg`;
@@ -8,4 +8,4 @@ const addImageToAnimal = animalArray => {
   });
 };
 
-export default addImageToAnimal;
+export default addPropertiesToAnimal;
