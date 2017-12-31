@@ -23,6 +23,15 @@ export const storeContinentsData = continentsData => {
 };
 
 export const searchAnimals = (inputValue, animals) => {
+  const filteredAnimals = filterAnimals(inputValue, animals);
+
+  return {
+    type: 'SEARCH_ANIMALS',
+    filteredAnimals
+  };
+};
+
+export const filterAnimals = (inputValue, animals) => {
   const searchValue = inputValue.toLowerCase();
   const filteredAnimals = animals.reduce((filteredAnimals, animal) => {
     animal.name.toLowerCase().includes(searchValue)
@@ -34,8 +43,5 @@ export const searchAnimals = (inputValue, animals) => {
     return filteredAnimals;
   }, []);
 
-  return {
-    type: 'SEARCH_ANIMALS',
-    filteredAnimals
-  };
-};
+  return filteredAnimals;
+}
