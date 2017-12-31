@@ -2,7 +2,6 @@ import React from 'react';
 import { shallow } from 'enzyme';
 import { CardContainer, mapStateToProps } from './CardContainer';
 import mockAnimalsArray from '../../data/mockAnimalsArray';
-import { mapDispatchToProps } from '../Header/Header';
 
 describe('CardContainer tests', () => {
   let renderedCardContainer;
@@ -28,7 +27,7 @@ describe('CardContainer tests', () => {
     );
 
     expect(renderedCardContainer.find('Card').length).toEqual(1);
-  })
+  });
 
   describe('mapStateToProps tests', () => {
     it('Should pull animals from the store', () => {
@@ -38,6 +37,6 @@ describe('CardContainer tests', () => {
       const result = mapStateToProps(mockStore);
 
       expect(result.user).toEqual(mockStore.user);
-    })
+    });
   });
 });
