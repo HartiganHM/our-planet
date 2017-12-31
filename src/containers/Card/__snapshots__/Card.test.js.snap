@@ -1,0 +1,139 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Card tests Should match the snapshot 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Card
+    animalData={
+        Object {
+            "display": true,
+            "facts": "The Arctic fox is primarily a carnivore that lives inland, away from the coasts. They are dependent on the presence of smaller animals (most often lemmings) to survive.  Arctic foxes also hunt for sea birds, fish, and other marine life. Smaller rodent populations waver between times of abundance and scarcity, which leaves the Arctic fox vulnerable when these creatures are low in numbers.",
+            "habitat": "Antarctica / Arctic",
+            "height": "11 inches",
+            "human_benefit": "The protection of the Arctic fox ensures the safety of a variety of other wildlife in the Arctic region.",
+            "length": "18 to 27 inches",
+            "name": "Arctic Fox",
+            "population": "Several Hundred Thousand",
+            "scientific_name": "Vulpes lagopus",
+            "status": "Least Concern",
+            "weight": "3 to 20 pounds",
+          }
+    }
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <img
+          alt="Arctic Fox-endangered-species"
+          className="animal-image"
+          src="arctic fox.jpg"
+/>,
+        <span
+          className="animal-name"
+>
+          Arctic Fox
+</span>,
+      ],
+      "className": "Card",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "alt": "Arctic Fox-endangered-species",
+          "className": "animal-image",
+          "src": "arctic fox.jpg",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": "img",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Arctic Fox",
+          "className": "animal-name",
+        },
+        "ref": null,
+        "rendered": "Arctic Fox",
+        "type": "span",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <img
+            alt="Arctic Fox-endangered-species"
+            className="animal-image"
+            src="arctic fox.jpg"
+/>,
+          <span
+            className="animal-name"
+>
+            Arctic Fox
+</span>,
+        ],
+        "className": "Card",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "alt": "Arctic Fox-endangered-species",
+            "className": "animal-image",
+            "src": "arctic fox.jpg",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "img",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Arctic Fox",
+            "className": "animal-name",
+          },
+          "ref": null,
+          "rendered": "Arctic Fox",
+          "type": "span",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
