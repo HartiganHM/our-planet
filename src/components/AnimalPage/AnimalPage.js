@@ -48,7 +48,7 @@ export class AnimalPage extends Component {
 
     return (
       <div className="AnimalPage">
-        <span>{name}</span>
+        <span className='animal-name'>{name}</span>
         {image && (
           <img
             className="animal-image"
