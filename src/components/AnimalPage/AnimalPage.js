@@ -22,6 +22,7 @@ export class AnimalPage extends Component {
   }
 
   render() {
+    const animalData = this.state.animalData.name ? console.log('full') : console.log('empty');
     const {
       name,
       status,
@@ -35,7 +36,7 @@ export class AnimalPage extends Component {
       human_benefit,
       image
     } = this.state.animalData;
-    console.log(this.state.animalData);
+
 
     return (
       <div className="AnimalPage">
