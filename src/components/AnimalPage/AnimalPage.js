@@ -11,18 +11,27 @@ export class AnimalPage extends Component {
     };
   }
 
+  componentWillMount() {
+    if (this.props.animals.length) {
+      this.matchAnimal(this.props);
+    }
+  }
+
   componentWillReceiveProps(nextProps) {
-    const linkedAnimal = this.props.match.params.animal;
-    const animalData = nextProps.animals.find(
+    this.matchAnimal(nextProps)
+  }
+
+  matchAnimal = (props) => {
+    const linkedAnimal = props.match.params.animal;
+    const animalData = props.animals.find(
       animal => animal.name === linkedAnimal
     );
     animalData.image = animalData.name.toLowerCase();
 
     this.setState({ animalData });
-  }
+  };
 
   render() {
-    const animalData = this.state.animalData.name ? console.log('full') : console.log('empty');
     const {
       name,
       status,
@@ -36,7 +45,6 @@ export class AnimalPage extends Component {
       human_benefit,
       image
     } = this.state.animalData;
-
 
     return (
       <div className="AnimalPage">
