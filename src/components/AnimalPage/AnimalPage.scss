@@ -1,7 +1,23 @@
+//Layout, Box, Visual, Typography, Misc
 @import '../../styles/mixins.scss';
+@import '../../styles/variables.scss';
 
 .AnimalPage {
+  display: flex;
+  flex-direction: column;
+  @include padding(2);
+  .animal-name {
+    @include padding(1);
+    border-radius: 20px 20px 0 0;
+    background-color: $accent-color-dark;
+    color: $snow;
+    font: {
+      family: $accent-font;
+      size: 1.6rem;
+    }
+  }
   .animal-image {
     @include width(50);
+    border-radius: 0 0 0 20px;
   }
 }
