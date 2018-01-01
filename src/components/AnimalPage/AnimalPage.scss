@@ -1,51 +1,87 @@
 //Layout, Box, Visual, Typography, Misc
 @import '../../styles/mixins.scss';
 @import '../../styles/variables.scss';
-
 .AnimalPage {
-  display: flex;
-  flex-direction: column;
-  @include padding(2);
-  .animal-name {
-    @include padding(1);
-    border-radius: 20px 20px 0 0;
-    background-color: $accent-color-dark;
-    color: $snow;
-    font: {
-      family: $accent-font;
-      size: 1.6rem;
-    }
-  }
-  .animal-data-container {
     display: flex;
-    background-color: $accent-color-light;
-    .animal-image {
-      @include height(40);
-      @include width(60);
-      border-radius: 0 0 20px 20px;
-    }
-    .animal-stats {
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-      .animal-stat {
-        display: flex;
-        align-items: baseline;
-        @include margin(1);
-        .stat-title {
-          flex: 1;
-          font: {
+    flex-direction: column;
+    @include padding(2);
+    .animal-name {
+        @include padding(1);
+        border-radius: 20px 20px 0 0;
+        background-color: $accent-color-dark;
+        color: $snow;
+        font: {
             family: $accent-font;
-            size: 1.4rem;
-          }
+            size: 1.8rem;
         }
-        .stat-body {
-          flex: 3;
-          font: {
-            size: 1rem;
-          }
-        }
-      }
     }
-  }
+    .animal-data-container {
+        display: flex;
+        flex-direction: column;
+        background-color: $platinum;
+        background: {
+            image: url('../../images/Our-Planet-Logo.png');
+            repeat: no-repeat;
+            size: contain;
+            position: right;
+        }
+        border: 1px solid black;
+        border-radius: 0 0 20px 20px;
+        .wrapper {
+            display: flex;
+            .animal-image {
+                @include height(40);
+                @include width(60);
+                border: 1px solid black;
+                border-top: none;
+                border-radius: 0 0 20px 20px;
+                box-shadow: $drop-shadow;
+            }
+            .animal-basic-stats {
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                .animal-stat {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: baseline;
+                    @include margin(1);
+                    .stat-title {
+                        font: {
+                            family: $accent-font;
+                            size: 1.2rem;
+                        }
+                    }
+                    .stat-body {
+                        font: {
+                            size: 1rem;
+                        }
+                    }
+                }
+            }
+        }
+        .animal-long-stats {
+            display: flex;
+            flex-direction: column;
+            .animal-stat {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                @include margin(1);
+                .stat-title {
+                    font: {
+                        family: $accent-font;
+                        size: 1.2rem;
+                    }
+                }
+                .stat-body {
+                    font: {
+                        size: 1rem;
+                    }
+                    text-align: center;
+                }
+            }
+        }
+    }
 }
