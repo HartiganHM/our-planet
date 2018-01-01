@@ -23,7 +23,6 @@ export class AnimalPage extends Component {
 
   cleanAnimalData = animalData => {
     const cleanAnimalData = {
-      Name: animalData.name,
       Status: animalData.status,
       Population: animalData.population,
       'Scientific Name': animalData.scientific_name,
@@ -51,8 +50,16 @@ export class AnimalPage extends Component {
   renderAnimalStats = () => {
     const cleanAnimalData = this.cleanAnimalData(this.state.animalData);
     const animalProperties = Object.keys(cleanAnimalData);
-    const animalStatsList = animalProperties.map(property => {
-      if (cleanAnimalData[property] !== '') {
+    let longStats = [];
+    const basicStats = animalProperties.map(property => {
+      if (property === 'The Facts' || property === "Why I'm Important") {
+        longStats.push(
+          <span className="animal-stat">
+            <span className="stat-title">{property}:</span>
+            <span className="stat-body">{cleanAnimalData[property]}</span>
+          </span>
+        );
+      } else if (cleanAnimalData[property] !== '') {
         return (
           <span className="animal-stat">
             <span className="stat-title">{property}:</span>
@@ -62,25 +69,28 @@ export class AnimalPage extends Component {
       }
     });
 
-    return animalStatsList;
+    return { basicStats, longStats };
   };
 
   render() {
     const { name, image } = this.state.animalData;
-    const animalStatsList = this.renderAnimalStats();
+    const { basicStats, longStats } = this.renderAnimalStats();
 
     return (
       <div className="AnimalPage">
         <span className="animal-name">{name}</span>
         <div className="animal-data-container">
-          {image && (
-            <img
-              className="animal-image"
-              src={require(`../../images/animals/${image}.jpg`)}
-              alt={`${name}-endangered-species`}
-            />
-          )}
-          <div className="animal-stats">{animalStatsList}</div>
+          <div className='wrapper'>
+            {image && (
+              <img
+                className="animal-image"
+                src={require(`../../images/animals/${image}.jpg`)}
+                alt={`${name}-endangered-species`}
+              />
+            )}
+            <div className="animal-basic-stats">{basicStats}</div>
+          </div>
+          <div className="animal-long-stats">{longStats}</div>
         </div>
       </div>
     );
