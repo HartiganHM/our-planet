@@ -1,0 +1,105 @@
+//Layout, Box, Visual, Typography, Misc
+@import '../../styles/mixins.scss';
+@import '../../styles/variables.scss';
+.AnimalPage {
+  display: flex;
+  flex-direction: column;
+  @include padding(2);
+  .animal-name {
+    @include padding(2);
+    border-radius: 20px 20px 0 0;
+    background: {
+      color: $accent-color-dark;
+      image: url('../../images/Our-Planet-Light-Logo.png');
+      position: calc(100% + 10px) calc(100% - 10px);
+      size: contain;
+      repeat: no-repeat;
+    }
+    color: $snow;
+    font: {
+      family: $accent-font;
+      size: 2rem;
+    }
+  }
+  .animal-data-container {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+    background: {
+      color: $snow;
+      image: url('../../images/OP-Logo-Light-Blue.png');
+      repeat: no-repeat;
+      size: 40rem;
+      position: top right;
+    }
+    border: 1px solid black;
+    border-radius: 0 0 20px 20px;
+    .wrapper {
+      display: flex;
+      .animal-image {
+        @include height(40);
+        @include width(60);
+        border: 1px solid black;
+        border-top: none;
+        border-radius: 0 0 20px 20px;
+        box-shadow: $drop-shadow;
+      }
+      .animal-basic-stats {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-content: baseline;
+        flex-wrap: wrap;
+        @include maxHeight(40);
+        .animal-stat {
+          display: flex;
+          flex-direction: column;
+          align-items: baseline;
+          width: 50%;
+          .stat-title {
+            align-self: stretch;
+            @include padding(1);
+            background-color: $rich-black;
+            color: $snow;
+            font: {
+              family: $accent-font;
+              size: 1.2rem;
+            }
+          }
+          .stat-body {
+            @include padding(0.5);
+            padding-left: 20px;
+            font: {
+              size: 1rem;
+            }
+          }
+        }
+      }
+    }
+    .animal-long-stats {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      .animal-stat {
+        display: flex;
+        flex-direction: column;
+        .stat-title {
+          @include padding(2);
+          margin: 20px 0;
+          background-color: $rich-black;
+          color: $snow;
+          font: {
+            family: $accent-font;
+            size: 1.2rem;
+          }
+        }
+        .stat-body {
+          @include padding(2);
+          font: {
+            size: 1rem;
+          }
+        }
+      }
+    }
+  }
+}

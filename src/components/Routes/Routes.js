@@ -2,6 +2,7 @@ import React from 'react';
 import { Route } from 'react-router-dom';
 import Search from '../../containers/Search/Search';
 import CardContainer from '../../containers/CardContainer/CardContainer';
+import AnimalPage from '../AnimalPage/AnimalPage';
 
 const Routes = () => {
   return (
@@ -18,6 +19,7 @@ const Routes = () => {
           );
         }}
       />
+      <Route path='/:animal' component={AnimalPage}/>
     </div>
   );
 };
