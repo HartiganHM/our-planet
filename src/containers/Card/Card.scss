@@ -2,26 +2,26 @@
 @import '../../styles/mixins.scss';
 @import '../../styles/variables.scss';
 .Card {
-    display: flex;
-    flex-direction: column;
-    @include width(29.8);
-    @include margin(1);
-    border: 1px solid black;
-    border-radius: 0 20px;
-    background-color: $accent-color-light;
-    text-decoration: none;
-    overflow: hidden;
-    .animal-image {
-        @include width(30);
-        border-radius: 0 0 0 20px;
-        box-shadow: $drop-shadow;
-        z-index: 2;
-    }
-    .animal-name {
-        @include padding(1);
-        color: $accent-color-dark;
-        font-family: $accent-font;
-        font-size: 1.4rem;
-        text-align: center;
-    }
+  display: flex;
+  flex-direction: column;
+  @include width(29.8);
+  @include margin(1);
+  border: 1px solid black;
+  border-radius: 0 20px;
+  background-color: $accent-color-light;
+  text-decoration: none;
+  overflow: hidden;
+  .animal-image {
+    @include width(30);
+    border-radius: 0 0 0 20px;
+    box-shadow: $drop-shadow;
+    z-index: 2;
+  }
+  .animal-name {
+    @include padding(1);
+    color: $accent-color-dark;
+    font-family: $accent-font;
+    font-size: 1.4rem;
+    text-align: center;
+  }
 }
