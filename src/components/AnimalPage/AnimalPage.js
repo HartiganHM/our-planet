@@ -55,7 +55,7 @@ export class AnimalPage extends Component {
       if (property === 'The Facts' || property === "Why I'm Important") {
         longStats.push(
           <span className="animal-stat">
-            <span className="stat-title">{property}:</span>
+            <span className="stat-title">{property}</span>
             <span className="stat-body">{cleanAnimalData[property]}</span>
           </span>
         );
