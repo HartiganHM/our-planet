@@ -8,7 +8,13 @@
   .animal-name {
     @include padding(2);
     border-radius: 20px 20px 0 0;
-    background-color: $accent-color-dark;
+    background: {
+      color: $accent-color-dark;
+      image: url('../../images/Our-Planet-Light-Logo.png');
+      position: calc(100% + 10px) calc(100% - 10px);
+      size: contain;
+      repeat: no-repeat;
+    }
     color: $snow;
     font: {
       family: $accent-font;
@@ -19,12 +25,12 @@
     display: flex;
     flex-direction: column;
     padding-bottom: 20px;
-    background-color: $snow;
     background: {
-      image: url('../../images/Logo-Light-Blue.png');
+      color: $snow;
+      image: url('../../images/OP-Logo-Light-Blue.png');
       repeat: no-repeat;
       size: 40rem;
-      position: right;
+      position: top right;
     }
     border: 1px solid black;
     border-radius: 0 0 20px 20px;
@@ -50,9 +56,11 @@
           flex-direction: column;
           align-items: baseline;
           width: 50%;
-          @include margin(1);
           .stat-title {
-            @include padding(0.5);
+            align-self: stretch;
+            @include padding(1);
+            background-color: $rich-black;
+            color: $snow;
             font: {
               family: $accent-font;
               size: 1.2rem;
