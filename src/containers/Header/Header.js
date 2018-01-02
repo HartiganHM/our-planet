@@ -18,7 +18,7 @@ export class Header extends Component {
         onClick={() => this.props.resetAnimals('', this.props.animals)}
       />
     );
-  }
+  };
 
   render() {
     return (
