@@ -2,7 +2,7 @@ import React from 'react';
 import { Route } from 'react-router-dom';
 import Search from '../../containers/Search/Search';
 import CardContainer from '../../containers/CardContainer/CardContainer';
-import AnimalPage from '../AnimalPage/AnimalPage';
+import AnimalPage from '../../containers/AnimalPage/AnimalPage';
 
 const Routes = () => {
   return (
