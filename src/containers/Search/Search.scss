@@ -1,12 +1,41 @@
 @import '../../styles/mixins.scss';
 @import '../../styles/variables.scss';
-
 .Search {
   display: flex;
+  @include width(160);
   @include margin(2);
+  @include padding(1);
+  margin: auto;
   .search-field {
     flex: 1;
     @include padding(1);
     font-size: 1rem;
+    &:focus {
+      outline: none;
+    }
+  }
+}
+
+@media screen and (max-width: 1599px) {
+  .Search {
+    @include width(128);
+  }
+}
+
+@media screen and (max-width: 1279px) {
+  .Search {
+    @include width(96);
+  }
+}
+
+@media screen and (max-width: 959px) {
+  .Search {
+    @include width(64);
+  }
+}
+
+@media screen and (max-width: 639px) {
+  .Search {
+    @include width(32);
   }
 }
