@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import './InteractiveMap.css';
 
-class InteractiveMap extends Component {
+export class InteractiveMap extends Component {
   render() {
     const buttons = this.props.continents.map((continent, index) => {
       const continentLink = '/continents/' + continent.name;
