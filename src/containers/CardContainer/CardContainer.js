@@ -24,5 +24,6 @@ export const mapStateToProps = store => {
 export default connect(mapStateToProps, null)(CardContainer);
 
 CardContainer.propTypes = {
-  animals: PropTypes.array
+  animals: PropTypes.array,
+  continentAnimals: PropTypes.array
 };

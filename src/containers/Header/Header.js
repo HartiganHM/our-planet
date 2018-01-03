@@ -18,7 +18,7 @@ export class Header extends Component {
         onClick={() => this.props.resetAnimals('', this.props.animals)}
       />
     );
-  };
+  }
 
   render() {
     return (
@@ -62,5 +62,7 @@ export const mapDispatchToProps = dispatch => {
 export default connect(mapStateToProps, mapDispatchToProps)(Header);
 
 Header.propTypes = {
-  populateData: PropTypes.func
+  animals: PropTypes.array,
+  populateData: PropTypes.func,
+  resetAnimals: PropTypes.func
 };
