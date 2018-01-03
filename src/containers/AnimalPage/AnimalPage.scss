@@ -6,20 +6,8 @@
   flex-direction: column;
   @include padding(2);
   .animal-name {
-    @include padding(2);
-    border-radius: 20px 20px 0 0;
-    background: {
-      color: $accent-color-dark;
-      image: url('../../images/Our-Planet-Light-Logo.png');
-      position: calc(100% + 10px) calc(100% - 10px);
-      size: contain;
-      repeat: no-repeat;
-    }
-    color: $snow;
-    font: {
-      family: $accent-font;
-      size: 2rem;
-    }
+    @include contentHeader();
+    background-image: url('../../images/Our-Planet-Light-Logo.png');
   }
   .animal-data-container {
     display: flex;
