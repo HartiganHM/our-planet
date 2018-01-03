@@ -31,5 +31,5 @@ describe('addPropertiesToAnimal tests', () => {
 
     expect(animalsArray[0].display).toEqual(expected);
     expect(animalsArray[1].display).toEqual(expected);
-  })
+  });
 });
