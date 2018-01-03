@@ -36,7 +36,7 @@ describe('Search tests', () => {
       const mockDispatch = jest.fn();
       const result = mapDispatchToProps(mockDispatch);
 
-      result.searchAnimals('fox', mockAnimalsArray);
+      result.searchAnimals('fox', mockAnimalsArray, 'name');
       expect(mockDispatch).toHaveBeenCalled();
     });
   });
