@@ -5,9 +5,10 @@ import PropTypes from 'prop-types';
 import './CardContainer.css';
 
 export const CardContainer = props => {
-  const noEndangeredAnimals = (
-    <span className="no-endangered-animals">
-      There are currently no endangered animals in this region
+  console.log(props);
+  const contentPlaceholder = (
+    <span className="content-placeholder">
+      {props.continentAnimals ? 'There are currently no endangered animals in this region' : 'Loading'}
     </span>
   );
   const animalsArray = props.continentAnimals
