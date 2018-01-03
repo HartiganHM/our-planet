@@ -30,6 +30,6 @@ describe('Actions tests', () => {
       filteredAnimals
     };
 
-    expect(actions.searchAnimals('fox', filteredAnimals)).toEqual(expected);
+    expect(actions.searchAnimals('fox', filteredAnimals, 'name')).toEqual(expected);
   });
 });
