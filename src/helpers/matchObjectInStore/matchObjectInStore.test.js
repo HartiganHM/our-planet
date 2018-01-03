@@ -7,7 +7,7 @@ describe('matchObjectInStore tests', () => {
 
   beforeEach(() => {
     mockProps = {
-      match: { params: { animal: 'Arctic Fox', continent: 'Antarctica ' } },
+      match: { params: { animal: 'Arctic Fox', continent: 'Africa' } },
       animals: mockAnimalsArray,
       continents: mockContinentsArray
     };
@@ -23,9 +23,38 @@ describe('matchObjectInStore tests', () => {
     expect(typeof mockAnimal).toEqual('object');
   });
 
-  it('Should match an object from store based on props give', () => {});
+  it('Should match an object from store based on props give', () => {
+    const expected = mockAnimalsArray[0];
+    const mockAnimal = matchObjectInStore(mockProps, 'animal', 'animals');
 
-  it('Should catch Antarctica outlier', () => {});
+    expect(mockAnimal).toEqual(expected);
+  });
 
-  it('should return an empty object if there are no matches', () => {});
+  it('Should be able to match an animal and a continent', () => {
+    const expectedAnimal = mockAnimalsArray[0];
+    const mockAnimal = matchObjectInStore(mockProps, 'animal', 'animals');
+
+    expect(mockAnimal.name).toEqual(expectedAnimal.name);
+
+    const expectedContinent = mockContinentsArray[0];
+    const mockContinet = matchObjectInStore(
+      mockProps,
+      'continent',
+      'continents'
+    );
+
+    expect(mockContinet.name).toEqual(expectedContinent.name);
+  });
+
+  it('Should catch Antarctica outlier', () => {
+    mockProps.match.params.continent = 'Antarctica ';
+    const expectedContinentName = 'Antarctica / Arctic';
+    const mockContinent = matchObjectInStore(
+      mockProps,
+      'continent',
+      'continents'
+    );
+
+    expect(mockContinent.name).toEqual(expectedContinentName);
+  });
 });
