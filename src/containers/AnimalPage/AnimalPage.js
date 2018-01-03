@@ -44,17 +44,17 @@ export class AnimalPage extends Component {
     const cleanAnimalData = this.cleanAnimalData(this.state.animalData);
     const animalProperties = Object.keys(cleanAnimalData);
     let longStats = [];
-    const basicStats = animalProperties.map(property => {
+    const basicStats = animalProperties.map((property, index) => {
       if (property === 'The Facts' || property === "Why I'm Important") {
         longStats.push(
-          <span className="animal-stat">
+          <span key={index} className="animal-stat">
             <span className="stat-title">{property}</span>
             <span className="stat-body">{cleanAnimalData[property]}</span>
           </span>
         );
       } else if (cleanAnimalData[property] !== '') {
         return (
-          <span className="animal-stat">
+          <span key={index} className="animal-stat">
             <span className="stat-title">{property}:</span>
             <span className="stat-body">{cleanAnimalData[property]}</span>
           </span>
