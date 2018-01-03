@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import matchObjectInStore from '../../helpers/matchObjectInStore/matchObjectInStore';
 import './ContinentPage.css';
 
 export class ContinentPage extends Component {
@@ -13,14 +14,27 @@ export class ContinentPage extends Component {
 
   componentWillMount() {
     if (this.props.continents.length) {
-      this.matchContinent(this.props);
+      const continentData = matchObjectInStore(
+        this.props,
+        'continent',
+        'continents'
+      );
+      const animals = this.matchContinentAnimals(continentData.id);
+
+      this.setState({ continentData, animals });
     }
   }
 
   componentWillReceiveProps(nextProps) {
-    if (nextProps.continents.length) {
-      this.matchContinent(nextProps);
-    }
+    console.log(nextProps.continents)
+    const continentData = matchObjectInStore(
+      this.props,
+      'continent',
+      'continents'
+    );
+    const animals = this.matchContinentAnimals(continentData.id);
+
+    this.setState({ continentData, animals });
   }
 
   matchContinent = props => {
@@ -31,6 +45,13 @@ export class ContinentPage extends Component {
     continentData.image = continentData.name.toLowerCase();
 
     this.setState({ continentData });
+  };
+
+  matchContinentAnimals = continentId => {
+    const animals = this.props.animals.filter(
+      animal => animal.continent_id === continentId
+    );
+    return animals;
   };
 
   render() {
