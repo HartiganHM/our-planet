@@ -5,7 +5,7 @@
   flex-wrap: wrap;
   @include width(160);
   margin: auto;
-  .no-endangered-animals {
+  .content-placeholder {
     @include contentDetailTitle();
     flex: 1;
     border-radius: $rounded-diagonal;
