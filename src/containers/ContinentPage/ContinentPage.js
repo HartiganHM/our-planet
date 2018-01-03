@@ -57,7 +57,11 @@ export class ContinentPage extends Component {
   };
 
   render() {
-    return (<div className="ContinentPage"><CardContainer /></div>);
+    return (
+      <div className="ContinentPage">
+        <CardContainer continentAnimals={this.state.animals}/>
+      </div>
+    );
   }
 }
 
