@@ -1,7 +1,7 @@
 import matchObjectInStore from './matchObjectInStore';
 import mockAnimalsArray from '../../data/mockAnimalsArray';
 import mockContinentsArray from '../../data/mockContinentsArray';
-import mockProps from '../../data/mockProps'
+import mockProps from '../../data/mockProps';
 
 describe('matchObjectInStore tests', () => {
   it('Should be a function', () => {
