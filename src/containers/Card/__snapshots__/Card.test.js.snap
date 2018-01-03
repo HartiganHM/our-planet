@@ -12,6 +12,7 @@ ShallowWrapper {
             "habitat": "Antarctica / Arctic",
             "height": "11 inches",
             "human_benefit": "The protection of the Arctic fox ensures the safety of a variety of other wildlife in the Arctic region.",
+            "image": "arctic fox",
             "length": "18 to 27 inches",
             "name": "Arctic Fox",
             "population": "Several Hundred Thousand",
@@ -31,7 +32,7 @@ ShallowWrapper {
   Symbol(enzyme.__node__): Object {
     "instance": null,
     "key": undefined,
-    "nodeType": "host",
+    "nodeType": "class",
     "props": Object {
       "children": Array [
         <img
@@ -46,6 +47,8 @@ ShallowWrapper {
 </span>,
       ],
       "className": "Card",
+      "replace": false,
+      "to": "/animals/Arctic Fox",
     },
     "ref": null,
     "rendered": Array [
@@ -75,13 +78,13 @@ ShallowWrapper {
         "type": "span",
       },
     ],
-    "type": "div",
+    "type": [Function],
   },
   Symbol(enzyme.__nodes__): Array [
     Object {
       "instance": null,
       "key": undefined,
-      "nodeType": "host",
+      "nodeType": "class",
       "props": Object {
         "children": Array [
           <img
@@ -96,6 +99,8 @@ ShallowWrapper {
 </span>,
         ],
         "className": "Card",
+        "replace": false,
+        "to": "/animals/Arctic Fox",
       },
       "ref": null,
       "rendered": Array [
@@ -125,7 +130,7 @@ ShallowWrapper {
           "type": "span",
         },
       ],
-      "type": "div",
+      "type": [Function],
     },
   ],
   Symbol(enzyme.__options__): Object {
