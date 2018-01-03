@@ -615,8 +615,6 @@ ShallowWrapper {
                                             Antarctica / Arctic
                       </span>
 </span>,
-                    undefined,
-                    undefined,
                   ],
                   "className": "animal-basic-stats",
                 },
@@ -1007,8 +1005,6 @@ ShallowWrapper {
                     ],
                     "type": "span",
                   },
-                  undefined,
-                  undefined,
                 ],
                 "type": "div",
               },
@@ -1726,8 +1722,6 @@ ShallowWrapper {
                                                 Antarctica / Arctic
                         </span>
 </span>,
-                      undefined,
-                      undefined,
                     ],
                     "className": "animal-basic-stats",
                   },
@@ -2118,8 +2112,6 @@ ShallowWrapper {
                       ],
                       "type": "span",
                     },
-                    undefined,
-                    undefined,
                   ],
                   "type": "div",
                 },
