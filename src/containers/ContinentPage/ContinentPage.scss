@@ -1,0 +1,12 @@
+//Layout, Box, Visual, Typography, Misc
+@import '../../styles/mixins.scss';
+@import '../../styles/variables.scss';
+.ContinentPage {
+  display: flex;
+  flex-direction: column;
+  @include padding(2);
+  .continent-name {
+    @include contentHeader();
+    background-image: url('../../images/Our-Planet-Light-Logo.png');
+  }
+}
