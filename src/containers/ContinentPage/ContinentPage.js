@@ -26,15 +26,16 @@ export class ContinentPage extends Component {
   }
 
   componentWillReceiveProps(nextProps) {
-    console.log(nextProps.continents)
-    const continentData = matchObjectInStore(
-      this.props,
-      'continent',
-      'continents'
-    );
-    const animals = this.matchContinentAnimals(continentData.id);
+    if (nextProps.continents.length) {
+      const continentData = matchObjectInStore(
+        nextProps,
+        'continent',
+        'continents'
+      );
+      const animals = this.matchContinentAnimals(continentData.id);
 
-    this.setState({ continentData, animals });
+      this.setState({ continentData, animals });
+    }
   }
 
   matchContinent = props => {
