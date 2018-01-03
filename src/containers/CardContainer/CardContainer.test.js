@@ -5,11 +5,13 @@ import mockAnimalsArray from '../../data/mockAnimalsArray';
 
 describe('CardContainer tests', () => {
   let renderedCardContainer;
+  let animalsArray;
 
   beforeEach(() => {
-    renderedCardContainer = shallow(
-      <CardContainer animals={mockAnimalsArray} />
-    );
+    animalsArray = mockAnimalsArray.map(animal => {
+      return { ...animal, display: true };
+    });
+    renderedCardContainer = shallow(<CardContainer animals={animalsArray} />);
   });
 
   it('Should match the snapshot', () => {
@@ -21,9 +23,18 @@ describe('CardContainer tests', () => {
   });
 
   it('Should not render certain cards if display is false', () => {
-    mockAnimalsArray[0].display = false;
+    animalsArray[0].display = false;
+    renderedCardContainer = shallow(<CardContainer animals={animalsArray} />);
+
+    expect(renderedCardContainer.find('Card').length).toEqual(1);
+  });
+
+  it('Should display different animals when receiving continentAnimals', () => {
     renderedCardContainer = shallow(
-      <CardContainer animals={mockAnimalsArray} />
+      <CardContainer
+        animals={animalsArray}
+        continentAnimals={[animalsArray[0]]}
+      />
     );
 
     expect(renderedCardContainer.find('Card').length).toEqual(1);
