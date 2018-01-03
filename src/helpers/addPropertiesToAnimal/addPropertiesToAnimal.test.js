@@ -12,7 +12,7 @@ describe('addPropertiesToAnimal tests', () => {
     expect(typeof animalsArray).toEqual('object');
   });
 
-  it('Should add an image matching each animals name', () => {
+  it('Should add an image reference matching each animals name', () => {
     expect(mockAnimalsArray[0].image).toEqual(undefined);
 
     const firstExpectedImage = 'arctic fox';
