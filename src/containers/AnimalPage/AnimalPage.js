@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import matchObjectInStore from '../../helpers/matchObjectInStore/matchObjectInStore';
 import './AnimalPage.css';
 
 export class AnimalPage extends Component {
@@ -12,12 +13,14 @@ export class AnimalPage extends Component {
 
   componentWillMount() {
     if (this.props.animals.length) {
-      this.matchAnimal(this.props);
+      const animalData = matchObjectInStore(this.props, 'animal', 'animals');
+      this.setState({ animalData });
     }
   }
 
   componentWillReceiveProps(nextProps) {
-    this.matchAnimal(nextProps);
+    const animalData = matchObjectInStore(nextProps, 'animal', 'animals');
+    this.setState({ animalData });
   }
 
   cleanAnimalData = animalData => {
@@ -34,16 +37,6 @@ export class AnimalPage extends Component {
     };
 
     return cleanAnimalData;
-  };
-
-  matchAnimal = props => {
-    const linkedAnimal = props.match.params.animal;
-    const animalData = props.animals.find(
-      animal => animal.name === linkedAnimal
-    );
-    animalData.image = animalData.name.toLowerCase();
-
-    this.setState({ animalData });
   };
 
   renderAnimalStats = () => {
@@ -79,7 +72,7 @@ export class AnimalPage extends Component {
       <div className="AnimalPage">
         <span className="animal-name">{name}</span>
         <div className="animal-data-container">
-          <div className='wrapper'>
+          <div className="wrapper">
             {image && (
               <img
                 className="animal-image"
