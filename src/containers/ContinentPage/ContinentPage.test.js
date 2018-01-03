@@ -1,6 +1,8 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import { ContinentPage, mapStateToProps } from './ContinentPage';
+import mockAnimalsArray from '../../data/mockAnimalsArray';
+import mockContinentsArray from '../../data/mockContinentsArray';
 import mockProps from '../../data/mockProps';
 
 describe('ContinentPage tests', () => {
@@ -19,6 +21,22 @@ describe('ContinentPage tests', () => {
   it('Should match the snapshot', () => {
     expect(renderedContinentPage).toMatchSnapshot();
   });
+
+  it('matchContinentAnimals should match animals to a given continent id', () => {
+    const expected = mockAnimalsArray;
+    const mockContinentId = mockContinentsArray[1].id;
+    const result = renderedContinentPage.instance().matchContinentAnimals(mockContinentId);
+
+    expect(result).toEqual(expected);
+  });
+
+  it('matchContinentAnimals should return an empty array is the continent id does not match', () => {
+    const expected = [];
+    const mockContinentId = mockContinentsArray[0].id;
+    const result = renderedContinentPage.instance().matchContinentAnimals(mockContinentId);
+
+    expect(result).toEqual(expected);
+  })
 
   describe('mapStateToProps tests', () => {
     it('Should pull animals from the store', () => {
