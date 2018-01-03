@@ -1,0 +1,2276 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AnimalPage tests Should match the snapshot 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <AnimalPage
+    animals={
+        Array [
+            Object {
+              "continent_id": 2,
+              "facts": "The Arctic fox is primarily a carnivore that lives inland, away from the coasts. They are dependent on the presence of smaller animals (most often lemmings) to survive.  Arctic foxes also hunt for sea birds, fish, and other marine life. Smaller rodent populations waver between times of abundance and scarcity, which leaves the Arctic fox vulnerable when these creatures are low in numbers.",
+              "habitat": "Antarctica / Arctic",
+              "height": "11 inches",
+              "human_benefit": "The protection of the Arctic fox ensures the safety of a variety of other wildlife in the Arctic region.",
+              "length": "18 to 27 inches",
+              "name": "Arctic Fox",
+              "population": "Several Hundred Thousand",
+              "scientific_name": "Vulpes lagopus",
+              "status": "Least Concern",
+              "weight": "3 to 20 pounds",
+            },
+            Object {
+              "continent_id": 2,
+              "facts": "Often called the \\"polar wolf\\" or \\"white wolf,\\" Arctic wolves inhabit the Arctic regions of North America and Greenland. Thanks to its isolation, the Arctic wolf is not threatened by hunting and habitat destruction in the same way as its southern relatives.",
+              "habitat": "Antarctica / Arctic",
+              "height": "",
+              "human_benefit": "Arctic wolves are carnivorous hunters. By nature they help to control the populations of other animals in the region like the musk ox, caribou and Arctic hares.",
+              "length": "3.2 to 5.9 feet",
+              "name": "Arctic Wolf",
+              "population": "",
+              "scientific_name": "Vulpes lagopus",
+              "status": "Least Concern",
+              "weight": "70 to 175 pounds",
+            },
+          ]
+    }
+    match={
+        Object {
+            "params": Object {
+              "animal": "Arctic Fox",
+              "continent": "Africa",
+            },
+          }
+    }
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <span
+          className="animal-name"
+>
+          Arctic Fox
+</span>,
+        <div
+          className="animal-data-container"
+>
+          <div
+                    className="wrapper"
+          >
+                    <div
+                              className="animal-basic-stats"
+                    >
+                              <span
+                                        className="animal-stat"
+                              >
+                                        <span
+                                                  className="stat-title"
+                                        >
+                                                  Status
+                                                  :
+                                        </span>
+                                        <span
+                                                  className="stat-body"
+                                        >
+                                                  Least Concern
+                                        </span>
+                              </span>
+                              <span
+                                        className="animal-stat"
+                              >
+                                        <span
+                                                  className="stat-title"
+                                        >
+                                                  Population
+                                                  :
+                                        </span>
+                                        <span
+                                                  className="stat-body"
+                                        >
+                                                  Several Hundred Thousand
+                                        </span>
+                              </span>
+                              <span
+                                        className="animal-stat"
+                              >
+                                        <span
+                                                  className="stat-title"
+                                        >
+                                                  Scientific Name
+                                                  :
+                                        </span>
+                                        <span
+                                                  className="stat-body"
+                                        >
+                                                  Vulpes lagopus
+                                        </span>
+                              </span>
+                              <span
+                                        className="animal-stat"
+                              >
+                                        <span
+                                                  className="stat-title"
+                                        >
+                                                  Height
+                                                  :
+                                        </span>
+                                        <span
+                                                  className="stat-body"
+                                        >
+                                                  11 inches
+                                        </span>
+                              </span>
+                              <span
+                                        className="animal-stat"
+                              >
+                                        <span
+                                                  className="stat-title"
+                                        >
+                                                  Weight
+                                                  :
+                                        </span>
+                                        <span
+                                                  className="stat-body"
+                                        >
+                                                  3 to 20 pounds
+                                        </span>
+                              </span>
+                              <span
+                                        className="animal-stat"
+                              >
+                                        <span
+                                                  className="stat-title"
+                                        >
+                                                  Length
+                                                  :
+                                        </span>
+                                        <span
+                                                  className="stat-body"
+                                        >
+                                                  18 to 27 inches
+                                        </span>
+                              </span>
+                              <span
+                                        className="animal-stat"
+                              >
+                                        <span
+                                                  className="stat-title"
+                                        >
+                                                  Habitat
+                                                  :
+                                        </span>
+                                        <span
+                                                  className="stat-body"
+                                        >
+                                                  Antarctica / Arctic
+                                        </span>
+                              </span>
+                    </div>
+          </div>
+          <div
+                    className="animal-long-stats"
+          >
+                    <span
+                              className="animal-stat"
+                    >
+                              <span
+                                        className="stat-title"
+                              >
+                                        The Facts
+                              </span>
+                              <span
+                                        className="stat-body"
+                              >
+                                        The Arctic fox is primarily a carnivore that lives inland, away from the coasts. They are dependent on the presence of smaller animals (most often lemmings) to survive.  Arctic foxes also hunt for sea birds, fish, and other marine life. Smaller rodent populations waver between times of abundance and scarcity, which leaves the Arctic fox vulnerable when these creatures are low in numbers.
+                              </span>
+                    </span>
+                    <span
+                              className="animal-stat"
+                    >
+                              <span
+                                        className="stat-title"
+                              >
+                                        Why I'm Important
+                              </span>
+                              <span
+                                        className="stat-body"
+                              >
+                                        The protection of the Arctic fox ensures the safety of a variety of other wildlife in the Arctic region.
+                              </span>
+                    </span>
+          </div>
+</div>,
+      ],
+      "className": "AnimalPage",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Arctic Fox",
+          "className": "animal-name",
+        },
+        "ref": null,
+        "rendered": "Arctic Fox",
+        "type": "span",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <div
+              className="wrapper"
+>
+              <div
+                            className="animal-basic-stats"
+              >
+                            <span
+                                          className="animal-stat"
+                            >
+                                          <span
+                                                        className="stat-title"
+                                          >
+                                                        Status
+                                                        :
+                                          </span>
+                                          <span
+                                                        className="stat-body"
+                                          >
+                                                        Least Concern
+                                          </span>
+                            </span>
+                            <span
+                                          className="animal-stat"
+                            >
+                                          <span
+                                                        className="stat-title"
+                                          >
+                                                        Population
+                                                        :
+                                          </span>
+                                          <span
+                                                        className="stat-body"
+                                          >
+                                                        Several Hundred Thousand
+                                          </span>
+                            </span>
+                            <span
+                                          className="animal-stat"
+                            >
+                                          <span
+                                                        className="stat-title"
+                                          >
+                                                        Scientific Name
+                                                        :
+                                          </span>
+                                          <span
+                                                        className="stat-body"
+                                          >
+                                                        Vulpes lagopus
+                                          </span>
+                            </span>
+                            <span
+                                          className="animal-stat"
+                            >
+                                          <span
+                                                        className="stat-title"
+                                          >
+                                                        Height
+                                                        :
+                                          </span>
+                                          <span
+                                                        className="stat-body"
+                                          >
+                                                        11 inches
+                                          </span>
+                            </span>
+                            <span
+                                          className="animal-stat"
+                            >
+                                          <span
+                                                        className="stat-title"
+                                          >
+                                                        Weight
+                                                        :
+                                          </span>
+                                          <span
+                                                        className="stat-body"
+                                          >
+                                                        3 to 20 pounds
+                                          </span>
+                            </span>
+                            <span
+                                          className="animal-stat"
+                            >
+                                          <span
+                                                        className="stat-title"
+                                          >
+                                                        Length
+                                                        :
+                                          </span>
+                                          <span
+                                                        className="stat-body"
+                                          >
+                                                        18 to 27 inches
+                                          </span>
+                            </span>
+                            <span
+                                          className="animal-stat"
+                            >
+                                          <span
+                                                        className="stat-title"
+                                          >
+                                                        Habitat
+                                                        :
+                                          </span>
+                                          <span
+                                                        className="stat-body"
+                                          >
+                                                        Antarctica / Arctic
+                                          </span>
+                            </span>
+              </div>
+</div>,
+            <div
+              className="animal-long-stats"
+>
+              <span
+                            className="animal-stat"
+              >
+                            <span
+                                          className="stat-title"
+                            >
+                                          The Facts
+                            </span>
+                            <span
+                                          className="stat-body"
+                            >
+                                          The Arctic fox is primarily a carnivore that lives inland, away from the coasts. They are dependent on the presence of smaller animals (most often lemmings) to survive.  Arctic foxes also hunt for sea birds, fish, and other marine life. Smaller rodent populations waver between times of abundance and scarcity, which leaves the Arctic fox vulnerable when these creatures are low in numbers.
+                            </span>
+              </span>
+              <span
+                            className="animal-stat"
+              >
+                            <span
+                                          className="stat-title"
+                            >
+                                          Why I'm Important
+                            </span>
+                            <span
+                                          className="stat-body"
+                            >
+                                          The protection of the Arctic fox ensures the safety of a variety of other wildlife in the Arctic region.
+                            </span>
+              </span>
+</div>,
+          ],
+          "className": "animal-data-container",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                undefined,
+                <div
+                  className="animal-basic-stats"
+>
+                  <span
+                                    className="animal-stat"
+                  >
+                                    <span
+                                                      className="stat-title"
+                                    >
+                                                      Status
+                                                      :
+                                    </span>
+                                    <span
+                                                      className="stat-body"
+                                    >
+                                                      Least Concern
+                                    </span>
+                  </span>
+                  <span
+                                    className="animal-stat"
+                  >
+                                    <span
+                                                      className="stat-title"
+                                    >
+                                                      Population
+                                                      :
+                                    </span>
+                                    <span
+                                                      className="stat-body"
+                                    >
+                                                      Several Hundred Thousand
+                                    </span>
+                  </span>
+                  <span
+                                    className="animal-stat"
+                  >
+                                    <span
+                                                      className="stat-title"
+                                    >
+                                                      Scientific Name
+                                                      :
+                                    </span>
+                                    <span
+                                                      className="stat-body"
+                                    >
+                                                      Vulpes lagopus
+                                    </span>
+                  </span>
+                  <span
+                                    className="animal-stat"
+                  >
+                                    <span
+                                                      className="stat-title"
+                                    >
+                                                      Height
+                                                      :
+                                    </span>
+                                    <span
+                                                      className="stat-body"
+                                    >
+                                                      11 inches
+                                    </span>
+                  </span>
+                  <span
+                                    className="animal-stat"
+                  >
+                                    <span
+                                                      className="stat-title"
+                                    >
+                                                      Weight
+                                                      :
+                                    </span>
+                                    <span
+                                                      className="stat-body"
+                                    >
+                                                      3 to 20 pounds
+                                    </span>
+                  </span>
+                  <span
+                                    className="animal-stat"
+                  >
+                                    <span
+                                                      className="stat-title"
+                                    >
+                                                      Length
+                                                      :
+                                    </span>
+                                    <span
+                                                      className="stat-body"
+                                    >
+                                                      18 to 27 inches
+                                    </span>
+                  </span>
+                  <span
+                                    className="animal-stat"
+                  >
+                                    <span
+                                                      className="stat-title"
+                                    >
+                                                      Habitat
+                                                      :
+                                    </span>
+                                    <span
+                                                      className="stat-body"
+                                    >
+                                                      Antarctica / Arctic
+                                    </span>
+                  </span>
+</div>,
+              ],
+              "className": "wrapper",
+            },
+            "ref": null,
+            "rendered": Array [
+              undefined,
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <span
+                      className="animal-stat"
+>
+                      <span
+                                            className="stat-title"
+                      >
+                                            Status
+                                            :
+                      </span>
+                      <span
+                                            className="stat-body"
+                      >
+                                            Least Concern
+                      </span>
+</span>,
+                    <span
+                      className="animal-stat"
+>
+                      <span
+                                            className="stat-title"
+                      >
+                                            Population
+                                            :
+                      </span>
+                      <span
+                                            className="stat-body"
+                      >
+                                            Several Hundred Thousand
+                      </span>
+</span>,
+                    <span
+                      className="animal-stat"
+>
+                      <span
+                                            className="stat-title"
+                      >
+                                            Scientific Name
+                                            :
+                      </span>
+                      <span
+                                            className="stat-body"
+                      >
+                                            Vulpes lagopus
+                      </span>
+</span>,
+                    <span
+                      className="animal-stat"
+>
+                      <span
+                                            className="stat-title"
+                      >
+                                            Height
+                                            :
+                      </span>
+                      <span
+                                            className="stat-body"
+                      >
+                                            11 inches
+                      </span>
+</span>,
+                    <span
+                      className="animal-stat"
+>
+                      <span
+                                            className="stat-title"
+                      >
+                                            Weight
+                                            :
+                      </span>
+                      <span
+                                            className="stat-body"
+                      >
+                                            3 to 20 pounds
+                      </span>
+</span>,
+                    <span
+                      className="animal-stat"
+>
+                      <span
+                                            className="stat-title"
+                      >
+                                            Length
+                                            :
+                      </span>
+                      <span
+                                            className="stat-body"
+                      >
+                                            18 to 27 inches
+                      </span>
+</span>,
+                    <span
+                      className="animal-stat"
+>
+                      <span
+                                            className="stat-title"
+                      >
+                                            Habitat
+                                            :
+                      </span>
+                      <span
+                                            className="stat-body"
+                      >
+                                            Antarctica / Arctic
+                      </span>
+</span>,
+                  ],
+                  "className": "animal-basic-stats",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": "0",
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        <span
+                          className="stat-title"
+>
+                          Status
+                          :
+</span>,
+                        <span
+                          className="stat-body"
+>
+                          Least Concern
+</span>,
+                      ],
+                      "className": "animal-stat",
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": Array [
+                            "Status",
+                            ":",
+                          ],
+                          "className": "stat-title",
+                        },
+                        "ref": null,
+                        "rendered": Array [
+                          "Status",
+                          ":",
+                        ],
+                        "type": "span",
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": "Least Concern",
+                          "className": "stat-body",
+                        },
+                        "ref": null,
+                        "rendered": "Least Concern",
+                        "type": "span",
+                      },
+                    ],
+                    "type": "span",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": "1",
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        <span
+                          className="stat-title"
+>
+                          Population
+                          :
+</span>,
+                        <span
+                          className="stat-body"
+>
+                          Several Hundred Thousand
+</span>,
+                      ],
+                      "className": "animal-stat",
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": Array [
+                            "Population",
+                            ":",
+                          ],
+                          "className": "stat-title",
+                        },
+                        "ref": null,
+                        "rendered": Array [
+                          "Population",
+                          ":",
+                        ],
+                        "type": "span",
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": "Several Hundred Thousand",
+                          "className": "stat-body",
+                        },
+                        "ref": null,
+                        "rendered": "Several Hundred Thousand",
+                        "type": "span",
+                      },
+                    ],
+                    "type": "span",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": "2",
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        <span
+                          className="stat-title"
+>
+                          Scientific Name
+                          :
+</span>,
+                        <span
+                          className="stat-body"
+>
+                          Vulpes lagopus
+</span>,
+                      ],
+                      "className": "animal-stat",
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": Array [
+                            "Scientific Name",
+                            ":",
+                          ],
+                          "className": "stat-title",
+                        },
+                        "ref": null,
+                        "rendered": Array [
+                          "Scientific Name",
+                          ":",
+                        ],
+                        "type": "span",
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": "Vulpes lagopus",
+                          "className": "stat-body",
+                        },
+                        "ref": null,
+                        "rendered": "Vulpes lagopus",
+                        "type": "span",
+                      },
+                    ],
+                    "type": "span",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": "3",
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        <span
+                          className="stat-title"
+>
+                          Height
+                          :
+</span>,
+                        <span
+                          className="stat-body"
+>
+                          11 inches
+</span>,
+                      ],
+                      "className": "animal-stat",
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": Array [
+                            "Height",
+                            ":",
+                          ],
+                          "className": "stat-title",
+                        },
+                        "ref": null,
+                        "rendered": Array [
+                          "Height",
+                          ":",
+                        ],
+                        "type": "span",
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": "11 inches",
+                          "className": "stat-body",
+                        },
+                        "ref": null,
+                        "rendered": "11 inches",
+                        "type": "span",
+                      },
+                    ],
+                    "type": "span",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": "4",
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        <span
+                          className="stat-title"
+>
+                          Weight
+                          :
+</span>,
+                        <span
+                          className="stat-body"
+>
+                          3 to 20 pounds
+</span>,
+                      ],
+                      "className": "animal-stat",
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": Array [
+                            "Weight",
+                            ":",
+                          ],
+                          "className": "stat-title",
+                        },
+                        "ref": null,
+                        "rendered": Array [
+                          "Weight",
+                          ":",
+                        ],
+                        "type": "span",
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": "3 to 20 pounds",
+                          "className": "stat-body",
+                        },
+                        "ref": null,
+                        "rendered": "3 to 20 pounds",
+                        "type": "span",
+                      },
+                    ],
+                    "type": "span",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": "5",
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        <span
+                          className="stat-title"
+>
+                          Length
+                          :
+</span>,
+                        <span
+                          className="stat-body"
+>
+                          18 to 27 inches
+</span>,
+                      ],
+                      "className": "animal-stat",
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": Array [
+                            "Length",
+                            ":",
+                          ],
+                          "className": "stat-title",
+                        },
+                        "ref": null,
+                        "rendered": Array [
+                          "Length",
+                          ":",
+                        ],
+                        "type": "span",
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": "18 to 27 inches",
+                          "className": "stat-body",
+                        },
+                        "ref": null,
+                        "rendered": "18 to 27 inches",
+                        "type": "span",
+                      },
+                    ],
+                    "type": "span",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": "6",
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        <span
+                          className="stat-title"
+>
+                          Habitat
+                          :
+</span>,
+                        <span
+                          className="stat-body"
+>
+                          Antarctica / Arctic
+</span>,
+                      ],
+                      "className": "animal-stat",
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": Array [
+                            "Habitat",
+                            ":",
+                          ],
+                          "className": "stat-title",
+                        },
+                        "ref": null,
+                        "rendered": Array [
+                          "Habitat",
+                          ":",
+                        ],
+                        "type": "span",
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": "Antarctica / Arctic",
+                          "className": "stat-body",
+                        },
+                        "ref": null,
+                        "rendered": "Antarctica / Arctic",
+                        "type": "span",
+                      },
+                    ],
+                    "type": "span",
+                  },
+                ],
+                "type": "div",
+              },
+            ],
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <span
+                  className="animal-stat"
+>
+                  <span
+                                    className="stat-title"
+                  >
+                                    The Facts
+                  </span>
+                  <span
+                                    className="stat-body"
+                  >
+                                    The Arctic fox is primarily a carnivore that lives inland, away from the coasts. They are dependent on the presence of smaller animals (most often lemmings) to survive.  Arctic foxes also hunt for sea birds, fish, and other marine life. Smaller rodent populations waver between times of abundance and scarcity, which leaves the Arctic fox vulnerable when these creatures are low in numbers.
+                  </span>
+</span>,
+                <span
+                  className="animal-stat"
+>
+                  <span
+                                    className="stat-title"
+                  >
+                                    Why I'm Important
+                  </span>
+                  <span
+                                    className="stat-body"
+                  >
+                                    The protection of the Arctic fox ensures the safety of a variety of other wildlife in the Arctic region.
+                  </span>
+</span>,
+              ],
+              "className": "animal-long-stats",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": "7",
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <span
+                      className="stat-title"
+>
+                      The Facts
+</span>,
+                    <span
+                      className="stat-body"
+>
+                      The Arctic fox is primarily a carnivore that lives inland, away from the coasts. They are dependent on the presence of smaller animals (most often lemmings) to survive.  Arctic foxes also hunt for sea birds, fish, and other marine life. Smaller rodent populations waver between times of abundance and scarcity, which leaves the Arctic fox vulnerable when these creatures are low in numbers.
+</span>,
+                  ],
+                  "className": "animal-stat",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "The Facts",
+                      "className": "stat-title",
+                    },
+                    "ref": null,
+                    "rendered": "The Facts",
+                    "type": "span",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "The Arctic fox is primarily a carnivore that lives inland, away from the coasts. They are dependent on the presence of smaller animals (most often lemmings) to survive.  Arctic foxes also hunt for sea birds, fish, and other marine life. Smaller rodent populations waver between times of abundance and scarcity, which leaves the Arctic fox vulnerable when these creatures are low in numbers.",
+                      "className": "stat-body",
+                    },
+                    "ref": null,
+                    "rendered": "The Arctic fox is primarily a carnivore that lives inland, away from the coasts. They are dependent on the presence of smaller animals (most often lemmings) to survive.  Arctic foxes also hunt for sea birds, fish, and other marine life. Smaller rodent populations waver between times of abundance and scarcity, which leaves the Arctic fox vulnerable when these creatures are low in numbers.",
+                    "type": "span",
+                  },
+                ],
+                "type": "span",
+              },
+              Object {
+                "instance": null,
+                "key": "8",
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <span
+                      className="stat-title"
+>
+                      Why I'm Important
+</span>,
+                    <span
+                      className="stat-body"
+>
+                      The protection of the Arctic fox ensures the safety of a variety of other wildlife in the Arctic region.
+</span>,
+                  ],
+                  "className": "animal-stat",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "Why I'm Important",
+                      "className": "stat-title",
+                    },
+                    "ref": null,
+                    "rendered": "Why I'm Important",
+                    "type": "span",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "The protection of the Arctic fox ensures the safety of a variety of other wildlife in the Arctic region.",
+                      "className": "stat-body",
+                    },
+                    "ref": null,
+                    "rendered": "The protection of the Arctic fox ensures the safety of a variety of other wildlife in the Arctic region.",
+                    "type": "span",
+                  },
+                ],
+                "type": "span",
+              },
+            ],
+            "type": "div",
+          },
+        ],
+        "type": "div",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <span
+            className="animal-name"
+>
+            Arctic Fox
+</span>,
+          <div
+            className="animal-data-container"
+>
+            <div
+                        className="wrapper"
+            >
+                        <div
+                                    className="animal-basic-stats"
+                        >
+                                    <span
+                                                className="animal-stat"
+                                    >
+                                                <span
+                                                            className="stat-title"
+                                                >
+                                                            Status
+                                                            :
+                                                </span>
+                                                <span
+                                                            className="stat-body"
+                                                >
+                                                            Least Concern
+                                                </span>
+                                    </span>
+                                    <span
+                                                className="animal-stat"
+                                    >
+                                                <span
+                                                            className="stat-title"
+                                                >
+                                                            Population
+                                                            :
+                                                </span>
+                                                <span
+                                                            className="stat-body"
+                                                >
+                                                            Several Hundred Thousand
+                                                </span>
+                                    </span>
+                                    <span
+                                                className="animal-stat"
+                                    >
+                                                <span
+                                                            className="stat-title"
+                                                >
+                                                            Scientific Name
+                                                            :
+                                                </span>
+                                                <span
+                                                            className="stat-body"
+                                                >
+                                                            Vulpes lagopus
+                                                </span>
+                                    </span>
+                                    <span
+                                                className="animal-stat"
+                                    >
+                                                <span
+                                                            className="stat-title"
+                                                >
+                                                            Height
+                                                            :
+                                                </span>
+                                                <span
+                                                            className="stat-body"
+                                                >
+                                                            11 inches
+                                                </span>
+                                    </span>
+                                    <span
+                                                className="animal-stat"
+                                    >
+                                                <span
+                                                            className="stat-title"
+                                                >
+                                                            Weight
+                                                            :
+                                                </span>
+                                                <span
+                                                            className="stat-body"
+                                                >
+                                                            3 to 20 pounds
+                                                </span>
+                                    </span>
+                                    <span
+                                                className="animal-stat"
+                                    >
+                                                <span
+                                                            className="stat-title"
+                                                >
+                                                            Length
+                                                            :
+                                                </span>
+                                                <span
+                                                            className="stat-body"
+                                                >
+                                                            18 to 27 inches
+                                                </span>
+                                    </span>
+                                    <span
+                                                className="animal-stat"
+                                    >
+                                                <span
+                                                            className="stat-title"
+                                                >
+                                                            Habitat
+                                                            :
+                                                </span>
+                                                <span
+                                                            className="stat-body"
+                                                >
+                                                            Antarctica / Arctic
+                                                </span>
+                                    </span>
+                        </div>
+            </div>
+            <div
+                        className="animal-long-stats"
+            >
+                        <span
+                                    className="animal-stat"
+                        >
+                                    <span
+                                                className="stat-title"
+                                    >
+                                                The Facts
+                                    </span>
+                                    <span
+                                                className="stat-body"
+                                    >
+                                                The Arctic fox is primarily a carnivore that lives inland, away from the coasts. They are dependent on the presence of smaller animals (most often lemmings) to survive.  Arctic foxes also hunt for sea birds, fish, and other marine life. Smaller rodent populations waver between times of abundance and scarcity, which leaves the Arctic fox vulnerable when these creatures are low in numbers.
+                                    </span>
+                        </span>
+                        <span
+                                    className="animal-stat"
+                        >
+                                    <span
+                                                className="stat-title"
+                                    >
+                                                Why I'm Important
+                                    </span>
+                                    <span
+                                                className="stat-body"
+                                    >
+                                                The protection of the Arctic fox ensures the safety of a variety of other wildlife in the Arctic region.
+                                    </span>
+                        </span>
+            </div>
+</div>,
+        ],
+        "className": "AnimalPage",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Arctic Fox",
+            "className": "animal-name",
+          },
+          "ref": null,
+          "rendered": "Arctic Fox",
+          "type": "span",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <div
+                className="wrapper"
+>
+                <div
+                                className="animal-basic-stats"
+                >
+                                <span
+                                                className="animal-stat"
+                                >
+                                                <span
+                                                                className="stat-title"
+                                                >
+                                                                Status
+                                                                :
+                                                </span>
+                                                <span
+                                                                className="stat-body"
+                                                >
+                                                                Least Concern
+                                                </span>
+                                </span>
+                                <span
+                                                className="animal-stat"
+                                >
+                                                <span
+                                                                className="stat-title"
+                                                >
+                                                                Population
+                                                                :
+                                                </span>
+                                                <span
+                                                                className="stat-body"
+                                                >
+                                                                Several Hundred Thousand
+                                                </span>
+                                </span>
+                                <span
+                                                className="animal-stat"
+                                >
+                                                <span
+                                                                className="stat-title"
+                                                >
+                                                                Scientific Name
+                                                                :
+                                                </span>
+                                                <span
+                                                                className="stat-body"
+                                                >
+                                                                Vulpes lagopus
+                                                </span>
+                                </span>
+                                <span
+                                                className="animal-stat"
+                                >
+                                                <span
+                                                                className="stat-title"
+                                                >
+                                                                Height
+                                                                :
+                                                </span>
+                                                <span
+                                                                className="stat-body"
+                                                >
+                                                                11 inches
+                                                </span>
+                                </span>
+                                <span
+                                                className="animal-stat"
+                                >
+                                                <span
+                                                                className="stat-title"
+                                                >
+                                                                Weight
+                                                                :
+                                                </span>
+                                                <span
+                                                                className="stat-body"
+                                                >
+                                                                3 to 20 pounds
+                                                </span>
+                                </span>
+                                <span
+                                                className="animal-stat"
+                                >
+                                                <span
+                                                                className="stat-title"
+                                                >
+                                                                Length
+                                                                :
+                                                </span>
+                                                <span
+                                                                className="stat-body"
+                                                >
+                                                                18 to 27 inches
+                                                </span>
+                                </span>
+                                <span
+                                                className="animal-stat"
+                                >
+                                                <span
+                                                                className="stat-title"
+                                                >
+                                                                Habitat
+                                                                :
+                                                </span>
+                                                <span
+                                                                className="stat-body"
+                                                >
+                                                                Antarctica / Arctic
+                                                </span>
+                                </span>
+                </div>
+</div>,
+              <div
+                className="animal-long-stats"
+>
+                <span
+                                className="animal-stat"
+                >
+                                <span
+                                                className="stat-title"
+                                >
+                                                The Facts
+                                </span>
+                                <span
+                                                className="stat-body"
+                                >
+                                                The Arctic fox is primarily a carnivore that lives inland, away from the coasts. They are dependent on the presence of smaller animals (most often lemmings) to survive.  Arctic foxes also hunt for sea birds, fish, and other marine life. Smaller rodent populations waver between times of abundance and scarcity, which leaves the Arctic fox vulnerable when these creatures are low in numbers.
+                                </span>
+                </span>
+                <span
+                                className="animal-stat"
+                >
+                                <span
+                                                className="stat-title"
+                                >
+                                                Why I'm Important
+                                </span>
+                                <span
+                                                className="stat-body"
+                                >
+                                                The protection of the Arctic fox ensures the safety of a variety of other wildlife in the Arctic region.
+                                </span>
+                </span>
+</div>,
+            ],
+            "className": "animal-data-container",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  undefined,
+                  <div
+                    className="animal-basic-stats"
+>
+                    <span
+                                        className="animal-stat"
+                    >
+                                        <span
+                                                            className="stat-title"
+                                        >
+                                                            Status
+                                                            :
+                                        </span>
+                                        <span
+                                                            className="stat-body"
+                                        >
+                                                            Least Concern
+                                        </span>
+                    </span>
+                    <span
+                                        className="animal-stat"
+                    >
+                                        <span
+                                                            className="stat-title"
+                                        >
+                                                            Population
+                                                            :
+                                        </span>
+                                        <span
+                                                            className="stat-body"
+                                        >
+                                                            Several Hundred Thousand
+                                        </span>
+                    </span>
+                    <span
+                                        className="animal-stat"
+                    >
+                                        <span
+                                                            className="stat-title"
+                                        >
+                                                            Scientific Name
+                                                            :
+                                        </span>
+                                        <span
+                                                            className="stat-body"
+                                        >
+                                                            Vulpes lagopus
+                                        </span>
+                    </span>
+                    <span
+                                        className="animal-stat"
+                    >
+                                        <span
+                                                            className="stat-title"
+                                        >
+                                                            Height
+                                                            :
+                                        </span>
+                                        <span
+                                                            className="stat-body"
+                                        >
+                                                            11 inches
+                                        </span>
+                    </span>
+                    <span
+                                        className="animal-stat"
+                    >
+                                        <span
+                                                            className="stat-title"
+                                        >
+                                                            Weight
+                                                            :
+                                        </span>
+                                        <span
+                                                            className="stat-body"
+                                        >
+                                                            3 to 20 pounds
+                                        </span>
+                    </span>
+                    <span
+                                        className="animal-stat"
+                    >
+                                        <span
+                                                            className="stat-title"
+                                        >
+                                                            Length
+                                                            :
+                                        </span>
+                                        <span
+                                                            className="stat-body"
+                                        >
+                                                            18 to 27 inches
+                                        </span>
+                    </span>
+                    <span
+                                        className="animal-stat"
+                    >
+                                        <span
+                                                            className="stat-title"
+                                        >
+                                                            Habitat
+                                                            :
+                                        </span>
+                                        <span
+                                                            className="stat-body"
+                                        >
+                                                            Antarctica / Arctic
+                                        </span>
+                    </span>
+</div>,
+                ],
+                "className": "wrapper",
+              },
+              "ref": null,
+              "rendered": Array [
+                undefined,
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      <span
+                        className="animal-stat"
+>
+                        <span
+                                                className="stat-title"
+                        >
+                                                Status
+                                                :
+                        </span>
+                        <span
+                                                className="stat-body"
+                        >
+                                                Least Concern
+                        </span>
+</span>,
+                      <span
+                        className="animal-stat"
+>
+                        <span
+                                                className="stat-title"
+                        >
+                                                Population
+                                                :
+                        </span>
+                        <span
+                                                className="stat-body"
+                        >
+                                                Several Hundred Thousand
+                        </span>
+</span>,
+                      <span
+                        className="animal-stat"
+>
+                        <span
+                                                className="stat-title"
+                        >
+                                                Scientific Name
+                                                :
+                        </span>
+                        <span
+                                                className="stat-body"
+                        >
+                                                Vulpes lagopus
+                        </span>
+</span>,
+                      <span
+                        className="animal-stat"
+>
+                        <span
+                                                className="stat-title"
+                        >
+                                                Height
+                                                :
+                        </span>
+                        <span
+                                                className="stat-body"
+                        >
+                                                11 inches
+                        </span>
+</span>,
+                      <span
+                        className="animal-stat"
+>
+                        <span
+                                                className="stat-title"
+                        >
+                                                Weight
+                                                :
+                        </span>
+                        <span
+                                                className="stat-body"
+                        >
+                                                3 to 20 pounds
+                        </span>
+</span>,
+                      <span
+                        className="animal-stat"
+>
+                        <span
+                                                className="stat-title"
+                        >
+                                                Length
+                                                :
+                        </span>
+                        <span
+                                                className="stat-body"
+                        >
+                                                18 to 27 inches
+                        </span>
+</span>,
+                      <span
+                        className="animal-stat"
+>
+                        <span
+                                                className="stat-title"
+                        >
+                                                Habitat
+                                                :
+                        </span>
+                        <span
+                                                className="stat-body"
+                        >
+                                                Antarctica / Arctic
+                        </span>
+</span>,
+                    ],
+                    "className": "animal-basic-stats",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": "0",
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": Array [
+                          <span
+                            className="stat-title"
+>
+                            Status
+                            :
+</span>,
+                          <span
+                            className="stat-body"
+>
+                            Least Concern
+</span>,
+                        ],
+                        "className": "animal-stat",
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": Array [
+                              "Status",
+                              ":",
+                            ],
+                            "className": "stat-title",
+                          },
+                          "ref": null,
+                          "rendered": Array [
+                            "Status",
+                            ":",
+                          ],
+                          "type": "span",
+                        },
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": "Least Concern",
+                            "className": "stat-body",
+                          },
+                          "ref": null,
+                          "rendered": "Least Concern",
+                          "type": "span",
+                        },
+                      ],
+                      "type": "span",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": "1",
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": Array [
+                          <span
+                            className="stat-title"
+>
+                            Population
+                            :
+</span>,
+                          <span
+                            className="stat-body"
+>
+                            Several Hundred Thousand
+</span>,
+                        ],
+                        "className": "animal-stat",
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": Array [
+                              "Population",
+                              ":",
+                            ],
+                            "className": "stat-title",
+                          },
+                          "ref": null,
+                          "rendered": Array [
+                            "Population",
+                            ":",
+                          ],
+                          "type": "span",
+                        },
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": "Several Hundred Thousand",
+                            "className": "stat-body",
+                          },
+                          "ref": null,
+                          "rendered": "Several Hundred Thousand",
+                          "type": "span",
+                        },
+                      ],
+                      "type": "span",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": "2",
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": Array [
+                          <span
+                            className="stat-title"
+>
+                            Scientific Name
+                            :
+</span>,
+                          <span
+                            className="stat-body"
+>
+                            Vulpes lagopus
+</span>,
+                        ],
+                        "className": "animal-stat",
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": Array [
+                              "Scientific Name",
+                              ":",
+                            ],
+                            "className": "stat-title",
+                          },
+                          "ref": null,
+                          "rendered": Array [
+                            "Scientific Name",
+                            ":",
+                          ],
+                          "type": "span",
+                        },
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": "Vulpes lagopus",
+                            "className": "stat-body",
+                          },
+                          "ref": null,
+                          "rendered": "Vulpes lagopus",
+                          "type": "span",
+                        },
+                      ],
+                      "type": "span",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": "3",
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": Array [
+                          <span
+                            className="stat-title"
+>
+                            Height
+                            :
+</span>,
+                          <span
+                            className="stat-body"
+>
+                            11 inches
+</span>,
+                        ],
+                        "className": "animal-stat",
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": Array [
+                              "Height",
+                              ":",
+                            ],
+                            "className": "stat-title",
+                          },
+                          "ref": null,
+                          "rendered": Array [
+                            "Height",
+                            ":",
+                          ],
+                          "type": "span",
+                        },
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": "11 inches",
+                            "className": "stat-body",
+                          },
+                          "ref": null,
+                          "rendered": "11 inches",
+                          "type": "span",
+                        },
+                      ],
+                      "type": "span",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": "4",
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": Array [
+                          <span
+                            className="stat-title"
+>
+                            Weight
+                            :
+</span>,
+                          <span
+                            className="stat-body"
+>
+                            3 to 20 pounds
+</span>,
+                        ],
+                        "className": "animal-stat",
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": Array [
+                              "Weight",
+                              ":",
+                            ],
+                            "className": "stat-title",
+                          },
+                          "ref": null,
+                          "rendered": Array [
+                            "Weight",
+                            ":",
+                          ],
+                          "type": "span",
+                        },
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": "3 to 20 pounds",
+                            "className": "stat-body",
+                          },
+                          "ref": null,
+                          "rendered": "3 to 20 pounds",
+                          "type": "span",
+                        },
+                      ],
+                      "type": "span",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": "5",
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": Array [
+                          <span
+                            className="stat-title"
+>
+                            Length
+                            :
+</span>,
+                          <span
+                            className="stat-body"
+>
+                            18 to 27 inches
+</span>,
+                        ],
+                        "className": "animal-stat",
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": Array [
+                              "Length",
+                              ":",
+                            ],
+                            "className": "stat-title",
+                          },
+                          "ref": null,
+                          "rendered": Array [
+                            "Length",
+                            ":",
+                          ],
+                          "type": "span",
+                        },
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": "18 to 27 inches",
+                            "className": "stat-body",
+                          },
+                          "ref": null,
+                          "rendered": "18 to 27 inches",
+                          "type": "span",
+                        },
+                      ],
+                      "type": "span",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": "6",
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": Array [
+                          <span
+                            className="stat-title"
+>
+                            Habitat
+                            :
+</span>,
+                          <span
+                            className="stat-body"
+>
+                            Antarctica / Arctic
+</span>,
+                        ],
+                        "className": "animal-stat",
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": Array [
+                              "Habitat",
+                              ":",
+                            ],
+                            "className": "stat-title",
+                          },
+                          "ref": null,
+                          "rendered": Array [
+                            "Habitat",
+                            ":",
+                          ],
+                          "type": "span",
+                        },
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": "Antarctica / Arctic",
+                            "className": "stat-body",
+                          },
+                          "ref": null,
+                          "rendered": "Antarctica / Arctic",
+                          "type": "span",
+                        },
+                      ],
+                      "type": "span",
+                    },
+                  ],
+                  "type": "div",
+                },
+              ],
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <span
+                    className="animal-stat"
+>
+                    <span
+                                        className="stat-title"
+                    >
+                                        The Facts
+                    </span>
+                    <span
+                                        className="stat-body"
+                    >
+                                        The Arctic fox is primarily a carnivore that lives inland, away from the coasts. They are dependent on the presence of smaller animals (most often lemmings) to survive.  Arctic foxes also hunt for sea birds, fish, and other marine life. Smaller rodent populations waver between times of abundance and scarcity, which leaves the Arctic fox vulnerable when these creatures are low in numbers.
+                    </span>
+</span>,
+                  <span
+                    className="animal-stat"
+>
+                    <span
+                                        className="stat-title"
+                    >
+                                        Why I'm Important
+                    </span>
+                    <span
+                                        className="stat-body"
+                    >
+                                        The protection of the Arctic fox ensures the safety of a variety of other wildlife in the Arctic region.
+                    </span>
+</span>,
+                ],
+                "className": "animal-long-stats",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": "7",
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      <span
+                        className="stat-title"
+>
+                        The Facts
+</span>,
+                      <span
+                        className="stat-body"
+>
+                        The Arctic fox is primarily a carnivore that lives inland, away from the coasts. They are dependent on the presence of smaller animals (most often lemmings) to survive.  Arctic foxes also hunt for sea birds, fish, and other marine life. Smaller rodent populations waver between times of abundance and scarcity, which leaves the Arctic fox vulnerable when these creatures are low in numbers.
+</span>,
+                    ],
+                    "className": "animal-stat",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "The Facts",
+                        "className": "stat-title",
+                      },
+                      "ref": null,
+                      "rendered": "The Facts",
+                      "type": "span",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "The Arctic fox is primarily a carnivore that lives inland, away from the coasts. They are dependent on the presence of smaller animals (most often lemmings) to survive.  Arctic foxes also hunt for sea birds, fish, and other marine life. Smaller rodent populations waver between times of abundance and scarcity, which leaves the Arctic fox vulnerable when these creatures are low in numbers.",
+                        "className": "stat-body",
+                      },
+                      "ref": null,
+                      "rendered": "The Arctic fox is primarily a carnivore that lives inland, away from the coasts. They are dependent on the presence of smaller animals (most often lemmings) to survive.  Arctic foxes also hunt for sea birds, fish, and other marine life. Smaller rodent populations waver between times of abundance and scarcity, which leaves the Arctic fox vulnerable when these creatures are low in numbers.",
+                      "type": "span",
+                    },
+                  ],
+                  "type": "span",
+                },
+                Object {
+                  "instance": null,
+                  "key": "8",
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      <span
+                        className="stat-title"
+>
+                        Why I'm Important
+</span>,
+                      <span
+                        className="stat-body"
+>
+                        The protection of the Arctic fox ensures the safety of a variety of other wildlife in the Arctic region.
+</span>,
+                    ],
+                    "className": "animal-stat",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "Why I'm Important",
+                        "className": "stat-title",
+                      },
+                      "ref": null,
+                      "rendered": "Why I'm Important",
+                      "type": "span",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "The protection of the Arctic fox ensures the safety of a variety of other wildlife in the Arctic region.",
+                        "className": "stat-body",
+                      },
+                      "ref": null,
+                      "rendered": "The protection of the Arctic fox ensures the safety of a variety of other wildlife in the Arctic region.",
+                      "type": "span",
+                    },
+                  ],
+                  "type": "span",
+                },
+              ],
+              "type": "div",
+            },
+          ],
+          "type": "div",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;

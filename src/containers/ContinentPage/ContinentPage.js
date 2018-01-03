@@ -40,16 +40,6 @@ export class ContinentPage extends Component {
     }
   }
 
-  matchContinent = props => {
-    const linkedContinent = props.match.params.continent;
-    const continentData = props.continents.find(
-      continent => continent.name === linkedContinent
-    );
-    continentData.image = continentData.name.toLowerCase();
-
-    this.setState({ continentData });
-  };
-
   matchContinentAnimals = continentId => {
     const animals = this.props.animals.filter(
       animal => animal.continent_id === continentId

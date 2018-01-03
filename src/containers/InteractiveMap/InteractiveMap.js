@@ -3,21 +3,22 @@ import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 // import * as actions from '../../actions';
 import PropTypes from 'prop-types';
-// import './Header.css';
+import './InteractiveMap.css';
 
-class InteractiveMap extends Component {
+export class InteractiveMap extends Component {
   render() {
     const buttons = this.props.continents.map((continent, index) => {
       const continentLink = '/continents/' + continent.name;
+      const continentClass = 'continent-button ' + continent.name;
 
       return (
-        <Link key={index} to={continentLink}>
+        <Link className={continentClass} key={index} to={continentLink}>
           {continent.name}
         </Link>
       );
     });
 
-    return <div>{buttons}</div>;
+    return <div className="InteractiveMap">{buttons}</div>;
   }
 }
 

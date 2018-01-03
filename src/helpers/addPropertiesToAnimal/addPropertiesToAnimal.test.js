@@ -25,6 +25,7 @@ describe('addPropertiesToAnimal tests', () => {
 
   it('Should add a display property of true', () => {
     expect(mockAnimalsArray[0].display).toEqual(undefined);
+    expect(mockAnimalsArray[1].display).toEqual(undefined);
 
     const animalsArray = addPropertiesToAnimal(mockAnimalsArray);
     const expected = true;

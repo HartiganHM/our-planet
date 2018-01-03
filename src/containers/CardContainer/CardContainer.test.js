@@ -40,6 +40,29 @@ describe('CardContainer tests', () => {
     expect(renderedCardContainer.find('Card').length).toEqual(1);
   });
 
+  it('Should display a placeholder if continentAnimals is empty', () => {
+    const expectedElement = '.content-placeholder';
+    const message = 'There are currently no endangered animals in this region';
+    expect(renderedCardContainer.find(expectedElement).length).toEqual(0);
+
+    renderedCardContainer = shallow(
+      <CardContainer animals={animalsArray} continentAnimals={[]} />
+    );
+    expect(renderedCardContainer.find(expectedElement).length).toEqual(1);
+    expect(renderedCardContainer.find(expectedElement).text()).toEqual(message);
+  });
+
+  it('Should display a placehold while the cards are loading', () => {
+    const expectedElement = '.content-placeholder';
+    const message = 'Loading';
+    expect(renderedCardContainer.find(expectedElement).length).toEqual(0);
+
+    renderedCardContainer = shallow(<CardContainer animals={[]} />);
+
+    expect(renderedCardContainer.find(expectedElement).length).toEqual(1);
+    expect(renderedCardContainer.find(expectedElement).text()).toEqual(message);
+  });
+
   describe('mapStateToProps tests', () => {
     it('Should pull animals from the store', () => {
       const mockStore = {
