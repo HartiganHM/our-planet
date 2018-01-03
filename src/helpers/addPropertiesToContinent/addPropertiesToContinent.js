@@ -1,9 +1,8 @@
 const addPropertiesToContinent = continentsArray => {
   return continentsArray.map(continent => {
-    const name = continent.name.includes('/')
+    const image = continent.name.includes('/')
       ? removeNonAlphaNumeric(continent.name)
       : continent.name.toLowerCase();
-    const image = `../../images/continents/${name}.jpg`;
 
     return { ...continent, image };
   });
