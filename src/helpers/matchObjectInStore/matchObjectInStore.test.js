@@ -1,18 +1,9 @@
 import matchObjectInStore from './matchObjectInStore';
 import mockAnimalsArray from '../../data/mockAnimalsArray';
 import mockContinentsArray from '../../data/mockContinentsArray';
+import mockProps from '../../data/mockProps'
 
 describe('matchObjectInStore tests', () => {
-  let mockProps;
-
-  beforeEach(() => {
-    mockProps = {
-      match: { params: { animal: 'Arctic Fox', continent: 'Africa' } },
-      animals: mockAnimalsArray,
-      continents: mockContinentsArray
-    };
-  });
-
   it('Should be a function', () => {
     expect(matchObjectInStore).toBeAFunction;
   });
