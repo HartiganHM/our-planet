@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import './AnimalPage.css';
-import { mapDispatchToProps } from '../../containers/Header/Header';
 
 export class AnimalPage extends Component {
   constructor() {
@@ -103,4 +102,4 @@ export const mapStateToProps = store => {
   };
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(AnimalPage);
+export default connect(mapStateToProps, null)(AnimalPage);
