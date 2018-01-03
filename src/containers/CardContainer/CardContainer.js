@@ -5,10 +5,12 @@ import PropTypes from 'prop-types';
 import './CardContainer.css';
 
 export const CardContainer = props => {
-  console.log(props);
   const contentPlaceholder = (
     <span className="content-placeholder">
-      {props.continentAnimals ? 'There are currently no endangered animals in this region' : 'Loading'}
+      {props.continentAnimals
+        ? 'There are currently no endangered animals in this region'
+        : 'Loading'
+      }
     </span>
   );
   const animalsArray = props.continentAnimals
@@ -16,13 +18,13 @@ export const CardContainer = props => {
     : props.animals;
   const animalCards = animalsArray.map((animal, index) => {
     return animal.display
-    ? (<Card key={index} animalData={animal} />)
-    : (undefined);
+      ? (<Card key={index} animalData={animal} />)
+      : (undefined);
   });
 
   return (
     <div className="CardContainer">
-      {animalCards.length ? animalCards : noEndangeredAnimals}
+      {animalCards.length ? animalCards : contentPlaceholder}
     </div>
   );
 };
