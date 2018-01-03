@@ -6,7 +6,7 @@ export class ContinentPage extends Component {
   constructor() {
     super();
     this.state = {
-      continentsData: {},
+      continentData: {},
       animals: []
     };
   }
@@ -18,8 +18,20 @@ export class ContinentPage extends Component {
   }
 
   componentWillReceiveProps(nextProps) {
-    this.matchContinent(nextProps);
+    if (nextProps.continents.length) {
+      this.matchContinent(nextProps);
+    }
   }
+
+  matchContinent = props => {
+    const linkedContinent = props.match.params.continent;
+    const continentData = props.continents.find(
+      continent => continent.name === linkedContinent
+    );
+    continentData.image = continentData.name.toLowerCase();
+
+    this.setState({ continentData });
+  };
 
   render() {
     return <div className="ContinentPage">I am an ContinentPage</div>;
