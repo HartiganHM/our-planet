@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import matchObjectInStore from '../../helpers/matchObjectInStore/matchObjectInStore';
 import CardContainer from '../CardContainer/CardContainer';
+import { PropTypes } from 'prop-types';
 import './ContinentPage.css';
 
 export class ContinentPage extends Component {
@@ -59,7 +60,7 @@ export class ContinentPage extends Component {
   render() {
     return (
       <div className="ContinentPage">
-        <CardContainer continentAnimals={this.state.animals}/>
+        <CardContainer continentAnimals={this.state.animals} />
       </div>
     );
   }
@@ -73,3 +74,8 @@ export const mapStateToProps = store => {
 };
 
 export default connect(mapStateToProps, null)(ContinentPage);
+
+ContinentPage.propTypes = {
+  animals: PropTypes.array,
+  continents: PropTypes.array
+};

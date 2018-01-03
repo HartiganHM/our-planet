@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import matchObjectInStore from '../../helpers/matchObjectInStore/matchObjectInStore';
+import { PropTypes } from 'prop-types';
 import './AnimalPage.css';
 
 export class AnimalPage extends Component {
@@ -96,3 +97,7 @@ export const mapStateToProps = store => {
 };
 
 export default connect(mapStateToProps, null)(AnimalPage);
+
+AnimalPage.propTypes = {
+  animals: PropTypes.array
+};
