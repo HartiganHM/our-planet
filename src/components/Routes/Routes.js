@@ -22,8 +22,8 @@ const Routes = () => {
           );
         }}
       />
-      <Route path='/:animal' component={AnimalPage}/>
-      <Route path='/:continent' component={ContinentPage}/>
+      <Route path='/animals/:animal' component={AnimalPage}/>
+      <Route path='/continents/:continent' component={ContinentPage}/>
     </div>
   );
 };
