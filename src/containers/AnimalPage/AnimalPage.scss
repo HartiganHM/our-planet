@@ -6,43 +6,16 @@
   flex-direction: column;
   @include padding(2);
   .animal-name {
-    @include padding(2);
-    border-radius: 20px 20px 0 0;
-    background: {
-      color: $accent-color-dark;
-      image: url('../../images/Our-Planet-Light-Logo.png');
-      position: calc(100% + 10px) calc(100% - 10px);
-      size: contain;
-      repeat: no-repeat;
-    }
-    color: $snow;
-    font: {
-      family: $accent-font;
-      size: 2rem;
-    }
+    @include contentHeader();
+    background-image: url('../../images/Our-Planet-Light-Logo.png');
   }
   .animal-data-container {
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 20px;
-    background: {
-      color: $snow;
-      image: url('../../images/OP-Logo-Light-Blue.png');
-      repeat: no-repeat;
-      size: 40rem;
-      position: top right;
-    }
-    border: 1px solid black;
-    border-radius: 0 0 20px 20px;
+    @include contentDataContainer();
+    background-image: url('../../images/OP-Logo-Light-Blue.png');
     .wrapper {
       display: flex;
       .animal-image {
-        @include height(40);
-        @include width(60);
-        border: 1px solid black;
-        border-top: none;
-        border-radius: 0 0 20px 20px;
-        box-shadow: $drop-shadow;
+        @include contentImage();
       }
       .animal-basic-stats {
         flex: 1;
@@ -77,27 +50,16 @@
       }
     }
     .animal-long-stats {
-      display: flex;
-      flex-direction: column;
-      text-align: center;
+      @include flexColumnCenter();
       .animal-stat {
         display: flex;
         flex-direction: column;
         .stat-title {
-          @include padding(2);
           margin: 20px 0;
-          background-color: $rich-black;
-          color: $snow;
-          font: {
-            family: $accent-font;
-            size: 1.2rem;
-          }
+          @include contentDetailTitle();
         }
         .stat-body {
-          @include padding(2);
-          font: {
-            size: 1rem;
-          }
+          @include contentDetailBody();
         }
       }
     }

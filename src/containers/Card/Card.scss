@@ -6,22 +6,28 @@
   flex-direction: column;
   @include width(29.8);
   @include margin(1);
-  border: 1px solid black;
-  border-radius: 0 20px;
+  border: $simple-border;
+  border-radius: $rounded-diagonal;
   background-color: $accent-color-light;
   text-decoration: none;
   overflow: hidden;
   .animal-image {
     @include width(30);
-    border-radius: 0 0 0 20px;
+    border-radius: $rounded-single;
     box-shadow: $drop-shadow;
     z-index: 2;
   }
   .animal-name {
     @include padding(1);
+    background: {
+      image: url('../../images/Our-Planet-Light-Logo.png');
+      position: calc(100% + 5px) calc(100% - 5px);
+      size: contain;
+      repeat: no-repeat;
+    }
     color: $accent-color-dark;
     font-family: $accent-font;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     text-align: center;
   }
 }

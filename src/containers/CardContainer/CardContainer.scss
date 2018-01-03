@@ -1,32 +1,38 @@
 @import '../../styles/mixins.scss';
 @import '../../styles/variables.scss';
 .CardContainer {
-    display: flex;
-    flex-wrap: wrap;
-    @include width(160);
-    margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  @include width(160);
+  margin: auto;
+  .content-placeholder {
+    @include contentDetailTitle();
+    flex: 1;
+    border-radius: $rounded-diagonal;
+    text-align: center;
+  }
 }
 
 @media screen and (max-width: 1599px) {
-    .CardContainer {
-        @include width(128);
-    }
+  .CardContainer {
+    @include width(128);
+  }
 }
 
 @media screen and (max-width: 1279px) {
-    .CardContainer {
-        @include width(96);
-    }
+  .CardContainer {
+    @include width(96);
+  }
 }
 
 @media screen and (max-width: 959px) {
-    .CardContainer {
-        @include width(64);
-    }
+  .CardContainer {
+    @include width(64);
+  }
 }
 
 @media screen and (max-width: 639px) {
-    .CardContainer {
-        @include width(32);
-    }
+  .CardContainer {
+    @include width(32);
+  }
 }

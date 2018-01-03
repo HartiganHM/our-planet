@@ -8,7 +8,6 @@ ShallowWrapper {
     animals={
         Array [
             Object {
-              "display": true,
               "facts": "The Arctic fox is primarily a carnivore that lives inland, away from the coasts. They are dependent on the presence of smaller animals (most often lemmings) to survive.  Arctic foxes also hunt for sea birds, fish, and other marine life. Smaller rodent populations waver between times of abundance and scarcity, which leaves the Arctic fox vulnerable when these creatures are low in numbers.",
               "habitat": "Antarctica / Arctic",
               "height": "11 inches",
@@ -21,7 +20,6 @@ ShallowWrapper {
               "weight": "3 to 20 pounds",
             },
             Object {
-              "display": true,
               "facts": "Often called the \\"polar wolf\\" or \\"white wolf,\\" Arctic wolves inhabit the Arctic regions of North America and Greenland. Thanks to its isolation, the Arctic wolf is not threatened by hunting and habitat destruction in the same way as its southern relatives.",
               "habitat": "Antarctica / Arctic",
               "height": "",

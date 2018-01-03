@@ -1,7 +1,9 @@
+@import './variables.scss';
 @mixin height($height) {
   height: convertRem($height);
 }
 
+// Boxsizing to REMs
 @mixin maxHeight($maxHeight) {
   max-height: convertRem($maxHeight);
 }
@@ -21,4 +23,68 @@
 @function convertRem($size) {
   $remSize: $size * 0.625;
   @return #{$remSize}rem;
+}
+
+// Content Page Styling
+@mixin contentHeader() {
+  @include padding(2);
+  border-radius: $rounded-top;
+  background: {
+    color: $accent-color-dark;
+    position: calc(100% + 10px) calc(100% - 10px);
+    size: contain;
+    repeat: no-repeat;
+  }
+  color: $snow;
+  font: {
+    family: $accent-font;
+    size: 2rem;
+  }
+}
+
+@mixin contentImage() {
+  @include height(40);
+  @include width(60);
+  border: $simple-border;
+  border-top: none;
+  border-radius: $rounded-bottom;
+  box-shadow: $drop-shadow;
+}
+
+@mixin contentDataContainer() {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: $bottom-padding;
+  background: {
+    color: $snow;
+    repeat: no-repeat;
+    size: 40rem;
+    position: top right;
+  }
+  border: $simple-border;
+  border-radius: $rounded-bottom;
+}
+
+@mixin contentDetailTitle() {
+  @include padding(2);
+  background-color: $rich-black;
+  color: $snow;
+  font: {
+    family: $accent-font;
+    size: 1.2rem;
+  }
+}
+
+@mixin contentDetailBody() {
+  @include padding(2);
+  font: {
+    size: 1rem;
+  }
+}
+
+// Flexbox mixins
+@mixin flexColumnCenter() {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }

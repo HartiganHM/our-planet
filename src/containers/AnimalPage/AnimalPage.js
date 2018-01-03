@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import matchObjectInStore from '../../helpers/matchObjectInStore/matchObjectInStore';
+import { PropTypes } from 'prop-types';
 import './AnimalPage.css';
-import { mapDispatchToProps } from '../../containers/Header/Header';
 
 export class AnimalPage extends Component {
   constructor() {
@@ -13,12 +14,14 @@ export class AnimalPage extends Component {
 
   componentWillMount() {
     if (this.props.animals.length) {
-      this.matchAnimal(this.props);
+      const animalData = matchObjectInStore(this.props, 'animal', 'animals');
+      this.setState({ animalData });
     }
   }
 
   componentWillReceiveProps(nextProps) {
-    this.matchAnimal(nextProps);
+    const animalData = matchObjectInStore(nextProps, 'animal', 'animals');
+    this.setState({ animalData });
   }
 
   cleanAnimalData = animalData => {
@@ -37,31 +40,21 @@ export class AnimalPage extends Component {
     return cleanAnimalData;
   };
 
-  matchAnimal = props => {
-    const linkedAnimal = props.match.params.animal;
-    const animalData = props.animals.find(
-      animal => animal.name === linkedAnimal
-    );
-    animalData.image = animalData.name.toLowerCase();
-
-    this.setState({ animalData });
-  };
-
   renderAnimalStats = () => {
     const cleanAnimalData = this.cleanAnimalData(this.state.animalData);
     const animalProperties = Object.keys(cleanAnimalData);
     let longStats = [];
-    const basicStats = animalProperties.map(property => {
+    const basicStats = animalProperties.map((property, index) => {
       if (property === 'The Facts' || property === "Why I'm Important") {
         longStats.push(
-          <span className="animal-stat">
+          <span key={index} className="animal-stat">
             <span className="stat-title">{property}</span>
             <span className="stat-body">{cleanAnimalData[property]}</span>
           </span>
         );
       } else if (cleanAnimalData[property] !== '') {
         return (
-          <span className="animal-stat">
+          <span key={index} className="animal-stat">
             <span className="stat-title">{property}:</span>
             <span className="stat-body">{cleanAnimalData[property]}</span>
           </span>
@@ -80,7 +73,7 @@ export class AnimalPage extends Component {
       <div className="AnimalPage">
         <span className="animal-name">{name}</span>
         <div className="animal-data-container">
-          <div className='wrapper'>
+          <div className="wrapper">
             {image && (
               <img
                 className="animal-image"
@@ -103,4 +96,8 @@ export const mapStateToProps = store => {
   };
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(AnimalPage);
+export default connect(mapStateToProps, null)(AnimalPage);
+
+AnimalPage.propTypes = {
+  animals: PropTypes.array
+};

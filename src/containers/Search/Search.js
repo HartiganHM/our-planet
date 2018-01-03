@@ -11,7 +11,7 @@ export const Search = props => {
     <div className="Search">
       <input
         className="search-field"
-        onChange={event => searchAnimals(event.target.value, animals)}
+        onChange={event => searchAnimals(event.target.value, animals, 'name')}
         type="text"
         placeholder="Search"
       />
@@ -27,8 +27,8 @@ export const mapStateToProps = store => {
 
 export const mapDispatchToProps = dispatch => {
   return {
-    searchAnimals: (inputValue, animals) =>
-      dispatch(actions.searchAnimals(inputValue, animals))
+    searchAnimals: (inputValue, animals, property) =>
+      dispatch(actions.searchAnimals(inputValue, animals, property))
   };
 };
 

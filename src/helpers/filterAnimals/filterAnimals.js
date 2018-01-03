@@ -1,7 +1,7 @@
-const filterAnimals = (inputValue, animals) => {
+const filterAnimals = (inputValue, animals, property) => {
   const searchValue = inputValue.toLowerCase();
   const filteredAnimals = animals.reduce((filteredAnimals, animal) => {
-    animal.name.toLowerCase().includes(searchValue)
+    animal[property].toLowerCase().includes(searchValue)
       ? (animal.display = true)
       : (animal.display = false);
 

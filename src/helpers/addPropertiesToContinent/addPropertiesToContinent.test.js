@@ -12,9 +12,9 @@ describe('addPropertiesToContinent tests', () => {
     expect(typeof continentsArray).toEqual('object');
   });
 
-  it('Should add an image matching each continents name', () => {
-    const firstExpectedImage = '../../images/continents/africa.jpg';
-    const secondExpectedImage = '../../images/continents/antarctica arctic.jpg';
+  it('Should add an image reference matching each continents name', () => {
+    const firstExpectedImage = 'africa';
+    const secondExpectedImage = 'antarctica arctic';
     const continentsArray = addPropertiesToContinent(mockContinentsArray);
 
     expect(continentsArray[0].image).toEqual(firstExpectedImage);
