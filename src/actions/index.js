@@ -23,8 +23,8 @@ export const storeContinentsData = continentsData => {
   };
 };
 
-export const searchAnimals = (inputValue, animals) => {
-  const filteredAnimals = filterAnimals(inputValue, animals);
+export const searchAnimals = (inputValue, animals, property) => {
+  const filteredAnimals = filterAnimals(inputValue, animals, property);
 
   return {
     type: 'SEARCH_ANIMALS',
