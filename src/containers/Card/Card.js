@@ -6,7 +6,7 @@ import './Card.css';
 const Card = props => {
   const { name } = props.animalData;
   const image = name.toLowerCase();
-  const animalLink = '/' + name;
+  const animalLink = '/animals/' + name;
 
   return (
     <Link to={animalLink} className='Card'>
