@@ -6,6 +6,7 @@ import mockAnimalsArray from '../../data/mockAnimalsArray';
 describe('Card tests', () => {
   it('Should match the snapshot', () => {
     const mockAnimal = mockAnimalsArray[0];
+    mockAnimal.image = mockAnimal.name.toLowerCase();
     const renderedCard = shallow(<Card animalData={mockAnimal} />);
 
     expect(renderedCard).toMatchSnapshot();
