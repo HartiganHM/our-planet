@@ -19,6 +19,12 @@
   }
   .animal-name {
     @include padding(1);
+    background: {
+      image: url('../../images/Our-Planet-Light-Logo.png');
+      position: calc(100% + 10px) calc(100% - 10px);
+      size: contain;
+      repeat: no-repeat;
+    }
     color: $accent-color-dark;
     font-family: $accent-font;
     font-size: 1.4rem;
