@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import matchObjectInStore from '../../helpers/matchObjectInStore/matchObjectInStore';
+import CardContainer from '../CardContainer/CardContainer';
 import './ContinentPage.css';
 
 export class ContinentPage extends Component {
@@ -56,7 +57,7 @@ export class ContinentPage extends Component {
   };
 
   render() {
-    return <div className="ContinentPage">I am an ContinentPage</div>;
+    return (<div className="ContinentPage"><CardContainer /></div>);
   }
 }
 
