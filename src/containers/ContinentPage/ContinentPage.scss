@@ -9,4 +9,25 @@
     @include contentHeader();
     background-image: url('../../images/Our-Planet-Light-Logo.png');
   }
+  .continent-data-container {
+    @include contentDataContainer();
+    background-image: url('../../images/OP-Logo-Light-Blue.png');
+    .wrapper {
+      display: flex;
+      padding-bottom: $bottom-padding;
+      .continent-image {
+        @include contentImage();
+      }
+      .continent-bio {
+        flex: 1;
+        @include flexColumnCenter();
+        .bio-title {
+          @include contentDetailTitle();
+        }
+        .bio-body {
+          @include contentDetailBody();
+        }
+      }
+    }
+  }
 }

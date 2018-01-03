@@ -58,11 +58,25 @@ export class ContinentPage extends Component {
   };
 
   render() {
-    const { name } = this.state.continentData;
+    const { name, bio, image } = this.state.continentData;
     return (
       <div className="ContinentPage">
         <span className="continent-name">{name}</span>
-        <CardContainer continentAnimals={this.state.animals} />
+        <div className="continent-data-container">
+          <div className="wrapper">
+            {image && (
+              <img
+                className="continent-image"
+                src={require(`../../images/continents/${image}.jpg`)}
+                alt={`${name}`}
+              />
+            )}
+            <div className="continent-bio">
+              <span className='bio-title'>Bio</span><span className='bio-body'>{bio}</span>
+            </div>
+          </div>
+          <CardContainer continentAnimals={this.state.animals} />
+        </div>
       </div>
     );
   }
