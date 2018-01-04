@@ -15,7 +15,6 @@ export class Header extends Component {
       <Link
         to="/"
         className="headerLogo"
-        onClick={() => this.props.resetAnimals('', this.props.animals)}
       />
     );
   }
@@ -28,14 +27,12 @@ export class Header extends Component {
           <NavLink
             className="nav-button"
             to="/"
-            onClick={() => this.props.resetAnimals('', this.props.animals)}
           >
             Home
           </NavLink>
           <NavLink
             className="nav-button"
             to="/about"
-            onClick={() => this.props.resetAnimals('', this.props.animals)}
           >
             About
           </NavLink>
