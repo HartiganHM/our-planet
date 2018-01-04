@@ -34,7 +34,8 @@ module.exports = {
     "no-duplicate-imports": "error",
     "id-length": "error",
     "id-blacklist": ["error", "data", "err", "e", "cb", "callback", "payload", "obj", "arr"],
-    "max-depth": ["warn", 4]
+    "max-depth": ["warn", 4],
+    "jsx-quotes": ["error", "prefer-single"]
   },
   "globals": {
     "expect": true
