@@ -4,7 +4,9 @@
 .ContinentPage {
   display: flex;
   flex-direction: column;
+  @include width(160);
   @include padding(2);
+  margin: auto;
   .continent-name {
     @include contentHeader();
     background-image: url('../../images/Our-Planet-Light-Logo.png');
@@ -22,7 +24,7 @@
         flex: 1;
         @include flexColumnCenter();
         .bio-title {
-          @include contentDetailTitle();
+          @include contentDetailTitleAlternate();
         }
         .bio-body {
           @include contentDetailBody();

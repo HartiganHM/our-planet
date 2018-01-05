@@ -5,6 +5,8 @@
   display: flex;
   flex-direction: column;
   @include padding(2);
+  @include width(160);
+  margin: auto;
   .animal-name {
     @include contentHeader();
     background-image: url('../../images/Our-Planet-Light-Logo.png');
@@ -23,21 +25,14 @@
         flex-direction: column;
         align-content: baseline;
         flex-wrap: wrap;
-        @include maxHeight(40);
+        @include maxHeight(30);
         .animal-stat {
           display: flex;
           flex-direction: column;
           align-items: baseline;
           width: 50%;
           .stat-title {
-            align-self: stretch;
-            @include padding(1);
-            background-color: $rich-black;
-            color: $snow;
-            font: {
-              family: $accent-font;
-              size: 1.2rem;
-            }
+            @include contentDetailTitleAlternate();
           }
           .stat-body {
             @include padding(0.5);

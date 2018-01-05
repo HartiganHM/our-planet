@@ -28,7 +28,6 @@
 // Content Page Styling
 @mixin contentHeader() {
   @include padding(2);
-  border-radius: $rounded-top;
   background: {
     color: $accent-color-dark;
     position: calc(100% + 10px) calc(100% - 10px);
@@ -43,12 +42,8 @@
 }
 
 @mixin contentImage() {
-  @include height(40);
-  @include width(60);
-  border: $simple-border;
-  border-top: none;
-  border-radius: $rounded-bottom;
-  box-shadow: $drop-shadow;
+  @include height(60);
+  @include width(90);
 }
 
 @mixin contentDataContainer() {
@@ -61,14 +56,24 @@
     size: 40rem;
     position: top right;
   }
-  border: $simple-border;
-  border-radius: $rounded-bottom;
 }
 
 @mixin contentDetailTitle() {
   @include padding(2);
-  background-color: $rich-black;
+  background-color: $accent-color-dark;
   color: $snow;
+  font: {
+    family: $accent-font;
+    size: 1.2rem;
+  }
+  text-align: center;
+}
+
+@mixin contentDetailTitleAlternate() {
+  align-self: stretch;
+  @include padding(1);
+  background: $accent-fade;
+  color: $accent-color-dark;
   font: {
     family: $accent-font;
     size: 1.2rem;
@@ -76,7 +81,9 @@
 }
 
 @mixin contentDetailBody() {
+  @include width(55);
   @include padding(2);
+  margin: 0 auto;
   font: {
     size: 1rem;
   }
@@ -86,5 +93,4 @@
 @mixin flexColumnCenter() {
   display: flex;
   flex-direction: column;
-  text-align: center;
 }

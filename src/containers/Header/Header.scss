@@ -2,43 +2,85 @@
 @import '../../styles/mixins.scss';
 @import '../../styles/variables.scss';
 .Header {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
     @include padding(1.5);
+    border-bottom: $simple-border;
     background-color: $snow;
-    box-shadow: $drop-shadow;
-    .headerLogo {
-        flex: 1;
-        @include height(6);
-        @include width(30);
-        background: {
-            image: url('../../images/Our-Planet-Wordmark-Small.png');
-            repeat: no-repeat;
-            size: contain;
+    .wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        @include width(160);
+        margin: auto;
+        .headerLogo {
+            flex: 1;
+            @include height(6);
+            @include width(30);
+            background: {
+                image: url('../../images/Our-Planet-Wordmark-Small.png');
+                repeat: no-repeat;
+                size: contain;
+            }
+        }
+        .nav-bar {
+            display: flex;
+            align-items: center;
+            .nav-button {
+                @include margin(0.5);
+                @include padding(0.5);
+                @include width(10);
+                border: $simple-border;
+                color: $accent-color-dark;
+                font-size: 1.4rem;
+                text: {
+                    align: center;
+                    decoration: none;
+                }
+                transition: 0.1s background-color,
+                color ease-in-out;
+                &:hover {
+                    background-color: $accent-color-light;
+                    color: $snow;
+                }
+            }
+            .active {
+                background-color: $accent-color-light;
+                color: $snow;
+                cursor: default;
+            }
         }
     }
-    .nav-bar {
-        display: flex;
-        align-items: center;
-        .nav-button {
-            @include margin(0.5);
-            @include padding(0.5);
-            border: 1px solid grey;
-            border-radius: 0 5px;
-            background-color: $accent-color-light;
-            color: $accent-color-dark;
-            font-size: 1rem;
-            text: {
-                align: center;
-                decoration: none;
-            }
-            transition: 0.3s background-color,
-            color ease-in-out;
-            &:hover {
-                background-color: $myrtle-green;
-                color: white;
-            }
+}
+
+@media screen and (max-width: 1599px) {
+    .Header {
+        .wrapper {
+            @include width(128);
+        }
+    }
+}
+
+@media screen and (max-width: 1279px) {
+    .Header {
+        .wrapper {
+            @include width(96);
+        }
+    }
+}
+
+@media screen and (max-width: 959px) {
+    .Header {
+        .wrapper {
+            flex-direction: column;
+            align-items: center;
+            @include width(64);
+        }
+    }
+}
+
+@media screen and (max-width: 639px) {
+    .Header {
+        .wrapper {
+            @include width(32);
         }
     }
 }
