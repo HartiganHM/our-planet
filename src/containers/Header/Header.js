@@ -25,14 +25,16 @@ export class Header extends Component {
         {this.renderLogo()}
         <div className="nav-bar">
           <NavLink
-            className="nav-button"
+            exact
             to="/"
+            className="nav-button"
           >
             Home
           </NavLink>
           <NavLink
-            className="nav-button"
+            exact
             to="/about"
+            className="nav-button"
           >
             About
           </NavLink>

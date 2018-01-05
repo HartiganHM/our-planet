@@ -6,8 +6,8 @@
     justify-content: space-between;
     align-items: flex-end;
     @include padding(1.5);
+    border-bottom: $simple-border;
     background-color: $snow;
-    box-shadow: $drop-shadow;
     .headerLogo {
         flex: 1;
         @include height(6);
@@ -24,21 +24,25 @@
         .nav-button {
             @include margin(0.5);
             @include padding(0.5);
-            border: 1px solid grey;
-            border-radius: 0 5px;
-            background-color: $accent-color-light;
+            @include width(10);
+            border: $simple-border;
             color: $accent-color-dark;
-            font-size: 1rem;
+            font-size: 1.4rem;
             text: {
                 align: center;
                 decoration: none;
             }
-            transition: 0.3s background-color,
+            transition: 0.1s background-color,
             color ease-in-out;
             &:hover {
-                background-color: $myrtle-green;
-                color: white;
+                background-color: $accent-color-light;
+                color: $snow;
             }
+        }
+        .active {
+            background-color: $accent-color-light;
+            color: $snow;
+            cursor: default;
         }
     }
 }
