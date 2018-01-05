@@ -33,3 +33,27 @@
     }
   }
 }
+
+@media screen and (max-width: 1599px) {
+  .ContinentPage {
+    @include width(128);
+  }
+}
+
+@media screen and (max-width: 1279px) {
+  .ContinentPage {
+    @include width(96);
+  }
+}
+
+@media screen and (max-width: 959px) {
+  .ContinentPage {
+    @include width(64);
+  }
+}
+
+@media screen and (max-width: 639px) {
+  .ContinentPage {
+    @include width(32);
+  }
+}

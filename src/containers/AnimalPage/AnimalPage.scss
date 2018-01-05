@@ -25,7 +25,7 @@
         flex-direction: column;
         align-content: baseline;
         flex-wrap: wrap;
-        @include maxHeight(30);
+        @include maxHeight(90);
         .animal-stat {
           display: flex;
           flex-direction: column;
@@ -58,5 +58,29 @@
         }
       }
     }
+  }
+}
+
+@media screen and (max-width: 1599px) {
+  .AnimalPage {
+    @include width(128);
+  }
+}
+
+@media screen and (max-width: 1279px) {
+  .AnimalPage {
+    @include width(96);
+  }
+}
+
+@media screen and (max-width: 959px) {
+  .AnimalPage {
+    @include width(64);
+  }
+}
+
+@media screen and (max-width: 639px) {
+  .AnimalPage {
+    @include width(32);
   }
 }

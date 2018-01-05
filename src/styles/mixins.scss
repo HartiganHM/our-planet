@@ -8,6 +8,10 @@
   max-height: convertRem($maxHeight);
 }
 
+@mixin maxWidth($maxWidth) {
+  max-width: convertRem($maxWidth);
+}
+
 @mixin width($width) {
   width: convertRem($width);
 }
@@ -81,7 +85,7 @@
 }
 
 @mixin contentDetailBody() {
-  @include width(55);
+  @include maxWidth(55);
   @include padding(2);
   margin: 0 auto;
   font: {

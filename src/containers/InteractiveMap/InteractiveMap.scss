@@ -10,3 +10,27 @@
     font-size: 1.4rem;
   }
 }
+
+@media screen and (max-width: 1599px) {
+  .InteractiveMap {
+    @include width(128);
+  }
+}
+
+@media screen and (max-width: 1279px) {
+  .InteractiveMap {
+    @include width(96);
+  }
+}
+
+@media screen and (max-width: 959px) {
+  .InteractiveMap {
+    @include width(64);
+  }
+}
+
+@media screen and (max-width: 639px) {
+  .InteractiveMap {
+    @include width(32);
+  }
+}
