@@ -7,7 +7,7 @@
   @include width(29.8);
   @include margin(1);
   border: $simple-border;
-  background-color: $accent-color-light;
+  background: $accent-fade;
   text-decoration: none;
   overflow: hidden;
   .animal-image {
