@@ -11,33 +11,22 @@ export class Header extends Component {
   }
 
   renderLogo() {
-    return (
-      <Link
-        to="/"
-        className="headerLogo"
-      />
-    );
+    return <Link to="/" className="headerLogo" />;
   }
 
   render() {
     return (
       <div className="Header">
-        {this.renderLogo()}
-        <div className="nav-bar">
-          <NavLink
-            exact
-            to="/"
-            className="nav-button"
-          >
-            Home
-          </NavLink>
-          <NavLink
-            exact
-            to="/about"
-            className="nav-button"
-          >
-            About
-          </NavLink>
+        <div className="wrapper">
+          <Link to="/" className="headerLogo" />
+          <div className="nav-bar">
+            <NavLink exact to="/" className="nav-button">
+              Home
+            </NavLink>
+            <NavLink exact to="/about" className="nav-button">
+              About
+            </NavLink>
+          </div>
         </div>
       </div>
     );
