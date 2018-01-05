@@ -72,11 +72,7 @@
 @mixin contentDetailTitleAlternate() {
   align-self: stretch;
   @include padding(1);
-  background: linear-gradient(
-    12deg,
-    rgba(154, 188, 237, 0.5) 0%,
-    rgba(255, 255, 255, 0) 50%
-  );
+  background: $accent-fade;
   color: $accent-color-dark;
   font: {
     family: $accent-font;

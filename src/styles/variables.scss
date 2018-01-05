@@ -1,25 +1,26 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans|Raleway');
-
 //Typography
 $main-font: 'Open Sans', Arial, sans-serif;
 $accent-font: 'Raleway', Courier, sans-serif;
-
 //Colors
 $accent-color-dark: rgb(77, 114, 152);
 $accent-color-light: rgb(154, 188, 237);
+$accent-fade: linear-gradient(
+  12deg,
+  rgba(154, 188, 237, 0.5) 0%,
+  rgba(255, 255, 255, 0) 50%
+);
 $isabelline: rgb(240, 240, 240);
-$myrtle-green: #3D897F;
+$myrtle-green: #3d897f;
 $platinum: rgb(228, 228, 228);
 $rich-black: rgb(4, 27, 21);
 $snow: rgb(249, 249, 249);
-
 //Borders + Box Styling
 $simple-border: 1px solid $accent-color-light;
 $rounded-top: 20px 20px 0 0;
 $rounded-bottom: 0 0 20px 20px;
 $rounded-diagonal: 0 20px;
 $rounded-single: 0 20px;
-
 // Box Styling
 $drop-shadow: 0 3px 3px $accent-color-dark;
 $bottom-padding: 20px;
