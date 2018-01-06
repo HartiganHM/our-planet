@@ -2,35 +2,44 @@
 @import '../../styles/mixins.scss';
 
 .InteractiveMap {
-  display: flex;
-  justify-content: space-around;
   @include width(160);
+  @include height(83.8);
   margin: auto;
-  .continent-button {
+  .world-image, #image-map {
+    @include width(160);
+    @include height(83.8);
     font-size: 1.4rem;
   }
-}
 
 @media screen and (max-width: 1599px) {
   .InteractiveMap {
     @include width(128);
+    @include height(67);
+    .world-image, #image-map {
+      @include width(128);
+      @include height(67);
+    }
   }
 }
 
 @media screen and (max-width: 1279px) {
   .InteractiveMap {
     @include width(96);
+    @include height(50.3);
+    .world-image, #image-map {
+      @include width(96);
+      @include height(50.3);
+    }
   }
 }
 
 @media screen and (max-width: 959px) {
   .InteractiveMap {
     @include width(64);
-  }
-}
-
-@media screen and (max-width: 639px) {
-  .InteractiveMap {
-    @include width(32);
+    @include height(33.5);
+    .world-image, #image-map {
+      @include width(64);
+      @include height(33.5);
+    }
   }
 }
