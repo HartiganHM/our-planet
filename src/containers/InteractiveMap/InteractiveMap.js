@@ -3,8 +3,6 @@ import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 // import * as actions from '../../actions';
 import PropTypes from 'prop-types';
-import imageMap from '../../data/imageMap';
-import ImageMap from 'image-map';
 import './InteractiveMap.css';
 
 export class InteractiveMap extends Component {
@@ -28,38 +26,17 @@ export class InteractiveMap extends Component {
       const continentLink = '/continents/' + continent.name;
       const continentKabob = continent.image.split(' ').join('-');
       const continentClass = 'continent-button ' + continentKabob;
-      let continentMap = imageMap[continentKabob];
 
       return (
-        <Link to={continentLink}>
-          <area
-            className={continentKabob}
-            shape="poly"
-            coords={continentMap}
-            onMouseOver={() => this.handleMouse()}
-            onMouseOut={() => this.handleMouse()}
-            alt={continentKabob}
-          />
+        <Link className={continentClass} to={continentLink}>
+          {continent.name}
         </Link>
       );
     });
 
-    ImageMap('img[usemap]');
-
-    return (
-      <div className="InteractiveMap">
-        <img
-          id="world-image"
-          alt="our-planet-world-map"
-          src={require('../../images/interactive-map/world/OP-Interactive-Map.png')}
-          className="world-image"
-          useMap="#image-map"
-        />
-        <map id="image-map" name="image-map">
-          {buttons}
-        </map>
-      </div>
-    );
+    return <div className="InteractiveMap">
+      {buttons}
+    </div>;
   }
 }
 
