@@ -4,47 +4,42 @@
 	 viewBox="0 0 1152 603.4" style="enable-background:new 0 0 1152 603.4;" xml:space="preserve">
 <g id="Oceans_xA0_Image_1_">
 	
-		<image style="overflow:visible;" width="2366" height="1204" id="Oceans_xA0_Image" xlink:href="D453BBB201083786.png"  transform="matrix(0.48 0 0 0.48 9.12 12)">
-	</image>
-</g>
-<g id="Globe_Grid_xA0_Image_1_">
-	
-		<image style="overflow:visible;" width="2371" height="1207" id="Globe_Grid_xA0_Image" xlink:href="D453BBB20108378A.png"  transform="matrix(0.48 0 0 0.48 8.16 11.52)">
+		<image style="overflow:visible;" width="2366" height="1204" id="Oceans_xA0_Image" xlink:href="./oceans.png"  transform="matrix(0.48 0 0 0.48 9.12 12)">
 	</image>
 </g>
 <g id="NA_xA0_Image_1_">
 	
-		<image style="overflow:visible;" width="887" height="528" id="NA_xA0_Image" xlink:href="D453BBB20108378D.png"  transform="matrix(0.48 0 0 0.48 124.8 22.08)">
+		<image style="overflow:visible;" width="887" height="528" id="NA_xA0_Image" xlink:href="./north-america.png"  transform="matrix(0.48 0 0 0.48 124.8 22.08)">
 	</image>
 </g>
 <g id="AF_xA0_Image_1_">
 	
-		<image style="overflow:visible;" width="532" height="543" id="AF_xA0_Image" xlink:href="D453BBB20108378E.png"  transform="matrix(0.48 0 0 0.48 499.2 167.52)">
+		<image style="overflow:visible;" width="532" height="543" id="AF_xA0_Image" xlink:href="./africa.png"  transform="matrix(0.48 0 0 0.48 499.2 167.52)">
 	</image>
 </g>
 <g id="SA_xA0_Image_1_">
 	
-		<image style="overflow:visible;" width="370" height="529" id="SA_xA0_Image" xlink:href="D453BBB20108378C.png"  transform="matrix(0.48 0 0 0.48 287.52 243.84)">
+		<image style="overflow:visible;" width="370" height="529" id="SA_xA0_Image" xlink:href="./south-america.png"  transform="matrix(0.48 0 0 0.48 287.52 243.84)">
 	</image>
 </g>
 <g id="AU_xA0_Image_1_">
 	
-		<image style="overflow:visible;" width="266" height="252" id="AU_xA0_Image" xlink:href="D453BBB20108378B.png"  transform="matrix(0.48 0 0 0.48 917.76 337.44)">
+		<image style="overflow:visible;" width="266" height="252" id="AU_xA0_Image" xlink:href="./australia.png"  transform="matrix(0.48 0 0 0.48 917.76 337.44)">
 	</image>
 </g>
 <g id="EU_xA0_Image_1_">
 	
-		<image style="overflow:visible;" width="472" height="309" id="EU_xA0_Image" xlink:href="D453BBB201083785.png"  transform="matrix(0.48 0 0 0.48 518.4 31.2)">
+		<image style="overflow:visible;" width="472" height="309" id="EU_xA0_Image" xlink:href="./europe.png"  transform="matrix(0.48 0 0 0.48 518.4 31.2)">
 	</image>
 </g>
 <g id="AS_xA0_Image_1_">
 	
-		<image style="overflow:visible;" width="845" height="656" id="AS_xA0_Image" xlink:href="D453BBB201083787.png"  transform="matrix(0.48 0 0 0.48 650.88 26.88)">
+		<image style="overflow:visible;" width="845" height="656" id="AS_xA0_Image" xlink:href="./asia.png"  transform="matrix(0.48 0 0 0.48 650.88 26.88)">
 	</image>
 </g>
 <g id="ANT_xA0_Image_1_">
 	
-		<image style="overflow:visible;" width="1542" height="141" id="ANT_xA0_Image" xlink:href="D453BBB201083784.png"  transform="matrix(0.48 0 0 0.48 215.04 522.24)">
+		<image style="overflow:visible;" width="1542" height="141" id="ANT_xA0_Image" xlink:href="./antarctica-arctic.png"  transform="matrix(0.48 0 0 0.48 215.04 522.24)">
 	</image>
 </g>
 </svg>
