@@ -24,6 +24,22 @@
   padding: convertRem($padding);
 }
 
+@mixin top($top) {
+  top: convertRem($top);
+}
+
+@mixin right($right) {
+  right: convertRem($right);
+}
+
+@mixin bottom($bottom) {
+  bottom: convertRem($bottom);
+}
+
+@mixin left($left) {
+  left: convertRem($left)
+}
+
 @function convertRem($size) {
   $remSize: $size * 0.625;
   @return #{$remSize}rem;
