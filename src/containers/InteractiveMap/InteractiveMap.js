@@ -20,7 +20,7 @@ export class InteractiveMap extends Component {
   };
 
   handleRedirect = continentLink => {
-    return continentLink;
+    this.props.props.history.push(continentLink);
   };
 
   render() {
@@ -31,15 +31,16 @@ export class InteractiveMap extends Component {
       let continentMap = imageMap[continentKabob];
 
       return (
-        <area
-          className={continentKabob}
-          shape="poly"
-          coords={continentMap}
-          onClick={() => this.handleRedirect(continentLink)}
-          onMouseOver={() => this.handleMouse()}
-          onMouseOut={() => this.handleMouse()}
-          alt={continentKabob}
-        />
+        <Link to={continentLink}>
+          <area
+            className={continentKabob}
+            shape="poly"
+            coords={continentMap}
+            onMouseOver={() => this.handleMouse()}
+            onMouseOut={() => this.handleMouse()}
+            alt={continentKabob}
+          />
+        </Link>
       );
     });
 
