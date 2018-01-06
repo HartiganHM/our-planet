@@ -3,12 +3,33 @@
 
 .InteractiveMap {
   @include width(160);
-  @include height(83.8);
+  @include height(81.7);
+  position: relative;
   margin: auto;
-  .world-image, #image-map {
+  .continent-button {
+    position: absolute;
+  }
+  #oceans {
     @include width(160);
     @include height(83.8);
-    font-size: 1.4rem;
+    position: absolute;
+    z-index: 2;
+  }
+  .oceans {
+    @include width(160);
+    @include height(83.8);
+    background-image: url('../../images/interactive-map/oceans.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .north-america {
+    @include top(1.5);
+    @include left(16.4);
+    @include width(59.9);
+    @include height(35.6);
+    background-image: url('../../images/interactive-map/north-america.png');
+    background-size: contain;
+    background-repeat: no-repeat;
   }
 }
 
@@ -16,7 +37,7 @@
   .InteractiveMap {
     @include width(128);
     @include height(67);
-    .world-image, #image-map {
+    .oceans {
       @include width(128);
       @include height(67);
     }
@@ -27,7 +48,7 @@
   .InteractiveMap {
     @include width(96);
     @include height(50.3);
-    .world-image, #image-map {
+    .oceans {
       @include width(96);
       @include height(50.3);
     }
@@ -38,7 +59,7 @@
   .InteractiveMap {
     @include width(64);
     @include height(33.5);
-    .world-image, #image-map {
+    .oceans {
       @include width(64);
       @include height(33.5);
     }
