@@ -1,7 +1,5 @@
-import React, { Component } from 'react';
-import { connect } from 'react-redux';
+import React from 'react';
 import { Link } from 'react-router-dom';
-// import * as actions from '../../actions';
 import './InteractiveMap.css';
 
 export const InteractiveMap = () => {
