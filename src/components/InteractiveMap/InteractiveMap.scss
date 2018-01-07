@@ -1,11 +1,27 @@
 @import '../../styles/variables.scss';
 @import '../../styles/mixins.scss';
-
 .InteractiveMap {
   @include width(160);
   @include height(81.7);
   @include padding(1);
   margin: auto;
+  .grid {
+    fill: $snow;
+  }
+  .oceans {
+    fill: $isabelline;
+    transition: 0.5s fill ease-in-out;
+    &:hover {
+      fill: $accent-color-light;
+    }
+  }
+  .continent {
+    fill: $spanish-gray;
+    transition: 0.5s fill ease-in-out;
+    &:hover {
+      fill: $accent-color-dark;
+    }
+  }
 }
 
 @media screen and (max-width: 1599px) {
