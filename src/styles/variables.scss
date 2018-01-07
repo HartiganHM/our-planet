@@ -14,6 +14,11 @@ $accent-fade: linear-gradient(
   rgba(154, 188, 237, 0.5) 0%,
   rgba(255, 255, 255, 0) 50%
 );
+$accent-dark-fade: linear-gradient(
+  12deg,
+  rgba(77, 114, 152, 0.75) 0%,
+  rgba(255, 255, 255, 0) 75%
+);
 $isabelline: rgb(240, 240, 240);
 $platinum: rgb(228, 228, 228);
 $rich-black: rgb(4, 27, 21);
