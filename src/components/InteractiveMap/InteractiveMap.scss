@@ -2,7 +2,6 @@
 @import '../../styles/mixins.scss';
 .InteractiveMap {
   @include width(160);
-  @include height(81.7);
   @include padding(1);
   margin: auto;
   position: relative;
@@ -24,35 +23,33 @@
     }
   }
   .hover-box {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    z-index: 3;
-    background-color: #ffffff;
-    border: 2px solid #bf0a30;
-    border-radius: 5px;
-    padding: 5px;
-    font-family: arial;
+    @include padding(1);
+    margin: auto;
+    color: $accent-color-dark;
+    .hover-title {
+      @include contentDetailTitle();
+    }
+    .hover-body {
+      @include maxWidth(55);
+      @include contentDetailBody();
+    }
   }
 }
 
 @media screen and (max-width: 1599px) {
   .InteractiveMap {
     @include width(128);
-    @include height(67);
   }
 }
 
 @media screen and (max-width: 1279px) {
   .InteractiveMap {
     @include width(96);
-    @include height(50.3);
   }
 }
 
 @media screen and (max-width: 959px) {
   .InteractiveMap {
     @include width(64);
-    @include height(33.5);
   }
 }
