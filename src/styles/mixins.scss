@@ -109,6 +109,15 @@
   }
 }
 
+@mixin parallaxImage() {
+  background: {
+    attachment: fixed;
+    position: center;
+    repeat: no-repeat;
+    size: cover;
+  }
+}
+
 // Flexbox mixins
 @mixin flexColumnCenter() {
   display: flex;

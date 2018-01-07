@@ -4,7 +4,6 @@
   "private": true,
   "dependencies": {
     "fs-watcher": "^0.2.1",
-    "image-map": "^1.0.7",
     "node-sass-chokidar": "0.0.3",
     "npm-run-all": "^4.1.2",
     "prop-types": "^15.6.0",

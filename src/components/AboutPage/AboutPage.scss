@@ -1,3 +1,66 @@
+@import '../../styles/variables.scss';
+@import '../../styles/mixins.scss';
 .AboutPage {
-  font-size: 1.4rem;
+  display: flex;
+  flex-direction: column;
+  @include width(160);
+  margin: auto;
+  .our-planet-image {
+    @include height(30);
+    @include margin(1.5);
+    background: {
+      image: url('../../images/branding/Our-Planet-Wordmark-Large.png');
+      position: center;
+      size: contain;
+      repeat: no-repeat;
+    }
+  }
+  .our-planet-wrapper {
+    background-image: url('../../images/about/scenery-about.jpg');
+  }
+  .purpose-image {
+    background-image: url('../../images/about/bear-about.jpg');
+  }
+  .why-image {
+    background-image: url('../../images/about/elephant-about.jpg');
+  }
+  .help-image {
+    background-image: url('../../images/about/frog-about.jpg');
+  }
+  .parallax {
+    @include height(30);
+    @include parallaxImage();
+  }
+  .section-title {
+    @include contentDetailTitle();
+  }
+  .section-body {
+    @include maxWidth(55);
+    margin: auto;
+    @include contentDetailBody();
+  }
+}
+
+@media screen and (max-width: 1599px) {
+  .AboutPage {
+    @include width(128);
+  }
+}
+
+@media screen and (max-width: 1279px) {
+  .AboutPage {
+    @include width(96);
+  }
+}
+
+@media screen and (max-width: 959px) {
+  .AboutPage {
+    @include width(64);
+  }
+}
+
+@media screen and (max-width: 639px) {
+  .AboutPage {
+    @include width(32);
+  }
 }
