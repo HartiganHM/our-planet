@@ -38,7 +38,7 @@ describe('matchObjectInStore tests', () => {
   });
 
   it('Should catch Antarctica outlier', () => {
-    mockProps.match.params.continent = 'Antarctica ';
+    mockProps.match.params.continent = 'Antarctica Arctic';
     const expectedContinentName = 'Antarctica / Arctic';
     const mockContinent = matchObjectInStore(
       mockProps,
