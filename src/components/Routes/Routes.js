@@ -1,7 +1,7 @@
 import React from 'react';
 import { Route } from 'react-router-dom';
 import Header from '../../containers/Header/Header';
-import InteractiveMap from '../../containers/InteractiveMap/InteractiveMap';
+import InteractiveMap from '../InteractiveMap/InteractiveMap';
 import Search from '../../containers/Search/Search';
 import CardContainer from '../../containers/CardContainer/CardContainer';
 import AboutPage from '../AboutPage/AboutPage';

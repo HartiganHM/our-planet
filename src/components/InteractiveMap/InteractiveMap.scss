@@ -4,21 +4,14 @@
 .InteractiveMap {
   @include width(160);
   @include height(81.7);
-  position: relative;
+  @include padding(1);
   margin: auto;
-  .continent-button {
-    // position: absolute;
-  }
 }
 
 @media screen and (max-width: 1599px) {
   .InteractiveMap {
     @include width(128);
     @include height(67);
-    .oceans {
-      @include width(128);
-      @include height(67);
-    }
   }
 }
 
@@ -26,10 +19,6 @@
   .InteractiveMap {
     @include width(96);
     @include height(50.3);
-    .oceans {
-      @include width(96);
-      @include height(50.3);
-    }
   }
 }
 
@@ -37,9 +26,5 @@
   .InteractiveMap {
     @include width(64);
     @include height(33.5);
-    .oceans {
-      @include width(64);
-      @include height(33.5);
-    }
   }
 }
