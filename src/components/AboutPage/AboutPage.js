@@ -11,16 +11,19 @@ const AboutPage = () => {
 
       <div className='purpose'>
         <div className='purpose-image'></div>
+        <div className='purpose-title'>Purpose</div>
         <div className='purpose-body'></div>
       </div>
 
       <div className='why'>
         <div className='why-image'></div>
+        <div className='why-title'>Why</div>
         <div className='why-body'></div>
       </div>
 
       <div className='help'>
         <div className='help-image'></div>
+        <div className='help-title'>How You Can Help</div>
         <div className='help-body'></div>
       </div>
     </div>
