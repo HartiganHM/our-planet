@@ -21,4 +21,24 @@ describe('InteractiveMap tests', () => {
 
     expect(renderedMap.find(expectedElement).length).toEqual(expectedLength);
   });
+
+  it('Should setState with handleMouseHover', () => {
+
+  });
+
+  it('Should setState with setContinent', () => {
+
+  });
+
+  it('Should receive an object from toggleHoverState with an opposite boolean', () => {
+
+  });
+
+  it('Should redurn svg path elements with createPath', () => {
+
+  });
+
+  it('Should not render a Link component with createPath when passed grid', () => {
+
+  });
 });

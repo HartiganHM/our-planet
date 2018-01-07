@@ -13,7 +13,6 @@ class InteractiveMap extends Component {
   }
 
   handleMouseHover = continent => {
-    console.log(this.props)
     this.setState(this.toggleHoverState, this.setContinent(continent));
   };
 
