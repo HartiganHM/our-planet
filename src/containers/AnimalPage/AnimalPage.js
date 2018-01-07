@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { PropTypes } from 'prop-types';
 import matchObjectInStore from '../../helpers/matchObjectInStore/matchObjectInStore';
-import animalDataCleaner from '../../helpers/cleanAnimalData/cleanAnimalData';
+import animalDataCleaner from '../../helpers/animalDataCleaner/animalDataCleaner';
 import './AnimalPage.css';
 
 export class AnimalPage extends Component {
