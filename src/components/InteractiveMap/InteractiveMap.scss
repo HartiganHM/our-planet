@@ -9,14 +9,14 @@
     fill: $snow;
   }
   .oceans {
-    fill: $isabelline;
+    fill: $accent-color-light-alpha;
     transition: 0.5s fill ease-in-out;
     &:hover {
       fill: $accent-color-light;
     }
   }
   .continent {
-    fill: $spanish-gray;
+    fill: $accent-color-dark-alpha;
     transition: 0.5s fill ease-in-out;
     &:hover {
       fill: $accent-color-dark;
