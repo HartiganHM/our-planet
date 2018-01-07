@@ -41,6 +41,7 @@ export class InteractiveMap extends Component {
         </g>
       )
     } else {
+      name === 'Antarctica Arctic' ? name = 'Antarctica / Arctic' : name;
       return (
         <g id={className}>
           <g transform={continentsPaths[className].transform}>
