@@ -6,12 +6,17 @@ export class InteractiveMap extends Component {
   constructor() {
     super();
     this.state = {
-      isHovering: false
+      isHovering: false,
+      continent: ''
     }
   }
 
-  handleMouseHover = () => {
-    this.setState(this.toggleHoverState);
+  handleMouseHover = (continent) => {
+    this.setState(this.toggleHoverState, this.setContinent(continent));
+  }
+
+  setContinent = (continent) => {
+    this.setState({continent})
   }
 
   toggleHoverState(state) {
@@ -21,7 +26,7 @@ export class InteractiveMap extends Component {
   }
 
   render() {
-    const hoverBox = <div className='hover-box'>Butt</div>;
+    const hoverBox = <div className='hover-box'>{this.state.continent}</div>;
 
     return (
       <div className="InteractiveMap">
@@ -31,8 +36,8 @@ export class InteractiveMap extends Component {
             <g transform="translate(0.000000,1204.000000) scale(0.100000,-0.100000)">
               <Link to="/continents/Oceans" className="oc">
                 <path
-                  onMouseEnter={this.handleMouseHover}
-                  onMouseLeave={this.handleMouseHover}
+                  onMouseEnter={() => this.handleMouseHover('Oceans')}
+                  onMouseLeave={() => this.handleMouseHover('')}
                   className="oceans"
                   d="M5289.7,11966c-466-150-906-330-1386-567c-2167-1073-3501-2641-3808-4479c-59-354-75-583-68-1004c5-340,11-420,48-681
           c210-1477,1058-2781,2482-3818c777-566,1768-1069,2702-1371l188-61l5871,2l5871,3l-5870,5l-5870,5l-260,97
