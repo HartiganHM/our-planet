@@ -1,5 +1,7 @@
 .AboutPage {
-  font-size: 1.4rem;
+  @include width(160);
+  display: flex;
+  flex-direction: column;
   .our-planet {
     .our-planet-image {
 
@@ -12,6 +14,9 @@
     .purpose-image {
 
     }
+    .purpose-title {
+
+    }
     .purpose-body {
       
     }
@@ -20,12 +25,18 @@
     .why-image {
 
     }
+    .why-title {
+      
+    }
     .why-body {
       
     }
   }
   .help {
     .help-image {
+      
+    }
+    .help-title {
       
     }
     .help-body {
