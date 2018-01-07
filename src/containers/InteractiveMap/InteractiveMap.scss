@@ -7,29 +7,7 @@
   position: relative;
   margin: auto;
   .continent-button {
-    position: absolute;
-  }
-  #oceans {
-    @include width(160);
-    @include height(83.8);
-    position: absolute;
-    z-index: 2;
-  }
-  .oceans {
-    @include width(160);
-    @include height(83.8);
-    background-image: url('../../images/interactive-map/oceans.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-  }
-  .north-america {
-    @include top(1.5);
-    @include left(16.4);
-    @include width(59.9);
-    @include height(35.6);
-    background-image: url('../../images/interactive-map/north-america.png');
-    background-size: contain;
-    background-repeat: no-repeat;
+    // position: absolute;
   }
 }
 
