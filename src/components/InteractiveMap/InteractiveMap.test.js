@@ -2,7 +2,6 @@ import React from 'react';
 import { shallow } from 'enzyme';
 import InteractiveMap from './InteractiveMap';
 import continentsPaths from '../../data/continentsPaths';
-import mockContinentsArray from '../../data/mockContinentsArray';
 
 describe('InteractiveMap tests', () => {
   let renderedMap;
