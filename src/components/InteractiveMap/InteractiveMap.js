@@ -39,7 +39,8 @@ export class InteractiveMap extends Component {
             />
           </g>
         </g>
-      )
+      );
+
     } else {
       name === 'Antarctica Arctic' ? name = 'Antarctica / Arctic' : name;
       return (
@@ -55,7 +56,7 @@ export class InteractiveMap extends Component {
             </Link>
           </g>
         </g>
-      )
+      );
     }
   }
 
