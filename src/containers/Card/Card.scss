@@ -8,8 +8,14 @@
   @include margin(1);
   border: $simple-border;
   background: $accent-fade;
+  color: $accent-color-dark;
   text-decoration: none;
   overflow: hidden;
+  transition: 0.2s color, background ease-in-out;
+  &:hover {
+    background: $accent-dark-fade;
+    color: $snow;
+  }
   .animal-image {
     @include width(30);
     z-index: 2;
@@ -22,7 +28,6 @@
       size: contain;
       repeat: no-repeat;
     }
-    color: $accent-color-dark;
     font-family: $accent-font;
     font-size: 1.2rem;
   }
