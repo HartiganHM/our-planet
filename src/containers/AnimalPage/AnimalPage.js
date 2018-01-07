@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import matchObjectInStore from '../../helpers/matchObjectInStore/matchObjectInStore';
 import { PropTypes } from 'prop-types';
+import matchObjectInStore from '../../helpers/matchObjectInStore/matchObjectInStore';
+import animalDataCleaner from '../../helpers/cleanAnimalData/cleanAnimalData';
 import './AnimalPage.css';
 
 export class AnimalPage extends Component {
@@ -24,24 +25,8 @@ export class AnimalPage extends Component {
     this.setState({ animalData });
   }
 
-  cleanAnimalData = animalData => {
-    const cleanAnimalData = {
-      Status: animalData.status,
-      Population: animalData.population,
-      'Scientific Name': animalData.scientific_name,
-      Height: animalData.height,
-      Weight: animalData.weight,
-      Length: animalData.length,
-      Habitat: animalData.habitat,
-      'The Facts': animalData.facts,
-      "Why I'm Important": animalData.human_benefit
-    };
-
-    return cleanAnimalData;
-  };
-
   renderAnimalStats = () => {
-    const cleanAnimalData = this.cleanAnimalData(this.state.animalData);
+    const cleanAnimalData = animalDataCleaner(this.state.animalData);
     const animalProperties = Object.keys(cleanAnimalData);
     let longStats = [];
     let basicStats = [];
