@@ -43,9 +43,12 @@
                 }
             }
             .active {
-                background-color: $accent-color-light;
+                background-color: $accent-color-dark;
                 color: $snow;
                 cursor: default;
+                &:hover {
+                    background-color: $accent-color-dark;
+                }
             }
         }
     }
