@@ -8,7 +8,6 @@
   .content-placeholder {
     @include contentDetailTitle();
     flex: 1;
-    border-radius: $rounded-diagonal;
     text-align: center;
   }
 }
