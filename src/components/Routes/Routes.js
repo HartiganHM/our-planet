@@ -15,10 +15,10 @@ const Routes = () => {
       <Route
         exact
         path="/"
-        render={(props) => {
+        render={() => {
           return (
             <div>
-              <InteractiveMap props={props}/>
+              <InteractiveMap />
               <Search />
               <CardContainer />
             </div>

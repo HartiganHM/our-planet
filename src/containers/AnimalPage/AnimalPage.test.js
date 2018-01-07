@@ -2,7 +2,6 @@ import React from 'react';
 import { shallow } from 'enzyme';
 import { AnimalPage, mapStateToProps } from './AnimalPage';
 import mockAnimalsArray from '../../data/mockAnimalsArray';
-import mockCleanAnimalData from '../../data/mockCleanAnimalData';
 import mockProps from '../../data/mockProps';
 
 describe('AnimalPage tests', () => {
@@ -20,19 +19,6 @@ describe('AnimalPage tests', () => {
     expect(renderedAnimalPage).toMatchSnapshot();
   });
 
-  it('cleanAnimalData should return an object', () => {
-    const mockCleanedData = renderedAnimalPage.instance().cleanAnimalData(mockAnimalsArray[0]);
-
-    expect(typeof mockCleanedData).toEqual('object');
-  });
-
-  it('cleanAnimalData should clean data properties', () => {
-    const mockCleanedData = renderedAnimalPage.instance().cleanAnimalData(mockAnimalsArray[0]);
-    const expected = mockCleanAnimalData;
-
-    expect(mockCleanedData).toEqual(expected);
-  });
-
   it('renderAnimalStats should return an object', () => {
     expect(typeof mockRenderAnimalStats).toEqual('object');
   });
@@ -46,7 +32,9 @@ describe('AnimalPage tests', () => {
     expect(renderedAnimalPage.state('animalData').population).toBeDefined;
 
     renderedAnimalPage.state('animalData').population = '';
-    const mockRenderAnimalStats = renderedAnimalPage.instance().renderAnimalStats();
+    const mockRenderAnimalStats = renderedAnimalPage
+      .instance()
+      .renderAnimalStats();
     const expected = undefined;
 
     expect(mockRenderAnimalStats.basicStats.population).toEqual(expected);

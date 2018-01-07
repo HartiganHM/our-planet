@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import continentsPaths from '../../data/continentsPaths';
 import './InteractiveMap.css';
 
-export class InteractiveMap extends Component {
+class InteractiveMap extends Component {
   constructor() {
     super();
     this.state = {
@@ -42,13 +42,13 @@ export class InteractiveMap extends Component {
       );
 
     } else {
-      name === 'Antarctica Arctic' ? name = 'Antarctica / Arctic' : name;
+      const displayName = name === 'Antarctica Arctic' ? name = 'Antarctica / Arctic' : name;
       return (
         <g id={className}>
           <g transform={continentsPaths[className].transform}>
             <Link to={continentLink}>
               <path
-                onMouseEnter={() => this.handleMouseHover(name)}
+                onMouseEnter={() => this.handleMouseHover(displayName)}
                 onMouseLeave={() => this.handleMouseHover('')}
                 className={className === 'oceans' ? className : 'continent'}
                 d={continentsPaths[className].path}

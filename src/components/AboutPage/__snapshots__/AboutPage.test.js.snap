@@ -1,0 +1,683 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AboutPage tests Should match the snapshot 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <AboutPage />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <div
+          className="our-planet"
+>
+          <div
+                    className="parallax our-planet-wrapper"
+          >
+                    <div
+                              className="our-planet-image"
+                    />
+          </div>
+          <div
+                    className="section-body"
+          >
+                    Weigh eight pounds but take up a full-size bed hiss at vacuum cleaner and sit on the laptop or spend all night ensuring people don't sleep sleep all day or use lap as chair, and who's the baby, so jump launch to pounce upon little yarn mouse, bare fangs at toy run hide in litter box until treats are fed. Fall asleep upside-down slap owner's face at 5am until human fills food dish. Brown cats with pink ears i can haz yet where is my slave?
+          </div>
+</div>,
+        <div
+          className="purpose"
+>
+          <div
+                    className="parallax purpose-image"
+          />
+          <div
+                    className="section-title"
+          >
+                    Purpose
+          </div>
+          <div
+                    className="section-body"
+          >
+                    Under the bed ooh, are those your $250 dollar sandals? lemme use that as my litter box, or weigh eight pounds but take up a full-size bed. Climb a tree, wait for a fireman jump to fireman then scratch his face meow. Munch on tasty moths flex claws on the human's belly and purr like a lawnmower woops poop hanging from butt must get rid run run around house drag poop on floor maybe it comes off woops left brown marks on floor human slave clean lick butt now flee in terror at cucumber discovered on floor or if it smells like fish eat as much as you wish. 
+          </div>
+</div>,
+        <div
+          className="why"
+>
+          <div
+                    className="parallax why-image"
+          />
+          <div
+                    className="section-title"
+          >
+                    Why
+          </div>
+          <div
+                    className="section-body"
+          >
+                    Ask for petting. Pee in human's bed until he cleans the litter box eat plants, meow, and throw up because i ate plants. Hide head under blanket so no one can see fall asleep upside-down lick human with sandpaper tongue. Howl uncontrollably for no reason Gate keepers of hell you call this cat food stare at ceiling behind the couch. Meow scratch the furniture. This cat happen now, it was too purr-fect!!! get video posted to internet for chasing red dot sleep and need to chase tail purr for no reason for knock dish off table head butt cant eat out of my own dish.
+          </div>
+</div>,
+        <div
+          className="help"
+>
+          <div
+                    className="parallax help-image"
+          />
+          <div
+                    className="section-title"
+          >
+                    How You Can Help
+          </div>
+          <div
+                    className="section-body"
+          >
+                    Make muffins eat grass, throw it back up jump on human and sleep on her all night long be long in the bed, purr in the morning and then give a bite to every human around for not waking up request food, purr loud scratch the walls, the floor, the windows, the humans. Throw down all the stuff in the kitchen cough furball so meow go back to sleep owner brings food and water tries to pet on head, so scratch get sprayed by water because bad cat sniff catnip and act crazy sniff catnip and act crazy dead stare with ears cocked.
+          </div>
+</div>,
+      ],
+      "className": "AboutPage",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <div
+              className="parallax our-planet-wrapper"
+>
+              <div
+                            className="our-planet-image"
+              />
+</div>,
+            <div
+              className="section-body"
+>
+              Weigh eight pounds but take up a full-size bed hiss at vacuum cleaner and sit on the laptop or spend all night ensuring people don't sleep sleep all day or use lap as chair, and who's the baby, so jump launch to pounce upon little yarn mouse, bare fangs at toy run hide in litter box until treats are fed. Fall asleep upside-down slap owner's face at 5am until human fills food dish. Brown cats with pink ears i can haz yet where is my slave?
+</div>,
+          ],
+          "className": "our-planet",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": <div
+                className="our-planet-image"
+/>,
+              "className": "parallax our-planet-wrapper",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "className": "our-planet-image",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "div",
+            },
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Weigh eight pounds but take up a full-size bed hiss at vacuum cleaner and sit on the laptop or spend all night ensuring people don't sleep sleep all day or use lap as chair, and who's the baby, so jump launch to pounce upon little yarn mouse, bare fangs at toy run hide in litter box until treats are fed. Fall asleep upside-down slap owner's face at 5am until human fills food dish. Brown cats with pink ears i can haz yet where is my slave?",
+              "className": "section-body",
+            },
+            "ref": null,
+            "rendered": "Weigh eight pounds but take up a full-size bed hiss at vacuum cleaner and sit on the laptop or spend all night ensuring people don't sleep sleep all day or use lap as chair, and who's the baby, so jump launch to pounce upon little yarn mouse, bare fangs at toy run hide in litter box until treats are fed. Fall asleep upside-down slap owner's face at 5am until human fills food dish. Brown cats with pink ears i can haz yet where is my slave?",
+            "type": "div",
+          },
+        ],
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <div
+              className="parallax purpose-image"
+/>,
+            <div
+              className="section-title"
+>
+              Purpose
+</div>,
+            <div
+              className="section-body"
+>
+              Under the bed ooh, are those your $250 dollar sandals? lemme use that as my litter box, or weigh eight pounds but take up a full-size bed. Climb a tree, wait for a fireman jump to fireman then scratch his face meow. Munch on tasty moths flex claws on the human's belly and purr like a lawnmower woops poop hanging from butt must get rid run run around house drag poop on floor maybe it comes off woops left brown marks on floor human slave clean lick butt now flee in terror at cucumber discovered on floor or if it smells like fish eat as much as you wish. 
+</div>,
+          ],
+          "className": "purpose",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "className": "parallax purpose-image",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Purpose",
+              "className": "section-title",
+            },
+            "ref": null,
+            "rendered": "Purpose",
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Under the bed ooh, are those your $250 dollar sandals? lemme use that as my litter box, or weigh eight pounds but take up a full-size bed. Climb a tree, wait for a fireman jump to fireman then scratch his face meow. Munch on tasty moths flex claws on the human's belly and purr like a lawnmower woops poop hanging from butt must get rid run run around house drag poop on floor maybe it comes off woops left brown marks on floor human slave clean lick butt now flee in terror at cucumber discovered on floor or if it smells like fish eat as much as you wish. ",
+              "className": "section-body",
+            },
+            "ref": null,
+            "rendered": "Under the bed ooh, are those your $250 dollar sandals? lemme use that as my litter box, or weigh eight pounds but take up a full-size bed. Climb a tree, wait for a fireman jump to fireman then scratch his face meow. Munch on tasty moths flex claws on the human's belly and purr like a lawnmower woops poop hanging from butt must get rid run run around house drag poop on floor maybe it comes off woops left brown marks on floor human slave clean lick butt now flee in terror at cucumber discovered on floor or if it smells like fish eat as much as you wish. ",
+            "type": "div",
+          },
+        ],
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <div
+              className="parallax why-image"
+/>,
+            <div
+              className="section-title"
+>
+              Why
+</div>,
+            <div
+              className="section-body"
+>
+              Ask for petting. Pee in human's bed until he cleans the litter box eat plants, meow, and throw up because i ate plants. Hide head under blanket so no one can see fall asleep upside-down lick human with sandpaper tongue. Howl uncontrollably for no reason Gate keepers of hell you call this cat food stare at ceiling behind the couch. Meow scratch the furniture. This cat happen now, it was too purr-fect!!! get video posted to internet for chasing red dot sleep and need to chase tail purr for no reason for knock dish off table head butt cant eat out of my own dish.
+</div>,
+          ],
+          "className": "why",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "className": "parallax why-image",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Why",
+              "className": "section-title",
+            },
+            "ref": null,
+            "rendered": "Why",
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Ask for petting. Pee in human's bed until he cleans the litter box eat plants, meow, and throw up because i ate plants. Hide head under blanket so no one can see fall asleep upside-down lick human with sandpaper tongue. Howl uncontrollably for no reason Gate keepers of hell you call this cat food stare at ceiling behind the couch. Meow scratch the furniture. This cat happen now, it was too purr-fect!!! get video posted to internet for chasing red dot sleep and need to chase tail purr for no reason for knock dish off table head butt cant eat out of my own dish.",
+              "className": "section-body",
+            },
+            "ref": null,
+            "rendered": "Ask for petting. Pee in human's bed until he cleans the litter box eat plants, meow, and throw up because i ate plants. Hide head under blanket so no one can see fall asleep upside-down lick human with sandpaper tongue. Howl uncontrollably for no reason Gate keepers of hell you call this cat food stare at ceiling behind the couch. Meow scratch the furniture. This cat happen now, it was too purr-fect!!! get video posted to internet for chasing red dot sleep and need to chase tail purr for no reason for knock dish off table head butt cant eat out of my own dish.",
+            "type": "div",
+          },
+        ],
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <div
+              className="parallax help-image"
+/>,
+            <div
+              className="section-title"
+>
+              How You Can Help
+</div>,
+            <div
+              className="section-body"
+>
+              Make muffins eat grass, throw it back up jump on human and sleep on her all night long be long in the bed, purr in the morning and then give a bite to every human around for not waking up request food, purr loud scratch the walls, the floor, the windows, the humans. Throw down all the stuff in the kitchen cough furball so meow go back to sleep owner brings food and water tries to pet on head, so scratch get sprayed by water because bad cat sniff catnip and act crazy sniff catnip and act crazy dead stare with ears cocked.
+</div>,
+          ],
+          "className": "help",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "className": "parallax help-image",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "How You Can Help",
+              "className": "section-title",
+            },
+            "ref": null,
+            "rendered": "How You Can Help",
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Make muffins eat grass, throw it back up jump on human and sleep on her all night long be long in the bed, purr in the morning and then give a bite to every human around for not waking up request food, purr loud scratch the walls, the floor, the windows, the humans. Throw down all the stuff in the kitchen cough furball so meow go back to sleep owner brings food and water tries to pet on head, so scratch get sprayed by water because bad cat sniff catnip and act crazy sniff catnip and act crazy dead stare with ears cocked.",
+              "className": "section-body",
+            },
+            "ref": null,
+            "rendered": "Make muffins eat grass, throw it back up jump on human and sleep on her all night long be long in the bed, purr in the morning and then give a bite to every human around for not waking up request food, purr loud scratch the walls, the floor, the windows, the humans. Throw down all the stuff in the kitchen cough furball so meow go back to sleep owner brings food and water tries to pet on head, so scratch get sprayed by water because bad cat sniff catnip and act crazy sniff catnip and act crazy dead stare with ears cocked.",
+            "type": "div",
+          },
+        ],
+        "type": "div",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <div
+            className="our-planet"
+>
+            <div
+                        className="parallax our-planet-wrapper"
+            >
+                        <div
+                                    className="our-planet-image"
+                        />
+            </div>
+            <div
+                        className="section-body"
+            >
+                        Weigh eight pounds but take up a full-size bed hiss at vacuum cleaner and sit on the laptop or spend all night ensuring people don't sleep sleep all day or use lap as chair, and who's the baby, so jump launch to pounce upon little yarn mouse, bare fangs at toy run hide in litter box until treats are fed. Fall asleep upside-down slap owner's face at 5am until human fills food dish. Brown cats with pink ears i can haz yet where is my slave?
+            </div>
+</div>,
+          <div
+            className="purpose"
+>
+            <div
+                        className="parallax purpose-image"
+            />
+            <div
+                        className="section-title"
+            >
+                        Purpose
+            </div>
+            <div
+                        className="section-body"
+            >
+                        Under the bed ooh, are those your $250 dollar sandals? lemme use that as my litter box, or weigh eight pounds but take up a full-size bed. Climb a tree, wait for a fireman jump to fireman then scratch his face meow. Munch on tasty moths flex claws on the human's belly and purr like a lawnmower woops poop hanging from butt must get rid run run around house drag poop on floor maybe it comes off woops left brown marks on floor human slave clean lick butt now flee in terror at cucumber discovered on floor or if it smells like fish eat as much as you wish. 
+            </div>
+</div>,
+          <div
+            className="why"
+>
+            <div
+                        className="parallax why-image"
+            />
+            <div
+                        className="section-title"
+            >
+                        Why
+            </div>
+            <div
+                        className="section-body"
+            >
+                        Ask for petting. Pee in human's bed until he cleans the litter box eat plants, meow, and throw up because i ate plants. Hide head under blanket so no one can see fall asleep upside-down lick human with sandpaper tongue. Howl uncontrollably for no reason Gate keepers of hell you call this cat food stare at ceiling behind the couch. Meow scratch the furniture. This cat happen now, it was too purr-fect!!! get video posted to internet for chasing red dot sleep and need to chase tail purr for no reason for knock dish off table head butt cant eat out of my own dish.
+            </div>
+</div>,
+          <div
+            className="help"
+>
+            <div
+                        className="parallax help-image"
+            />
+            <div
+                        className="section-title"
+            >
+                        How You Can Help
+            </div>
+            <div
+                        className="section-body"
+            >
+                        Make muffins eat grass, throw it back up jump on human and sleep on her all night long be long in the bed, purr in the morning and then give a bite to every human around for not waking up request food, purr loud scratch the walls, the floor, the windows, the humans. Throw down all the stuff in the kitchen cough furball so meow go back to sleep owner brings food and water tries to pet on head, so scratch get sprayed by water because bad cat sniff catnip and act crazy sniff catnip and act crazy dead stare with ears cocked.
+            </div>
+</div>,
+        ],
+        "className": "AboutPage",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <div
+                className="parallax our-planet-wrapper"
+>
+                <div
+                                className="our-planet-image"
+                />
+</div>,
+              <div
+                className="section-body"
+>
+                Weigh eight pounds but take up a full-size bed hiss at vacuum cleaner and sit on the laptop or spend all night ensuring people don't sleep sleep all day or use lap as chair, and who's the baby, so jump launch to pounce upon little yarn mouse, bare fangs at toy run hide in litter box until treats are fed. Fall asleep upside-down slap owner's face at 5am until human fills food dish. Brown cats with pink ears i can haz yet where is my slave?
+</div>,
+            ],
+            "className": "our-planet",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": <div
+                  className="our-planet-image"
+/>,
+                "className": "parallax our-planet-wrapper",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "className": "our-planet-image",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "div",
+              },
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Weigh eight pounds but take up a full-size bed hiss at vacuum cleaner and sit on the laptop or spend all night ensuring people don't sleep sleep all day or use lap as chair, and who's the baby, so jump launch to pounce upon little yarn mouse, bare fangs at toy run hide in litter box until treats are fed. Fall asleep upside-down slap owner's face at 5am until human fills food dish. Brown cats with pink ears i can haz yet where is my slave?",
+                "className": "section-body",
+              },
+              "ref": null,
+              "rendered": "Weigh eight pounds but take up a full-size bed hiss at vacuum cleaner and sit on the laptop or spend all night ensuring people don't sleep sleep all day or use lap as chair, and who's the baby, so jump launch to pounce upon little yarn mouse, bare fangs at toy run hide in litter box until treats are fed. Fall asleep upside-down slap owner's face at 5am until human fills food dish. Brown cats with pink ears i can haz yet where is my slave?",
+              "type": "div",
+            },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <div
+                className="parallax purpose-image"
+/>,
+              <div
+                className="section-title"
+>
+                Purpose
+</div>,
+              <div
+                className="section-body"
+>
+                Under the bed ooh, are those your $250 dollar sandals? lemme use that as my litter box, or weigh eight pounds but take up a full-size bed. Climb a tree, wait for a fireman jump to fireman then scratch his face meow. Munch on tasty moths flex claws on the human's belly and purr like a lawnmower woops poop hanging from butt must get rid run run around house drag poop on floor maybe it comes off woops left brown marks on floor human slave clean lick butt now flee in terror at cucumber discovered on floor or if it smells like fish eat as much as you wish. 
+</div>,
+            ],
+            "className": "purpose",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "className": "parallax purpose-image",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Purpose",
+                "className": "section-title",
+              },
+              "ref": null,
+              "rendered": "Purpose",
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Under the bed ooh, are those your $250 dollar sandals? lemme use that as my litter box, or weigh eight pounds but take up a full-size bed. Climb a tree, wait for a fireman jump to fireman then scratch his face meow. Munch on tasty moths flex claws on the human's belly and purr like a lawnmower woops poop hanging from butt must get rid run run around house drag poop on floor maybe it comes off woops left brown marks on floor human slave clean lick butt now flee in terror at cucumber discovered on floor or if it smells like fish eat as much as you wish. ",
+                "className": "section-body",
+              },
+              "ref": null,
+              "rendered": "Under the bed ooh, are those your $250 dollar sandals? lemme use that as my litter box, or weigh eight pounds but take up a full-size bed. Climb a tree, wait for a fireman jump to fireman then scratch his face meow. Munch on tasty moths flex claws on the human's belly and purr like a lawnmower woops poop hanging from butt must get rid run run around house drag poop on floor maybe it comes off woops left brown marks on floor human slave clean lick butt now flee in terror at cucumber discovered on floor or if it smells like fish eat as much as you wish. ",
+              "type": "div",
+            },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <div
+                className="parallax why-image"
+/>,
+              <div
+                className="section-title"
+>
+                Why
+</div>,
+              <div
+                className="section-body"
+>
+                Ask for petting. Pee in human's bed until he cleans the litter box eat plants, meow, and throw up because i ate plants. Hide head under blanket so no one can see fall asleep upside-down lick human with sandpaper tongue. Howl uncontrollably for no reason Gate keepers of hell you call this cat food stare at ceiling behind the couch. Meow scratch the furniture. This cat happen now, it was too purr-fect!!! get video posted to internet for chasing red dot sleep and need to chase tail purr for no reason for knock dish off table head butt cant eat out of my own dish.
+</div>,
+            ],
+            "className": "why",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "className": "parallax why-image",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Why",
+                "className": "section-title",
+              },
+              "ref": null,
+              "rendered": "Why",
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Ask for petting. Pee in human's bed until he cleans the litter box eat plants, meow, and throw up because i ate plants. Hide head under blanket so no one can see fall asleep upside-down lick human with sandpaper tongue. Howl uncontrollably for no reason Gate keepers of hell you call this cat food stare at ceiling behind the couch. Meow scratch the furniture. This cat happen now, it was too purr-fect!!! get video posted to internet for chasing red dot sleep and need to chase tail purr for no reason for knock dish off table head butt cant eat out of my own dish.",
+                "className": "section-body",
+              },
+              "ref": null,
+              "rendered": "Ask for petting. Pee in human's bed until he cleans the litter box eat plants, meow, and throw up because i ate plants. Hide head under blanket so no one can see fall asleep upside-down lick human with sandpaper tongue. Howl uncontrollably for no reason Gate keepers of hell you call this cat food stare at ceiling behind the couch. Meow scratch the furniture. This cat happen now, it was too purr-fect!!! get video posted to internet for chasing red dot sleep and need to chase tail purr for no reason for knock dish off table head butt cant eat out of my own dish.",
+              "type": "div",
+            },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <div
+                className="parallax help-image"
+/>,
+              <div
+                className="section-title"
+>
+                How You Can Help
+</div>,
+              <div
+                className="section-body"
+>
+                Make muffins eat grass, throw it back up jump on human and sleep on her all night long be long in the bed, purr in the morning and then give a bite to every human around for not waking up request food, purr loud scratch the walls, the floor, the windows, the humans. Throw down all the stuff in the kitchen cough furball so meow go back to sleep owner brings food and water tries to pet on head, so scratch get sprayed by water because bad cat sniff catnip and act crazy sniff catnip and act crazy dead stare with ears cocked.
+</div>,
+            ],
+            "className": "help",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "className": "parallax help-image",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "How You Can Help",
+                "className": "section-title",
+              },
+              "ref": null,
+              "rendered": "How You Can Help",
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Make muffins eat grass, throw it back up jump on human and sleep on her all night long be long in the bed, purr in the morning and then give a bite to every human around for not waking up request food, purr loud scratch the walls, the floor, the windows, the humans. Throw down all the stuff in the kitchen cough furball so meow go back to sleep owner brings food and water tries to pet on head, so scratch get sprayed by water because bad cat sniff catnip and act crazy sniff catnip and act crazy dead stare with ears cocked.",
+                "className": "section-body",
+              },
+              "ref": null,
+              "rendered": "Make muffins eat grass, throw it back up jump on human and sleep on her all night long be long in the bed, purr in the morning and then give a bite to every human around for not waking up request food, purr loud scratch the walls, the floor, the windows, the humans. Throw down all the stuff in the kitchen cough furball so meow go back to sleep owner brings food and water tries to pet on head, so scratch get sprayed by water because bad cat sniff catnip and act crazy sniff catnip and act crazy dead stare with ears cocked.",
+              "type": "div",
+            },
+          ],
+          "type": "div",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
