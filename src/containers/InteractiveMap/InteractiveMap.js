@@ -2,45 +2,17 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 // import * as actions from '../../actions';
-import PropTypes from 'prop-types';
 import './InteractiveMap.css';
 
 export class InteractiveMap extends Component {
-  constructor() {
-    super();
-    this.state = {
-      src: '../../images/interactive-map/world/OP-Interactive-Map.png'
-    };
-  }
-
-  handleMouse = () => {
-    console.log('in');
-  };
-
-  handleRedirect = continentLink => {
-    this.props.props.history.push(continentLink);
-  };
-
   render() {
-    const buttons = this.props.continents.map((continent, index) => {
-      const continentLink = '/continents/' + continent.name;
-      const continentKabob = continent.image.split(' ').join('-');
-      const continentClass = 'continent-button ' + continentKabob;
-
-      return (
-        <Link className={continentClass} to={continentLink}>
-          {continent.name}
-        </Link>
-      );
-    });
-
-    return (<div className="InteractiveMap">
-    {buttons}
-    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-    viewBox="0 0 2371 1207">
- <g id="oceans">
- <g transform="translate(0.000000,1204.000000) scale(0.100000,-0.100000)">
-			<Link to='/continents/Oceans' className='oc'><path fill='#9ABCED' d="M5289.7,11966c-466-150-906-330-1386-567c-2167-1073-3501-2641-3808-4479c-59-354-75-583-68-1004c5-340,11-420,48-681
+    return (
+      <div className="InteractiveMap">
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 2371 1207">
+          <g id="oceans">
+            <g transform="translate(0.000000,1204.000000) scale(0.100000,-0.100000)">
+              <Link to='/continents/Oceans' className='oc'>
+                <path fill='#9ABCED' d="M5289.7,11966c-466-150-906-330-1386-567c-2167-1073-3501-2641-3808-4479c-59-354-75-583-68-1004c5-340,11-420,48-681
 				c210-1477,1058-2781,2482-3818c777-566,1768-1069,2702-1371l188-61l5871,2l5871,3l-5870,5l-5870,5l-260,97
 				c-444,164-499,185-686,259c-99,39-177,75-172,80c4,4,94,4,198-2c170-9,474-5,516,7c10,3,19,19,22,41c9,51,32,73,79,73
 				c31,0,38-4,38-19c0-25,67-35,148-22c70,11,117,33,132,61c16,30,89,68,155,79c33,6,112,10,175,9c126-2,255,20,300,51
