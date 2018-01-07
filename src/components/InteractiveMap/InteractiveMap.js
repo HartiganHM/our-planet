@@ -80,7 +80,7 @@ export class InteractiveMap extends Component {
     const australia = this.createPath('australia', 'Australia');
     const europe = this.createPath('europe', 'Europe');
     const asia = this.createPath('asia', 'Asia');
-    const antarcticaArctic = this.createPath('antarctica-arctic', 'Antarctica Arctic')
+    const antarcticaArctic = this.createPath('antarctica-arctic', 'Antarctica Arctic');
 
     return (
       <div className="InteractiveMap">
