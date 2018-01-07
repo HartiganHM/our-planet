@@ -8,25 +8,25 @@ export class InteractiveMap extends Component {
     this.state = {
       isHovering: false,
       continent: ''
-    }
+    };
   }
 
-  handleMouseHover = (continent) => {
+  handleMouseHover = continent => {
     this.setState(this.toggleHoverState, this.setContinent(continent));
-  }
+  };
 
-  setContinent = (continent) => {
-    this.setState({continent})
-  }
+  setContinent = continent => {
+    this.setState({ continent });
+  };
 
   toggleHoverState(state) {
     return {
-      isHovering: !state.isHovering,
+      isHovering: !state.isHovering
     };
   }
 
   render() {
-    const hoverBox = <div className='hover-box'>{this.state.continent}</div>;
+    const hoverBox = <div className="hover-box">{this.state.continent}</div>;
 
     return (
       <div className="InteractiveMap">
@@ -679,6 +679,8 @@ export class InteractiveMap extends Component {
                 <Link to="/continents/North%20America">
                   <path
                     className="continent"
+                    onMouseEnter={() => this.handleMouseHover('North America')}
+                    onMouseLeave={() => this.handleMouseHover('')}
                     d="M10516.2,5084.6c-5-2-102-5-214-7c-152-2-205-6-209-15c-4-15-38-17-47-3c-11,18-42,11-68-16
            c-25-24-27-25-49-10c-28,20-77,21-84,2c-9-23-33-27-60-9c-20,13-27,14-34,4c-6-11-8-11-12,0c-11,31-328-1-328-33c0-5-4-8-8-8
            c-5,0-7,14-4,30l4,30h-59c-34,0-64,5-72,13c-19,19-659,17-670-2c-6-9-33-15-77-17c-38-2-70-8-72-14s-51-10-129-10h-125l4-30
@@ -842,6 +844,8 @@ export class InteractiveMap extends Component {
               >
                 <Link to="/continents/South%20America">
                   <path
+                    onMouseEnter={() => this.handleMouseHover('South America')}
+                    onMouseLeave={() => this.handleMouseHover('')}
                     className="continent"
                     d="M7123.6,123.5c-7-8-13-19-13-25c0-5-10-10-23-10c-12,0-29-9-37-20c-9-13-26-20-47-20c-18,0-33-4-33-8
            s-20-13-45-20c-28-7-45-18-45-27c0-8-4-15-10-15c-5,0-10-16-10-35s-5-35-11-35c-14,0-39-25-39-39c0-6-5-11-11-11
@@ -893,6 +897,8 @@ export class InteractiveMap extends Component {
               >
                 <Link to="/continents/Africa">
                   <path
+                    onMouseEnter={() => this.handleMouseHover('Africa')}
+                    onMouseLeave={() => this.handleMouseHover('')}
                     className="continent"
                     d="M12366.7,2121c-10-10-18-11-25-4c-10,10-97,6-159-7c-22-5-33-3-33,4s-25,11-68,11c-56,0-72-4-87-20
            c-14-15-31-20-71-20c-44,0-54-3-59-20c-3-11-9-20-13-21c-74-6-97-12-112-29s-30-20-94-20c-46,0-76-4-76-10s-16,5-35,25
@@ -962,6 +968,8 @@ export class InteractiveMap extends Component {
               >
                 <Link to="/continents/Australia">
                   <path
+                    onMouseEnter={() => this.handleMouseHover('Australia')}
+                    onMouseLeave={() => this.handleMouseHover('')}
                     className="continent"
                     d="M21189-4313.1c3-8,2-15-2-15s-13-19-20-43s-24-55-36-69c-13-13-27-40-31-59s-11-38-15-44c-4-5-14-37-21-70
            s-16-62-19-65s-23-36-44-73c-39-70-61-87-103-79c-22,4-22,5-6,18c10,7,14,14,8,14c-5,0,1,7,13,16c43,30-7,48-52,19
@@ -1002,6 +1010,8 @@ export class InteractiveMap extends Component {
               <g transform="translate(0.000000,309.000000) scale(0.100000,-0.100000)">
                 <Link to="/continents/Europe">
                   <path
+                    onMouseEnter={() => this.handleMouseHover('Europe')}
+                    onMouseLeave={() => this.handleMouseHover('')}
                     className="continent"
                     d="M13136,2638.6c-4-3-66-7-139-9c-109-2-134-6-141-19c-5-9-15-16-23-16s-16-4-19-9c-9-14,5-41,21-41
            c11,0,13-7,9-25c-4-16,0-31,11-45c18-21,67-27,78-10c8,13,84,50,102,50c8,0,16,7,20,16c5,13,7,13,14,2c13-19,11-28-6-28
@@ -1086,6 +1096,8 @@ export class InteractiveMap extends Component {
               <g transform="translate(0.000000,656.000000) scale(0.100000,-0.100000)">
                 <Link to="/continents/Asia">
                   <path
+                    onMouseEnter={() => this.handleMouseHover('Asia')}
+                    onMouseLeave={() => this.handleMouseHover('')}
                     className="continent"
                     d="M15633,6245c-5-2-27-6-47-10c-45-7-47-15-13-49c25-25,64-30,91-14c5,4,11-3,11-14c2-28,13-33,62-32
            c22,0,38-3,35-7c-6-11,100-23,132-15c17,5,23,3,19-4c-12-19,59-6,74,14c12,16,12,20-1,30c-8,6-17,19-21,29c-6,16-16,18-57,15
@@ -1346,6 +1358,10 @@ export class InteractiveMap extends Component {
               <g transform="translate(0.000000,141.000000) scale(0.100000,-0.100000)">
                 <Link to="/continents/Antarctica%20/%20Arctic">
                   <path
+                    onMouseEnter={() =>
+                      this.handleMouseHover('Antarctica / Artic')
+                    }
+                    onMouseLeave={() => this.handleMouseHover('')}
                     className="continent"
                     d="M8825.3-9261.9c-12-5-27-21-32-35c-10-26-47-47-106-59c-28-6-32-4-38,18c-10,39-51,36-65-4
            c-7-20-17-30-30-30c-31,0-26-33,10-74c22-25,29-41,24-56c-8-25-11-25-69,1c-25,11-51,17-56,14c-16-10-12-75,5-81c8-4,39-9,68-13
