@@ -9,17 +9,17 @@
     fill: $snow;
   }
   .oceans {
-    fill: $accent-color-light-gray;
+    fill: $spanish-gray;
     transition: 0.5s fill ease-in-out;
     &:hover {
       fill: $accent-color-light;
     }
   }
   .continent {
-    fill: $accent-color-dark-gray;
+    fill: $isabelline;
     transition: 0.5s fill ease-in-out;
     &:hover {
-      fill: $accent-color-dark;
+      fill: $accent-color-light;
     }
   }
 }
