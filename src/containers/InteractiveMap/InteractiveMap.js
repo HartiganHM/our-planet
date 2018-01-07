@@ -1375,7 +1375,3 @@ export const mapStateToProps = store => {
 };
 
 export default connect(mapStateToProps, null)(InteractiveMap);
-
-InteractiveMap.propTypes = {
-  continents: PropTypes.array
-};
