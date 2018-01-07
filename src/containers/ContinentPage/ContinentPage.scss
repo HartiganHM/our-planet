@@ -9,11 +9,11 @@
   margin: auto;
   .continent-name {
     @include contentHeader();
-    background-image: url('../../images/Our-Planet-Light-Logo.png');
+    background-image: url('../../images/branding/Our-Planet-Light-Logo.png');
   }
   .continent-data-container {
     @include contentDataContainer();
-    background-image: url('../../images/OP-Logo-Light-Blue.png');
+    background-image: url('../../images/branding/OP-Logo-Light-Blue.png');
     .wrapper {
       display: flex;
       padding-bottom: $bottom-padding;
@@ -31,5 +31,29 @@
         }
       }
     }
+  }
+}
+
+@media screen and (max-width: 1599px) {
+  .ContinentPage {
+    @include width(128);
+  }
+}
+
+@media screen and (max-width: 1279px) {
+  .ContinentPage {
+    @include width(96);
+  }
+}
+
+@media screen and (max-width: 959px) {
+  .ContinentPage {
+    @include width(64);
+  }
+}
+
+@media screen and (max-width: 639px) {
+  .ContinentPage {
+    @include width(32);
   }
 }

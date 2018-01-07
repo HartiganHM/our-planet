@@ -8,6 +8,10 @@
   max-height: convertRem($maxHeight);
 }
 
+@mixin maxWidth($maxWidth) {
+  max-width: convertRem($maxWidth);
+}
+
 @mixin width($width) {
   width: convertRem($width);
 }
@@ -18,6 +22,22 @@
 
 @mixin padding($padding) {
   padding: convertRem($padding);
+}
+
+@mixin top($top) {
+  top: convertRem($top);
+}
+
+@mixin right($right) {
+  right: convertRem($right);
+}
+
+@mixin bottom($bottom) {
+  bottom: convertRem($bottom);
+}
+
+@mixin left($left) {
+  left: convertRem($left)
 }
 
 @function convertRem($size) {
@@ -81,7 +101,7 @@
 }
 
 @mixin contentDetailBody() {
-  @include width(55);
+  @include maxWidth(55);
   @include padding(2);
   margin: 0 auto;
   font: {

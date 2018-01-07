@@ -17,7 +17,7 @@ export const CardContainer = props => {
     ? props.continentAnimals
     : props.animals;
   const animalCards = animalsArray.map((animal, index) => {
-    if(props.continentAnimals) {
+    if (props.continentAnimals) {
       return (<Card key={index} animalData={animal} />);
 
     } else {

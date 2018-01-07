@@ -1,0 +1,55 @@
+@import '../../styles/variables.scss';
+@import '../../styles/mixins.scss';
+.InteractiveMap {
+  @include width(160);
+  @include padding(1);
+  margin: auto;
+  position: relative;
+  .grid {
+    fill: $snow;
+  }
+  .oceans {
+    fill: $spanish-gray;
+    transition: 0.5s fill ease-in-out;
+    &:hover {
+      fill: $accent-color-light;
+    }
+  }
+  .continent {
+    fill: $isabelline;
+    transition: 0.5s fill ease-in-out;
+    &:hover {
+      fill: $accent-color-light;
+    }
+  }
+  .hover-box {
+    @include padding(1);
+    margin: auto;
+    color: $accent-color-dark;
+    .hover-title {
+      @include contentDetailTitle();
+    }
+    .hover-body {
+      @include maxWidth(55);
+      @include contentDetailBody();
+    }
+  }
+}
+
+@media screen and (max-width: 1599px) {
+  .InteractiveMap {
+    @include width(128);
+  }
+}
+
+@media screen and (max-width: 1279px) {
+  .InteractiveMap {
+    @include width(96);
+  }
+}
+
+@media screen and (max-width: 959px) {
+  .InteractiveMap {
+    @include width(64);
+  }
+}

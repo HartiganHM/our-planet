@@ -17,7 +17,7 @@
   .animal-name {
     @include padding(1);
     background: {
-      image: url('../../images/Our-Planet-Light-Logo.png');
+      image: url('../../images/branding/Our-Planet-Light-Logo.png');
       position: calc(100% + 5px) calc(100% - 5px);
       size: contain;
       repeat: no-repeat;
