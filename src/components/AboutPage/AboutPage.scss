@@ -1,46 +1,82 @@
+@import '../../styles/variables.scss';
+@import '../../styles/mixins.scss';
 .AboutPage {
-  @include width(160);
   display: flex;
   flex-direction: column;
+  @include width(160);
+  margin: auto;
   .our-planet {
     .our-planet-image {
-
     }
     .our-planet-body {
-
     }
   }
   .purpose {
     .purpose-image {
-
-    }
-    .purpose-title {
-
-    }
-    .purpose-body {
-      
+      @include height(30);
+      background: {
+        image: url('../../images/about/bear-about.jpg');
+        attachment: fixed;
+        position: center;
+        repeat: no-repeat;
+        size: cover;
+      }
     }
   }
   .why {
     .why-image {
-
-    }
-    .why-title {
-      
-    }
-    .why-body {
-      
+      @include height(30);
+      background: {
+        image: url('../../images/about/elephant-about.jpg');
+        attachment: fixed;
+        position: center;
+        repeat: no-repeat;
+        size: cover;
+      }
     }
   }
   .help {
     .help-image {
-      
+      @include height(30);
+      background: {
+        image: url('../../images/about/frog-about.jpg');
+        attachment: fixed;
+        position: center;
+        repeat: no-repeat;
+        size: cover;
+      }
     }
-    .help-title {
-      
-    }
-    .help-body {
-      
-    }
+  }
+  .section-title {
+    @include contentDetailTitle();
+  }
+  .section-body {
+    @include maxWidth(55);
+    margin: auto;
+    @include contentDetailBody();
+  }
+}
+
+@media screen and (max-width: 1599px) {
+  .AboutPage {
+    @include width(128);
+  }
+}
+
+@media screen and (max-width: 1279px) {
+  .AboutPage {
+    @include width(96);
+  }
+}
+
+@media screen and (max-width: 959px) {
+  .AboutPage {
+    @include width(64);
+  }
+}
+
+@media screen and (max-width: 639px) {
+  .AboutPage {
+    @include width(32);
   }
 }
