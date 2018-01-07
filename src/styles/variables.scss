@@ -4,9 +4,11 @@ $main-font: 'Open Sans', Arial, sans-serif;
 $accent-font: 'Raleway', Courier, sans-serif;
 //Colors
 $accent-color-dark: rgb(77, 114, 152);
-$accent-color-light: rgb(154, 188, 237);
 $accent-color-dark-alpha: rgba(77, 114, 152, 0.6);
+$accent-color-dark-gray: rgb(175, 201, 237);
+$accent-color-light: rgb(154, 188, 237);
 $accent-color-light-alpha: rgba(154, 188, 237, 0.6);
+$accent-color-light-gray: rgb(104, 128, 153);
 $accent-fade: linear-gradient(
   12deg,
   rgba(154, 188, 237, 0.5) 0%,
