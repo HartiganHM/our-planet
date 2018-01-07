@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import continentsPaths from '../../data/continentsPaths';
 import './InteractiveMap.css';
 
-export class InteractiveMap extends Component {
+class InteractiveMap extends Component {
   constructor() {
     super();
     this.state = {
@@ -13,6 +13,7 @@ export class InteractiveMap extends Component {
   }
 
   handleMouseHover = continent => {
+    console.log(this.props)
     this.setState(this.toggleHoverState, this.setContinent(continent));
   };
 
