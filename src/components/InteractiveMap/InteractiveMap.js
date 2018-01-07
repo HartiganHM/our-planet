@@ -567,7 +567,6 @@ export class InteractiveMap extends Component {
             </g>
           </g>
           <g id="grid">
-            <g>
               <g transform="translate(0.000000,1207.000000) scale(0.100000,-0.100000)">
                 <path
                   className="grid"
@@ -681,10 +680,8 @@ export class InteractiveMap extends Component {
           c830,333,1686,863,2310,1431l110,100h763C20929.5,1628.5,21272.5,1625.5,21272.5,1621.5z"
                 />
               </g>
-            </g>
           </g>
           <g id="north-america">
-            <g>
               <g transform="translate(0.000000,528.000000) scale(0.100000,-0.100000)">
                 <Link to="/continents/North%20America">
                   <path
@@ -844,10 +841,8 @@ export class InteractiveMap extends Component {
                   />
                 </Link>
               </g>
-            </g>
           </g>
           <g id="south-america">
-            <g>
               <g
                 className="continent"
                 transform="translate(0.000000,529.000000) scale(0.100000,-0.100000)"
@@ -897,10 +892,8 @@ export class InteractiveMap extends Component {
                   />
                 </Link>
               </g>
-            </g>
           </g>
           <g id="africa">
-            <g>
               <g
                 className="continent"
                 transform="translate(0.000000,543.000000) scale(0.100000,-0.100000)"
@@ -968,10 +961,8 @@ export class InteractiveMap extends Component {
                   />
                 </Link>
               </g>
-            </g>
           </g>
           <g id="australia">
-            <g>
               <g
                 className="continent"
                 transform="translate(0.000000,252.000000) scale(0.100000,-0.100000)"
@@ -1013,10 +1004,8 @@ export class InteractiveMap extends Component {
                   />
                 </Link>
               </g>
-            </g>
           </g>
           <g id="europe">
-            <g>
               <g transform="translate(0.000000,309.000000) scale(0.100000,-0.100000)">
                 <Link to="/continents/Europe">
                   <path
@@ -1099,10 +1088,8 @@ export class InteractiveMap extends Component {
                   />
                 </Link>
               </g>
-            </g>
           </g>
           <g id="asia">
-            <g>
               <g transform="translate(0.000000,656.000000) scale(0.100000,-0.100000)">
                 <Link to="/continents/Asia">
                   <path
@@ -1361,10 +1348,8 @@ export class InteractiveMap extends Component {
                   />
                 </Link>
               </g>
-            </g>
           </g>
           <g id="antarctica-arctic">
-            <g>
               <g transform="translate(0.000000,141.000000) scale(0.100000,-0.100000)">
                 <Link to="/continents/Antarctica%20/%20Arctic">
                   <path
@@ -1403,7 +1388,6 @@ export class InteractiveMap extends Component {
                   />
                 </Link>
               </g>
-            </g>
           </g>
         </svg>
       </div>
