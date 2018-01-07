@@ -15,4 +15,4 @@ describe('animalDataCleaner tests', () => {
 
     expect(mockCleanedData).toEqual(expected);
   });
-})
+});

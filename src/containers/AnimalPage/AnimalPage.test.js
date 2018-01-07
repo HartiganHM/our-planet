@@ -2,7 +2,6 @@ import React from 'react';
 import { shallow } from 'enzyme';
 import { AnimalPage, mapStateToProps } from './AnimalPage';
 import mockAnimalsArray from '../../data/mockAnimalsArray';
-import mockCleanAnimalData from '../../data/mockCleanAnimalData';
 import mockProps from '../../data/mockProps';
 
 describe('AnimalPage tests', () => {
@@ -33,7 +32,9 @@ describe('AnimalPage tests', () => {
     expect(renderedAnimalPage.state('animalData').population).toBeDefined;
 
     renderedAnimalPage.state('animalData').population = '';
-    const mockRenderAnimalStats = renderedAnimalPage.instance().renderAnimalStats();
+    const mockRenderAnimalStats = renderedAnimalPage
+      .instance()
+      .renderAnimalStats();
     const expected = undefined;
 
     expect(mockRenderAnimalStats.basicStats.population).toEqual(expected);

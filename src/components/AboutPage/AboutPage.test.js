@@ -7,5 +7,5 @@ describe('AboutPage tests', () => {
     const renderedAboutPage = shallow(<AboutPage />);
 
     expect(renderedAboutPage).toMatchSnapshot();
-  })
-})
+  });
+});
