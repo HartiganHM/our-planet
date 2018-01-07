@@ -26,17 +26,27 @@ export class InteractiveMap extends Component {
   }
 
   render() {
-    const hoverBox = <div className="hover-box">{this.state.continent}</div>;
+    const hoverBox = (
+      <div className="hover-box">
+        <div className='hover-title'>
+          What animals are endangered near you?
+        </div>
+        <div className='hover-body'>
+          <div>Use our map to search the globe and view endangered animals from...</div>
+          <div>{this.state.isHovering ? this.state.continent : ' - '}</div>
+        </div>
+      </div>
+    );
 
     return (
       <div className="InteractiveMap">
-        {this.state.isHovering && hoverBox}
+        {hoverBox}
         <svg version="1.1" x="0px" y="0px" viewBox="0 0 2371 1207">
           <g id="oceans">
             <g transform="translate(0.000000,1204.000000) scale(0.100000,-0.100000)">
               <Link to="/continents/Oceans" className="oc">
                 <path
-                  onMouseEnter={() => this.handleMouseHover('Oceans')}
+                  onMouseEnter={() => this.handleMouseHover('the Oceans')}
                   onMouseLeave={() => this.handleMouseHover('')}
                   className="oceans"
                   d="M5289.7,11966c-466-150-906-330-1386-567c-2167-1073-3501-2641-3808-4479c-59-354-75-583-68-1004c5-340,11-420,48-681
