@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-// import './Sticky.css';
+import './Sticky.css';
 
 class Sticky extends Component {
   componentDidMount() {
