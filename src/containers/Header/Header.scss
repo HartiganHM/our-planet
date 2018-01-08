@@ -8,7 +8,7 @@
     .wrapper {
         display: flex;
         justify-content: space-between;
-        align-items: flex-end;
+        align-items: middle;
         @include width(160);
         margin: auto;
         .headerLogo {
@@ -30,7 +30,7 @@
                 @include width(10);
                 border: $simple-border;
                 color: $accent-color-dark;
-                font-size: 1.4rem;
+                font-size: 1.2rem;
                 text: {
                     align: center;
                     decoration: none;
@@ -43,6 +43,7 @@
                 }
             }
             .active {
+                border-color: $accent-color-dark;
                 background-color: $accent-color-dark;
                 color: $snow;
                 cursor: default;
