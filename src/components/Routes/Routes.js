@@ -17,7 +17,7 @@ const Routes = () => {
         render={() => {
           return (
             <div>
-              <Sticky>
+              <Sticky enter='76'>
                 <Header />
               </Sticky>
             </div>
