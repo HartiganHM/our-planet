@@ -13,7 +13,7 @@
         margin: auto;
         .headerLogo {
             flex: 1;
-            @include height(6);
+            @include height(4.5);
             @include width(30);
             background: {
                 image: url('../../images/branding/Our-Planet-Wordmark-Small.png');
@@ -25,7 +25,7 @@
             display: flex;
             align-items: center;
             .nav-button {
-                @include margin(0.5);
+                // @include margin(0.5);
                 @include padding(0.5);
                 @include width(10);
                 border: $simple-border;
