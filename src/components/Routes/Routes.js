@@ -1,5 +1,6 @@
 import React from 'react';
 import { Route } from 'react-router-dom';
+import Sticky from '../Sticky/Sticky';
 import Header from '../../containers/Header/Header';
 import InteractiveMap from '../InteractiveMap/InteractiveMap';
 import Search from '../../containers/Search/Search';
@@ -11,7 +12,18 @@ import ContinentPage from '../../containers/ContinentPage/ContinentPage';
 const Routes = () => {
   return (
     <div>
-      <Route path='/' component={Header} />
+      <Route
+        path="/"
+        render={() => {
+          return (
+            <div>
+              <Sticky>
+                <Header />
+              </Sticky>
+            </div>
+          );
+        }}
+      />
       <Route
         exact
         path="/"
@@ -25,9 +37,9 @@ const Routes = () => {
           );
         }}
       />
-      <Route exact path='/about' component={AboutPage} />
-      <Route path='/animals/:animal' component={AnimalPage} />
-      <Route path='/continents/:continent' component={ContinentPage} />
+      <Route exact path="/about" component={AboutPage} />
+      <Route path="/animals/:animal" component={AnimalPage} />
+      <Route path="/continents/:continent" component={ContinentPage} />
     </div>
   );
 };
