@@ -2,7 +2,7 @@ import addPropertiesToAnimal from '../addPropertiesToAnimal/addPropertiesToAnima
 
 const fetchAnimalsData = async () => {
   try {
-    const fetchedData = await fetch('http://localhost:3001/api/v1/animals');
+    const fetchedData = await fetch('https://our-planet-be.herokuapp.com/api/v1/animals');
     const jsonData = await fetchedData.json();
 
     return addPropertiesToAnimal(jsonData);

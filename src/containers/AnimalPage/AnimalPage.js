@@ -15,12 +15,14 @@ export class AnimalPage extends Component {
 
   componentWillMount() {
     if (this.props.animals.length) {
+      window.scrollTo(0, 0);
       const animalData = matchObjectInStore(this.props, 'animal', 'animals');
       this.setState({ animalData });
     }
   }
 
   componentWillReceiveProps(nextProps) {
+    window.scrollTo(0, 0);
     const animalData = matchObjectInStore(nextProps, 'animal', 'animals');
     this.setState({ animalData });
   }
@@ -56,7 +58,7 @@ export class AnimalPage extends Component {
     const { basicStats, longStats } = this.renderAnimalStats();
 
     return (
-      <div className="AnimalPage">
+      <div className="AnimalPage buffer">
         <span className="animal-name">{name}</span>
         <div className="animal-data-container">
           <div className="wrapper">

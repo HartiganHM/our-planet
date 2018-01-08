@@ -16,6 +16,7 @@ export class ContinentPage extends Component {
 
   componentWillMount() {
     if (this.props.continents.length) {
+      window.scrollTo(0, 0);
       const continentData = matchObjectInStore(
         this.props,
         'continent',
@@ -29,6 +30,7 @@ export class ContinentPage extends Component {
 
   componentWillReceiveProps(nextProps) {
     if (nextProps.continents.length) {
+      window.scrollTo(0, 0);
       const continentData = matchObjectInStore(
         nextProps,
         'continent',
@@ -50,7 +52,7 @@ export class ContinentPage extends Component {
   render() {
     const { name, bio, image } = this.state.continentData;
     return (
-      <div className="ContinentPage">
+      <div className="ContinentPage buffer">
         <span className="continent-name">{name}</span>
         <div className="continent-data-container">
           <div className="wrapper">
@@ -62,7 +64,8 @@ export class ContinentPage extends Component {
               />
             )}
             <div className="continent-bio">
-              <span className='bio-title'>Bio</span><span className='bio-body'>{bio}</span>
+              <span className="bio-title">Bio</span>
+              <span className="bio-body">{bio}</span>
             </div>
           </div>
           <CardContainer continentAnimals={this.state.animals} />

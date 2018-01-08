@@ -15,15 +15,18 @@ export class Header extends Component {
   }
 
   render() {
+    const aboutActive = this.props.location === '/about' ? 'nav-button active' : 'nav-button';
+    const homeActive = this.props.location === '/' ? 'nav-button active' : 'nav-button';
+
     return (
       <div className="Header">
         <div className="wrapper">
           <Link to="/" className="headerLogo" />
           <div className="nav-bar">
-            <NavLink exact to="/" className="nav-button">
+            <NavLink exact to="/" className={homeActive}>
               Home
             </NavLink>
-            <NavLink exact to="/about" className="nav-button">
+            <NavLink exact to="/about" className={aboutActive}>
               About
             </NavLink>
           </div>
@@ -52,5 +55,6 @@ export default connect(mapStateToProps, mapDispatchToProps)(Header);
 Header.propTypes = {
   animals: PropTypes.array,
   populateData: PropTypes.func,
-  resetAnimals: PropTypes.func
+  resetAnimals: PropTypes.func,
+  location: PropTypes.string
 };

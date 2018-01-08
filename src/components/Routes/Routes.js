@@ -1,6 +1,6 @@
 import React from 'react';
 import { Route } from 'react-router-dom';
-import Header from '../../containers/Header/Header';
+import Sticky from '../Sticky/Sticky';
 import InteractiveMap from '../InteractiveMap/InteractiveMap';
 import Search from '../../containers/Search/Search';
 import CardContainer from '../../containers/CardContainer/CardContainer';
@@ -11,13 +11,13 @@ import ContinentPage from '../../containers/ContinentPage/ContinentPage';
 const Routes = () => {
   return (
     <div>
-      <Route path='/' component={Header} />
+      <Route path="/" component={Sticky} />
       <Route
         exact
         path="/"
         render={() => {
           return (
-            <div>
+            <div className="buffer">
               <InteractiveMap />
               <Search />
               <CardContainer />
@@ -25,9 +25,9 @@ const Routes = () => {
           );
         }}
       />
-      <Route exact path='/about' component={AboutPage} />
-      <Route path='/animals/:animal' component={AnimalPage} />
-      <Route path='/continents/:continent' component={ContinentPage} />
+      <Route exact path="/about" component={AboutPage} />
+      <Route path="/animals/:animal" component={AnimalPage} />
+      <Route path="/continents/:continent" component={ContinentPage} />
     </div>
   );
 };
