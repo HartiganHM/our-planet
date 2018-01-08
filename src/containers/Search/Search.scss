@@ -2,6 +2,7 @@
 @import '../../styles/variables.scss';
 .Search {
   display: flex;
+  flex-direction: column;
   @include width(160);
   @include margin(2);
   @include padding(1);
@@ -12,6 +13,18 @@
     font-size: 1rem;
     &:focus {
       outline: none;
+    }
+  }
+  .header-box {
+    flex: 1;
+    @include padding(1);
+    color: $accent-color-dark;
+    .header-title {
+      @include contentDetailTitle();
+    }
+    .header-body {
+      @include maxWidth(55);
+      @include contentDetailBody();
     }
   }
 }
