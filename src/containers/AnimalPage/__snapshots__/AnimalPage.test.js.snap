@@ -212,7 +212,7 @@ ShallowWrapper {
           </div>
 </div>,
       ],
-      "className": "AnimalPage",
+      "className": "AnimalPage buffer",
     },
     "ref": null,
     "rendered": Array [
@@ -1319,7 +1319,7 @@ ShallowWrapper {
             </div>
 </div>,
         ],
-        "className": "AnimalPage",
+        "className": "AnimalPage buffer",
       },
       "ref": null,
       "rendered": Array [

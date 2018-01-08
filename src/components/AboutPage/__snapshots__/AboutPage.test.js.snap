@@ -86,7 +86,7 @@ ShallowWrapper {
           </div>
 </div>,
       ],
-      "className": "AboutPage",
+      "className": "AboutPage buffer",
     },
     "ref": null,
     "rendered": Array [
@@ -416,7 +416,7 @@ ShallowWrapper {
             </div>
 </div>,
         ],
-        "className": "AboutPage",
+        "className": "AboutPage buffer",
       },
       "ref": null,
       "rendered": Array [

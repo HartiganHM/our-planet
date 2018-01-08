@@ -49,47 +49,81 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "host",
     "props": Object {
-      "children": <input
-        className="search-field"
-        onChange={[Function]}
-        placeholder="Search"
-        type="text"
-/>,
-      "className": "Search",
-    },
-    "ref": null,
-    "rendered": Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "host",
-      "props": Object {
-        "className": "search-field",
-        "onChange": [Function],
-        "placeholder": "Search",
-        "type": "text",
-      },
-      "ref": null,
-      "rendered": null,
-      "type": "input",
-    },
-    "type": "div",
-  },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "host",
-      "props": Object {
-        "children": <input
+      "children": Array [
+        <div
+          className="header-box"
+>
+          <div
+                    className="header-title"
+          >
+                    Animals of all shapes and sizes
+          </div>
+          <div
+                    className="header-body"
+          >
+                    Is your favorite animal endangered? Search below and click on an animal to learn more about them!
+          </div>
+</div>,
+        <input
           className="search-field"
           onChange={[Function]}
           placeholder="Search"
           type="text"
 />,
-        "className": "Search",
+      ],
+      "className": "Search",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <div
+              className="header-title"
+>
+              Animals of all shapes and sizes
+</div>,
+            <div
+              className="header-body"
+>
+              Is your favorite animal endangered? Search below and click on an animal to learn more about them!
+</div>,
+          ],
+          "className": "header-box",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Animals of all shapes and sizes",
+              "className": "header-title",
+            },
+            "ref": null,
+            "rendered": "Animals of all shapes and sizes",
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Is your favorite animal endangered? Search below and click on an animal to learn more about them!",
+              "className": "header-body",
+            },
+            "ref": null,
+            "rendered": "Is your favorite animal endangered? Search below and click on an animal to learn more about them!",
+            "type": "div",
+          },
+        ],
+        "type": "div",
       },
-      "ref": null,
-      "rendered": Object {
+      Object {
         "instance": null,
         "key": undefined,
         "nodeType": "host",
@@ -103,6 +137,104 @@ ShallowWrapper {
         "rendered": null,
         "type": "input",
       },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <div
+            className="header-box"
+>
+            <div
+                        className="header-title"
+            >
+                        Animals of all shapes and sizes
+            </div>
+            <div
+                        className="header-body"
+            >
+                        Is your favorite animal endangered? Search below and click on an animal to learn more about them!
+            </div>
+</div>,
+          <input
+            className="search-field"
+            onChange={[Function]}
+            placeholder="Search"
+            type="text"
+/>,
+        ],
+        "className": "Search",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <div
+                className="header-title"
+>
+                Animals of all shapes and sizes
+</div>,
+              <div
+                className="header-body"
+>
+                Is your favorite animal endangered? Search below and click on an animal to learn more about them!
+</div>,
+            ],
+            "className": "header-box",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Animals of all shapes and sizes",
+                "className": "header-title",
+              },
+              "ref": null,
+              "rendered": "Animals of all shapes and sizes",
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Is your favorite animal endangered? Search below and click on an animal to learn more about them!",
+                "className": "header-body",
+              },
+              "ref": null,
+              "rendered": "Is your favorite animal endangered? Search below and click on an animal to learn more about them!",
+              "type": "div",
+            },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "className": "search-field",
+            "onChange": [Function],
+            "placeholder": "Search",
+            "type": "text",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "input",
+        },
+      ],
       "type": "div",
     },
   ],

@@ -103,7 +103,7 @@ ShallowWrapper {
           />
 </div>,
       ],
-      "className": "ContinentPage",
+      "className": "ContinentPage buffer",
     },
     "ref": null,
     "rendered": Array [
@@ -284,7 +284,7 @@ ShallowWrapper {
             />
 </div>,
         ],
-        "className": "ContinentPage",
+        "className": "ContinentPage buffer",
       },
       "ref": null,
       "rendered": Array [
