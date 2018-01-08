@@ -64,5 +64,5 @@ Sticky.propTypes = {
   className: PropTypes.string,
   enter: PropTypes.string,
   exit: PropTypes.string,
-  location: PropTypes.string
+  location: PropTypes.object
 };
