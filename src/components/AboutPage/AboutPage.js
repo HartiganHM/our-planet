@@ -4,7 +4,7 @@ import './AboutPage.css';
 
 const AboutPage = () => {
   return (
-    <div className="AboutPage">
+    <div className="AboutPage buffer">
       <div className="our-planet">
         <div className="parallax our-planet-wrapper">
           <div className="our-planet-image" />

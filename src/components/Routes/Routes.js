@@ -17,7 +17,7 @@ const Routes = () => {
         render={() => {
           return (
             <div>
-              <Sticky enter='76'>
+              <Sticky>
                 <Header />
               </Sticky>
             </div>
@@ -29,7 +29,7 @@ const Routes = () => {
         path="/"
         render={() => {
           return (
-            <div>
+            <div className='buffer'>
               <InteractiveMap />
               <Search />
               <CardContainer />

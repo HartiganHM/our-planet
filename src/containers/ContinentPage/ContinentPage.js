@@ -50,7 +50,7 @@ export class ContinentPage extends Component {
   render() {
     const { name, bio, image } = this.state.continentData;
     return (
-      <div className="ContinentPage">
+      <div className="ContinentPage buffer">
         <span className="continent-name">{name}</span>
         <div className="continent-data-container">
           <div className="wrapper">
