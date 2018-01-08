@@ -55,5 +55,6 @@ export default connect(mapStateToProps, mapDispatchToProps)(Header);
 Header.propTypes = {
   animals: PropTypes.array,
   populateData: PropTypes.func,
-  resetAnimals: PropTypes.func
+  resetAnimals: PropTypes.func,
+  location: PropTypes.string
 };

@@ -15,14 +15,14 @@ export class AnimalPage extends Component {
 
   componentWillMount() {
     if (this.props.animals.length) {
-      window.scrollTo(0,0);
+      window.scrollTo(0, 0);
       const animalData = matchObjectInStore(this.props, 'animal', 'animals');
       this.setState({ animalData });
     }
   }
 
   componentWillReceiveProps(nextProps) {
-    window.scrollTo(0,0);
+    window.scrollTo(0, 0);
     const animalData = matchObjectInStore(nextProps, 'animal', 'animals');
     this.setState({ animalData });
   }

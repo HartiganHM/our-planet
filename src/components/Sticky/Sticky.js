@@ -44,7 +44,7 @@ class Sticky extends Component {
 
   render() {
     const location = this.props.location.pathname;
-    const { className, enter, exit, children } = this.props;
+    const { className, enter, exit } = this.props;
     return (
       <div
         className={`Sticky ${className}`}
@@ -64,5 +64,5 @@ Sticky.propTypes = {
   className: PropTypes.string,
   enter: PropTypes.string,
   exit: PropTypes.string,
-  children: PropTypes.node
+  location: PropTypes.string
 };
