@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import setStickyProperties from '../../helpers/setStickyProperties';
+import setStickyProperties from '../../helpers/setStickyProperties/setStickyProperties';
 import Header from '../../containers/Header/Header';
 import './Sticky.css';
 
