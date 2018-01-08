@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import Header from '../../containers/Header/Header';
 import './Sticky.css';
 
 class Sticky extends Component {
@@ -42,6 +43,7 @@ class Sticky extends Component {
   }
 
   render() {
+    const location = this.props.location.pathname;
     const { className, enter, exit, children } = this.props;
     return (
       <div
@@ -50,7 +52,7 @@ class Sticky extends Component {
         data-sticky-enter={enter}
         data-stick-exit={exit}
       >
-        {children}
+        <Header location={location}/>
       </div>
     );
   }
