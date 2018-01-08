@@ -3,6 +3,7 @@ import copyContent from '../../data/copyContent';
 import './AboutPage.css';
 
 const AboutPage = () => {
+  window.scrollTo(0,0);
   return (
     <div className="AboutPage buffer">
       <div className="our-planet">

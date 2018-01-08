@@ -16,6 +16,7 @@ export class ContinentPage extends Component {
 
   componentWillMount() {
     if (this.props.continents.length) {
+      window.scrollTo(0,0);
       const continentData = matchObjectInStore(
         this.props,
         'continent',
@@ -29,6 +30,7 @@ export class ContinentPage extends Component {
 
   componentWillReceiveProps(nextProps) {
     if (nextProps.continents.length) {
+      window.scrollTo(0,0);
       const continentData = matchObjectInStore(
         nextProps,
         'continent',
