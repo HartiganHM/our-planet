@@ -3,16 +3,22 @@
 
 .LandingPage {
   height: 100vh;
+  @include padding(2.5);
   margin: auto;
   display: table;
   top: 0;
-  background-size: cover;
+  border-bottom: $simple-border;
+  background-image: url('../../images/branding/landing-seascape.jpg');
   color: $accent-color-dark;
   .inner {
     display: table-cell;
+    @include width(160);
+    background: {
+      image: url('../../images/branding/op-wordmark-large-white.png');
+      repeat: no-repeat;
+      size: contain;
+    }
     vertical-align: middle;
-    width: 100%;
-    max-width: none;
     .content {
       @include maxWidth(50);
       margin: 0 auto;
