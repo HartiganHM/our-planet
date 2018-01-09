@@ -2,5 +2,21 @@
 @import '../../styles/mixins.scss';
 
 .LandingPage {
+  height: 100vh;
+  margin: auto;
+  display: table;
+  top: 0;
+  background-size: cover;
   color: $accent-color-dark;
+  .inner {
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+    max-width: none;
+    .content {
+      @include maxWidth(50);
+      margin: 0 auto;
+      text-align: center;
+    }
+  }
 }
