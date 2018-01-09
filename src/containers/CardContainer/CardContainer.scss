@@ -12,25 +12,25 @@
   }
 }
 
-@media screen and (max-width: 1599px) {
+@media screen and (max-width: 1634px) {
   .CardContainer {
     @include width(128);
   }
 }
 
-@media screen and (max-width: 1279px) {
+@media screen and (max-width: 1334px) {
   .CardContainer {
     @include width(96);
   }
 }
 
-@media screen and (max-width: 959px) {
+@media screen and (max-width: 1014px) {
   .CardContainer {
     @include width(64);
   }
 }
 
-@media screen and (max-width: 639px) {
+@media screen and (max-width: 694px) {
   .CardContainer {
     @include width(32);
   }
