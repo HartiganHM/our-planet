@@ -1,5 +1,6 @@
 import React from 'react';
 import { Route } from 'react-router-dom';
+import LandingPage from '../LandingPage/LandingPage';
 import Sticky from '../Sticky/Sticky';
 import InteractiveMap from '../InteractiveMap/InteractiveMap';
 import Search from '../../containers/Search/Search';
@@ -11,6 +12,7 @@ import ContinentPage from '../../containers/ContinentPage/ContinentPage';
 const Routes = () => {
   return (
     <div>
+      <Route exact path="/" component={LandingPage} />
       <Route path="/" component={Sticky} />
       <Route
         exact
