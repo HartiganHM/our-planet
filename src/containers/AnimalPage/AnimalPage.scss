@@ -67,20 +67,42 @@
   }
 }
 
-@media screen and (max-width: 1279px) {
+@media screen and (max-width: 1334px) {
   .AnimalPage {
     @include width(96);
+    .animal-data-container {
+      background-position: center right;
+    }
+    .wrapper {
+      flex-direction: column;
+      align-items: center;
+      .animal-basic-stats {
+        align-self: stretch;
+        @include maxHeight(37)
+      }
+    }
   }
 }
 
-@media screen and (max-width: 959px) {
+@media screen and (max-width: 1014px) {
   .AnimalPage {
     @include width(64);
+    .animal-data-container .wrapper .animal-image {
+      @include width(64);
+      @include height(42.7);
+    }
   }
 }
 
-@media screen and (max-width: 639px) {
+@media screen and (max-width: 694px) {
   .AnimalPage {
     @include width(32);
+    .animal-name {
+      background-image: none;
+    }
+    .animal-data-container .wrapper .animal-image {
+      @include width(32);
+      @include height(21.3);
+    }
   }
 }
