@@ -17,7 +17,7 @@ export const Search = props => {
   );
 
   return (
-    <div className="Search">
+    <div className="Search" id="Search">
       {headerBox}
       <input
         className="search-field"
