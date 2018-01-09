@@ -12,11 +12,13 @@ class Sticky extends Component {
   render() {
     const location = this.props.location.pathname;
     const { className, enter, exit } = this.props;
+    const alternateEnter = location === '/about' ? '1' : enter;
+
     return (
       <div
         className={`Sticky ${className}`}
         data-sticky
-        data-sticky-enter={enter}
+        data-sticky-enter={alternateEnter}
         data-stick-exit={exit}
       >
         <Header location={location}/>
