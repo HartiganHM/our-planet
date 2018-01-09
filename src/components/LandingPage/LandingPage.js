@@ -4,9 +4,8 @@ import './LandingPage.css';
 const LandingPage = () => {
   return (
     <div className="LandingPage">
-      <div className='inner'>
-        <div className='content'>
-        </div>
+      <div className="inner">
+        <div className="content" />
       </div>
     </div>
   );
