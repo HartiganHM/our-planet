@@ -68,7 +68,7 @@ class InteractiveMap extends Component {
         </div>
         <div className='hover-body'>
           <div>Use our map to search the globe and view endangered animals from...</div>
-          <div>{this.state.isHovering ? this.state.continent : ' - '}</div>
+          <div className='hover-continent'>{this.state.isHovering ? this.state.continent : ' - '}</div>
         </div>
       </div>
     );
