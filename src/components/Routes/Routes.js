@@ -12,7 +12,7 @@ import ContinentPage from '../../containers/ContinentPage/ContinentPage';
 const Routes = () => {
   return (
     <div>
-      <Route path="/" component={LandingPage} />
+      <Route exact path="/" component={LandingPage} />
       <Route path="/" component={Sticky} />
       <Route
         exact
