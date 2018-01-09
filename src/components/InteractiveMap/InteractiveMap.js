@@ -27,22 +27,20 @@ class InteractiveMap extends Component {
   }
 
   createPath = (className, name) => {
-    const continentLink = name === 'The Oceans' ? '/continents/Oceans' : '/continents/' + name;
+    const continentLink =
+      name === 'The Oceans' ? '/continents/Oceans' : '/continents/' + name;
 
     if (className === 'grid') {
       return (
         <g id={className}>
           <g transform={continentsPaths[className].transform}>
-            <path
-              className='grid'
-              d={continentsPaths[className].path}
-            />
+            <path className="grid" d={continentsPaths[className].path} />
           </g>
         </g>
       );
-
     } else {
-      const displayName = name === 'Antarctica Arctic' ? name = 'Antarctica / Arctic' : name;
+      const displayName =
+        name === 'Antarctica Arctic' ? (name = 'Antarctica / Arctic') : name;
       return (
         <g id={className}>
           <g transform={continentsPaths[className].transform}>
@@ -58,17 +56,19 @@ class InteractiveMap extends Component {
         </g>
       );
     }
-  }
+  };
 
   render() {
     const hoverBox = (
       <div className="hover-box">
-        <div className='hover-title'>
-          What animals are endangered near you?
-        </div>
-        <div className='hover-body'>
-          <div>Use our map to search the globe and view endangered animals from...</div>
-          <div className='hover-continent'>{this.state.isHovering ? this.state.continent : ' - '}</div>
+        <div className="hover-title">What animals are endangered near you?</div>
+        <div className="hover-body">
+          <div>
+            Use our map to search the globe and view endangered animals from...
+          </div>
+          <div className="hover-continent">
+            {this.state.isHovering ? this.state.continent : ' - '}
+          </div>
         </div>
       </div>
     );
@@ -81,7 +81,10 @@ class InteractiveMap extends Component {
     const australia = this.createPath('australia', 'Australia');
     const europe = this.createPath('europe', 'Europe');
     const asia = this.createPath('asia', 'Asia');
-    const antarcticaArctic = this.createPath('antarctica-arctic', 'Antarctica Arctic');
+    const antarcticaArctic = this.createPath(
+      'antarctica-arctic',
+      'Antarctica Arctic'
+    );
 
     return (
       <div className="InteractiveMap">

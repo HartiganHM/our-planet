@@ -15,7 +15,7 @@ class Sticky extends Component {
     let enter;
 
     if (location === '/about' || location.includes('animals') || location.includes('continents')) {
-      enter = '1'
+      enter = '1';
     } else {
       enter = (window.outerHeight + window.innerHeight) / 2;
     }
