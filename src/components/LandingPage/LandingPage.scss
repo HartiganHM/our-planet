@@ -5,13 +5,14 @@
   height: 100vh;
   @include padding(2.5);
   margin: auto;
-  display: table;
+  display: flex;
+  justify-content: center;
   top: 0;
   border-bottom: $simple-border;
   background-image: url('../../images/branding/landing-seascape.jpg');
+  background-size: cover;
   color: $accent-color-dark;
   .inner {
-    display: table-cell;
     @include width(160);
     background: {
       image: url('../../images/branding/op-globe-animation.gif');
