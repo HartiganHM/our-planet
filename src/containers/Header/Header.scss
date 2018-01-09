@@ -55,7 +55,7 @@
     }
 }
 
-@media screen and (max-width: 1599px) {
+@media screen and (max-width: 1634px) {
     .Header {
         .wrapper {
             @include width(128);
@@ -63,7 +63,7 @@
     }
 }
 
-@media screen and (max-width: 1279px) {
+@media screen and (max-width: 1334px) {
     .Header {
         .wrapper {
             @include width(96);
@@ -71,7 +71,7 @@
     }
 }
 
-@media screen and (max-width: 959px) {
+@media screen and (max-width: 1014px) {
     .Header {
         .wrapper {
             flex-direction: column;
@@ -81,7 +81,7 @@
     }
 }
 
-@media screen and (max-width: 639px) {
+@media screen and (max-width: 694px) {
     .Header {
         .wrapper {
             @include width(32);
