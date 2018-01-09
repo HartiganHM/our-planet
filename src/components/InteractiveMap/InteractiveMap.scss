@@ -32,6 +32,10 @@
     .hover-body {
       @include maxWidth(55);
       @include contentDetailBody();
+      .hover-continent {
+        font-size: 1.8rem;
+        text-align: center;
+      }
     }
   }
 }
