@@ -23,16 +23,16 @@ export const CardContainer = props => {
     });
   };
 
-  const buildFilteredArray = (filterValue, filteredArray) => {
-    return filteredArray.map((element, index) => {
+  const buildFilteredArray = (filterValue, array) => {
+    const filteredArray = array.map((element, index) => {
       return (
         <div className="filtered-container">
           <span id={index} className="filter-header">
             {element}
           </span>
           <div className="wrapper">
-            {props.animals.map((animal, index) => {
-              if (animal[filterValue] === element && animal.display) {
+            {props.animals.filter(animal => animal[filterValue] === element).filter(animal => animal.display).map((animal, index) => {
+              if (animal[filterValue] === element) {
                 return <Card key={index} animalData={animal} />;
               }
             })}
@@ -40,6 +40,8 @@ export const CardContainer = props => {
         </div>
       );
     });
+
+    return filteredArray.filter(element => element.props.children[1].props.children.length)
   };
 
   const buildContinentArray = continentAnimals => {
