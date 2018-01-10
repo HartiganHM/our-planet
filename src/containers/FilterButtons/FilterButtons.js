@@ -5,12 +5,12 @@ import { changeFilter } from '../../actions/index';
 
 export class FilterButtons extends Component {
   render() {
-    console.log(this.props)
+    console.log(this.props.filter)
     return (
       <div className="FilterButtons">
-        <span className="filter-button">From A - Z</span>
-        <span className="filter-button">By Endangered Level</span>
-        <span className="filter-button">By Region</span>
+        <span className="filter-button" onClick={() => this.props.switchFilter('default')}>From A - Z</span>
+        <span className="filter-button" onClick={() => this.props.switchFilter('endangered')}>By Endangered Level</span>
+        <span className="filter-button" onClick={() => this.props.switchFilter('habitat')}>By Region</span>
       </div>
     );
   }
