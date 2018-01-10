@@ -6,9 +6,9 @@ const fetchAnimalsData = async () => {
     const fetchedData = await fetch('https://our-planet-be.herokuapp.com/api/v1/animals');
     const jsonData = await fetchedData.json();
     const newAnimals = addPropertiesToAnimal(jsonData);
-    const sortedAnimals = sortAnimalsAlphabetically(newAnimals);
+    newAnimals._filter = 'default';
 
-    return sortedAnimals;
+    return sortAnimalsAlphabetically(newAnimals);
 
   } catch (error) {
     return new Error(`Error fetching animals data: ${error}`);
