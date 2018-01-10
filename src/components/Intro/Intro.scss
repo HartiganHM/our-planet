@@ -7,6 +7,7 @@
     @include contentDetailBody();
   }
   .intro-logo {
-
+    @include largeWordmarkLogo();
+    background-image: url('../../images/branding/Our-Planet-Wordmark-Large.png');
   }
 }
