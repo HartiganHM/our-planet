@@ -1,10 +1,11 @@
 import React from 'react';
+import copyContent from '../../data/copyContent';
 import './Intro.css';
 
 const Intro = () => {
   return (
     <div className='Intro'>
-      I am duh Intro
+      <div className='intro-body'>{copyContent.intro}</div>
     </div>
   )
 }
