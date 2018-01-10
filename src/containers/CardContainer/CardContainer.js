@@ -18,16 +18,13 @@ export const CardContainer = props => {
 
   const continentsArray = props.continents.map(continent => continent.name);
 
-  const buildArray = (filter) => {
-    const filteredArray = filter === 'endangered' ? endangeredArray : continentsArray;
-    const type = filter === 'endangered' ? 'status' : 'habitat';
-
+  const buildArray = (filterValue, filteredArray) => {
     return filteredArray.map(element => {
       return (
         <div>
           <span className='filter-header'>{element}</span>
           {props.animals.map((animal, index) => {
-            if (animal[type] === element) {
+            if (animal[filterValue] === element) {
               return (
                 <Card key={index} animalData={animal} />
               )
@@ -43,10 +40,12 @@ export const CardContainer = props => {
     : props.animals;
 
   let animalCards = [];
-  
-  if (props.filter === 'endangered') {
-    animalCards = buildArray('endangered')
-  } else {
+
+  if (props.filter === 'status') {
+    animalCards = buildArray('status', endangeredArray)
+  } else if(props.filter === 'habitat') {
+    animalCards = buildArray('habitat', continentsArray)
+  }else {
     animalCards = animalsArray.map((animal, index) => {
       if (props.continentAnimals) {
         return (<Card key={index} animalData={animal} />);
@@ -58,7 +57,7 @@ export const CardContainer = props => {
       }
     });
   }
-  
+
 
   return (
     <div className="CardContainer">
