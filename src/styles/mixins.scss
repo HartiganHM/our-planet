@@ -37,7 +37,7 @@
 }
 
 @mixin left($left) {
-  left: convertRem($left)
+  left: convertRem($left);
 }
 
 @function convertRem($size) {
@@ -115,6 +115,25 @@
     position: center;
     repeat: no-repeat;
     size: cover;
+  }
+}
+
+@mixin largeWordmarkLogo() {
+  @include height(30);
+  @include margin(1.5);
+  background: {
+    position: center;
+    size: contain;
+    repeat: no-repeat;
+  }
+}
+
+@mixin icon() {
+  @include width(3);
+  @include height(3);
+  background: {
+    repeat: no-repeat;
+    size: contain;
   }
 }
 
