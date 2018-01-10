@@ -6,13 +6,6 @@ const AboutPage = () => {
   window.scrollTo(0, 0);
   return (
     <div className="AboutPage buffer">
-      <div className="our-planet">
-        <div className="parallax our-planet-wrapper">
-          <div className="our-planet-image" />
-        </div>
-        <div className="section-body">{copyContent['our-planet']}</div>
-      </div>
-
       <div className="purpose">
         <div className="parallax purpose-image" />
         <div className="section-title">Purpose</div>

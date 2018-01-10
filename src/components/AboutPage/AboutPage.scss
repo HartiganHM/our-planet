@@ -5,10 +5,6 @@
   flex-direction: column;
   @include width(160);
   margin: auto;
-  .our-planet-image {
-    @include largeWordmarkLogo();
-    background-image: url('../../images/branding/Our-Planet-Wordmark-Large.png');
-  }
   .purpose-image {
     background-image: url('../../images/about/bear-about.jpg');
   }
