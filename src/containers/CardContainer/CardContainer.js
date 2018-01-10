@@ -32,7 +32,7 @@ export const CardContainer = props => {
           </span>
           <div className="wrapper">
             {props.animals.map((animal, index) => {
-              if (animal[filterValue] === element) {
+              if (animal[filterValue] === element && animal.display) {
                 return <Card key={index} animalData={animal} />;
               }
             })}
