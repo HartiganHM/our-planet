@@ -15,13 +15,37 @@
     }
     .footer-links {
       display: flex;
-      flex-direction: column;
+      // flex-direction: column;
       justify-content: space-between;
       .link {
         color: $snow;
         text-decoration: none;
         &:hover {
           color: $accent-color-light;
+          .github-icon {
+            background-image: url('../../images/icons/gh-icon-blue.svg');
+          }
+          .contact-icon {
+            background-image: url('../../images/icons/contact-icon-blue.svg');
+          }
+        }
+        .github-icon {
+          @include width(2);
+          @include height(2);
+          background: {
+            image: url('../../images/icons/gh-icon-snow.svg');
+            repeat: no-repeat;
+            size: contain;
+          }
+        }
+        .contact-icon {
+          @include width(2);
+          @include height(2);
+          background: {
+            image: url('../../images/icons/contact-icon-snow.svg');
+            repeat: no-repeat;
+            size: contain;
+          }
         }
       }
     }
