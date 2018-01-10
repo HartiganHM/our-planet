@@ -56,7 +56,7 @@ export const CardContainer = props => {
   return (
     <div className="CardContainer">
       {animalCards.length ? animalCards : contentPlaceholder}
-      {props.animals._filter !== 'default' && buildArray(props.animals._filter)}
+      {props.filter !== 'default' && buildArray(props.filter)}
     </div>
   );
 };
@@ -64,7 +64,8 @@ export const CardContainer = props => {
 export const mapStateToProps = store => {
   return {
     animals: store.animals,
-    continents: store.continents
+    continents: store.continents,
+    filter: store.filter
   };
 };
 
