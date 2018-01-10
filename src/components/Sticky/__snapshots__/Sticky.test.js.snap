@@ -7,9 +7,7 @@ ShallowWrapper {
   Symbol(enzyme.__unrendered__): <Sticky
     location={
         Object {
-            "location": Object {
-              "pathname": "/",
-            },
+            "pathname": "/",
           }
     }
 />,
@@ -26,12 +24,12 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": <Connect(Header)
-        location={undefined}
+        location="/"
 />,
       "className": "Sticky undefined",
       "data-stick-exit": undefined,
       "data-sticky": true,
-      "data-sticky-enter": undefined,
+      "data-sticky-enter": 768,
     },
     "ref": null,
     "rendered": Object {
@@ -39,7 +37,7 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "class",
       "props": Object {
-        "location": undefined,
+        "location": "/",
       },
       "ref": null,
       "rendered": null,
@@ -54,12 +52,12 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": <Connect(Header)
-          location={undefined}
+          location="/"
 />,
         "className": "Sticky undefined",
         "data-stick-exit": undefined,
         "data-sticky": true,
-        "data-sticky-enter": undefined,
+        "data-sticky-enter": 768,
       },
       "ref": null,
       "rendered": Object {
@@ -67,7 +65,7 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "class",
         "props": Object {
-          "location": undefined,
+          "location": "/",
         },
         "ref": null,
         "rendered": null,

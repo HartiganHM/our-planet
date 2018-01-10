@@ -8,7 +8,7 @@ export const Search = props => {
   const { searchAnimals, animals } = props;
   const headerBox = (
     <div className="header-box">
-      <div className="header-title">Animals of all shapes and sizes</div>
+      <div className="header-title">Search for animals of all shapes and sizes</div>
       <div className="header-body">
         Is your favorite animal endangered? Search below and click on an animal
         to learn more about them!
@@ -17,7 +17,7 @@ export const Search = props => {
   );
 
   return (
-    <div className="Search">
+    <div className="Search" id="Search">
       {headerBox}
       <input
         className="search-field"

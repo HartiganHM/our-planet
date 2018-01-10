@@ -32,24 +32,34 @@
     .hover-body {
       @include maxWidth(55);
       @include contentDetailBody();
+      .hover-continent {
+        font-size: 1.8rem;
+        text-align: center;
+      }
     }
   }
 }
 
-@media screen and (max-width: 1599px) {
+@media screen and (max-width: 1634px) {
   .InteractiveMap {
     @include width(128);
   }
 }
 
-@media screen and (max-width: 1279px) {
+@media screen and (max-width: 1334px) {
   .InteractiveMap {
     @include width(96);
   }
 }
 
-@media screen and (max-width: 959px) {
+@media screen and (max-width: 1014px) {
   .InteractiveMap {
     @include width(64);
+  }
+}
+
+@media screen and (max-width: 694px) {
+  .InteractiveMap {
+    @include width(32);
   }
 }

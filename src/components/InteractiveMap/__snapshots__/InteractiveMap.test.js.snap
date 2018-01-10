@@ -32,7 +32,9 @@ ShallowWrapper {
                     <div>
                               Use our map to search the globe and view endangered animals from...
                     </div>
-                    <div>
+                    <div
+                              className="hover-continent"
+                    >
                                - 
                     </div>
           </div>
@@ -1462,7 +1464,9 @@ ShallowWrapper {
               <div>
                             Use our map to search the globe and view endangered animals from...
               </div>
-              <div>
+              <div
+                            className="hover-continent"
+              >
                              - 
               </div>
 </div>,
@@ -1492,7 +1496,9 @@ ShallowWrapper {
                 <div>
                   Use our map to search the globe and view endangered animals from...
 </div>,
-                <div>
+                <div
+                  className="hover-continent"
+>
                    - 
 </div>,
               ],
@@ -1517,6 +1523,7 @@ ShallowWrapper {
                 "nodeType": "host",
                 "props": Object {
                   "children": " - ",
+                  "className": "hover-continent",
                 },
                 "ref": null,
                 "rendered": " - ",
@@ -8446,7 +8453,9 @@ ShallowWrapper {
                         <div>
                                     Use our map to search the globe and view endangered animals from...
                         </div>
-                        <div>
+                        <div
+                                    className="hover-continent"
+                        >
                                      - 
                         </div>
             </div>
@@ -9876,7 +9885,9 @@ ShallowWrapper {
                 <div>
                                 Use our map to search the globe and view endangered animals from...
                 </div>
-                <div>
+                <div
+                                className="hover-continent"
+                >
                                  - 
                 </div>
 </div>,
@@ -9906,7 +9917,9 @@ ShallowWrapper {
                   <div>
                     Use our map to search the globe and view endangered animals from...
 </div>,
-                  <div>
+                  <div
+                    className="hover-continent"
+>
                      - 
 </div>,
                 ],
@@ -9931,6 +9944,7 @@ ShallowWrapper {
                   "nodeType": "host",
                   "props": Object {
                     "children": " - ",
+                    "className": "hover-continent",
                   },
                   "ref": null,
                   "rendered": " - ",

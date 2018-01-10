@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { NavLink, Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import * as actions from '../../actions';
 import PropTypes from 'prop-types';
 import './Header.css';
@@ -10,18 +10,16 @@ export class Header extends Component {
     this.props.populateData();
   }
 
-  renderLogo() {
-    return <Link to="/" className="headerLogo" />;
-  }
-
   render() {
-    const aboutActive = this.props.location === '/about' ? 'nav-button active' : 'nav-button';
-    const homeActive = this.props.location === '/' ? 'nav-button active' : 'nav-button';
+    const { location } = this.props;
+    const aboutActive =
+      location === '/about' ? 'nav-button active' : 'nav-button';
+    const homeActive = location === '/' ? 'nav-button active' : 'nav-button';
 
     return (
       <div className="Header">
         <div className="wrapper">
-          <Link to="/" className="headerLogo" />
+          <span className="headerLogo" />
           <div className="nav-bar">
             <NavLink exact to="/" className={homeActive}>
               Home

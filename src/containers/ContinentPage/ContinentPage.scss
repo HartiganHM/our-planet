@@ -34,26 +34,48 @@
   }
 }
 
-@media screen and (max-width: 1599px) {
+@media screen and (max-width: 1634px) {
   .ContinentPage {
     @include width(128);
   }
 }
 
-@media screen and (max-width: 1279px) {
+@media screen and (max-width: 1334px) {
   .ContinentPage {
     @include width(96);
+    .continent-data-container {
+      background-position: center right;
+      .wrapper {
+        flex-direction: column;
+        align-items: center;
+        .continent-image {
+          @include width(96);
+          @include height(64);
+        }
+        .continent-bio {
+          align-self: stretch;
+        }
+      }
+    }
   }
 }
 
-@media screen and (max-width: 959px) {
+@media screen and (max-width: 1014px) {
   .ContinentPage {
     @include width(64);
+    .continent-data-container .wrapper .continent-image {
+      @include width(64);
+      @include height(42.7);
+    }
   }
 }
 
-@media screen and (max-width: 639px) {
+@media screen and (max-width: 694px) {
   .ContinentPage {
     @include width(32);
+    .continent-data-container .wrapper .continent-image {
+      @include width(32);
+      @include height(21.3);
+    }
   }
 }

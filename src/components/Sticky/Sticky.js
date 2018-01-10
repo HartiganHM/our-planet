@@ -11,7 +11,15 @@ class Sticky extends Component {
 
   render() {
     const location = this.props.location.pathname;
-    const { className, enter, exit } = this.props;
+    const { className, exit } = this.props;
+    let enter;
+
+    if (location === '/about' || location.includes('animals') || location.includes('continents')) {
+      enter = '1';
+    } else {
+      enter = (window.outerHeight + window.innerHeight) / 2;
+    }
+
     return (
       <div
         className={`Sticky ${className}`}

@@ -56,7 +56,7 @@ ShallowWrapper {
           <div
                     className="header-title"
           >
-                    Animals of all shapes and sizes
+                    Search for animals of all shapes and sizes
           </div>
           <div
                     className="header-body"
@@ -72,6 +72,7 @@ ShallowWrapper {
 />,
       ],
       "className": "Search",
+      "id": "Search",
     },
     "ref": null,
     "rendered": Array [
@@ -84,7 +85,7 @@ ShallowWrapper {
             <div
               className="header-title"
 >
-              Animals of all shapes and sizes
+              Search for animals of all shapes and sizes
 </div>,
             <div
               className="header-body"
@@ -101,11 +102,11 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": "Animals of all shapes and sizes",
+              "children": "Search for animals of all shapes and sizes",
               "className": "header-title",
             },
             "ref": null,
-            "rendered": "Animals of all shapes and sizes",
+            "rendered": "Search for animals of all shapes and sizes",
             "type": "div",
           },
           Object {
@@ -153,7 +154,7 @@ ShallowWrapper {
             <div
                         className="header-title"
             >
-                        Animals of all shapes and sizes
+                        Search for animals of all shapes and sizes
             </div>
             <div
                         className="header-body"
@@ -169,6 +170,7 @@ ShallowWrapper {
 />,
         ],
         "className": "Search",
+        "id": "Search",
       },
       "ref": null,
       "rendered": Array [
@@ -181,7 +183,7 @@ ShallowWrapper {
               <div
                 className="header-title"
 >
-                Animals of all shapes and sizes
+                Search for animals of all shapes and sizes
 </div>,
               <div
                 className="header-body"
@@ -198,11 +200,11 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": "Animals of all shapes and sizes",
+                "children": "Search for animals of all shapes and sizes",
                 "className": "header-title",
               },
               "ref": null,
-              "rendered": "Animals of all shapes and sizes",
+              "rendered": "Search for animals of all shapes and sizes",
               "type": "div",
             },
             Object {

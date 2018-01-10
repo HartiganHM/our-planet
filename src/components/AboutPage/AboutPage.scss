@@ -38,25 +38,31 @@
   }
 }
 
-@media screen and (max-width: 1599px) {
+@media screen and (max-width: 1634px) {
   .AboutPage {
     @include width(128);
   }
 }
 
-@media screen and (max-width: 1279px) {
+@media screen and (max-width: 1334px) {
   .AboutPage {
     @include width(96);
   }
 }
 
-@media screen and (max-width: 959px) {
+@media screen and (max-width: 1014px) {
   .AboutPage {
     @include width(64);
+    .our-planet-image {
+      @include height(15);
+    }
+    .parallax {
+      @include height(15);
+    }
   }
 }
 
-@media screen and (max-width: 639px) {
+@media screen and (max-width: 694px) {
   .AboutPage {
     @include width(32);
   }
