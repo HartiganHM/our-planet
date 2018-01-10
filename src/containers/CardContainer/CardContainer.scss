@@ -5,9 +5,6 @@
   flex-wrap: wrap;
   @include width(160);
   margin: auto;
-  .filter-header {
-    @include contentHeader();
-  }
   .content-placeholder {
     @include contentDetailTitle();
     flex: 1;
@@ -16,8 +13,6 @@
 }
 
 .filtered {
-  display: flex;
-  flex-direction: column;
   @include width(160);
   margin: auto;
   .filtered-container {
@@ -25,6 +20,7 @@
     flex-direction: column;
     .filter-header {
       @include contentHeader();
+      background-image: url('../../images/branding/Our-Planet-Light-Logo.png');
     }
     .wrapper {
       display: flex;
@@ -61,10 +57,16 @@
   .CardContainer {
     @include width(64);
   }
+  .filtered {
+    @include width(64);
+  }
 }
 
 @media screen and (max-width: 694px) {
   .CardContainer {
+    @include width(32);
+  }
+  .filtered {
     @include width(32);
   }
 }
