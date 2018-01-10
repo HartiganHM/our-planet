@@ -11,7 +11,19 @@
     @include width(160);
     margin: auto;
     .footer-copy {
-      @include maxWidth(55);
+      @include maxWidth(45);
+    }
+    .footer-links {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      .link {
+        color: $snow;
+        text-decoration: none;
+        &:hover {
+          color: $accent-color-light;
+        }
+      }
     }
   }
 }

@@ -8,9 +8,9 @@ const Footer = () => {
       <div className='wrapper'>
         <span className="footer-copy">{copyContent.footer}</span>
         <div className="footer-links">
-          <a href="https://github.com/HartiganHM/our-planet" className="github-fe">GitHub Front End Repository</a>
-          <a href="https://github.com/HartiganHM/our-planet-be" className="github-be">GitHub Back End Repository</a>
-          <a href="mailto:hartigan.hm@gmail.com" className="contact">Contact Hugh</a>
+          <a href="https://github.com/HartiganHM/our-planet" className="link">Front End</a>
+          <a href="https://github.com/HartiganHM/our-planet-be" className="link">Back End</a>
+          <a href="mailto:hartigan.hm@gmail.com" className="link">Contact</a>
         </div>
       </div>
     </div>
