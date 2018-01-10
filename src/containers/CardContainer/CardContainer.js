@@ -13,11 +13,14 @@ export const CardContainer = props => {
       }
     </span>
   );
+
+  const endangeredArray = ['Least Concern', 'Near Threatened', 'Vulnerable', 'Endangered', 'Critically Endangered'];
+
+  const continentsArray = props.continents.map(continent => continent.name);
+
   const animalsArray = props.continentAnimals
     ? props.continentAnimals
     : props.animals;
-
-  const endangeredArray = animalsArray.map
 
   const animalCards = animalsArray.map((animal, index) => {
     if (props.continentAnimals) {
