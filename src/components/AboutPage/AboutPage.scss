@@ -6,14 +6,8 @@
   @include width(160);
   margin: auto;
   .our-planet-image {
-    @include height(30);
-    @include margin(1.5);
-    background: {
-      image: url('../../images/branding/Our-Planet-Wordmark-Large.png');
-      position: center;
-      size: contain;
-      repeat: no-repeat;
-    }
+    @include largeWordmarkLogo();
+    background-image: url('../../images/branding/Our-Planet-Wordmark-Large.png');
   }
   .purpose-image {
     background-image: url('../../images/about/bear-about.jpg');
