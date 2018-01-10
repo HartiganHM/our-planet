@@ -14,4 +14,4 @@ class FilterButtons extends Component {
   }
 }
 
-export default FilterButtons;
+export default connect(null, null)(FilterButtons);
