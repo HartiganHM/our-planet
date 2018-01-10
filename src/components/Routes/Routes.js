@@ -2,6 +2,7 @@ import React from 'react';
 import { Route } from 'react-router-dom';
 import LandingPage from '../LandingPage/LandingPage';
 import Sticky from '../Sticky/Sticky';
+import Intro from '../Intro/Intro';
 import InteractiveMap from '../InteractiveMap/InteractiveMap';
 import Search from '../../containers/Search/Search';
 import CardContainer from '../../containers/CardContainer/CardContainer';
@@ -20,6 +21,7 @@ const Routes = () => {
         render={() => {
           return (
             <div className="buffer">
+              <Intro />
               <InteractiveMap />
               <Search />
               <CardContainer />
