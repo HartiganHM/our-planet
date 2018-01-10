@@ -5,7 +5,10 @@ import './Intro.css';
 const Intro = () => {
   return (
     <div className="Intro">
-      <div className="intro-body">{copyContent.intro}</div>
+      <div className="intro-body">
+        <p>{copyContent['intro-1']}</p>
+        <p>{copyContent['intro-2']}</p>
+      </div>
       <div className="intro-logo" />
     </div>
   );
