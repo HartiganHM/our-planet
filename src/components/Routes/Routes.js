@@ -4,6 +4,7 @@ import LandingPage from '../LandingPage/LandingPage';
 import Sticky from '../Sticky/Sticky';
 import Intro from '../Intro/Intro';
 import InteractiveMap from '../InteractiveMap/InteractiveMap';
+import FilterButtons from '../../containers/FilterButtons/FilterButtons';
 import Search from '../../containers/Search/Search';
 import CardContainer from '../../containers/CardContainer/CardContainer';
 import AboutPage from '../AboutPage/AboutPage';
@@ -24,6 +25,7 @@ const Routes = () => {
             <div className="buffer">
               <Intro />
               <InteractiveMap />
+              <FilterButtons />
               <Search />
               <CardContainer />
             </div>
