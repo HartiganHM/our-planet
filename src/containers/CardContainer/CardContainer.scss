@@ -5,6 +5,9 @@
   flex-wrap: wrap;
   @include width(160);
   margin: auto;
+  .filter-header {
+    @include contentHeader();
+  }
   .content-placeholder {
     @include contentDetailTitle();
     flex: 1;
@@ -12,14 +15,44 @@
   }
 }
 
+.filtered {
+  display: flex;
+  flex-direction: column;
+  @include width(160);
+  margin: auto;
+  .filtered-container {
+    display: flex;
+    flex-direction: column;
+    .filter-header {
+      @include contentHeader();
+    }
+    .wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      margin: auto;
+      .content-placeholder {
+        @include contentDetailTitle();
+        flex: 1;
+        text-align: center;
+      }
+    }
+  }
+}
+
 @media screen and (max-width: 1634px) {
   .CardContainer {
+    @include width(128);
+  }
+  .filtered {
     @include width(128);
   }
 }
 
 @media screen and (max-width: 1334px) {
   .CardContainer {
+    @include width(96);
+  }
+  .filtered {
     @include width(96);
   }
 }
