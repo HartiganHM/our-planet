@@ -20,12 +20,12 @@
     flex-direction: column;
     .filter-header {
       @include contentHeader();
+      @include margin(1);
       background-image: url('../../images/branding/Our-Planet-Light-Logo.png');
     }
     .wrapper {
       display: flex;
       flex-wrap: wrap;
-      margin: auto;
       .content-placeholder {
         @include contentDetailTitle();
         flex: 1;
