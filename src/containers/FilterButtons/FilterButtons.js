@@ -9,7 +9,7 @@ export class FilterButtons extends Component {
     return (
       <div className="FilterButtons">
         <span className="filter-button" onClick={() => this.props.switchFilter('default')}>From A - Z</span>
-        <span className="filter-button" onClick={() => this.props.switchFilter('endangered')}>By Endangered Level</span>
+        <span className="filter-button" onClick={() => this.props.switchFilter('status')}>By Endangered Level</span>
         <span className="filter-button" onClick={() => this.props.switchFilter('habitat')}>By Region</span>
       </div>
     );
