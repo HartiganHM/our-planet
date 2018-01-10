@@ -9,6 +9,7 @@ import CardContainer from '../../containers/CardContainer/CardContainer';
 import AboutPage from '../AboutPage/AboutPage';
 import AnimalPage from '../../containers/AnimalPage/AnimalPage';
 import ContinentPage from '../../containers/ContinentPage/ContinentPage';
+import Footer from '../Footer/Footer';
 
 const Routes = () => {
   return (
@@ -32,6 +33,7 @@ const Routes = () => {
       <Route exact path="/about" component={AboutPage} />
       <Route path="/animals/:animal" component={AnimalPage} />
       <Route path="/continents/:continent" component={ContinentPage} />
+      <Route path="/" component={Footer} />
     </div>
   );
 };
