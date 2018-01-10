@@ -16,6 +16,9 @@ export const CardContainer = props => {
   const animalsArray = props.continentAnimals
     ? props.continentAnimals
     : props.animals;
+
+  const endangeredArray = animalsArray.map
+
   const animalCards = animalsArray.map((animal, index) => {
     if (props.continentAnimals) {
       return (<Card key={index} animalData={animal} />);
@@ -30,13 +33,15 @@ export const CardContainer = props => {
   return (
     <div className="CardContainer">
       {animalCards.length ? animalCards : contentPlaceholder}
+      {props.animals._filter === 'endangered' && endangeredArray}
     </div>
   );
 };
 
 export const mapStateToProps = store => {
   return {
-    animals: store.animals
+    animals: store.animals,
+    continents: store.continents
   };
 };
 
@@ -44,5 +49,6 @@ export default connect(mapStateToProps, null)(CardContainer);
 
 CardContainer.propTypes = {
   animals: PropTypes.array,
+  continents: PropTypes.array,
   continentAnimals: PropTypes.array
 };
