@@ -15,37 +15,33 @@
     }
     .footer-links {
       display: flex;
-      // flex-direction: column;
       justify-content: space-between;
       .link {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        @include padding(0.5);
         color: $snow;
         text-decoration: none;
         &:hover {
           color: $accent-color-light;
-          .github-icon {
+          .github {
             background-image: url('../../images/icons/gh-icon-blue.svg');
           }
-          .contact-icon {
+          .contact {
             background-image: url('../../images/icons/contact-icon-blue.svg');
           }
         }
-        .github-icon {
-          @include width(2);
-          @include height(2);
-          background: {
-            image: url('../../images/icons/gh-icon-snow.svg');
-            repeat: no-repeat;
-            size: contain;
-          }
+        .icon {
+          @include icon();
+          padding-bottom: 5px;
         }
-        .contact-icon {
-          @include width(2);
-          @include height(2);
-          background: {
-            image: url('../../images/icons/contact-icon-snow.svg');
-            repeat: no-repeat;
-            size: contain;
-          }
+        .github {
+          background-image: url('../../images/icons/gh-icon-snow.svg');
+        }
+        .contact {
+          background-image: url('../../images/icons/contact-icon-snow.svg');
         }
       }
     }
@@ -54,37 +50,37 @@
 
 @media screen and (max-width: 1634px) {
   .Footer {
-      .wrapper {
-          @include width(128);
-      }
+    .wrapper {
+      @include width(128);
+    }
   }
 }
 
 @media screen and (max-width: 1334px) {
   .Footer {
-      .wrapper {
-          @include width(96);
-      }
+    .wrapper {
+      @include width(96);
+    }
   }
 }
 
 @media screen and (max-width: 1014px) {
   .Footer {
-      .wrapper {
-          flex-direction: column;
-          align-items: center;
-          @include width(64);
-          .footer-copy {
-              margin-bottom: 15px;
-          }
+    .wrapper {
+      flex-direction: column;
+      align-items: center;
+      @include width(64);
+      .footer-copy {
+        margin-bottom: 15px;
       }
+    }
   }
 }
 
 @media screen and (max-width: 694px) {
   .Footer {
-      .wrapper {
-          @include width(32);
-      }
+    .wrapper {
+      @include width(32);
+    }
   }
 }
