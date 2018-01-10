@@ -5,6 +5,7 @@ import { changeFilter } from '../../actions/index';
 
 export class FilterButtons extends Component {
   render() {
+    console.log(this.props)
     return (
       <div className="FilterButtons">
         <span className="filter-button">From A - Z</span>
@@ -27,4 +28,4 @@ export const mapDispatchToProps = dispatch => {
   };
 };
 
-export default connect(null, null)(FilterButtons);
+export default connect(mapStateToProps, mapDispatchToProps)(FilterButtons);
