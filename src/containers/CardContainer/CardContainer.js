@@ -24,24 +24,29 @@ export const CardContainer = props => {
   };
 
   const buildFilteredArray = (filterValue, array) => {
-    const filteredArray = array.map((element, index) => {
-      return (
-        <div className="filtered-container">
-          <span id={index} className="filter-header">
-            {element}
-          </span>
-          <div className="wrapper">
-            {props.animals.filter(animal => animal[filterValue] === element).filter(animal => animal.display).map((animal, index) => {
-              if (animal[filterValue] === element) {
-                return <Card key={index} animalData={animal} />;
-              }
-            })}
+    const filteredArray = array
+      .map((element, index) => {
+        return (
+          <div className="filtered-container">
+            <span id={index} className="filter-header">
+              {element}
+            </span>
+            <div className="wrapper">
+              {props.animals
+                .filter(animal => animal[filterValue] === element)
+                .filter(animal => animal.display)
+                .map((animal, index) => {
+                  if (animal[filterValue] === element) {
+                    return <Card key={index} animalData={animal} />;
+                  }
+                })}
+            </div>
           </div>
-        </div>
-      );
-    });
+        );
+      })
+      .filter(element => element.props.children[1].props.children.length);
 
-    return filteredArray.filter(element => element.props.children[1].props.children.length)
+    return filteredArray;
   };
 
   const buildContinentArray = continentAnimals => {
