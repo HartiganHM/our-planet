@@ -1,7 +1,7 @@
 import { combineReducers } from 'redux';
 import animalsReducers from './animals/animalsReducers';
 import continentsReducers from './continents/continentsReducers';
-import filterReducers from './filters/filterReducers';
+import filterReducers from './filters/filtersReducers';
 
 
 const rootReducer = combineReducers({
