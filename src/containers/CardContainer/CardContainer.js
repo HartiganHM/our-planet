@@ -5,62 +5,73 @@ import PropTypes from 'prop-types';
 import './CardContainer.css';
 
 export const CardContainer = props => {
-  const contentPlaceholder = (
-    <span className="content-placeholder">
-      {props.continentAnimals
-        ? 'There are currently no endangered animals in this region'
-        : 'Loading'
-      }
-    </span>
-  );
-
-  const endangeredArray = ['Least Concern', 'Near Threatened', 'Vulnerable', 'Endangered', 'Critically Endangered'];
-
   const continentsArray = props.continents.map(continent => continent.name);
 
-  const buildArray = (filterValue, filteredArray) => {
-    return filteredArray.map(element => {
-      return (
-        <div>
-          <span className='filter-header'>{element}</span>
-          {props.animals.map((animal, index) => {
-            if (animal[filterValue] === element) {
-              return (
-                <Card key={index} animalData={animal} />
-              )
-            }
-          })}
-        </div>
-      )
-    })
-  }
+  const endangeredArray = [
+    'Least Concern',
+    'Near Threatened',
+    'Vulnerable',
+    'Endangered',
+    'Critically Endangered'
+  ];
 
-  const animalsArray = props.continentAnimals
-    ? props.continentAnimals
-    : props.animals;
+  const buildDefaultArray = animals => {
+    return animals.map((animal, index) => {
+      return animal.display ? (
+        <Card key={index} animalData={animal} />
+      ) : (
+        undefined
+      );
+    });
+  };
+
+  const buildFilteredArray = (filterValue, filteredArray) => {
+    return filteredArray.map((element, index) => {
+      return (
+        <div className='filtered-container'>
+          <span id={index} className="filter-header">
+            {element}
+          </span>
+          <div className="wrapper">
+            {props.animals.map((animal, index) => {
+              if (animal[filterValue] === element) {
+                return <Card key={index} animalData={animal} />;
+              }
+            })}
+          </div>
+        </div>
+      );
+    });
+  };
+
+  const buildContinentArray = continentAnimals => {
+    return continentAnimals.map((animal, index) => {
+      return <Card key={index} animalData={animal} />;
+    });
+  };
 
   let animalCards = [];
 
   if (props.filter === 'status') {
-    animalCards = buildArray('status', endangeredArray)
-  } else if(props.filter === 'habitat') {
-    animalCards = buildArray('habitat', continentsArray)
-  }else {
-    animalCards = animalsArray.map((animal, index) => {
-      if (props.continentAnimals) {
-        return (<Card key={index} animalData={animal} />);
-
-      } else {
-        return animal.display
-          ? (<Card key={index} animalData={animal} />)
-          : (undefined);
-      }
-    });
+    animalCards = buildFilteredArray('status', endangeredArray);
+  } else if (props.filter === 'habitat') {
+    animalCards = buildFilteredArray('habitat', continentsArray);
+  } else if (props.continentAnimals) {
+    animalCards = buildContinentArray(props.continentAnimals);
+  } else {
+    animalCards = buildDefaultArray(props.animals);
   }
 
+  const contentPlaceholder = (
+    <span className="content-placeholder">
+      {props.continentAnimals
+        ? 'There are currently no endangered animals in this region'
+        : 'Loading'}
+    </span>
+  );
 
   return (
-    <div className="CardContainer">
+    <div className={props.filter === 'default' ? 'CardContainer' : 'filtered'}>
       {animalCards.length ? animalCards : contentPlaceholder}
     </div>
   );
