@@ -8,27 +8,25 @@ export const CardContainer = props => {
   const continentsArray = props.continents.map(continent => continent.name);
 
   const endangeredArray = [
-    'Least Concern',
-    'Near Threatened',
-    'Vulnerable',
+    'Critically Endangered',
     'Endangered',
-    'Critically Endangered'
+    'Vulnerable',
+    'Near Threatened',
+    'Least Concern'
   ];
 
   const buildDefaultArray = animals => {
     return animals.map((animal, index) => {
-      return animal.display ? (
-        <Card key={index} animalData={animal} />
-      ) : (
-        undefined
-      );
+      if (animal.display) {
+        return <Card key={index} animalData={animal} />;
+      }
     });
   };
 
   const buildFilteredArray = (filterValue, filteredArray) => {
     return filteredArray.map((element, index) => {
       return (
-        <div className='filtered-container'>
+        <div className="filtered-container">
           <span id={index} className="filter-header">
             {element}
           </span>
