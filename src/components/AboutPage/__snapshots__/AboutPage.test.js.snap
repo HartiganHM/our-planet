@@ -19,22 +19,6 @@ ShallowWrapper {
     "props": Object {
       "children": Array [
         <div
-          className="our-planet"
->
-          <div
-                    className="parallax our-planet-wrapper"
-          >
-                    <div
-                              className="our-planet-image"
-                    />
-          </div>
-          <div
-                    className="section-body"
-          >
-                    Weigh eight pounds but take up a full-size bed hiss at vacuum cleaner and sit on the laptop or spend all night ensuring people don't sleep sleep all day or use lap as chair, and who's the baby, so jump launch to pounce upon little yarn mouse, bare fangs at toy run hide in litter box until treats are fed. Fall asleep upside-down slap owner's face at 5am until human fills food dish. Brown cats with pink ears i can haz yet where is my slave?
-          </div>
-</div>,
-        <div
           className="purpose"
 >
           <div
@@ -48,7 +32,7 @@ ShallowWrapper {
           <div
                     className="section-body"
           >
-                    Under the bed ooh, are those your $250 dollar sandals? lemme use that as my litter box, or weigh eight pounds but take up a full-size bed. Climb a tree, wait for a fireman jump to fireman then scratch his face meow. Munch on tasty moths flex claws on the human's belly and purr like a lawnmower woops poop hanging from butt must get rid run run around house drag poop on floor maybe it comes off woops left brown marks on floor human slave clean lick butt now flee in terror at cucumber discovered on floor or if it smells like fish eat as much as you wish.
+                    Our Planet is a web application constructed through the study of front-end engineering at Turing School of Software & Design. During research, it was evident that most information available online about endangered animals was well represented, but tucked away and hidden. Our Planet makes use of a wealth of stunning photos in order to resonate with users in a more immediate way. It is our hope that you walk away with a greater awareness of the impact we have, as humans, to the other species that call this planet home.
           </div>
 </div>,
         <div
@@ -65,7 +49,7 @@ ShallowWrapper {
           <div
                     className="section-body"
           >
-                    Ask for petting. Pee in human's bed until he cleans the litter box eat plants, meow, and throw up because i ate plants. Hide head under blanket so no one can see fall asleep upside-down lick human with sandpaper tongue. Howl uncontrollably for no reason Gate keepers of hell you call this cat food stare at ceiling behind the couch. Meow scratch the furniture. This cat happen now, it was too purr-fect!!! get video posted to internet for chasing red dot sleep and need to chase tail purr for no reason for knock dish off table head butt cant eat out of my own dish.
+                    It is widely believed that climate change is one of the biggest issues facing our generation. While this problem is of the utmost importance for future generations, it is of immediate concern to nearly every animal on this planet. Loss of natural habitats, pollution, and unsustainable use of resources are at the top of the list of human-created problems that impact more than our own cities and towns. With animals unable to speak for themselves, it is important to be mindful not of only how we impact future inhabitants on Earth, but those that currently live here.
           </div>
 </div>,
         <div
@@ -82,7 +66,7 @@ ShallowWrapper {
           <div
                     className="section-body"
           >
-                    Make muffins eat grass, throw it back up jump on human and sleep on her all night long be long in the bed, purr in the morning and then give a bite to every human around for not waking up request food, purr loud scratch the walls, the floor, the windows, the humans. Throw down all the stuff in the kitchen cough furball so meow go back to sleep owner brings food and water tries to pet on head, so scratch get sprayed by water because bad cat sniff catnip and act crazy sniff catnip and act crazy dead stare with ears cocked.
+                    The smallest efforts can have an enormous impact when done on a large scale. Recycling and composting help towards renewability, while eating more consciously with organic foods or reducing consumption of animal products can bolster sustainability. Even buying clothes or furniture that have a longer lifespan supports a more conscious way of using materials. To help animals in a more direct way, visit our Charities page to learn more about organizations leading the way toward a planet teeming with a diversity of life.
           </div>
 </div>,
       ],
@@ -90,68 +74,6 @@ ShallowWrapper {
     },
     "ref": null,
     "rendered": Array [
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": Array [
-            <div
-              className="parallax our-planet-wrapper"
->
-              <div
-                            className="our-planet-image"
-              />
-</div>,
-            <div
-              className="section-body"
->
-              Weigh eight pounds but take up a full-size bed hiss at vacuum cleaner and sit on the laptop or spend all night ensuring people don't sleep sleep all day or use lap as chair, and who's the baby, so jump launch to pounce upon little yarn mouse, bare fangs at toy run hide in litter box until treats are fed. Fall asleep upside-down slap owner's face at 5am until human fills food dish. Brown cats with pink ears i can haz yet where is my slave?
-</div>,
-          ],
-          "className": "our-planet",
-        },
-        "ref": null,
-        "rendered": Array [
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": <div
-                className="our-planet-image"
-/>,
-              "className": "parallax our-planet-wrapper",
-            },
-            "ref": null,
-            "rendered": Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "className": "our-planet-image",
-              },
-              "ref": null,
-              "rendered": null,
-              "type": "div",
-            },
-            "type": "div",
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": "Weigh eight pounds but take up a full-size bed hiss at vacuum cleaner and sit on the laptop or spend all night ensuring people don't sleep sleep all day or use lap as chair, and who's the baby, so jump launch to pounce upon little yarn mouse, bare fangs at toy run hide in litter box until treats are fed. Fall asleep upside-down slap owner's face at 5am until human fills food dish. Brown cats with pink ears i can haz yet where is my slave?",
-              "className": "section-body",
-            },
-            "ref": null,
-            "rendered": "Weigh eight pounds but take up a full-size bed hiss at vacuum cleaner and sit on the laptop or spend all night ensuring people don't sleep sleep all day or use lap as chair, and who's the baby, so jump launch to pounce upon little yarn mouse, bare fangs at toy run hide in litter box until treats are fed. Fall asleep upside-down slap owner's face at 5am until human fills food dish. Brown cats with pink ears i can haz yet where is my slave?",
-            "type": "div",
-          },
-        ],
-        "type": "div",
-      },
       Object {
         "instance": null,
         "key": undefined,
@@ -169,7 +91,7 @@ ShallowWrapper {
             <div
               className="section-body"
 >
-              Under the bed ooh, are those your $250 dollar sandals? lemme use that as my litter box, or weigh eight pounds but take up a full-size bed. Climb a tree, wait for a fireman jump to fireman then scratch his face meow. Munch on tasty moths flex claws on the human's belly and purr like a lawnmower woops poop hanging from butt must get rid run run around house drag poop on floor maybe it comes off woops left brown marks on floor human slave clean lick butt now flee in terror at cucumber discovered on floor or if it smells like fish eat as much as you wish.
+              Our Planet is a web application constructed through the study of front-end engineering at Turing School of Software & Design. During research, it was evident that most information available online about endangered animals was well represented, but tucked away and hidden. Our Planet makes use of a wealth of stunning photos in order to resonate with users in a more immediate way. It is our hope that you walk away with a greater awareness of the impact we have, as humans, to the other species that call this planet home.
 </div>,
           ],
           "className": "purpose",
@@ -204,11 +126,11 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": "Under the bed ooh, are those your $250 dollar sandals? lemme use that as my litter box, or weigh eight pounds but take up a full-size bed. Climb a tree, wait for a fireman jump to fireman then scratch his face meow. Munch on tasty moths flex claws on the human's belly and purr like a lawnmower woops poop hanging from butt must get rid run run around house drag poop on floor maybe it comes off woops left brown marks on floor human slave clean lick butt now flee in terror at cucumber discovered on floor or if it smells like fish eat as much as you wish.",
+              "children": "Our Planet is a web application constructed through the study of front-end engineering at Turing School of Software & Design. During research, it was evident that most information available online about endangered animals was well represented, but tucked away and hidden. Our Planet makes use of a wealth of stunning photos in order to resonate with users in a more immediate way. It is our hope that you walk away with a greater awareness of the impact we have, as humans, to the other species that call this planet home.",
               "className": "section-body",
             },
             "ref": null,
-            "rendered": "Under the bed ooh, are those your $250 dollar sandals? lemme use that as my litter box, or weigh eight pounds but take up a full-size bed. Climb a tree, wait for a fireman jump to fireman then scratch his face meow. Munch on tasty moths flex claws on the human's belly and purr like a lawnmower woops poop hanging from butt must get rid run run around house drag poop on floor maybe it comes off woops left brown marks on floor human slave clean lick butt now flee in terror at cucumber discovered on floor or if it smells like fish eat as much as you wish.",
+            "rendered": "Our Planet is a web application constructed through the study of front-end engineering at Turing School of Software & Design. During research, it was evident that most information available online about endangered animals was well represented, but tucked away and hidden. Our Planet makes use of a wealth of stunning photos in order to resonate with users in a more immediate way. It is our hope that you walk away with a greater awareness of the impact we have, as humans, to the other species that call this planet home.",
             "type": "div",
           },
         ],
@@ -231,7 +153,7 @@ ShallowWrapper {
             <div
               className="section-body"
 >
-              Ask for petting. Pee in human's bed until he cleans the litter box eat plants, meow, and throw up because i ate plants. Hide head under blanket so no one can see fall asleep upside-down lick human with sandpaper tongue. Howl uncontrollably for no reason Gate keepers of hell you call this cat food stare at ceiling behind the couch. Meow scratch the furniture. This cat happen now, it was too purr-fect!!! get video posted to internet for chasing red dot sleep and need to chase tail purr for no reason for knock dish off table head butt cant eat out of my own dish.
+              It is widely believed that climate change is one of the biggest issues facing our generation. While this problem is of the utmost importance for future generations, it is of immediate concern to nearly every animal on this planet. Loss of natural habitats, pollution, and unsustainable use of resources are at the top of the list of human-created problems that impact more than our own cities and towns. With animals unable to speak for themselves, it is important to be mindful not of only how we impact future inhabitants on Earth, but those that currently live here.
 </div>,
           ],
           "className": "why",
@@ -266,11 +188,11 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": "Ask for petting. Pee in human's bed until he cleans the litter box eat plants, meow, and throw up because i ate plants. Hide head under blanket so no one can see fall asleep upside-down lick human with sandpaper tongue. Howl uncontrollably for no reason Gate keepers of hell you call this cat food stare at ceiling behind the couch. Meow scratch the furniture. This cat happen now, it was too purr-fect!!! get video posted to internet for chasing red dot sleep and need to chase tail purr for no reason for knock dish off table head butt cant eat out of my own dish.",
+              "children": "It is widely believed that climate change is one of the biggest issues facing our generation. While this problem is of the utmost importance for future generations, it is of immediate concern to nearly every animal on this planet. Loss of natural habitats, pollution, and unsustainable use of resources are at the top of the list of human-created problems that impact more than our own cities and towns. With animals unable to speak for themselves, it is important to be mindful not of only how we impact future inhabitants on Earth, but those that currently live here.",
               "className": "section-body",
             },
             "ref": null,
-            "rendered": "Ask for petting. Pee in human's bed until he cleans the litter box eat plants, meow, and throw up because i ate plants. Hide head under blanket so no one can see fall asleep upside-down lick human with sandpaper tongue. Howl uncontrollably for no reason Gate keepers of hell you call this cat food stare at ceiling behind the couch. Meow scratch the furniture. This cat happen now, it was too purr-fect!!! get video posted to internet for chasing red dot sleep and need to chase tail purr for no reason for knock dish off table head butt cant eat out of my own dish.",
+            "rendered": "It is widely believed that climate change is one of the biggest issues facing our generation. While this problem is of the utmost importance for future generations, it is of immediate concern to nearly every animal on this planet. Loss of natural habitats, pollution, and unsustainable use of resources are at the top of the list of human-created problems that impact more than our own cities and towns. With animals unable to speak for themselves, it is important to be mindful not of only how we impact future inhabitants on Earth, but those that currently live here.",
             "type": "div",
           },
         ],
@@ -293,7 +215,7 @@ ShallowWrapper {
             <div
               className="section-body"
 >
-              Make muffins eat grass, throw it back up jump on human and sleep on her all night long be long in the bed, purr in the morning and then give a bite to every human around for not waking up request food, purr loud scratch the walls, the floor, the windows, the humans. Throw down all the stuff in the kitchen cough furball so meow go back to sleep owner brings food and water tries to pet on head, so scratch get sprayed by water because bad cat sniff catnip and act crazy sniff catnip and act crazy dead stare with ears cocked.
+              The smallest efforts can have an enormous impact when done on a large scale. Recycling and composting help towards renewability, while eating more consciously with organic foods or reducing consumption of animal products can bolster sustainability. Even buying clothes or furniture that have a longer lifespan supports a more conscious way of using materials. To help animals in a more direct way, visit our Charities page to learn more about organizations leading the way toward a planet teeming with a diversity of life.
 </div>,
           ],
           "className": "help",
@@ -328,11 +250,11 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": "Make muffins eat grass, throw it back up jump on human and sleep on her all night long be long in the bed, purr in the morning and then give a bite to every human around for not waking up request food, purr loud scratch the walls, the floor, the windows, the humans. Throw down all the stuff in the kitchen cough furball so meow go back to sleep owner brings food and water tries to pet on head, so scratch get sprayed by water because bad cat sniff catnip and act crazy sniff catnip and act crazy dead stare with ears cocked.",
+              "children": "The smallest efforts can have an enormous impact when done on a large scale. Recycling and composting help towards renewability, while eating more consciously with organic foods or reducing consumption of animal products can bolster sustainability. Even buying clothes or furniture that have a longer lifespan supports a more conscious way of using materials. To help animals in a more direct way, visit our Charities page to learn more about organizations leading the way toward a planet teeming with a diversity of life.",
               "className": "section-body",
             },
             "ref": null,
-            "rendered": "Make muffins eat grass, throw it back up jump on human and sleep on her all night long be long in the bed, purr in the morning and then give a bite to every human around for not waking up request food, purr loud scratch the walls, the floor, the windows, the humans. Throw down all the stuff in the kitchen cough furball so meow go back to sleep owner brings food and water tries to pet on head, so scratch get sprayed by water because bad cat sniff catnip and act crazy sniff catnip and act crazy dead stare with ears cocked.",
+            "rendered": "The smallest efforts can have an enormous impact when done on a large scale. Recycling and composting help towards renewability, while eating more consciously with organic foods or reducing consumption of animal products can bolster sustainability. Even buying clothes or furniture that have a longer lifespan supports a more conscious way of using materials. To help animals in a more direct way, visit our Charities page to learn more about organizations leading the way toward a planet teeming with a diversity of life.",
             "type": "div",
           },
         ],
@@ -349,22 +271,6 @@ ShallowWrapper {
       "props": Object {
         "children": Array [
           <div
-            className="our-planet"
->
-            <div
-                        className="parallax our-planet-wrapper"
-            >
-                        <div
-                                    className="our-planet-image"
-                        />
-            </div>
-            <div
-                        className="section-body"
-            >
-                        Weigh eight pounds but take up a full-size bed hiss at vacuum cleaner and sit on the laptop or spend all night ensuring people don't sleep sleep all day or use lap as chair, and who's the baby, so jump launch to pounce upon little yarn mouse, bare fangs at toy run hide in litter box until treats are fed. Fall asleep upside-down slap owner's face at 5am until human fills food dish. Brown cats with pink ears i can haz yet where is my slave?
-            </div>
-</div>,
-          <div
             className="purpose"
 >
             <div
@@ -378,7 +284,7 @@ ShallowWrapper {
             <div
                         className="section-body"
             >
-                        Under the bed ooh, are those your $250 dollar sandals? lemme use that as my litter box, or weigh eight pounds but take up a full-size bed. Climb a tree, wait for a fireman jump to fireman then scratch his face meow. Munch on tasty moths flex claws on the human's belly and purr like a lawnmower woops poop hanging from butt must get rid run run around house drag poop on floor maybe it comes off woops left brown marks on floor human slave clean lick butt now flee in terror at cucumber discovered on floor or if it smells like fish eat as much as you wish.
+                        Our Planet is a web application constructed through the study of front-end engineering at Turing School of Software & Design. During research, it was evident that most information available online about endangered animals was well represented, but tucked away and hidden. Our Planet makes use of a wealth of stunning photos in order to resonate with users in a more immediate way. It is our hope that you walk away with a greater awareness of the impact we have, as humans, to the other species that call this planet home.
             </div>
 </div>,
           <div
@@ -395,7 +301,7 @@ ShallowWrapper {
             <div
                         className="section-body"
             >
-                        Ask for petting. Pee in human's bed until he cleans the litter box eat plants, meow, and throw up because i ate plants. Hide head under blanket so no one can see fall asleep upside-down lick human with sandpaper tongue. Howl uncontrollably for no reason Gate keepers of hell you call this cat food stare at ceiling behind the couch. Meow scratch the furniture. This cat happen now, it was too purr-fect!!! get video posted to internet for chasing red dot sleep and need to chase tail purr for no reason for knock dish off table head butt cant eat out of my own dish.
+                        It is widely believed that climate change is one of the biggest issues facing our generation. While this problem is of the utmost importance for future generations, it is of immediate concern to nearly every animal on this planet. Loss of natural habitats, pollution, and unsustainable use of resources are at the top of the list of human-created problems that impact more than our own cities and towns. With animals unable to speak for themselves, it is important to be mindful not of only how we impact future inhabitants on Earth, but those that currently live here.
             </div>
 </div>,
           <div
@@ -412,7 +318,7 @@ ShallowWrapper {
             <div
                         className="section-body"
             >
-                        Make muffins eat grass, throw it back up jump on human and sleep on her all night long be long in the bed, purr in the morning and then give a bite to every human around for not waking up request food, purr loud scratch the walls, the floor, the windows, the humans. Throw down all the stuff in the kitchen cough furball so meow go back to sleep owner brings food and water tries to pet on head, so scratch get sprayed by water because bad cat sniff catnip and act crazy sniff catnip and act crazy dead stare with ears cocked.
+                        The smallest efforts can have an enormous impact when done on a large scale. Recycling and composting help towards renewability, while eating more consciously with organic foods or reducing consumption of animal products can bolster sustainability. Even buying clothes or furniture that have a longer lifespan supports a more conscious way of using materials. To help animals in a more direct way, visit our Charities page to learn more about organizations leading the way toward a planet teeming with a diversity of life.
             </div>
 </div>,
         ],
@@ -420,68 +326,6 @@ ShallowWrapper {
       },
       "ref": null,
       "rendered": Array [
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": Array [
-              <div
-                className="parallax our-planet-wrapper"
->
-                <div
-                                className="our-planet-image"
-                />
-</div>,
-              <div
-                className="section-body"
->
-                Weigh eight pounds but take up a full-size bed hiss at vacuum cleaner and sit on the laptop or spend all night ensuring people don't sleep sleep all day or use lap as chair, and who's the baby, so jump launch to pounce upon little yarn mouse, bare fangs at toy run hide in litter box until treats are fed. Fall asleep upside-down slap owner's face at 5am until human fills food dish. Brown cats with pink ears i can haz yet where is my slave?
-</div>,
-            ],
-            "className": "our-planet",
-          },
-          "ref": null,
-          "rendered": Array [
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": <div
-                  className="our-planet-image"
-/>,
-                "className": "parallax our-planet-wrapper",
-              },
-              "ref": null,
-              "rendered": Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "host",
-                "props": Object {
-                  "className": "our-planet-image",
-                },
-                "ref": null,
-                "rendered": null,
-                "type": "div",
-              },
-              "type": "div",
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": "Weigh eight pounds but take up a full-size bed hiss at vacuum cleaner and sit on the laptop or spend all night ensuring people don't sleep sleep all day or use lap as chair, and who's the baby, so jump launch to pounce upon little yarn mouse, bare fangs at toy run hide in litter box until treats are fed. Fall asleep upside-down slap owner's face at 5am until human fills food dish. Brown cats with pink ears i can haz yet where is my slave?",
-                "className": "section-body",
-              },
-              "ref": null,
-              "rendered": "Weigh eight pounds but take up a full-size bed hiss at vacuum cleaner and sit on the laptop or spend all night ensuring people don't sleep sleep all day or use lap as chair, and who's the baby, so jump launch to pounce upon little yarn mouse, bare fangs at toy run hide in litter box until treats are fed. Fall asleep upside-down slap owner's face at 5am until human fills food dish. Brown cats with pink ears i can haz yet where is my slave?",
-              "type": "div",
-            },
-          ],
-          "type": "div",
-        },
         Object {
           "instance": null,
           "key": undefined,
@@ -499,7 +343,7 @@ ShallowWrapper {
               <div
                 className="section-body"
 >
-                Under the bed ooh, are those your $250 dollar sandals? lemme use that as my litter box, or weigh eight pounds but take up a full-size bed. Climb a tree, wait for a fireman jump to fireman then scratch his face meow. Munch on tasty moths flex claws on the human's belly and purr like a lawnmower woops poop hanging from butt must get rid run run around house drag poop on floor maybe it comes off woops left brown marks on floor human slave clean lick butt now flee in terror at cucumber discovered on floor or if it smells like fish eat as much as you wish.
+                Our Planet is a web application constructed through the study of front-end engineering at Turing School of Software & Design. During research, it was evident that most information available online about endangered animals was well represented, but tucked away and hidden. Our Planet makes use of a wealth of stunning photos in order to resonate with users in a more immediate way. It is our hope that you walk away with a greater awareness of the impact we have, as humans, to the other species that call this planet home.
 </div>,
             ],
             "className": "purpose",
@@ -534,11 +378,11 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": "Under the bed ooh, are those your $250 dollar sandals? lemme use that as my litter box, or weigh eight pounds but take up a full-size bed. Climb a tree, wait for a fireman jump to fireman then scratch his face meow. Munch on tasty moths flex claws on the human's belly and purr like a lawnmower woops poop hanging from butt must get rid run run around house drag poop on floor maybe it comes off woops left brown marks on floor human slave clean lick butt now flee in terror at cucumber discovered on floor or if it smells like fish eat as much as you wish.",
+                "children": "Our Planet is a web application constructed through the study of front-end engineering at Turing School of Software & Design. During research, it was evident that most information available online about endangered animals was well represented, but tucked away and hidden. Our Planet makes use of a wealth of stunning photos in order to resonate with users in a more immediate way. It is our hope that you walk away with a greater awareness of the impact we have, as humans, to the other species that call this planet home.",
                 "className": "section-body",
               },
               "ref": null,
-              "rendered": "Under the bed ooh, are those your $250 dollar sandals? lemme use that as my litter box, or weigh eight pounds but take up a full-size bed. Climb a tree, wait for a fireman jump to fireman then scratch his face meow. Munch on tasty moths flex claws on the human's belly and purr like a lawnmower woops poop hanging from butt must get rid run run around house drag poop on floor maybe it comes off woops left brown marks on floor human slave clean lick butt now flee in terror at cucumber discovered on floor or if it smells like fish eat as much as you wish.",
+              "rendered": "Our Planet is a web application constructed through the study of front-end engineering at Turing School of Software & Design. During research, it was evident that most information available online about endangered animals was well represented, but tucked away and hidden. Our Planet makes use of a wealth of stunning photos in order to resonate with users in a more immediate way. It is our hope that you walk away with a greater awareness of the impact we have, as humans, to the other species that call this planet home.",
               "type": "div",
             },
           ],
@@ -561,7 +405,7 @@ ShallowWrapper {
               <div
                 className="section-body"
 >
-                Ask for petting. Pee in human's bed until he cleans the litter box eat plants, meow, and throw up because i ate plants. Hide head under blanket so no one can see fall asleep upside-down lick human with sandpaper tongue. Howl uncontrollably for no reason Gate keepers of hell you call this cat food stare at ceiling behind the couch. Meow scratch the furniture. This cat happen now, it was too purr-fect!!! get video posted to internet for chasing red dot sleep and need to chase tail purr for no reason for knock dish off table head butt cant eat out of my own dish.
+                It is widely believed that climate change is one of the biggest issues facing our generation. While this problem is of the utmost importance for future generations, it is of immediate concern to nearly every animal on this planet. Loss of natural habitats, pollution, and unsustainable use of resources are at the top of the list of human-created problems that impact more than our own cities and towns. With animals unable to speak for themselves, it is important to be mindful not of only how we impact future inhabitants on Earth, but those that currently live here.
 </div>,
             ],
             "className": "why",
@@ -596,11 +440,11 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": "Ask for petting. Pee in human's bed until he cleans the litter box eat plants, meow, and throw up because i ate plants. Hide head under blanket so no one can see fall asleep upside-down lick human with sandpaper tongue. Howl uncontrollably for no reason Gate keepers of hell you call this cat food stare at ceiling behind the couch. Meow scratch the furniture. This cat happen now, it was too purr-fect!!! get video posted to internet for chasing red dot sleep and need to chase tail purr for no reason for knock dish off table head butt cant eat out of my own dish.",
+                "children": "It is widely believed that climate change is one of the biggest issues facing our generation. While this problem is of the utmost importance for future generations, it is of immediate concern to nearly every animal on this planet. Loss of natural habitats, pollution, and unsustainable use of resources are at the top of the list of human-created problems that impact more than our own cities and towns. With animals unable to speak for themselves, it is important to be mindful not of only how we impact future inhabitants on Earth, but those that currently live here.",
                 "className": "section-body",
               },
               "ref": null,
-              "rendered": "Ask for petting. Pee in human's bed until he cleans the litter box eat plants, meow, and throw up because i ate plants. Hide head under blanket so no one can see fall asleep upside-down lick human with sandpaper tongue. Howl uncontrollably for no reason Gate keepers of hell you call this cat food stare at ceiling behind the couch. Meow scratch the furniture. This cat happen now, it was too purr-fect!!! get video posted to internet for chasing red dot sleep and need to chase tail purr for no reason for knock dish off table head butt cant eat out of my own dish.",
+              "rendered": "It is widely believed that climate change is one of the biggest issues facing our generation. While this problem is of the utmost importance for future generations, it is of immediate concern to nearly every animal on this planet. Loss of natural habitats, pollution, and unsustainable use of resources are at the top of the list of human-created problems that impact more than our own cities and towns. With animals unable to speak for themselves, it is important to be mindful not of only how we impact future inhabitants on Earth, but those that currently live here.",
               "type": "div",
             },
           ],
@@ -623,7 +467,7 @@ ShallowWrapper {
               <div
                 className="section-body"
 >
-                Make muffins eat grass, throw it back up jump on human and sleep on her all night long be long in the bed, purr in the morning and then give a bite to every human around for not waking up request food, purr loud scratch the walls, the floor, the windows, the humans. Throw down all the stuff in the kitchen cough furball so meow go back to sleep owner brings food and water tries to pet on head, so scratch get sprayed by water because bad cat sniff catnip and act crazy sniff catnip and act crazy dead stare with ears cocked.
+                The smallest efforts can have an enormous impact when done on a large scale. Recycling and composting help towards renewability, while eating more consciously with organic foods or reducing consumption of animal products can bolster sustainability. Even buying clothes or furniture that have a longer lifespan supports a more conscious way of using materials. To help animals in a more direct way, visit our Charities page to learn more about organizations leading the way toward a planet teeming with a diversity of life.
 </div>,
             ],
             "className": "help",
@@ -658,11 +502,11 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": "Make muffins eat grass, throw it back up jump on human and sleep on her all night long be long in the bed, purr in the morning and then give a bite to every human around for not waking up request food, purr loud scratch the walls, the floor, the windows, the humans. Throw down all the stuff in the kitchen cough furball so meow go back to sleep owner brings food and water tries to pet on head, so scratch get sprayed by water because bad cat sniff catnip and act crazy sniff catnip and act crazy dead stare with ears cocked.",
+                "children": "The smallest efforts can have an enormous impact when done on a large scale. Recycling and composting help towards renewability, while eating more consciously with organic foods or reducing consumption of animal products can bolster sustainability. Even buying clothes or furniture that have a longer lifespan supports a more conscious way of using materials. To help animals in a more direct way, visit our Charities page to learn more about organizations leading the way toward a planet teeming with a diversity of life.",
                 "className": "section-body",
               },
               "ref": null,
-              "rendered": "Make muffins eat grass, throw it back up jump on human and sleep on her all night long be long in the bed, purr in the morning and then give a bite to every human around for not waking up request food, purr loud scratch the walls, the floor, the windows, the humans. Throw down all the stuff in the kitchen cough furball so meow go back to sleep owner brings food and water tries to pet on head, so scratch get sprayed by water because bad cat sniff catnip and act crazy sniff catnip and act crazy dead stare with ears cocked.",
+              "rendered": "The smallest efforts can have an enormous impact when done on a large scale. Recycling and composting help towards renewability, while eating more consciously with organic foods or reducing consumption of animal products can bolster sustainability. Even buying clothes or furniture that have a longer lifespan supports a more conscious way of using materials. To help animals in a more direct way, visit our Charities page to learn more about organizations leading the way toward a planet teeming with a diversity of life.",
               "type": "div",
             },
           ],
