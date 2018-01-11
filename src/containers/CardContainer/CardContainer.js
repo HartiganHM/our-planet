@@ -53,12 +53,12 @@ export const CardContainer = props => {
 
   let animalCards = [];
 
-  if (props.filter === 'status') {
+  if (props.continentAnimals) {
+    animalCards = buildContinentArray(props.continentAnimals);
+  } else if (props.filter === 'status') {
     animalCards = buildFilteredArray('status', endangeredArray);
   } else if (props.filter === 'habitat') {
     animalCards = buildFilteredArray('habitat', continentsArray);
-  } else if (props.continentAnimals) {
-    animalCards = buildContinentArray(props.continentAnimals);
   } else {
     animalCards = buildDefaultArray(props.animals);
   }
@@ -71,9 +71,10 @@ export const CardContainer = props => {
     </span>
   );
 
-  console.log(animalCards.length);
+  const cardContainerClass = props.filter === 'default' ? 'CardContainer' : 'filtered';
+  
   return (
-    <div className={props.filter === 'default' ? 'CardContainer' : 'filtered'}>
+    <div className={props.continentAnimals ? 'CardContainer' : cardContainerClass}>
       {animalCards.length ? animalCards : contentPlaceholder}
     </div>
   );
