@@ -27,8 +27,8 @@ export const CardContainer = props => {
     const filteredArray = array
       .map((element, index) => {
         return (
-          <div className="filtered-container">
-            <span id={index} className="filter-header">
+          <div key={index} className="filtered-container">
+            <span className="filter-header">
               {element}
             </span>
             <div className="wrapper">
