@@ -74,9 +74,9 @@ describe('CardContainer tests', () => {
     expect(renderedCardContainer.find(expectedElement).text()).toEqual(message);
   });
 
-  it('Should display a placehold while the cards are loading', () => {
+  it('Should display a placehold if there are no animals', () => {
     const expectedElement = '.content-placeholder';
-    const message = 'Loading';
+    const message = 'That animal is not endangered!';
     expect(renderedCardContainer.find(expectedElement).length).toEqual(0);
 
     renderedCardContainer = shallow(
