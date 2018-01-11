@@ -64,12 +64,18 @@ ShallowWrapper {
                     Is your favorite animal endangered? Search below and click on an animal to learn more about them!
           </div>
 </div>,
-        <input
-          className="search-field"
-          onChange={[Function]}
-          placeholder="Search"
-          type="text"
-/>,
+        <span
+          className="wrapper"
+>
+          <input
+                    className="search-field"
+                    onChange={[Function]}
+                    placeholder="Search"
+                    type="text"
+                    value={undefined}
+          />
+          <Connect(FilterButtons) />
+</span>,
       ],
       "className": "Search",
       "id": "Search",
@@ -129,14 +135,46 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "className": "search-field",
-          "onChange": [Function],
-          "placeholder": "Search",
-          "type": "text",
+          "children": Array [
+            <input
+              className="search-field"
+              onChange={[Function]}
+              placeholder="Search"
+              type="text"
+              value={undefined}
+/>,
+            <Connect(FilterButtons) />,
+          ],
+          "className": "wrapper",
         },
         "ref": null,
-        "rendered": null,
-        "type": "input",
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "className": "search-field",
+              "onChange": [Function],
+              "placeholder": "Search",
+              "type": "text",
+              "value": undefined,
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "input",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {},
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+        ],
+        "type": "span",
       },
     ],
     "type": "div",
@@ -162,12 +200,18 @@ ShallowWrapper {
                         Is your favorite animal endangered? Search below and click on an animal to learn more about them!
             </div>
 </div>,
-          <input
-            className="search-field"
-            onChange={[Function]}
-            placeholder="Search"
-            type="text"
-/>,
+          <span
+            className="wrapper"
+>
+            <input
+                        className="search-field"
+                        onChange={[Function]}
+                        placeholder="Search"
+                        type="text"
+                        value={undefined}
+            />
+            <Connect(FilterButtons) />
+</span>,
         ],
         "className": "Search",
         "id": "Search",
@@ -227,14 +271,46 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "className": "search-field",
-            "onChange": [Function],
-            "placeholder": "Search",
-            "type": "text",
+            "children": Array [
+              <input
+                className="search-field"
+                onChange={[Function]}
+                placeholder="Search"
+                type="text"
+                value={undefined}
+/>,
+              <Connect(FilterButtons) />,
+            ],
+            "className": "wrapper",
           },
           "ref": null,
-          "rendered": null,
-          "type": "input",
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "className": "search-field",
+                "onChange": [Function],
+                "placeholder": "Search",
+                "type": "text",
+                "value": undefined,
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "input",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {},
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+          ],
+          "type": "span",
         },
       ],
       "type": "div",

@@ -39,5 +39,13 @@ describe('Search tests', () => {
       result.searchAnimals('fox', mockAnimalsArray, 'name');
       expect(mockDispatch).toHaveBeenCalled();
     });
+
+    it('Should call dispatch when setSearchValue is called', () => {
+      const mockDispatch = jest.fn();
+      const result = mapDispatchToProps(mockDispatch);
+
+      result.setSearchValue('chimp');
+      expect(mockDispatch).toHaveBeenCalled();
+    });
   });
 });

@@ -31,3 +31,17 @@ export const searchAnimals = (inputValue, animals, property) => {
     filteredAnimals
   };
 };
+
+export const changeFilter = filterValue => {
+  return {
+    type: 'CHANGE_FILTER',
+    filterValue
+  };
+};
+
+export const changeSearch = searchValue => {
+  return {
+    type: 'CHANGE_SEARCH',
+    searchValue
+  };
+};

@@ -45,6 +45,31 @@
   @return #{$remSize}rem;
 }
 
+//Button Styling
+@mixin button() {
+  @include padding(0.5);
+  border: $simple-border;
+  color: $accent-color-dark;
+  font-size: 1.2rem;
+  text: {
+    align: center;
+    decoration: none;
+  }
+  transition: 0.1s background-color, color ease-in-out;
+}
+
+@mixin buttonHover () {
+  background-color: $accent-color-light;
+  color: $snow;
+}
+
+@mixin activeButton() {
+  border-color: $accent-color-dark;
+  background-color: $accent-color-dark;
+  color: $snow;
+  cursor: default;
+}
+
 // Content Page Styling
 @mixin contentHeader() {
   @include padding(2);
@@ -109,6 +134,7 @@
   }
 }
 
+// Image Styling
 @mixin parallaxImage() {
   background: {
     attachment: fixed;

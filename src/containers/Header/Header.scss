@@ -2,92 +2,78 @@
 @import '../../styles/mixins.scss';
 @import '../../styles/variables.scss';
 .Header {
-    @include padding(1.5);
-    border-bottom: $simple-border;
-    background-color: $snow;
-    .wrapper {
-        display: flex;
-        justify-content: space-between;
-        align-items: middle;
-        @include width(160);
-        margin: auto;
-        .headerLogo {
-            flex: 1;
-            @include height(4.5);
-            @include width(30);
-            background: {
-                image: url('../../images/branding/Our-Planet-Wordmark-Small.png');
-                repeat: no-repeat;
-                size: contain;
-            }
-        }
-        .nav-bar {
-            display: flex;
-            align-items: center;
-            .nav-button {
-                // @include margin(0.5);
-                @include padding(0.5);
-                @include width(10);
-                border: $simple-border;
-                color: $accent-color-dark;
-                font-size: 1.2rem;
-                text: {
-                    align: center;
-                    decoration: none;
-                }
-                transition: 0.1s background-color,
-                color ease-in-out;
-                &:hover {
-                    background-color: $accent-color-light;
-                    color: $snow;
-                }
-            }
-            .active {
-                border-color: $accent-color-dark;
-                background-color: $accent-color-dark;
-                color: $snow;
-                cursor: default;
-                &:hover {
-                    background-color: $accent-color-dark;
-                }
-            }
-        }
+  @include padding(1.5);
+  border-bottom: $simple-border;
+  background-color: $snow;
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: middle;
+    @include width(160);
+    margin: auto;
+    .headerLogo {
+      flex: 1;
+      @include height(4.5);
+      @include width(30);
+      background: {
+        image: url('../../images/branding/Our-Planet-Wordmark-Small.png');
+        repeat: no-repeat;
+        size: contain;
+      }
     }
+    .nav-bar {
+      display: flex;
+      align-items: center;
+      .nav-button {
+        @include width(10);
+        @include button();
+        &:hover {
+          @include buttonHover();
+        }
+      }
+      .active {
+        @include activeButton();
+        &:hover {
+          background-color: $accent-color-dark;
+        }
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 1634px) {
-    .Header {
-        .wrapper {
-            @include width(128);
-        }
+  .Header {
+    .wrapper {
+      @include width(128);
     }
+  }
 }
 
 @media screen and (max-width: 1334px) {
-    .Header {
-        .wrapper {
-            @include width(96);
-        }
+  .Header {
+    .wrapper {
+      @include width(96);
     }
+  }
 }
 
 @media screen and (max-width: 1014px) {
-    .Header {
-        .wrapper {
-            flex-direction: column;
-            align-items: center;
-            @include width(64);
-            .headerLogo {
-                margin-bottom: 15px;
-            }
-        }
+  .Header {
+    .wrapper {
+      flex-direction: column;
+      align-items: center;
+      @include width(64);
+      .headerLogo {
+        margin-bottom: 15px;
+      }
     }
+  }
 }
 
 @media screen and (max-width: 694px) {
-    .Header {
-        .wrapper {
-            @include width(32);
-        }
+  .Header {
+    .wrapper {
+      @include width(32);
     }
+  }
 }

@@ -2,6 +2,7 @@
 @import '../../styles/variables.scss';
 .Footer {
   @include padding(1.5);
+  margin-top: 10px;
   background-color: $accent-color-dark;
   color: $snow;
   .wrapper {

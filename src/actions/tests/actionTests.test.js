@@ -30,6 +30,28 @@ describe('Actions tests', () => {
       filteredAnimals
     };
 
-    expect(actions.searchAnimals('fox', filteredAnimals, 'name')).toEqual(expected);
+    expect(actions.searchAnimals('fox', filteredAnimals, 'name')).toEqual(
+      expected
+    );
+  });
+
+  it('changeFilter should have a type of CHANGE_FILTER', () => {
+    const filterValue = 'status';
+    const expected = {
+      type: 'CHANGE_FILTER',
+      filterValue
+    };
+
+    expect(actions.changeFilter(filterValue)).toEqual(expected);
+  });
+
+  it('changeSearch should have a type of CHAGE_SEARCH', () => {
+    const searchValue = 'chimp';
+    const expected = {
+      type: 'CHANGE_SEARCH',
+      searchValue
+    };
+
+    expect(actions.changeSearch(searchValue)).toEqual(expected);
   });
 });

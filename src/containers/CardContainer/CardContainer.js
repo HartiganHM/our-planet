@@ -1,34 +1,80 @@
 import React from 'react';
-import Card from '../Card/Card';
+import Card from '../../components/Card/Card';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import './CardContainer.css';
 
 export const CardContainer = props => {
+  const continentsArray = props.continents.map(continent => continent.name);
+
+  const endangeredArray = [
+    'Critically Endangered',
+    'Endangered',
+    'Vulnerable',
+    'Near Threatened',
+    'Least Concern'
+  ];
+
+  const buildDefaultArray = animals => {
+    return animals.filter(animal => animal.display).map((animal, index) => {
+      return <Card key={index} animalData={animal} />;
+    });
+  };
+
+  const buildFilteredArray = (filterValue, array) => {
+    const filteredArray = array
+      .map((element, index) => {
+        return (
+          <div key={index} className="filtered-container">
+            <span className="filter-header">{element}</span>
+            <div className="wrapper">
+              {props.animals
+                .filter(animal => animal[filterValue] === element)
+                .filter(animal => animal.display)
+                .map((animal, index) => {
+                  if (animal[filterValue] === element) {
+                    return <Card key={index} animalData={animal} />;
+                  }
+                })}
+            </div>
+          </div>
+        );
+      })
+      .filter(element => element.props.children[1].props.children.length);
+
+    return filteredArray;
+  };
+
+  const buildContinentArray = continentAnimals => {
+    return continentAnimals.map((animal, index) => {
+      return <Card key={index} animalData={animal} />;
+    });
+  };
+
+  let animalCards = [];
+
+  if (props.continentAnimals) {
+    animalCards = buildContinentArray(props.continentAnimals);
+  } else if (props.filter === 'status') {
+    animalCards = buildFilteredArray('status', endangeredArray);
+  } else if (props.filter === 'habitat') {
+    animalCards = buildFilteredArray('habitat', continentsArray);
+  } else {
+    animalCards = buildDefaultArray(props.animals);
+  }
+
   const contentPlaceholder = (
     <span className="content-placeholder">
       {props.continentAnimals
         ? 'There are currently no endangered animals in this region'
-        : 'Loading'
-      }
+        : 'That animal is not endangered!'}
     </span>
   );
-  const animalsArray = props.continentAnimals
-    ? props.continentAnimals
-    : props.animals;
-  const animalCards = animalsArray.map((animal, index) => {
-    if (props.continentAnimals) {
-      return (<Card key={index} animalData={animal} />);
 
-    } else {
-      return animal.display
-        ? (<Card key={index} animalData={animal} />)
-        : (undefined);
-    }
-  });
-
+  const cardContainerClass = props.filter === 'default' ? 'CardContainer' : 'filtered';
+  
   return (
-    <div className="CardContainer">
+    <div className={props.continentAnimals ? 'CardContainer' : cardContainerClass}>
       {animalCards.length ? animalCards : contentPlaceholder}
     </div>
   );
@@ -36,7 +82,9 @@ export const CardContainer = props => {
 
 export const mapStateToProps = store => {
   return {
-    animals: store.animals
+    animals: store.animals,
+    continents: store.continents,
+    filter: store.filter
   };
 };
 
@@ -44,5 +92,7 @@ export default connect(mapStateToProps, null)(CardContainer);
 
 CardContainer.propTypes = {
   animals: PropTypes.array,
+  continents: PropTypes.array,
+  filter: PropTypes.string,
   continentAnimals: PropTypes.array
 };
