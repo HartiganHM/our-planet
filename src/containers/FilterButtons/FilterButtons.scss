@@ -2,7 +2,9 @@
 @import '../../styles/mixins.scss';
 
 .FilterButtons {
+  display: flex;
   .filter-button {
+    @include width(10);
     @include button();
     &:hover {
       @include buttonHover();
