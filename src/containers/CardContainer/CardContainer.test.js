@@ -91,6 +91,50 @@ describe('CardContainer tests', () => {
     expect(renderedCardContainer.find(expectedElement).text()).toEqual(message);
   });
 
+  it('Should display header sections if the filter is habitat', () => {
+    const expectedElement = '.filter-header';
+    const expectedLength = 1;
+    const expectedText = 'Antarctica / Arctic';
+    expect(renderedCardContainer.find(expectedElement).length).toEqual(0);
+
+    renderedCardContainer = shallow(
+      <CardContainer
+        animals={animalsArray}
+        continents={mockContinentsArray}
+        filter="habitat"
+      />
+    );
+
+    expect(renderedCardContainer.find(expectedElement).length).toEqual(
+      expectedLength
+    );
+    expect(renderedCardContainer.find(expectedElement).text()).toEqual(
+      expectedText
+    );
+  });
+
+  it('Should display header sections if the filter is status', () => {
+    const expectedElement = '.filter-header';
+    const expectedLength = 1;
+    const expectedText = 'Least Concern';
+    expect(renderedCardContainer.find(expectedElement).length).toEqual(0);
+
+    renderedCardContainer = shallow(
+      <CardContainer
+        animals={animalsArray}
+        continents={mockContinentsArray}
+        filter="status"
+      />
+    );
+
+    expect(renderedCardContainer.find(expectedElement).length).toEqual(
+      expectedLength
+    );
+    expect(renderedCardContainer.find(expectedElement).text()).toEqual(
+      expectedText
+    );
+  });
+
   describe('mapStateToProps tests', () => {
     it('Should pull animals from the store', () => {
       const mockStore = {
