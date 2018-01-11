@@ -3,27 +3,38 @@
 # Our Planet
 > A study in React, Redux, and Node.js centered around the well being of endangered animals across the globe
 
-Our Planet is a web application built as part of the curriculum at Turing School of Software & Design. The project incorporates both a back-end database and a front-end user interface. The back-end [repository here](https://github.com/HartiganHM/our-planet-be) was built using Node.js and Knex, while the front-end was constructed through primarily through React and Redux. All styling was done through Sass and the testing suite runs through Enzyme and Jest.
+Our Planet is a web application built as part of the curriculum at Turing School of Software & Design. The project incorporates both a back-end database and a front-end user interface. The back-end [repository here](https://github.com/HartiganHM/our-planet-be) was built using Node.js and Knex, while the front-end was constructed primarily through React and Redux. All styling was done through Sass and the testing suite runs through Enzyme and Jest.
+
+For the subject matter of representing endangered animals, during research, it was evident that most information available online about endangered animals was well represented, but tucked away and hidden. Our Planet makes use of a wealth of stunning photos in order to resonate with users in a more immediate way. It is our hope that you walk away with a greater awareness of the impact we have, as humans, to the other species that call this planet home.
 
 ## Installing / Getting started
 
-A quick introduction of the minimal setup you need to get a hello world up &
-running.
+To get the project running on your machine, clone the repository down. Once complete run:
 
 ```shell
-commands here
+npm install
 ```
 
-Here you should say what actually happens when you execute the code above.
+This will give you all of the primary dependencies you need to run the application. The repository makes use of `node-sass-chokidar`, a CSS style watcher that is friendly with `create-react-app`. Though all of the stylesheets are `.scss`, the `.js` files themselves look for a `.css`. To prepare for this, run:
+
+```shell
+npm run build-css
+```
+
+This will allow `node-sass-chokidar` to build the `.css` files that all of the `.js` require when running. 
+
+You should now be ready to start the application! Run the following command to boot it up:
+
+```shell
+npm start
+```
+
+This script has been built to not only start your application (default to `localhost:3000`), but will watch your CSS for any style changes, as well as run a linter to warn you of any potential errors in your code. These warns will show up in the terminal from which you ran the above mentioned command.
 
 ## Developing
 
 ### Built With
-List main libraries, frameworks used including versions (React, Angular etc...)
-
-### Prerequisites
-What is needed to set up the dev environment. For instance, global dependencies or any other tools. include download links.
-
+React, Redux, Sass, Enzyme, Jest, React Router
 
 ### Setting up Dev
 
@@ -31,60 +42,39 @@ Here's a brief intro about what a developer must do in order to start developing
 the project further:
 
 ```shell
-git clone https://github.com/your/your-project.git
-cd your-project/
-packagemanager install
+git clone git@github.com:HartiganHM/our-planet.git
+cd our-planet/
+npm install
 ```
 
-And state what happens step-by-step. If there is any virtual environment, local server or database feeder needed, explain here.
-
-### Building
-
-If your project needs some additional steps for the developer to build the
-project after some code changes, state them here. for example:
+As mentioned above, this will get the project installed on your machine. Before you start, however, you must build all of the necessary `.css` files with the following comand:
 
 ```shell
-./configure
-make
-make install
+npm run build-css
 ```
 
-Here again you should state what actually happens when the code above gets
-executed.
-
-### Deploying / Publishing
-give instructions on how to build and release a new version
-In case there's some step you have to take that publishes this project to a
-server, this is the right time to state it.
-
-```shell
-packagemanager deploy your-project -s server.com -u username -p password
-```
-
-And again you'd need to tell what the previous code actually does.
-
-## Versioning
-
-We can maybe use [SemVer](http://semver.org/) for versioning. For the versions available, see the [link to tags on this repository](/tags).
-
-
-## Configuration
-
-Here you should write what are all of the configurations a user can enter when
-using the project.
+The project is now ready to be built upon in the development environment.
 
 ## Tests
 
-Describe and show how to run the tests with code examples.
-Explain what these tests test and why.
+The testing suite runs through Enzyme and Jest. To run the testing suite, enter the following command:
 
 ```shell
-Give an example
+npm test
 ```
+
+Any new tests will populate in the terminal. If no changes have been made to any of the tests since the last commit, you will have the following options:
+
+`a`: Run all tests
+`p`: Filter tests by file name
+`t`: Filter tests by test name
+`q`: Quit watch mode
+
+The testing suite is comprhenzive in scope, checking all `.js` files, including Redux architecture, React conditional rendering, helper functions, and API calls.
 
 ## Style guide
 
-Explain your code style and show how to check it.
+The styling of this project uses Sass with an independent style sheet for any component or container. The `styles/` directory holds all mixins and variables which reference reused styling methods for specific content sections, as well as the overarching color palette for the project.
 
 ## Api Reference
 
@@ -95,7 +85,3 @@ If the api is external, link to api documentation. If not describe your api incl
 
 Explaining what database (and version) has been used. Provide download links.
 Documents your database design and schemas, relations etc... 
-
-## Licensing
-
-State what the license is and how to find the text version of the license.
