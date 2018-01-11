@@ -6,6 +6,7 @@
   @include width(160);
   margin: auto;
   .content-placeholder {
+    @include margin(1);
     @include contentDetailTitle();
     flex: 1;
     text-align: center;

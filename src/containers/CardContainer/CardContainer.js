@@ -16,10 +16,8 @@ export const CardContainer = props => {
   ];
 
   const buildDefaultArray = animals => {
-    return animals.map((animal, index) => {
-      if (animal.display) {
-        return <Card key={index} animalData={animal} />;
-      }
+    return animals.filter(animal => animal.display).map((animal, index) => {
+      return <Card key={index} animalData={animal} />;
     });
   };
 
@@ -28,9 +26,7 @@ export const CardContainer = props => {
       .map((element, index) => {
         return (
           <div key={index} className="filtered-container">
-            <span className="filter-header">
-              {element}
-            </span>
+            <span className="filter-header">{element}</span>
             <div className="wrapper">
               {props.animals
                 .filter(animal => animal[filterValue] === element)
@@ -71,10 +67,11 @@ export const CardContainer = props => {
     <span className="content-placeholder">
       {props.continentAnimals
         ? 'There are currently no endangered animals in this region'
-        : 'Loading'}
+        : 'That animal is not endangered!'}
     </span>
   );
 
+  console.log(animalCards.length);
   return (
     <div className={props.filter === 'default' ? 'CardContainer' : 'filtered'}>
       {animalCards.length ? animalCards : contentPlaceholder}
