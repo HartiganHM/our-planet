@@ -5,12 +5,18 @@ import { changeFilter } from '../../actions/index';
 
 export class FilterButtons extends Component {
   render() {
-    console.log(this.props.filter)
+    const displayCopy = ['A-Z', 'Endangered Level', 'Region'];
+
+    const buttons = ['default', 'status', 'habitat'].map((element, index) => {
+      const buttonClass = this.props.filter === element ? 'filter-button active' : 'filter-button';
+      return (
+        <span className={buttonClass} onClick={() => this.props.switchFilter(element)}>{displayCopy[index]}</span>
+      )
+    })
+
     return (
       <div className="FilterButtons">
-        <span className="filter-button" onClick={() => this.props.switchFilter('default')}>From A - Z</span>
-        <span className="filter-button" onClick={() => this.props.switchFilter('status')}>By Endangered Level</span>
-        <span className="filter-button" onClick={() => this.props.switchFilter('habitat')}>By Region</span>
+        {buttons}
       </div>
     );
   }
