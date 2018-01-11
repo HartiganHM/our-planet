@@ -44,5 +44,5 @@ export default connect(mapStateToProps, mapDispatchToProps)(FilterButtons);
 
 FilterButtons.propTypes = {
   filter: PropTypes.string,
-  changeFilter: PropTypes.func
+  switchFilter: PropTypes.func
 };
