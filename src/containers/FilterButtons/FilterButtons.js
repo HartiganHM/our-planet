@@ -10,7 +10,7 @@ export class FilterButtons extends Component {
     const buttons = ['default', 'status', 'habitat'].map((element, index) => {
       const buttonClass = this.props.filter === element ? 'filter-button active' : 'filter-button';
       return (
-        <span className={buttonClass} onClick={() => this.props.switchFilter(element)}>{displayCopy[index]}</span>
+        <span key={index} className={buttonClass} onClick={() => this.props.switchFilter(element)}>{displayCopy[index]}</span>
       )
     })
 
