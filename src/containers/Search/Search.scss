@@ -56,4 +56,10 @@
   .Search {
     @include width(32);
   }
+  .wrapper {
+    flex-direction: column;
+    .search-field {
+      align-self: stretch;
+    }
+  }
 }
