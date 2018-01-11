@@ -33,7 +33,13 @@ describe('CardContainer tests', () => {
 
   it('Should not render certain cards if display is false', () => {
     animalsArray[0].display = false;
-    renderedCardContainer = shallow(<CardContainer animals={animalsArray} />);
+    renderedCardContainer = shallow(
+      <CardContainer
+        animals={animalsArray}
+        continents={mockContinentsArray}
+        filter={mockFilter}
+      />
+    );
 
     expect(renderedCardContainer.find('Card').length).toEqual(1);
   });
@@ -43,6 +49,8 @@ describe('CardContainer tests', () => {
       <CardContainer
         animals={animalsArray}
         continentAnimals={[animalsArray[0]]}
+        continents={mockContinentsArray}
+        filter={mockFilter}
       />
     );
 
@@ -55,7 +63,12 @@ describe('CardContainer tests', () => {
     expect(renderedCardContainer.find(expectedElement).length).toEqual(0);
 
     renderedCardContainer = shallow(
-      <CardContainer animals={animalsArray} continentAnimals={[]} />
+      <CardContainer
+        animals={animalsArray}
+        continentAnimals={[]}
+        continents={mockContinentsArray}
+        filter={mockFilter}
+      />
     );
     expect(renderedCardContainer.find(expectedElement).length).toEqual(1);
     expect(renderedCardContainer.find(expectedElement).text()).toEqual(message);
@@ -66,7 +79,13 @@ describe('CardContainer tests', () => {
     const message = 'Loading';
     expect(renderedCardContainer.find(expectedElement).length).toEqual(0);
 
-    renderedCardContainer = shallow(<CardContainer animals={[]} />);
+    renderedCardContainer = shallow(
+      <CardContainer
+        animals={[]}
+        continents={mockContinentsArray}
+        filter={mockFilter}
+      />
+    );
 
     expect(renderedCardContainer.find(expectedElement).length).toEqual(1);
     expect(renderedCardContainer.find(expectedElement).text()).toEqual(message);
