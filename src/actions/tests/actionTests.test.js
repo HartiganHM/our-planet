@@ -44,4 +44,14 @@ describe('Actions tests', () => {
 
     expect(actions.changeFilter(filterValue)).toEqual(expected);
   });
+
+  it('changeSearch should have a type of CHAGE_SEARCH', () => {
+    const searchValue = 'chimp';
+    const expected = {
+      type: 'CHANGE_SEARCH',
+      searchValue
+    };
+
+    expect(actions.changeSearch(searchValue)).toEqual(expected);
+  });
 });
