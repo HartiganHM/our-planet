@@ -7,12 +7,17 @@
   @include margin(2);
   @include padding(1);
   margin: auto;
-  .search-field {
-    flex: 1;
-    @include padding(1);
-    font-size: 1rem;
-    &:focus {
-      outline: none;
+  .wrapper {
+    display: flex;
+    align-items: center;
+    @include margin(1);
+    .search-field {
+      flex: 1;
+      @include padding(1);
+      font-size: 1rem;
+      &:focus {
+        outline: none;
+      }
     }
   }
   .header-box {
