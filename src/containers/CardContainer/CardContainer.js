@@ -72,7 +72,7 @@ export const CardContainer = props => {
   );
 
   const cardContainerClass = props.filter === 'default' ? 'CardContainer' : 'filtered';
-  
+
   return (
     <div className={props.continentAnimals ? 'CardContainer' : cardContainerClass}>
       {animalCards.length ? animalCards : contentPlaceholder}
