@@ -5,7 +5,7 @@ import { changeFilter } from '../../actions/index';
 
 export class FilterButtons extends Component {
   render() {
-    const displayCopy = ['A-Z', 'Endangered Level', 'Region'];
+    const displayCopy = ['A - Z', 'Status', 'Habitat'];
 
     const buttons = ['default', 'status', 'habitat'].map((element, index) => {
       const buttonClass = this.props.filter === element ? 'filter-button active' : 'filter-button';
