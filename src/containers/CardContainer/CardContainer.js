@@ -95,5 +95,6 @@ export default connect(mapStateToProps, null)(CardContainer);
 CardContainer.propTypes = {
   animals: PropTypes.array,
   continents: PropTypes.array,
+  filter: PropTypes.string,
   continentAnimals: PropTypes.array
 };
