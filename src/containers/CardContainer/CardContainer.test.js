@@ -2,16 +2,25 @@ import React from 'react';
 import { shallow } from 'enzyme';
 import { CardContainer, mapStateToProps } from './CardContainer';
 import mockAnimalsArray from '../../data/mockAnimalsArray';
+import mockContinentsArray from '../../data/mockContinentsArray';
 
 describe('CardContainer tests', () => {
   let renderedCardContainer;
   let animalsArray;
+  let mockFilter;
 
   beforeEach(() => {
+    mockFilter = 'default';
     animalsArray = mockAnimalsArray.map(animal => {
       return { ...animal, display: true };
     });
-    renderedCardContainer = shallow(<CardContainer animals={animalsArray} />);
+    renderedCardContainer = shallow(
+      <CardContainer
+        animals={animalsArray}
+        continents={mockContinentsArray}
+        filter={mockFilter}
+      />
+    );
   });
 
   it('Should match the snapshot', () => {
