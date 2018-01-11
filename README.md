@@ -65,10 +65,10 @@ npm test
 
 Any new tests will populate in the terminal. If no changes have been made to any of the tests since the last commit, you will have the following options:
 
-`a`: Run all tests
-`p`: Filter tests by file name
-`t`: Filter tests by test name
-`q`: Quit watch mode
+* `a`: Run all tests
+* `p`: Filter tests by file name
+* `t`: Filter tests by test name
+* `q`: Quit watch mode
 
 The testing suite is comprhenzive in scope, checking all `.js` files, including Redux architecture, React conditional rendering, helper functions, and API calls.
 
@@ -76,12 +76,6 @@ The testing suite is comprhenzive in scope, checking all `.js` files, including 
 
 The styling of this project uses Sass with an independent style sheet for any component or container. The `styles/` directory holds all mixins and variables which reference reused styling methods for specific content sections, as well as the overarching color palette for the project.
 
-## Api Reference
+## Api Reference and Database
 
-If the api is external, link to api documentation. If not describe your api including authentication methods as well as explaining all the endpoints with their required parameters.
-
-
-## Database
-
-Explaining what database (and version) has been used. Provide download links.
-Documents your database design and schemas, relations etc... 
+The API calls used in this project references the [Our Planet BE Database](https://github.com/HartiganHM/our-planet-be) using two `GET` calls for the `animals` and `continents` endpoints. For more information about the this database, please reference the above repo.
