@@ -48,7 +48,7 @@ ShallowWrapper {
       ],
       "className": "Card",
       "replace": false,
-      "to": "/animals/Arctic Fox",
+      "to": "/our-planet/animals/Arctic Fox",
     },
     "ref": null,
     "rendered": Array [
@@ -100,7 +100,7 @@ ShallowWrapper {
         ],
         "className": "Card",
         "replace": false,
-        "to": "/animals/Arctic Fox",
+        "to": "/our-planet/animals/Arctic Fox",
       },
       "ref": null,
       "rendered": Array [

@@ -13,18 +13,18 @@ export class Header extends Component {
   render() {
     const { location } = this.props;
     const aboutActive =
-      location === '/about' ? 'nav-button active' : 'nav-button';
-    const homeActive = location === '/' ? 'nav-button active' : 'nav-button';
+      location === '/our-planet/about/' ? 'nav-button active' : 'nav-button';
+    const homeActive = location === '/our-planet/' ? 'nav-button active' : 'nav-button';
 
     return (
       <div className="Header">
         <div className="wrapper">
           <span className="headerLogo" />
           <div className="nav-bar">
-            <NavLink exact to="/" className={homeActive}>
+            <NavLink exact to="/our-planet/" className={homeActive}>
               Home
             </NavLink>
-            <NavLink exact to="/about" className={aboutActive}>
+            <NavLink exact to="/our-planet/about" className={aboutActive}>
               About
             </NavLink>
           </div>

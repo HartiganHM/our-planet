@@ -53,7 +53,7 @@ ShallowWrapper {
                     >
                               <Link
                                         replace={false}
-                                        to="/continents/Oceans"
+                                        to="/our-planet/continents/Oceans"
                               >
                                         <path
                                                   className="oceans"
@@ -703,7 +703,7 @@ ShallowWrapper {
                     >
                               <Link
                                         replace={false}
-                                        to="/continents/North America"
+                                        to="/our-planet/continents/North America"
                               >
                                         <path
                                                   className="continent"
@@ -871,7 +871,7 @@ ShallowWrapper {
                     >
                               <Link
                                         replace={false}
-                                        to="/continents/South America"
+                                        to="/our-planet/continents/South America"
                               >
                                         <path
                                                   className="continent"
@@ -926,7 +926,7 @@ ShallowWrapper {
                     >
                               <Link
                                         replace={false}
-                                        to="/continents/Africa"
+                                        to="/our-planet/continents/Africa"
                               >
                                         <path
                                                   className="continent"
@@ -999,7 +999,7 @@ ShallowWrapper {
                     >
                               <Link
                                         replace={false}
-                                        to="/continents/Australia"
+                                        to="/our-planet/continents/Australia"
                               >
                                         <path
                                                   className="continent"
@@ -1046,7 +1046,7 @@ ShallowWrapper {
                     >
                               <Link
                                         replace={false}
-                                        to="/continents/Europe"
+                                        to="/our-planet/continents/Europe"
                               >
                                         <path
                                                   className="continent"
@@ -1137,7 +1137,7 @@ ShallowWrapper {
                     >
                               <Link
                                         replace={false}
-                                        to="/continents/Asia"
+                                        to="/our-planet/continents/Asia"
                               >
                                         <path
                                                   className="continent"
@@ -1404,7 +1404,7 @@ ShallowWrapper {
                     >
                               <Link
                                         replace={false}
-                                        to="/continents/Antarctica Arctic"
+                                        to="/our-planet/continents/Antarctica Arctic"
                               >
                                         <path
                                                   className="continent"
@@ -1549,7 +1549,7 @@ ShallowWrapper {
               >
                             <Link
                                           replace={false}
-                                          to="/continents/Oceans"
+                                          to="/our-planet/continents/Oceans"
                             >
                                           <path
                                                         className="oceans"
@@ -2199,7 +2199,7 @@ ShallowWrapper {
               >
                             <Link
                                           replace={false}
-                                          to="/continents/North America"
+                                          to="/our-planet/continents/North America"
                             >
                                           <path
                                                         className="continent"
@@ -2367,7 +2367,7 @@ ShallowWrapper {
               >
                             <Link
                                           replace={false}
-                                          to="/continents/South America"
+                                          to="/our-planet/continents/South America"
                             >
                                           <path
                                                         className="continent"
@@ -2422,7 +2422,7 @@ ShallowWrapper {
               >
                             <Link
                                           replace={false}
-                                          to="/continents/Africa"
+                                          to="/our-planet/continents/Africa"
                             >
                                           <path
                                                         className="continent"
@@ -2495,7 +2495,7 @@ ShallowWrapper {
               >
                             <Link
                                           replace={false}
-                                          to="/continents/Australia"
+                                          to="/our-planet/continents/Australia"
                             >
                                           <path
                                                         className="continent"
@@ -2542,7 +2542,7 @@ ShallowWrapper {
               >
                             <Link
                                           replace={false}
-                                          to="/continents/Europe"
+                                          to="/our-planet/continents/Europe"
                             >
                                           <path
                                                         className="continent"
@@ -2633,7 +2633,7 @@ ShallowWrapper {
               >
                             <Link
                                           replace={false}
-                                          to="/continents/Asia"
+                                          to="/our-planet/continents/Asia"
                             >
                                           <path
                                                         className="continent"
@@ -2900,7 +2900,7 @@ ShallowWrapper {
               >
                             <Link
                                           replace={false}
-                                          to="/continents/Antarctica Arctic"
+                                          to="/our-planet/continents/Antarctica Arctic"
                             >
                                           <path
                                                         className="continent"
@@ -2955,7 +2955,7 @@ ShallowWrapper {
 >
                 <Link
                                 replace={false}
-                                to="/continents/Oceans"
+                                to="/our-planet/continents/Oceans"
                 >
                                 <path
                                                 className="oceans"
@@ -3487,7 +3487,7 @@ ShallowWrapper {
               "props": Object {
                 "children": <Link
                   replace={false}
-                  to="/continents/Oceans"
+                  to="/our-planet/continents/Oceans"
 >
                   <path
                                     className="oceans"
@@ -4535,7 +4535,7 @@ ShallowWrapper {
                     onMouseLeave={[Function]}
 />,
                   "replace": false,
-                  "to": "/continents/Oceans",
+                  "to": "/our-planet/continents/Oceans",
                 },
                 "ref": null,
                 "rendered": Object {
@@ -5445,7 +5445,7 @@ ShallowWrapper {
 >
                 <Link
                                 replace={false}
-                                to="/continents/North America"
+                                to="/our-planet/continents/North America"
                 >
                                 <path
                                                 className="continent"
@@ -5614,7 +5614,7 @@ ShallowWrapper {
               "props": Object {
                 "children": <Link
                   replace={false}
-                  to="/continents/North America"
+                  to="/our-planet/continents/North America"
 >
                   <path
                                     className="continent"
@@ -5936,7 +5936,7 @@ ShallowWrapper {
                     onMouseLeave={[Function]}
 />,
                   "replace": false,
-                  "to": "/continents/North America",
+                  "to": "/our-planet/continents/North America",
                 },
                 "ref": null,
                 "rendered": Object {
@@ -6118,7 +6118,7 @@ ShallowWrapper {
 >
                 <Link
                                 replace={false}
-                                to="/continents/South America"
+                                to="/our-planet/continents/South America"
                 >
                                 <path
                                                 className="continent"
@@ -6174,7 +6174,7 @@ ShallowWrapper {
               "props": Object {
                 "children": <Link
                   replace={false}
-                  to="/continents/South America"
+                  to="/our-planet/continents/South America"
 >
                   <path
                                     className="continent"
@@ -6270,7 +6270,7 @@ ShallowWrapper {
                     onMouseLeave={[Function]}
 />,
                   "replace": false,
-                  "to": "/continents/South America",
+                  "to": "/our-planet/continents/South America",
                 },
                 "ref": null,
                 "rendered": Object {
@@ -6339,7 +6339,7 @@ ShallowWrapper {
 >
                 <Link
                                 replace={false}
-                                to="/continents/Africa"
+                                to="/our-planet/continents/Africa"
                 >
                                 <path
                                                 className="continent"
@@ -6413,7 +6413,7 @@ ShallowWrapper {
               "props": Object {
                 "children": <Link
                   replace={false}
-                  to="/continents/Africa"
+                  to="/our-planet/continents/Africa"
 >
                   <path
                                     className="continent"
@@ -6545,7 +6545,7 @@ ShallowWrapper {
                     onMouseLeave={[Function]}
 />,
                   "replace": false,
-                  "to": "/continents/Africa",
+                  "to": "/our-planet/continents/Africa",
                 },
                 "ref": null,
                 "rendered": Object {
@@ -6632,7 +6632,7 @@ ShallowWrapper {
 >
                 <Link
                                 replace={false}
-                                to="/continents/Australia"
+                                to="/our-planet/continents/Australia"
                 >
                                 <path
                                                 className="continent"
@@ -6680,7 +6680,7 @@ ShallowWrapper {
               "props": Object {
                 "children": <Link
                   replace={false}
-                  to="/continents/Australia"
+                  to="/our-planet/continents/Australia"
 >
                   <path
                                     className="continent"
@@ -6760,7 +6760,7 @@ ShallowWrapper {
                     onMouseLeave={[Function]}
 />,
                   "replace": false,
-                  "to": "/continents/Australia",
+                  "to": "/our-planet/continents/Australia",
                 },
                 "ref": null,
                 "rendered": Object {
@@ -6821,7 +6821,7 @@ ShallowWrapper {
 >
                 <Link
                                 replace={false}
-                                to="/continents/Europe"
+                                to="/our-planet/continents/Europe"
                 >
                                 <path
                                                 className="continent"
@@ -6913,7 +6913,7 @@ ShallowWrapper {
               "props": Object {
                 "children": <Link
                   replace={false}
-                  to="/continents/Europe"
+                  to="/our-planet/continents/Europe"
 >
                   <path
                                     className="continent"
@@ -7081,7 +7081,7 @@ ShallowWrapper {
                     onMouseLeave={[Function]}
 />,
                   "replace": false,
-                  "to": "/continents/Europe",
+                  "to": "/our-planet/continents/Europe",
                 },
                 "ref": null,
                 "rendered": Object {
@@ -7186,7 +7186,7 @@ ShallowWrapper {
 >
                 <Link
                                 replace={false}
-                                to="/continents/Asia"
+                                to="/our-planet/continents/Asia"
                 >
                                 <path
                                                 className="continent"
@@ -7454,7 +7454,7 @@ ShallowWrapper {
               "props": Object {
                 "children": <Link
                   replace={false}
-                  to="/continents/Asia"
+                  to="/our-planet/continents/Asia"
 >
                   <path
                                     className="continent"
@@ -7974,7 +7974,7 @@ ShallowWrapper {
                     onMouseLeave={[Function]}
 />,
                   "replace": false,
-                  "to": "/continents/Asia",
+                  "to": "/our-planet/continents/Asia",
                 },
                 "ref": null,
                 "rendered": Object {
@@ -8255,7 +8255,7 @@ ShallowWrapper {
 >
                 <Link
                                 replace={false}
-                                to="/continents/Antarctica Arctic"
+                                to="/our-planet/continents/Antarctica Arctic"
                 >
                                 <path
                                                 className="continent"
@@ -8301,7 +8301,7 @@ ShallowWrapper {
               "props": Object {
                 "children": <Link
                   replace={false}
-                  to="/continents/Antarctica Arctic"
+                  to="/our-planet/continents/Antarctica Arctic"
 >
                   <path
                                     className="continent"
@@ -8377,7 +8377,7 @@ ShallowWrapper {
                     onMouseLeave={[Function]}
 />,
                   "replace": false,
-                  "to": "/continents/Antarctica Arctic",
+                  "to": "/our-planet/continents/Antarctica Arctic",
                 },
                 "ref": null,
                 "rendered": Object {
@@ -8474,7 +8474,7 @@ ShallowWrapper {
                         >
                                     <Link
                                                 replace={false}
-                                                to="/continents/Oceans"
+                                                to="/our-planet/continents/Oceans"
                                     >
                                                 <path
                                                             className="oceans"
@@ -9124,7 +9124,7 @@ ShallowWrapper {
                         >
                                     <Link
                                                 replace={false}
-                                                to="/continents/North America"
+                                                to="/our-planet/continents/North America"
                                     >
                                                 <path
                                                             className="continent"
@@ -9292,7 +9292,7 @@ ShallowWrapper {
                         >
                                     <Link
                                                 replace={false}
-                                                to="/continents/South America"
+                                                to="/our-planet/continents/South America"
                                     >
                                                 <path
                                                             className="continent"
@@ -9347,7 +9347,7 @@ ShallowWrapper {
                         >
                                     <Link
                                                 replace={false}
-                                                to="/continents/Africa"
+                                                to="/our-planet/continents/Africa"
                                     >
                                                 <path
                                                             className="continent"
@@ -9420,7 +9420,7 @@ ShallowWrapper {
                         >
                                     <Link
                                                 replace={false}
-                                                to="/continents/Australia"
+                                                to="/our-planet/continents/Australia"
                                     >
                                                 <path
                                                             className="continent"
@@ -9467,7 +9467,7 @@ ShallowWrapper {
                         >
                                     <Link
                                                 replace={false}
-                                                to="/continents/Europe"
+                                                to="/our-planet/continents/Europe"
                                     >
                                                 <path
                                                             className="continent"
@@ -9558,7 +9558,7 @@ ShallowWrapper {
                         >
                                     <Link
                                                 replace={false}
-                                                to="/continents/Asia"
+                                                to="/our-planet/continents/Asia"
                                     >
                                                 <path
                                                             className="continent"
@@ -9825,7 +9825,7 @@ ShallowWrapper {
                         >
                                     <Link
                                                 replace={false}
-                                                to="/continents/Antarctica Arctic"
+                                                to="/our-planet/continents/Antarctica Arctic"
                                     >
                                                 <path
                                                             className="continent"
@@ -9970,7 +9970,7 @@ ShallowWrapper {
                 >
                                 <Link
                                                 replace={false}
-                                                to="/continents/Oceans"
+                                                to="/our-planet/continents/Oceans"
                                 >
                                                 <path
                                                                 className="oceans"
@@ -10620,7 +10620,7 @@ ShallowWrapper {
                 >
                                 <Link
                                                 replace={false}
-                                                to="/continents/North America"
+                                                to="/our-planet/continents/North America"
                                 >
                                                 <path
                                                                 className="continent"
@@ -10788,7 +10788,7 @@ ShallowWrapper {
                 >
                                 <Link
                                                 replace={false}
-                                                to="/continents/South America"
+                                                to="/our-planet/continents/South America"
                                 >
                                                 <path
                                                                 className="continent"
@@ -10843,7 +10843,7 @@ ShallowWrapper {
                 >
                                 <Link
                                                 replace={false}
-                                                to="/continents/Africa"
+                                                to="/our-planet/continents/Africa"
                                 >
                                                 <path
                                                                 className="continent"
@@ -10916,7 +10916,7 @@ ShallowWrapper {
                 >
                                 <Link
                                                 replace={false}
-                                                to="/continents/Australia"
+                                                to="/our-planet/continents/Australia"
                                 >
                                                 <path
                                                                 className="continent"
@@ -10963,7 +10963,7 @@ ShallowWrapper {
                 >
                                 <Link
                                                 replace={false}
-                                                to="/continents/Europe"
+                                                to="/our-planet/continents/Europe"
                                 >
                                                 <path
                                                                 className="continent"
@@ -11054,7 +11054,7 @@ ShallowWrapper {
                 >
                                 <Link
                                                 replace={false}
-                                                to="/continents/Asia"
+                                                to="/our-planet/continents/Asia"
                                 >
                                                 <path
                                                                 className="continent"
@@ -11321,7 +11321,7 @@ ShallowWrapper {
                 >
                                 <Link
                                                 replace={false}
-                                                to="/continents/Antarctica Arctic"
+                                                to="/our-planet/continents/Antarctica Arctic"
                                 >
                                                 <path
                                                                 className="continent"
@@ -11376,7 +11376,7 @@ ShallowWrapper {
 >
                   <Link
                                     replace={false}
-                                    to="/continents/Oceans"
+                                    to="/our-planet/continents/Oceans"
                   >
                                     <path
                                                       className="oceans"
@@ -11908,7 +11908,7 @@ ShallowWrapper {
                 "props": Object {
                   "children": <Link
                     replace={false}
-                    to="/continents/Oceans"
+                    to="/our-planet/continents/Oceans"
 >
                     <path
                                         className="oceans"
@@ -12956,7 +12956,7 @@ ShallowWrapper {
                       onMouseLeave={[Function]}
 />,
                     "replace": false,
-                    "to": "/continents/Oceans",
+                    "to": "/our-planet/continents/Oceans",
                   },
                   "ref": null,
                   "rendered": Object {
@@ -13866,7 +13866,7 @@ ShallowWrapper {
 >
                   <Link
                                     replace={false}
-                                    to="/continents/North America"
+                                    to="/our-planet/continents/North America"
                   >
                                     <path
                                                       className="continent"
@@ -14035,7 +14035,7 @@ ShallowWrapper {
                 "props": Object {
                   "children": <Link
                     replace={false}
-                    to="/continents/North America"
+                    to="/our-planet/continents/North America"
 >
                     <path
                                         className="continent"
@@ -14357,7 +14357,7 @@ ShallowWrapper {
                       onMouseLeave={[Function]}
 />,
                     "replace": false,
-                    "to": "/continents/North America",
+                    "to": "/our-planet/continents/North America",
                   },
                   "ref": null,
                   "rendered": Object {
@@ -14539,7 +14539,7 @@ ShallowWrapper {
 >
                   <Link
                                     replace={false}
-                                    to="/continents/South America"
+                                    to="/our-planet/continents/South America"
                   >
                                     <path
                                                       className="continent"
@@ -14595,7 +14595,7 @@ ShallowWrapper {
                 "props": Object {
                   "children": <Link
                     replace={false}
-                    to="/continents/South America"
+                    to="/our-planet/continents/South America"
 >
                     <path
                                         className="continent"
@@ -14691,7 +14691,7 @@ ShallowWrapper {
                       onMouseLeave={[Function]}
 />,
                     "replace": false,
-                    "to": "/continents/South America",
+                    "to": "/our-planet/continents/South America",
                   },
                   "ref": null,
                   "rendered": Object {
@@ -14760,7 +14760,7 @@ ShallowWrapper {
 >
                   <Link
                                     replace={false}
-                                    to="/continents/Africa"
+                                    to="/our-planet/continents/Africa"
                   >
                                     <path
                                                       className="continent"
@@ -14834,7 +14834,7 @@ ShallowWrapper {
                 "props": Object {
                   "children": <Link
                     replace={false}
-                    to="/continents/Africa"
+                    to="/our-planet/continents/Africa"
 >
                     <path
                                         className="continent"
@@ -14966,7 +14966,7 @@ ShallowWrapper {
                       onMouseLeave={[Function]}
 />,
                     "replace": false,
-                    "to": "/continents/Africa",
+                    "to": "/our-planet/continents/Africa",
                   },
                   "ref": null,
                   "rendered": Object {
@@ -15053,7 +15053,7 @@ ShallowWrapper {
 >
                   <Link
                                     replace={false}
-                                    to="/continents/Australia"
+                                    to="/our-planet/continents/Australia"
                   >
                                     <path
                                                       className="continent"
@@ -15101,7 +15101,7 @@ ShallowWrapper {
                 "props": Object {
                   "children": <Link
                     replace={false}
-                    to="/continents/Australia"
+                    to="/our-planet/continents/Australia"
 >
                     <path
                                         className="continent"
@@ -15181,7 +15181,7 @@ ShallowWrapper {
                       onMouseLeave={[Function]}
 />,
                     "replace": false,
-                    "to": "/continents/Australia",
+                    "to": "/our-planet/continents/Australia",
                   },
                   "ref": null,
                   "rendered": Object {
@@ -15242,7 +15242,7 @@ ShallowWrapper {
 >
                   <Link
                                     replace={false}
-                                    to="/continents/Europe"
+                                    to="/our-planet/continents/Europe"
                   >
                                     <path
                                                       className="continent"
@@ -15334,7 +15334,7 @@ ShallowWrapper {
                 "props": Object {
                   "children": <Link
                     replace={false}
-                    to="/continents/Europe"
+                    to="/our-planet/continents/Europe"
 >
                     <path
                                         className="continent"
@@ -15502,7 +15502,7 @@ ShallowWrapper {
                       onMouseLeave={[Function]}
 />,
                     "replace": false,
-                    "to": "/continents/Europe",
+                    "to": "/our-planet/continents/Europe",
                   },
                   "ref": null,
                   "rendered": Object {
@@ -15607,7 +15607,7 @@ ShallowWrapper {
 >
                   <Link
                                     replace={false}
-                                    to="/continents/Asia"
+                                    to="/our-planet/continents/Asia"
                   >
                                     <path
                                                       className="continent"
@@ -15875,7 +15875,7 @@ ShallowWrapper {
                 "props": Object {
                   "children": <Link
                     replace={false}
-                    to="/continents/Asia"
+                    to="/our-planet/continents/Asia"
 >
                     <path
                                         className="continent"
@@ -16395,7 +16395,7 @@ ShallowWrapper {
                       onMouseLeave={[Function]}
 />,
                     "replace": false,
-                    "to": "/continents/Asia",
+                    "to": "/our-planet/continents/Asia",
                   },
                   "ref": null,
                   "rendered": Object {
@@ -16676,7 +16676,7 @@ ShallowWrapper {
 >
                   <Link
                                     replace={false}
-                                    to="/continents/Antarctica Arctic"
+                                    to="/our-planet/continents/Antarctica Arctic"
                   >
                                     <path
                                                       className="continent"
@@ -16722,7 +16722,7 @@ ShallowWrapper {
                 "props": Object {
                   "children": <Link
                     replace={false}
-                    to="/continents/Antarctica Arctic"
+                    to="/our-planet/continents/Antarctica Arctic"
 >
                     <path
                                         className="continent"
@@ -16798,7 +16798,7 @@ ShallowWrapper {
                       onMouseLeave={[Function]}
 />,
                     "replace": false,
-                    "to": "/continents/Antarctica Arctic",
+                    "to": "/our-planet/continents/Antarctica Arctic",
                   },
                   "ref": null,
                   "rendered": Object {

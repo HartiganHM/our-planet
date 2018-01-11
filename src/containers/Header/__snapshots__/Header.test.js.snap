@@ -33,7 +33,7 @@ ShallowWrapper {
                         ariaCurrent="true"
                         className="nav-button"
                         exact={true}
-                        to="/"
+                        to="/our-planet/"
                 >
                         Home
                 </NavLink>
@@ -42,7 +42,7 @@ ShallowWrapper {
                         ariaCurrent="true"
                         className="nav-button"
                         exact={true}
-                        to="/about"
+                        to="/our-planet/about"
                 >
                         About
                 </NavLink>
@@ -68,7 +68,7 @@ ShallowWrapper {
                         ariaCurrent="true"
                         className="nav-button"
                         exact={true}
-                        to="/"
+                        to="/our-planet/"
             >
                         Home
             </NavLink>
@@ -77,7 +77,7 @@ ShallowWrapper {
                         ariaCurrent="true"
                         className="nav-button"
                         exact={true}
-                        to="/about"
+                        to="/our-planet/about"
             >
                         About
             </NavLink>
@@ -109,7 +109,7 @@ ShallowWrapper {
                 ariaCurrent="true"
                 className="nav-button"
                 exact={true}
-                to="/"
+                to="/our-planet/"
 >
                 Home
 </NavLink>,
@@ -118,7 +118,7 @@ ShallowWrapper {
                 ariaCurrent="true"
                 className="nav-button"
                 exact={true}
-                to="/about"
+                to="/our-planet/about"
 >
                 About
 </NavLink>,
@@ -137,7 +137,7 @@ ShallowWrapper {
                 "children": "Home",
                 "className": "nav-button",
                 "exact": true,
-                "to": "/",
+                "to": "/our-planet/",
               },
               "ref": null,
               "rendered": "Home",
@@ -153,7 +153,7 @@ ShallowWrapper {
                 "children": "About",
                 "className": "nav-button",
                 "exact": true,
-                "to": "/about",
+                "to": "/our-planet/about",
               },
               "ref": null,
               "rendered": "About",
@@ -187,7 +187,7 @@ ShallowWrapper {
                               ariaCurrent="true"
                               className="nav-button"
                               exact={true}
-                              to="/"
+                              to="/our-planet/"
                     >
                               Home
                     </NavLink>
@@ -196,7 +196,7 @@ ShallowWrapper {
                               ariaCurrent="true"
                               className="nav-button"
                               exact={true}
-                              to="/about"
+                              to="/our-planet/about"
                     >
                               About
                     </NavLink>
@@ -222,7 +222,7 @@ ShallowWrapper {
                             ariaCurrent="true"
                             className="nav-button"
                             exact={true}
-                            to="/"
+                            to="/our-planet/"
               >
                             Home
               </NavLink>
@@ -231,7 +231,7 @@ ShallowWrapper {
                             ariaCurrent="true"
                             className="nav-button"
                             exact={true}
-                            to="/about"
+                            to="/our-planet/about"
               >
                             About
               </NavLink>
@@ -263,7 +263,7 @@ ShallowWrapper {
                   ariaCurrent="true"
                   className="nav-button"
                   exact={true}
-                  to="/"
+                  to="/our-planet/"
 >
                   Home
 </NavLink>,
@@ -272,7 +272,7 @@ ShallowWrapper {
                   ariaCurrent="true"
                   className="nav-button"
                   exact={true}
-                  to="/about"
+                  to="/our-planet/about"
 >
                   About
 </NavLink>,
@@ -291,7 +291,7 @@ ShallowWrapper {
                   "children": "Home",
                   "className": "nav-button",
                   "exact": true,
-                  "to": "/",
+                  "to": "/our-planet/",
                 },
                 "ref": null,
                 "rendered": "Home",
@@ -307,7 +307,7 @@ ShallowWrapper {
                   "children": "About",
                   "className": "nav-button",
                   "exact": true,
-                  "to": "/about",
+                  "to": "/our-planet/about",
                 },
                 "ref": null,
                 "rendered": "About",

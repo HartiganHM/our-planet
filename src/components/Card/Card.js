@@ -5,7 +5,7 @@ import './Card.css';
 
 const Card = props => {
   const { name, image } = props.animalData;
-  const animalLink = '/animals/' + name;
+  const animalLink = '/our-planet/animals/' + name;
 
   return (
     <Link to={animalLink} className='Card'>

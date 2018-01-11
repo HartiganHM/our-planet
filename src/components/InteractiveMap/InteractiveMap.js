@@ -28,7 +28,7 @@ class InteractiveMap extends Component {
 
   createPath = (className, name) => {
     const continentLink =
-      name === 'The Oceans' ? '/continents/Oceans' : '/continents/' + name;
+      name === 'The Oceans' ? '/our-planet/continents/Oceans' : '/our-planet/continents/' + name;
 
     if (className === 'grid') {
       return (
