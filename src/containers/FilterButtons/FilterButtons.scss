@@ -1,7 +1,11 @@
+@import '../../styles/variables.scss';
+@import '../../styles/mixins.scss';
+
 .FilterButtons {
   .filter-button {
-    border: 1px solid blue;
-    margin: 10px;
-    font-size: 1rem;
+    @include button();
+    &:hover {
+      @include buttonHover();
+    }
   }
 }
