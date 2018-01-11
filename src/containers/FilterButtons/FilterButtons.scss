@@ -8,4 +8,10 @@
       @include buttonHover();
     }
   }
+  .active {
+    @include activeButton();
+    &:hover {
+      background-color: $accent-color-dark;
+    }
+  }
 }
