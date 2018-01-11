@@ -38,3 +38,10 @@ export const changeFilter = filterValue => {
     filterValue
   };
 };
+
+export const changeSearch = searchValue => {
+  return {
+    type: "CHANGE_SEARCH",
+    searchValue
+  }
+}
