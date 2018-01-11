@@ -22,7 +22,7 @@ export const Search = props => {
   const handleChange = (inputValue, animals, property) => {
     searchAnimals(inputValue, animals, property);
     setSearchValue(inputValue);
-  }
+  };
 
   return (
     <div className="Search" id="Search">
@@ -52,8 +52,7 @@ export const mapDispatchToProps = dispatch => {
   return {
     searchAnimals: (inputValue, animals, property) =>
       dispatch(actions.searchAnimals(inputValue, animals, property)),
-    setSearchValue: (inputValue) =>
-      dispatch(actions.changeSearch(inputValue))
+    setSearchValue: inputValue => dispatch(actions.changeSearch(inputValue))
   };
 };
 
@@ -61,5 +60,7 @@ export default connect(mapStateToProps, mapDispatchToProps)(Search);
 
 Search.propTypes = {
   searchAnimals: PropTypes.func,
-  animals: PropTypes.array
+  animals: PropTypes.array,
+  setSearchValue: PropTypes.func,
+  searchValue: PropTypes.string
 };

@@ -41,7 +41,7 @@ export const changeFilter = filterValue => {
 
 export const changeSearch = searchValue => {
   return {
-    type: "CHANGE_SEARCH",
+    type: 'CHANGE_SEARCH',
     searchValue
-  }
-}
+  };
+};
