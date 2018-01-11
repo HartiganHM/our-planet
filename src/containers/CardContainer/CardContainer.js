@@ -1,5 +1,5 @@
 import React from 'react';
-import Card from '../Card/Card';
+import Card from '../../components/Card/Card';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import './CardContainer.css';
