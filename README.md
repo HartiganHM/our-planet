@@ -3,7 +3,7 @@
 # Our Planet
 > A study in React, Redux, and Node.js centered around the well being of endangered animals across the globe
 
-Our Planet is a web application built as part of the curriculum at Turing School of Software & Design. The project incorporates both a back-end database and a front-end user interface. The back-end [repository here](https://github.com/HartiganHM/our-planet-be) was built using Node.js and Knex, while the front-end was constructed primarily through React and Redux. All styling was done through Sass and the testing suite runs through Enzyme and Jest.
+Our Planet is a web application built as part of the curriculum at Turing School of Software & Design. The project incorporates both a back-end database and a front-end user interface. [The back-end repository](https://github.com/HartiganHM/our-planet-be) was built using Node.js and Knex, while the front-end was constructed primarily through React and Redux. All styling was done through Sass and the testing suite runs through Enzyme and Jest.
 
 For the subject matter of representing endangered animals, during research, it was evident that most information available online about endangered animals was well represented, but tucked away and hidden. Our Planet makes use of a wealth of stunning photos in order to resonate with users in a more immediate way. It is our hope that you walk away with a greater awareness of the impact we have, as humans, to the other species that call this planet home.
 
