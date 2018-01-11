@@ -98,7 +98,25 @@ describe('CardContainer tests', () => {
       };
       const result = mapStateToProps(mockStore);
 
-      expect(result.user).toEqual(mockStore.user);
+      expect(result.animals).toEqual(mockStore.animals);
+    });
+
+    it('Should pull continents from the store', () => {
+      const mockStore = {
+        continents: mockContinentsArray
+      };
+      const result = mapStateToProps(mockStore);
+
+      expect(result.continents).toEqual(mockStore.continents);
+    });
+
+    it('Should pull filter from the store', () => {
+      const mockStore = {
+        filter: 'default'
+      };
+      const result = mapStateToProps(mockStore);
+
+      expect(result.filter).toEqual(mockStore.filter);
     });
   });
 });
