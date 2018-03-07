@@ -76,6 +76,10 @@ The testing suite is comprhenzive in scope, checking all `.js` files, including 
 
 The styling of this project uses Sass with an independent style sheet for any component or container. The `styles/` directory holds all mixins and variables which reference reused styling methods for specific content sections, as well as the overarching color palette for the project.
 
+An initial wireframe was also created for Our Plant prior to the project being built. This set the ground work for an over-arching design concept as well as intial UI/UX structure.
+
+[Our Planet UI/UX Wireframe](https://xd.adobe.com/view/a017c691-0ff2-4b78-979a-b5e5e64187b7)
+
 ## Api Reference and Database
 
 The API calls used in this project references the [Our Planet BE Database](https://github.com/HartiganHM/our-planet-be) using two `GET` calls for the `animals` and `continents` endpoints. For more information about the this database, please reference the above repo.
