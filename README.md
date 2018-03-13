@@ -15,7 +15,7 @@ To get the project running on your machine, clone the repository down. Once comp
 npm install
 ```
 
-This will give you all of the primary dependencies you need to run the application. The repository makes use of `node-sass-chokidar`, a CSS style watcher that is friendly with `create-react-app`. Though all of the stylesheets are `.scss`, the `.js` files themselves look for a `.css`. To prepare for this, run:
+This will give you all of the primary dependencies you need to run the application. The repository makes use of `node-sass-chokidar`, a CSS style watcher and compiler that is friendly with `create-react-app`. Though all of the stylesheets are `.scss`, the `.js` files themselves look for a `.css`. To prepare for this, run:
 
 ```shell
 npm run build-css
@@ -29,7 +29,7 @@ You should now be ready to start the application! Run the following command to b
 npm start
 ```
 
-This script has been built to not only start your application (default to `localhost:3000`), but will watch your CSS for any style changes, as well as run a linter to warn you of any potential errors in your code. These warns will show up in the terminal from which you ran the above mentioned command.
+This script has been built to start your application on `localhost:3000`, as well as watch your CSS for any style changes and run a linter. Any linting warnings will show up in the terminal, as well as the console of your browser.
 
 ## Developing
 
