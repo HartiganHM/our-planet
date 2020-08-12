@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import { NavLink } from 'react-router-dom';
 import * as actions from '../../actions';
 import PropTypes from 'prop-types';
-import './Header.css';
+import './Header.scss';
 
 export class Header extends Component {
   componentDidMount() {
@@ -14,7 +14,8 @@ export class Header extends Component {
     const { location } = this.props;
     const aboutActive =
       location === '/our-planet/about/' ? 'nav-button active' : 'nav-button';
-    const homeActive = location === '/our-planet/' ? 'nav-button active' : 'nav-button';
+    const homeActive =
+      location === '/our-planet/' ? 'nav-button active' : 'nav-button';
 
     return (
       <div className="Header">
@@ -34,17 +35,17 @@ export class Header extends Component {
   }
 }
 
-export const mapStateToProps = store => {
+export const mapStateToProps = (store) => {
   return {
-    animals: store.animals
+    animals: store.animals,
   };
 };
 
-export const mapDispatchToProps = dispatch => {
+export const mapDispatchToProps = (dispatch) => {
   return {
     populateData: () => dispatch(actions.fetchAllData()),
     resetAnimals: (inputValue, animals) =>
-      dispatch(actions.searchAnimals(inputValue, animals))
+      dispatch(actions.searchAnimals(inputValue, animals)),
   };
 };
 
@@ -54,5 +55,5 @@ Header.propTypes = {
   animals: PropTypes.array,
   populateData: PropTypes.func,
   resetAnimals: PropTypes.func,
-  location: PropTypes.string
+  location: PropTypes.string,
 };

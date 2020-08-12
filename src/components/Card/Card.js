@@ -1,20 +1,20 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { PropTypes } from 'prop-types';
-import './Card.css';
+import './Card.scss';
 
-const Card = props => {
+const Card = (props) => {
   const { name, image } = props.animalData;
   const animalLink = '/our-planet/animals/' + name;
 
   return (
-    <Link to={animalLink} className='Card'>
+    <Link to={animalLink} className="Card">
       <img
-        className='animal-image'
+        className="animal-image"
         src={require(`../../images/animals/${image}.jpg`)}
         alt={`${name}-endangered-species`}
       />
-      <span className='animal-name'>{name}</span>
+      <span className="animal-name">{name}</span>
     </Link>
   );
 };
@@ -22,5 +22,5 @@ const Card = props => {
 export default Card;
 
 Card.propTypes = {
-  animalData: PropTypes.object
+  animalData: PropTypes.object,
 };

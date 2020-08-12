@@ -1,6 +1,6 @@
 import React from 'react';
 import copyContent from '../../data/copyContent';
-import './Footer.css';
+import './Footer.scss';
 
 const Footer = () => {
   return (

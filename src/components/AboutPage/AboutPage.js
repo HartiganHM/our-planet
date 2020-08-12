@@ -1,6 +1,6 @@
 import React from 'react';
 import copyContent from '../../data/copyContent';
-import './AboutPage.css';
+import './AboutPage.scss';
 
 const AboutPage = () => {
   window.scrollTo(0, 0);

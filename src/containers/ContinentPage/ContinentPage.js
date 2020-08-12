@@ -3,14 +3,14 @@ import { connect } from 'react-redux';
 import matchObjectInStore from '../../helpers/matchObjectInStore/matchObjectInStore';
 import CardContainer from '../CardContainer/CardContainer';
 import { PropTypes } from 'prop-types';
-import './ContinentPage.css';
+import './ContinentPage.scss';
 
 export class ContinentPage extends Component {
   constructor() {
     super();
     this.state = {
       continentData: {},
-      animals: []
+      animals: [],
     };
   }
 
@@ -42,9 +42,9 @@ export class ContinentPage extends Component {
     }
   }
 
-  matchContinentAnimals = continentId => {
+  matchContinentAnimals = (continentId) => {
     const animals = this.props.animals.filter(
-      animal => animal.continent_id === continentId
+      (animal) => animal.continent_id === continentId
     );
     return animals;
   };
@@ -75,10 +75,10 @@ export class ContinentPage extends Component {
   }
 }
 
-export const mapStateToProps = store => {
+export const mapStateToProps = (store) => {
   return {
     animals: store.animals,
-    continents: store.continents
+    continents: store.continents,
   };
 };
 
@@ -86,5 +86,5 @@ export default connect(mapStateToProps, null)(ContinentPage);
 
 ContinentPage.propTypes = {
   animals: PropTypes.array,
-  continents: PropTypes.array
+  continents: PropTypes.array,
 };
