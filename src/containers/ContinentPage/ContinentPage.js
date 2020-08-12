@@ -59,7 +59,7 @@ export class ContinentPage extends Component {
             {image && (
               <img
                 className="continent-image"
-                src={require(`../../images/continents/${image}.jpg`)}
+                src={image}
                 alt={`${name}`}
               />
             )}

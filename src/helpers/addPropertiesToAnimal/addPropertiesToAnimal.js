@@ -1,6 +1,6 @@
 const addPropertiesToAnimal = animalArray => {
   return animalArray.map(animal => {
-    const image = animal.name.toLowerCase();
+    const image = animal.image_url;
     const display = true;
 
     return { ...animal, image, display };
