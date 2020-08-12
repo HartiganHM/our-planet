@@ -65,7 +65,7 @@ export class AnimalPage extends Component {
             {image && (
               <img
                 className="animal-image"
-                src={require(`../../images/animals/${image}.jpg`)}
+                src={image}
                 alt={`${name}-endangered-species`}
               />
             )}

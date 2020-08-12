@@ -11,7 +11,7 @@ const Card = (props) => {
     <Link to={animalLink} className="Card">
       <img
         className="animal-image"
-        src={require(`../../images/animals/${image}.jpg`)}
+        src={image}
         alt={`${name}-endangered-species`}
       />
       <span className="animal-name">{name}</span>
