@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import setStickyProperties from '../../helpers/setStickyProperties/setStickyProperties';
 import Header from '../../containers/Header/Header';
-import './Sticky.css';
+import './Sticky.scss';
 
 class Sticky extends Component {
   componentDidMount() {
@@ -14,7 +14,11 @@ class Sticky extends Component {
     const { className, exit } = this.props;
     let enter;
 
-    if (location === '/about' || location.includes('animals') || location.includes('continents')) {
+    if (
+      location === '/about' ||
+      location.includes('animals') ||
+      location.includes('continents')
+    ) {
       enter = '1';
     } else {
       enter = (window.outerHeight + window.innerHeight) / 2;
@@ -27,7 +31,7 @@ class Sticky extends Component {
         data-sticky-enter={enter}
         data-stick-exit={exit}
       >
-        <Header location={location}/>
+        <Header location={location} />
       </div>
     );
   }
@@ -39,5 +43,5 @@ Sticky.propTypes = {
   className: PropTypes.string,
   enter: PropTypes.string,
   exit: PropTypes.string,
-  location: PropTypes.object
+  location: PropTypes.object,
 };

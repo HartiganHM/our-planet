@@ -1,6 +1,6 @@
 import React from 'react';
 import copyContent from '../../data/copyContent';
-import './Intro.css';
+import './Intro.scss';
 
 const Intro = () => {
   return (

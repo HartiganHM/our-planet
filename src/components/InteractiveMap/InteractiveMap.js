@@ -1,34 +1,36 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import continentsPaths from '../../data/continentsPaths';
-import './InteractiveMap.css';
+import './InteractiveMap.scss';
 
 class InteractiveMap extends Component {
   constructor() {
     super();
     this.state = {
       isHovering: false,
-      continent: ''
+      continent: '',
     };
   }
 
-  handleMouseHover = continent => {
+  handleMouseHover = (continent) => {
     this.setState(this.toggleHoverState, this.setContinent(continent));
   };
 
-  setContinent = continent => {
+  setContinent = (continent) => {
     this.setState({ continent });
   };
 
   toggleHoverState(state) {
     return {
-      isHovering: !state.isHovering
+      isHovering: !state.isHovering,
     };
   }
 
   createPath = (className, name) => {
     const continentLink =
-      name === 'The Oceans' ? '/our-planet/continents/Oceans' : '/our-planet/continents/' + name;
+      name === 'The Oceans'
+        ? '/our-planet/continents/Oceans'
+        : '/our-planet/continents/' + name;
 
     if (className === 'grid') {
       return (
