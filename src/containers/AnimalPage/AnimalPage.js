@@ -3,13 +3,13 @@ import { connect } from 'react-redux';
 import { PropTypes } from 'prop-types';
 import matchObjectInStore from '../../helpers/matchObjectInStore/matchObjectInStore';
 import animalDataCleaner from '../../helpers/animalDataCleaner/animalDataCleaner';
-import './AnimalPage.css';
+import './AnimalPage.scss';
 
 export class AnimalPage extends Component {
   constructor() {
     super();
     this.state = {
-      animalData: {}
+      animalData: {},
     };
   }
 
@@ -78,14 +78,14 @@ export class AnimalPage extends Component {
   }
 }
 
-export const mapStateToProps = store => {
+export const mapStateToProps = (store) => {
   return {
-    animals: store.animals
+    animals: store.animals,
   };
 };
 
 export default connect(mapStateToProps, null)(AnimalPage);
 
 AnimalPage.propTypes = {
-  animals: PropTypes.array
+  animals: PropTypes.array,
 };

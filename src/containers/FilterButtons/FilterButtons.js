@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { changeFilter } from '../../actions/index';
 import PropTypes from 'prop-types';
-import './FilterButtons.css';
+import './FilterButtons.scss';
 
 export class FilterButtons extends Component {
   render() {
@@ -28,15 +28,15 @@ export class FilterButtons extends Component {
   }
 }
 
-export const mapStateToProps = store => {
+export const mapStateToProps = (store) => {
   return {
-    filter: store.filter
+    filter: store.filter,
   };
 };
 
-export const mapDispatchToProps = dispatch => {
+export const mapDispatchToProps = (dispatch) => {
   return {
-    switchFilter: filterValue => dispatch(changeFilter(filterValue))
+    switchFilter: (filterValue) => dispatch(changeFilter(filterValue)),
   };
 };
 
@@ -44,5 +44,5 @@ export default connect(mapStateToProps, mapDispatchToProps)(FilterButtons);
 
 FilterButtons.propTypes = {
   filter: PropTypes.string,
-  switchFilter: PropTypes.func
+  switchFilter: PropTypes.func,
 };
