@@ -8,8 +8,6 @@ const Card = (props) => {
   const animalLink = '/our-planet/animals/' + name;
   console.log(image);
 
-  console.log(image);
-
   return (
     <Link to={animalLink} className="Card">
       <img
