@@ -10,14 +10,11 @@ import registerServiceWorker from './registerServiceWorker';
 import App from './components/App/App';
 import './index.scss';
 
-const devTools =
-  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__();
-
 const configureStore = (preloadedState) => {
   const middlewares = [thunk, logger];
   const middlewareEnhancer = applyMiddleware(...middlewares);
 
-  const enhancers = [middlewareEnhancer, devTools];
+  const enhancers = [middlewareEnhancer];
   const composedEnhancers = compose(...enhancers);
 
   return createStore(rootReducer, preloadedState, composedEnhancers);
