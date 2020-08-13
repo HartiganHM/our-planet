@@ -6,6 +6,7 @@ import './Card.scss';
 const Card = (props) => {
   const { name, image } = props.animalData;
   const animalLink = '/our-planet/animals/' + name;
+  console.log(image);
 
   console.log(image);
 
