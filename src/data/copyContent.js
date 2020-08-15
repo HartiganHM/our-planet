@@ -11,10 +11,18 @@ export default {
     whyDescription:
       'It is widely believed that climate change is one of the biggest issues facing humankind today. While this problem is of the utmost importance for future generations, it is of immediate concern to nearly every animal on this planet. Loss of natural habitats, pollution, and unsustainable use of resources are at the top of the list of human-created problems that impact more than our own cities and towns. With animals unable to speak for themselves, it is important to be mindful not of only how we impact future inhabitants on Earth, but those that currently live here.',
   },
+  footer: {
+    backendUrl: 'https://github.com/HartiganHM/our-planet-be',
+    backendTag: 'BE',
+    contactTag: 'Contact',
+    contactUrl: 'mailto:hartigan.hm@gmail.com',
+    description:
+      'Our Planet was designed and built by Hugh Hartigan as part of the curriculum at Turing School of Design & Software. Special thank yous are due to the World Wildlife Fund and BBC Nature, whose resources were used in the building of the Our Planet database, as well as the countless photographers that supplied their artwork online as a public resource.',
+    frontendTag: 'FE',
+    frontendUrl: 'https://github.com/HartiganHM/our-planet',
+  },
   'intro-1':
-    'Our Planet is a student lead initiative meant to bring awareness to endangered animals across the world through detailed facts and beautiful photographs. While most strive to be aware of other people in need, it is less frequent that we pay mind to the other species that cohabitate this world with us.',
+    'Our Planet is a student lead initiative meant to bring awareness to endangered animals across the world through detailed facts and beautiful photographs. While most strive to be aware of other people in need, it is less frequent that we pay mind to the other species that Cohabitate this world with us.',
   'intro-2':
     "This site puts a face to those animals with the greatest need, in hope that their plight resonates with someone somewhere. When you have time to unplug and breath fresh air, remember that Earth isn't your planet or my planet, but...",
-  footer:
-    'Our Planet was designed and built by Hugh Hartigan as part of the curriculum at Turing School of Design & Software. Special thank yous are due to the World Wildlife Fund and BBC Nature, whose resources were used in the building of the Our Planet database, as well as the countless photographers that supplied their artwork online as a public resource.',
 };
