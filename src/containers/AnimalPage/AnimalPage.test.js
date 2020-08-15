@@ -43,7 +43,7 @@ describe('AnimalPage tests', () => {
   describe('mapStateToProps tests', () => {
     it('Should pull animals from the store', () => {
       const mockStore = {
-        animals: mockAnimalsArray
+        animals: mockAnimalsArray,
       };
       const result = mapStateToProps(mockStore);
 

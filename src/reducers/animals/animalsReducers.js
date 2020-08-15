@@ -1,13 +1,13 @@
 const animalsReducers = (store = [], action) => {
   switch (action.type) {
-  case 'STORE_ANIMAL_DATA':
-    return action.animalsData;
+    case 'STORE_ANIMAL_DATA':
+      return action.animalsData;
 
-  case 'SEARCH_ANIMALS':
-    return action.filteredAnimals;
+    case 'SEARCH_ANIMALS':
+      return action.filteredAnimals;
 
-  default:
-    return store;
+    default:
+      return store;
   }
 };
 

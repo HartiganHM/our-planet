@@ -35,13 +35,13 @@ export class Header extends Component {
   }
 }
 
-export const mapStateToProps = (store) => {
+export const mapStateToProps = store => {
   return {
     animals: store.animals,
   };
 };
 
-export const mapDispatchToProps = (dispatch) => {
+export const mapDispatchToProps = dispatch => {
   return {
     populateData: () => dispatch(actions.fetchAllData()),
     resetAnimals: (inputValue, animals) =>

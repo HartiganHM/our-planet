@@ -9,7 +9,7 @@ const mockCleanAnimalData = {
   Length: animalData[0].length,
   Habitat: animalData[0].habitat,
   'The Facts': animalData[0].facts,
-  "Why I'm Important": animalData[0].human_benefit
+  "Why I'm Important": animalData[0].human_benefit,
 };
 
 export default mockCleanAnimalData;

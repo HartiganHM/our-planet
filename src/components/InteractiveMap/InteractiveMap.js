@@ -12,11 +12,11 @@ class InteractiveMap extends Component {
     };
   }
 
-  handleMouseHover = (continent) => {
+  handleMouseHover = continent => {
     this.setState(this.toggleHoverState, this.setContinent(continent));
   };
 
-  setContinent = (continent) => {
+  setContinent = continent => {
     this.setState({ continent });
   };
 

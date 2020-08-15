@@ -3,7 +3,7 @@ import { shallow } from 'enzyme';
 import {
   FilterButtons,
   mapStateToProps,
-  mapDispatchToProps
+  mapDispatchToProps,
 } from './FilterButtons';
 
 describe('FilterButton tests', () => {
@@ -20,7 +20,7 @@ describe('FilterButton tests', () => {
   describe('mapStateToProps tests', () => {
     it('Should pull filter from the store', () => {
       const mockStore = {
-        filter: 'status'
+        filter: 'status',
       };
       const result = mapStateToProps(mockStore);
 

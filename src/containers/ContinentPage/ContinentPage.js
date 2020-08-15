@@ -42,9 +42,9 @@ export class ContinentPage extends Component {
     }
   }
 
-  matchContinentAnimals = (continentId) => {
+  matchContinentAnimals = continentId => {
     const animals = this.props.animals.filter(
-      (animal) => animal.continent_id === continentId
+      animal => animal.continent_id === continentId
     );
     return animals;
   };
@@ -57,11 +57,7 @@ export class ContinentPage extends Component {
         <div className="continent-data-container">
           <div className="wrapper">
             {image && (
-              <img
-                className="continent-image"
-                src={image}
-                alt={`${name}`}
-              />
+              <img className="continent-image" src={image} alt={`${name}`} />
             )}
             <div className="continent-bio">
               <span className="bio-title">Bio</span>
@@ -75,7 +71,7 @@ export class ContinentPage extends Component {
   }
 }
 
-export const mapStateToProps = (store) => {
+export const mapStateToProps = store => {
   return {
     animals: store.animals,
     continents: store.continents,

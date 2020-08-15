@@ -5,7 +5,7 @@ const fetchAnimalsData = async () => {
   const {
     NODE_ENV,
     REACT_APP_API_ROOT_DEV,
-    REACT_APP_API_ROOT_PROD
+    REACT_APP_API_ROOT_PROD,
   } = process.env;
 
   try {

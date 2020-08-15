@@ -5,7 +5,7 @@ import * as actions from '../../actions';
 import { PropTypes } from 'prop-types';
 import './Search.scss';
 
-export const Search = (props) => {
+export const Search = props => {
   const { searchAnimals, animals, setSearchValue, searchValue } = props;
   const headerBox = (
     <div className="header-box">
@@ -30,9 +30,7 @@ export const Search = (props) => {
       <span className="wrapper">
         <input
           className="search-field"
-          onChange={(event) =>
-            handleChange(event.target.value, animals, 'name')
-          }
+          onChange={event => handleChange(event.target.value, animals, 'name')}
           type="text"
           placeholder="Search"
           value={searchValue}
@@ -43,18 +41,18 @@ export const Search = (props) => {
   );
 };
 
-export const mapStateToProps = (store) => {
+export const mapStateToProps = store => {
   return {
     animals: store.animals,
     searchValue: store.searchValue,
   };
 };
 
-export const mapDispatchToProps = (dispatch) => {
+export const mapDispatchToProps = dispatch => {
   return {
     searchAnimals: (inputValue, animals, property) =>
       dispatch(actions.searchAnimals(inputValue, animals, property)),
-    setSearchValue: (inputValue) => dispatch(actions.changeSearch(inputValue)),
+    setSearchValue: inputValue => dispatch(actions.changeSearch(inputValue)),
   };
 };
 

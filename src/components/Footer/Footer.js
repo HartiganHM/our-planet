@@ -2,7 +2,15 @@ import React from 'react';
 import copyContent from '../../data/copyContent';
 import './Footer.scss';
 
-const { backendTag, backendUrl, contactTag, contactUrl, description, frontendTag, frontendUrl } = copyContent.footer;
+const {
+  backendTag,
+  backendUrl,
+  contactTag,
+  contactUrl,
+  description,
+  frontendTag,
+  frontendUrl,
+} = copyContent.footer;
 
 const Footer = () => (
   <div className="footer">
@@ -14,18 +22,12 @@ const Footer = () => (
           <span>{contactTag}</span>
         </a>
 
-        <a
-          href={frontendUrl}
-          className="footer__link"
-        >
+        <a href={frontendUrl} className="footer__link">
           <div className="footer__icon footer__github" />
           <span>{frontendTag}</span>
         </a>
 
-        <a
-          href={backendUrl}
-          className="footer__link"
-        >
+        <a href={backendUrl} className="footer__link">
           <div className="footer__icon footer__github" />
           <span>{backendTag}</span>
         </a>

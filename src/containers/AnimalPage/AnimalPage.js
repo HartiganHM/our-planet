@@ -78,7 +78,7 @@ export class AnimalPage extends Component {
   }
 }
 
-export const mapStateToProps = (store) => {
+export const mapStateToProps = store => {
   return {
     animals: store.animals,
   };

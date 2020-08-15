@@ -28,15 +28,15 @@ export class FilterButtons extends Component {
   }
 }
 
-export const mapStateToProps = (store) => {
+export const mapStateToProps = store => {
   return {
     filter: store.filter,
   };
 };
 
-export const mapDispatchToProps = (dispatch) => {
+export const mapDispatchToProps = dispatch => {
   return {
-    switchFilter: (filterValue) => dispatch(changeFilter(filterValue)),
+    switchFilter: filterValue => dispatch(changeFilter(filterValue)),
   };
 };
 

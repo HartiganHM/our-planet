@@ -4,8 +4,8 @@ import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import './CardContainer.scss';
 
-export const CardContainer = (props) => {
-  const continentsArray = props.continents.map((continent) => continent.name);
+export const CardContainer = props => {
+  const continentsArray = props.continents.map(continent => continent.name);
 
   const endangeredArray = [
     'Critically Endangered',
@@ -15,9 +15,9 @@ export const CardContainer = (props) => {
     'Least Concern',
   ];
 
-  const buildDefaultArray = (animals) => {
+  const buildDefaultArray = animals => {
     return animals
-      .filter((animal) => animal.display)
+      .filter(animal => animal.display)
       .map((animal, index) => {
         return <Card key={index} animalData={animal} />;
       });
@@ -31,8 +31,8 @@ export const CardContainer = (props) => {
             <span className="filter-header">{element}</span>
             <div className="wrapper">
               {props.animals
-                .filter((animal) => animal[filterValue] === element)
-                .filter((animal) => animal.display)
+                .filter(animal => animal[filterValue] === element)
+                .filter(animal => animal.display)
                 .map((animal, index) => {
                   if (animal[filterValue] === element) {
                     return <Card key={index} animalData={animal} />;
@@ -42,12 +42,12 @@ export const CardContainer = (props) => {
           </div>
         );
       })
-      .filter((element) => element.props.children[1].props.children.length);
+      .filter(element => element.props.children[1].props.children.length);
 
     return filteredArray;
   };
 
-  const buildContinentArray = (continentAnimals) => {
+  const buildContinentArray = continentAnimals => {
     return continentAnimals.map((animal, index) => {
       return <Card key={index} animalData={animal} />;
     });
@@ -85,7 +85,7 @@ export const CardContainer = (props) => {
   );
 };
 
-export const mapStateToProps = (store) => {
+export const mapStateToProps = store => {
   return {
     animals: store.animals,
     continents: store.continents,

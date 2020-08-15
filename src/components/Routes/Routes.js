@@ -32,7 +32,10 @@ const Routes = () => {
       />
       <Route exact path="/our-planet/about" component={AboutPage} />
       <Route path="/our-planet/animals/:animal" component={AnimalPage} />
-      <Route path="/our-planet/continents/:continent" component={ContinentPage} />
+      <Route
+        path="/our-planet/continents/:continent"
+        component={ContinentPage}
+      />
       <Route path="/our-planet/" component={Footer} />
     </div>
   );
