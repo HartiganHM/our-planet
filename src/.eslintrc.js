@@ -1,42 +1,27 @@
 module.exports = {
-  "parser": "babel-eslint",
-  "extends": [
-    "eslint:recommended",
-    "plugin:react/recommended"
-  ],
-  "plugins": [
-    "react"
-  ],
-  "env": {
-    "browser": true,
-    "jest": true,
-    "node": true,
-    "es6": true
+  parser: 'babel-eslint', // Specifies the ESLint parser
+  parserOptions: {
+    ecmaVersion: 2018, // Allows for the parsing of modern ECMAScript features
+    sourceType: 'module', // Allows for the use of imports
+    ecmaFeatures: {
+      jsx: true, // Allows for the parsing of JSX
+    },
   },
-  // Having a problem with one of these rules? Learn more about it here: https://eslint.org/docs/rules/
-  "rules": {
-    "eqeqeq": ["error", "always"],
-    "getter-return": ["error", { "allowImplicit": true }],
-    "indent": ["warn", 2],
-    "no-template-curly-in-string": "error",
-    "semi": ["error", "always"],
-    "array-bracket-spacing": ["error", "never"],
-    "block-spacing": ["error", "always"],
-    "brace-style": ["error", "1tbs", { "allowSingleLine": true }],
-    "camelcase": "warn",
-    "comma-dangle": ["error", "never"],
-    "comma-spacing": ["error", { "before": false, "after": true }],
-    "comma-style": ["error", "last"],
-    "computed-property-spacing": ["error", "never"],
-    "func-call-spacing": ["error", "never"],
-    "keyword-spacing": ["error", { "before": true, "after": true }],
-    "max-len": ["warn", 100],
-    "no-duplicate-imports": "error",
-    "id-length": "error",
-    "id-blacklist": ["error", "data", "err", "e", "cb", "callback", "payload", "obj", "arr"],
-    "max-depth": ["warn", 4]
+  extends: [
+    'plugin:react/recommended', // Uses the recommended rules from @eslint-plugin-react
+    'plugin:prettier/recommended', // Enables eslint-plugin-prettier and eslint-config-prettier. This will display prettier errors as ESLint errors. Make sure this is always the last configuration in the extends array.
+    'prettier',
+  ],
+  plugins: ['react-hooks'],
+  rules: {
+    // Place to specify ESLint rules. Can be used to overwrite rules specified from the extended configs
+    // e.g. "@typescript-eslint/explicit-function-return-type": "off",
+    'no-use-before-define': ['error', { variables: false }],
+    'react-hooks/rules-of-hooks': 'error',
   },
-  "globals": {
-    "expect": true
-  }
-}
+  settings: {
+    react: {
+      version: 'detect', // Tells eslint-plugin-react to automatically detect the version of React to use
+    },
+  },
+};
