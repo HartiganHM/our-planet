@@ -1,7 +1,7 @@
 @import '../../styles/variables.scss';
 @import '../../styles/mixins.scss';
 
-.AboutPage {
+.about-page {
   display: flex;
   flex-direction: column;
   @include width(160);
@@ -30,19 +30,19 @@
 }
 
 @media screen and (max-width: 1634px) {
-  .AboutPage {
+  .about-page {
     @include width(128);
   }
 }
 
 @media screen and (max-width: 1334px) {
-  .AboutPage {
+  .about-page {
     @include width(96);
   }
 }
 
 @media screen and (max-width: 1014px) {
-  .AboutPage {
+  .about-page {
     @include width(64);
     .our-planet-image {
       @include height(15);
@@ -54,7 +54,7 @@
 }
 
 @media screen and (max-width: 694px) {
-  .AboutPage {
+  .about-page {
     @include width(32);
   }
 }
