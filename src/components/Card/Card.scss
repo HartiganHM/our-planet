@@ -1,7 +1,8 @@
 //Layout, Box, Visual, Typography, Misc
 @import '../../styles/mixins.scss';
 @import '../../styles/variables.scss';
-.Card {
+
+.card {
   display: flex;
   flex-direction: column;
   @include width(29.8);
@@ -16,11 +17,11 @@
     background: $accent-dark-fade;
     color: $snow;
   }
-  .animal-image {
+  &__animal-image {
     @include width(30);
     z-index: 2;
   }
-  .animal-name {
+  &__animal-name {
     @include padding(1);
     background: {
       image: url('../../images/branding/Our-Planet-Light-Logo.png');
