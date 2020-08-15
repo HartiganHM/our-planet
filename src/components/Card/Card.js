@@ -4,7 +4,7 @@ import { object } from 'prop-types';
 
 import './Card.scss';
 
-const Card = (props) => {
+const Card = props => {
   const { name, image } = props.animalData;
 
   return (

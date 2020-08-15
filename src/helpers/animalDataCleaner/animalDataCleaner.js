@@ -8,7 +8,7 @@ const animalDataCleaner = animalData => {
     Length: animalData.length,
     Habitat: animalData.habitat,
     'The Facts': animalData.facts,
-    "Why I'm Important": animalData.human_benefit
+    "Why I'm Important": animalData.human_benefit,
   };
 
   return cleanAnimalData;

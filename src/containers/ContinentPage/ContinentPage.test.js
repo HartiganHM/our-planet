@@ -45,7 +45,7 @@ describe('ContinentPage tests', () => {
   describe('mapStateToProps tests', () => {
     it('Should pull animals from the store', () => {
       const mockStore = {
-        animals: mockProps.animals
+        animals: mockProps.animals,
       };
       const result = mapStateToProps(mockStore);
 
@@ -54,7 +54,7 @@ describe('ContinentPage tests', () => {
 
     it('Should pull continents from the store', () => {
       const mockStore = {
-        continents: mockProps.continents
+        continents: mockProps.continents,
       };
       const result = mapStateToProps(mockStore);
 

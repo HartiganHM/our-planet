@@ -4,7 +4,7 @@ import fetchContinentsData from './fetchContinentsData';
 window.fetch = jest.fn().mockImplementation(() =>
   Promise.resolve({
     status: 200,
-    json: () => Promise.resolve(mockContinentsArray)
+    json: () => Promise.resolve(mockContinentsArray),
   })
 );
 
@@ -26,7 +26,7 @@ describe('fetchContinentsData tests', () => {
   it('Should throw an error when the fetch fails', async () => {
     window.fetch = jest.fn().mockImplementation(() =>
       Promise.reject({
-        status: 500
+        status: 500,
       })
     );
     const expected = Error('Error fetching continents data: [object Object]');

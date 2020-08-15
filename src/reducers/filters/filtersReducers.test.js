@@ -11,7 +11,8 @@ describe('filtersReducers tests', () => {
   it('Should return a new store with a different filter', () => {
     const expected = 'habitat';
 
-    expect(filtersReducers(undefined, actions.changeFilter('habitat')))
-      .toEqual(expected);
+    expect(filtersReducers(undefined, actions.changeFilter('habitat'))).toEqual(
+      expected
+    );
   });
 });

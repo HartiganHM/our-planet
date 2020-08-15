@@ -7,7 +7,7 @@ describe('Actions tests', () => {
     const animalsData = mockAnimalsArray;
     const expected = {
       type: 'STORE_ANIMAL_DATA',
-      animalsData
+      animalsData,
     };
 
     expect(actions.storeAnimalData(animalsData)).toEqual(expected);
@@ -17,7 +17,7 @@ describe('Actions tests', () => {
     const continentsData = mockContinentsArray;
     const expected = {
       type: 'STORE_CONTINENTS_DATA',
-      continentsData
+      continentsData,
     };
 
     expect(actions.storeContinentsData(continentsData)).toEqual(expected);
@@ -27,7 +27,7 @@ describe('Actions tests', () => {
     const filteredAnimals = mockAnimalsArray;
     const expected = {
       type: 'SEARCH_ANIMALS',
-      filteredAnimals
+      filteredAnimals,
     };
 
     expect(actions.searchAnimals('fox', filteredAnimals, 'name')).toEqual(
@@ -39,7 +39,7 @@ describe('Actions tests', () => {
     const filterValue = 'status';
     const expected = {
       type: 'CHANGE_FILTER',
-      filterValue
+      filterValue,
     };
 
     expect(actions.changeFilter(filterValue)).toEqual(expected);
@@ -49,7 +49,7 @@ describe('Actions tests', () => {
     const searchValue = 'chimp';
     const expected = {
       type: 'CHANGE_SEARCH',
-      searchValue
+      searchValue,
     };
 
     expect(actions.changeSearch(searchValue)).toEqual(expected);

@@ -4,7 +4,7 @@ import fetchAnimalsData from './fetchAnimalsData';
 window.fetch = jest.fn().mockImplementation(() =>
   Promise.resolve({
     status: 200,
-    json: () => Promise.resolve(mockAnimalsArray)
+    json: () => Promise.resolve(mockAnimalsArray),
   })
 );
 
@@ -26,7 +26,7 @@ describe('fetchAnimalsData tests', () => {
   it('Should throw an error if the fetch fails', async () => {
     window.fetch = jest.fn().mockImplementation(() =>
       Promise.reject({
-        status: 500
+        status: 500,
       })
     );
     const mockAnimalsData = await fetchAnimalsData();

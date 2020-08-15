@@ -6,10 +6,10 @@ document.querySelectorAll = jest.fn().mockImplementation(() => {
     NodeList: {
       Sticky: {
         attributes: {
-          'data-sticky': true
-        }
-      }
-    }
+          'data-sticky': true,
+        },
+      },
+    },
   };
 });
 

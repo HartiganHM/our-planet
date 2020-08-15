@@ -138,7 +138,7 @@ describe('CardContainer tests', () => {
   describe('mapStateToProps tests', () => {
     it('Should pull animals from the store', () => {
       const mockStore = {
-        animals: mockAnimalsArray
+        animals: mockAnimalsArray,
       };
       const result = mapStateToProps(mockStore);
 
@@ -147,7 +147,7 @@ describe('CardContainer tests', () => {
 
     it('Should pull continents from the store', () => {
       const mockStore = {
-        continents: mockContinentsArray
+        continents: mockContinentsArray,
       };
       const result = mapStateToProps(mockStore);
 
@@ -156,7 +156,7 @@ describe('CardContainer tests', () => {
 
     it('Should pull filter from the store', () => {
       const mockStore = {
-        filter: 'default'
+        filter: 'default',
       };
       const result = mapStateToProps(mockStore);
 

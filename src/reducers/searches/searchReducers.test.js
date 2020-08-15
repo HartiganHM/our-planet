@@ -11,7 +11,8 @@ describe('searchReducers tests', () => {
   it('Should return a new store with a different search value', () => {
     const expected = 'whal';
 
-    expect(searchReducers(undefined, actions.changeSearch('whal')))
-      .toEqual(expected);
+    expect(searchReducers(undefined, actions.changeSearch('whal'))).toEqual(
+      expected
+    );
   });
 });

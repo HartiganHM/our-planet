@@ -10,7 +10,7 @@ import registerServiceWorker from './registerServiceWorker';
 import App from './components/App/App';
 import './index.scss';
 
-const configureStore = (preloadedState) => {
+const configureStore = preloadedState => {
   const middlewares = [thunk, logger];
   const middlewareEnhancer = applyMiddleware(...middlewares);
 

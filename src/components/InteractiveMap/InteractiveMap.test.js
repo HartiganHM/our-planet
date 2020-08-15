@@ -24,7 +24,7 @@ describe('InteractiveMap tests', () => {
   it('Should setState with handleMouseHover', () => {
     const expectedState = {
       isHovering: true,
-      continent: 'Asia'
+      continent: 'Asia',
     };
 
     renderedMap.instance().handleMouseHover('Asia');
@@ -50,7 +50,7 @@ describe('InteractiveMap tests', () => {
   it('Should setState with the return object from toggleHoverState', () => {
     const expectedState = {
       isHovering: true,
-      continent: ''
+      continent: '',
     };
 
     expect(renderedMap.state('isHovering')).toEqual(false);

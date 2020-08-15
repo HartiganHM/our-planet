@@ -23,7 +23,7 @@ describe('Search tests', () => {
   describe('mapStateToProps tests', () => {
     it('Should pull animals from the store', () => {
       const mockStore = {
-        animals: mockAnimals
+        animals: mockAnimals,
       };
       const result = mapStateToProps(mockStore);
 
