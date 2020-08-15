@@ -18,7 +18,7 @@ const AboutPage = () => {
   } = copyContent.about;
 
   return (
-    <div className="AboutPage buffer">
+    <div className="about-page buffer">
       <div className="purpose">
         <div className="parallax purpose-image" />
         <div className="section-title">{purposeTitle}</div>
