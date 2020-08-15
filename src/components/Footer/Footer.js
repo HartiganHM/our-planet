@@ -2,31 +2,36 @@ import React from 'react';
 import copyContent from '../../data/copyContent';
 import './Footer.scss';
 
-const Footer = () => {
-  return (
-    <div className="Footer">
-      <div className="wrapper">
-        <span className="footer-copy">{copyContent.footer}</span>
-        <div className="footer-links">
-          <a href="mailto:hartigan.hm@gmail.com" className="link">
-            <div className="icon contact" />
-            <span>Contact</span>
-          </a>
-          <a href="https://github.com/HartiganHM/our-planet" className="link">
-            <div className="icon github" />
-            <span>FE</span>
-          </a>
-          <a
-            href="https://github.com/HartiganHM/our-planet-be"
-            className="link"
-          >
-            <div className="icon github" />
-            <span>BE</span>
-          </a>
-        </div>
+const { backendTag, backendUrl, contactTag, contactUrl, description, frontendTag, frontendUrl } = copyContent.footer;
+
+const Footer = () => (
+  <div className="footer">
+    <div className="footer__wrapper">
+      <span className="footer__copy">{description}</span>
+      <div className="footer__links">
+        <a href={contactUrl} className="footer__link">
+          <div className="footer__icon footer__contact" />
+          <span>{contactTag}</span>
+        </a>
+
+        <a
+          href={frontendUrl}
+          className="footer__link"
+        >
+          <div className="footer__icon footer__github" />
+          <span>{frontendTag}</span>
+        </a>
+
+        <a
+          href={backendUrl}
+          className="footer__link"
+        >
+          <div className="footer__icon footer__github" />
+          <span>{backendTag}</span>
+        </a>
       </div>
     </div>
-  );
-};
+  </div>
+);
 
 export default Footer;
