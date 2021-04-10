@@ -1,10 +1,9 @@
-/*eslint-disable*/
 import continentData from './mockContinentsArray';
 
 export default [
   {
     name: 'Arctic Fox',
-    status: 'Least Concern',
+    status: 'Least Concern1',
     population: 'Several Hundred Thousand',
     scientific_name: 'Vulpes lagopus',
     height: '11 inches',
@@ -15,7 +14,8 @@ export default [
       'The Arctic fox is primarily a carnivore that lives inland, away from the coasts. They are dependent on the presence of smaller animals (most often lemmings) to survive.  Arctic foxes also hunt for sea birds, fish, and other marine life. Smaller rodent populations waver between times of abundance and scarcity, which leaves the Arctic fox vulnerable when these creatures are low in numbers.',
     human_benefit:
       'The protection of the Arctic fox ensures the safety of a variety of other wildlife in the Arctic region.',
-    continent_id: continentData[1].id
+    continent_id: continentData[1].id,
+    image: 'butt',
   },
   {
     name: 'Arctic Wolf',
@@ -30,6 +30,8 @@ export default [
       'Often called the "polar wolf" or "white wolf," Arctic wolves inhabit the Arctic regions of North America and Greenland. Thanks to its isolation, the Arctic wolf is not threatened by hunting and habitat destruction in the same way as its southern relatives.',
     human_benefit:
       'Arctic wolves are carnivorous hunters. By nature they help to control the populations of other animals in the region like the musk ox, caribou and Arctic hares.',
-    continent_id: continentData[1].id
-  }
+    continent_id: continentData[1].id,
+    image:
+      'https://our-planet.s3-us-west-2.amazonaws.com/animals/arctic+wolf.jpg',
+  },
 ];
