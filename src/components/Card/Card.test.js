@@ -14,7 +14,8 @@ describe('Card tests', () => {
 
   it('Should have an image that matches the animals name', () => {
     const mockAnimal = mockAnimalsArray[0];
-    const expected = 'arctic fox.jpg';
+
+    const expected = mockAnimal.image;
     const renderedCard = shallow(<Card animalData={mockAnimal} />);
 
     expect(renderedCard.find('img').prop('src')).toEqual(expected);
