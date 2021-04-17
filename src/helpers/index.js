@@ -1,6 +1,6 @@
 import addPropertiesToAnimal from './addPropertiesToAnimal/addPropertiesToAnimal';
 import addPropertiesToContinent from './addPropertiesToContinent/addPropertiesToContinent';
-import animalsDataCleaner from './animalsDataCleaner/animalsDataCleaner';
+import animalDataCleaner from './animalDataCleaner/animalDataCleaner';
 import fetchAnimalsData from './fetchAnimalsData/fetchAnimalsData';
 import fetchContinentsData from './fetchContinentsData/fetchContinentsData';
 import filterAnimals from './filterAnimals/filterAnimals';
@@ -11,7 +11,7 @@ import sortAnimalsAlphabetically from './sortAnimalsAlphabetically/sortAnimalsAl
 export {
   addPropertiesToAnimal,
   addPropertiesToContinent,
-  animalsDataCleaner,
+  animalDataCleaner,
   fetchAnimalsData,
   fetchContinentsData,
   filterAnimals,
