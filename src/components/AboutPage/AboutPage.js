@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import copyContent from '../../data/copyContent';
+import { copyContent } from '../../data';
 
 import './AboutPage.scss';
 

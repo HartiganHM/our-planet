@@ -1,5 +1,5 @@
 import React from 'react';
-import copyContent from '../../data/copyContent';
+import { copyContent } from '../../data';
 import './Footer.scss';
 
 const {
