@@ -26,8 +26,8 @@ export default {
     hoverBody: 'Use our map to search the globe and view endangered animals from...',
     noHoverPlaceholder: ' - ',
   },
-  'intro-1':
-    'Our Planet is a student lead initiative meant to bring awareness to endangered animals across the world through detailed facts and beautiful photographs. While most strive to be aware of other people in need, it is less frequent that we pay mind to the other species that Cohabitate this world with us.',
-  'intro-2':
-    "This site puts a face to those animals with the greatest need, in hope that their plight resonates with someone somewhere. When you have time to unplug and breath fresh air, remember that Earth isn't your planet or my planet, but...",
+  intro: {
+    partOne: 'Our Planet is a student lead initiative meant to bring awareness to endangered animals across the world through detailed facts and beautiful photographs. While most strive to be aware of other people in need, it is less frequent that we pay mind to the other species that Cohabitate this world with us.',
+    partTwo: "This site puts a face to those animals with the greatest need, in hope that their plight resonates with someone somewhere. When you have time to unplug and breath fresh air, remember that Earth isn't your planet or my planet, but..."
+  }
 };

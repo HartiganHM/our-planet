@@ -1,17 +1,18 @@
 import React from 'react';
-import copyContent from '../../data/copyContent';
+import { copyContent } from '../../data';
+
 import './Intro.scss';
 
-const Intro = () => {
-  return (
-    <div className="Intro">
-      <div className="intro-body">
-        <p>{copyContent['intro-1']}</p>
-        <p>{copyContent['intro-2']}</p>
-      </div>
-      <div className="intro-logo" />
+const { intro } = copyContent;
+
+const Intro = () => (
+  <div className="Intro">
+    <div className="intro-body">
+      <p>{intro.partOne}</p>
+      <p>{intro.partTwo}</p>
     </div>
-  );
-};
+    <div className="intro-logo" />
+  </div>
+);
 
 export default Intro;
