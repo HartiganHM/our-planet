@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { PropTypes } from 'prop-types';
-import matchObjectInStore from '../../helpers/matchObjectInStore/matchObjectInStore';
-import animalDataCleaner from '../../helpers/animalDataCleaner/animalDataCleaner';
+
+import { animalDataCleaner, matchObjectInStore } from '../../helpers';
+
 import './AnimalPage.scss';
 
 export class AnimalPage extends Component {
