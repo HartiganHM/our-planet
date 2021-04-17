@@ -21,6 +21,11 @@ export default {
     frontendTag: 'FE',
     frontendUrl: 'https://github.com/HartiganHM/our-planet',
   },
+  interactiveMap: {
+    hoverTitle: 'What animals are endangered near you?',
+    hoverBody: 'Use our map to search the globe and view endangered animals from...',
+    noHoverPlaceholder: ' - ',
+  },
   'intro-1':
     'Our Planet is a student lead initiative meant to bring awareness to endangered animals across the world through detailed facts and beautiful photographs. While most strive to be aware of other people in need, it is less frequent that we pay mind to the other species that Cohabitate this world with us.',
   'intro-2':
