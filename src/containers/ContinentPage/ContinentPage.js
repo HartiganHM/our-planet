@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import matchObjectInStore from '../../helpers/matchObjectInStore/matchObjectInStore';
-import CardContainer from '../CardContainer/CardContainer';
 import { PropTypes } from 'prop-types';
+
+import CardContainer from '../CardContainer/CardContainer';
+import { matchObjectInStore } from '../../helpers';
+
 import './ContinentPage.scss';
 
 export class ContinentPage extends Component {
