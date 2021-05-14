@@ -5,6 +5,7 @@ import Footer from './Footer/Footer';
 import InteractiveMap from './InteractiveMap/InteractiveMap';
 import Intro from './Intro/Intro';
 import LandingPage from './LandingPage/LandingPage';
+import LoadingContainer from './LoadingContainer/LoadingContainer';
 import Routes from './Routes/Routes';
 import Sticky from './Sticky/Sticky';
 
@@ -16,6 +17,7 @@ export {
   InteractiveMap,
   Intro,
   LandingPage,
+  LoadingContainer,
   Routes,
   Sticky,
 };
