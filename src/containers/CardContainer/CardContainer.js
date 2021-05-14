@@ -39,11 +39,9 @@ export const CardContainer = ({
               {animals
                 .filter(animal => animal[filterValue] === element)
                 .filter(animal => animal.display)
-                .map((animal, index) => {
-                  if (animal[filterValue] === element) {
-                    return <Card key={index} animalData={animal} />;
-                  }
-                })}
+                .map((animal, index) => (
+                  <Card key={index} animalData={animal} />
+                ))}
             </div>
           </div>
         );
