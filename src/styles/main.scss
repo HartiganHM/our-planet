@@ -1,0 +1,6 @@
+@import './variables';
+@import './mixins';
+
+$brand-color: $accent-color-dark;
+
+@import '~@f-design/component-library/dist/scss/components/all.scss';
