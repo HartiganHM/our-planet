@@ -4,41 +4,34 @@ import { changeFilter } from '../../actions/index';
 import PropTypes from 'prop-types';
 import './FilterButtons.scss';
 
-export class FilterButtons extends Component {
-  render() {
-    const displayCopy = ['A - Z', 'Status', 'Habitat'];
+export const FilterButtons = ({ filter, switchFilter }) => {
+  const displayCopy = ['A - Z', 'Status', 'Habitat'];
 
-    const buttons = ['default', 'status', 'habitat'].map((element, index) => {
-      const buttonClass =
-        this.props.filter === element
-          ? 'filter-button active'
-          : 'filter-button';
-      return (
-        <span
-          key={index}
-          className={buttonClass}
-          onClick={() => this.props.switchFilter(element)}
-        >
-          {displayCopy[index]}
-        </span>
-      );
-    });
+  const buttons = ['default', 'status', 'habitat'].map((element, index) => {
+    const buttonClass =
+      filter === element ? 'filter-button active' : 'filter-button';
 
-    return <div className="FilterButtons">{buttons}</div>;
-  }
-}
+    return (
+      <span
+        key={index}
+        className={buttonClass}
+        onClick={() => switchFilter(element)}
+      >
+        {displayCopy[index]}
+      </span>
+    );
+  });
 
-export const mapStateToProps = store => {
-  return {
-    filter: store.filter,
-  };
+  return <div className="FilterButtons">{buttons}</div>;
 };
 
-export const mapDispatchToProps = dispatch => {
-  return {
-    switchFilter: filterValue => dispatch(changeFilter(filterValue)),
-  };
-};
+export const mapStateToProps = store => ({
+  filter: store.filter,
+});
+
+export const mapDispatchToProps = dispatch => ({
+  switchFilter: filterValue => dispatch(changeFilter(filterValue)),
+});
 
 export default connect(mapStateToProps, mapDispatchToProps)(FilterButtons);
 
