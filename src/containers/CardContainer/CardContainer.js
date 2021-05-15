@@ -13,7 +13,6 @@ export const CardContainer = ({
   filter,
 }) => {
   const continentsArray = continents.map(continent => continent.name);
-
   const endangeredArray = [
     'Critically Endangered',
     'Endangered',
@@ -56,17 +55,21 @@ export const CardContainer = ({
       return <Card key={index} animalData={animal} />;
     });
 
-  let animalCards = [];
+  const methodByFilter = {
+    default: buildDefaultArray(animals),
+    status: buildFilteredArray(filter, endangeredArray),
+    habitat: buildFilteredArray(filter, continentsArray),
+  };
 
-  if (continentAnimals) {
-    animalCards = buildContinentArray(continentAnimals);
-  } else if (filter === 'status') {
-    animalCards = buildFilteredArray('status', endangeredArray);
-  } else if (filter === 'habitat') {
-    animalCards = buildFilteredArray('habitat', continentsArray);
-  } else {
-    animalCards = buildDefaultArray(animals);
-  }
+  const buildAnimalCards = () => {
+    if (continentAnimals) {
+      return buildContinentArray(continentAnimals);
+    }
+
+    return methodByFilter[filter];
+  };
+
+  const animalCards = buildAnimalCards();
 
   const contentPlaceholder = (
     <span className="content-placeholder">
@@ -80,7 +83,7 @@ export const CardContainer = ({
     filter === 'default' ? 'CardContainer' : 'filtered';
 
   return (
-    <div className={continentAnimals ? '' : cardContainerClass}>
+    <div className={continentAnimals ? 'CardContainer' : cardContainerClass}>
       {!animals.length && <LoadingContainer />}
       {!!animals.length && !!animalCards.length && animalCards}
       {!!animals.length && !animalCards.length && contentPlaceholder}
