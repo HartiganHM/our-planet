@@ -20,13 +20,13 @@ const InteractiveMap = () => {
 
   const createPath = ({ className, displayName, link, name }) =>
     className === GRID ? (
-      <g id={className}>
+      <g id={className} key={className}>
         <g transform={continentsPaths[className].transform}>
           <path className={className} d={continentsPaths[className].path} />
         </g>
       </g>
     ) : (
-      <g id={className}>
+      <g id={className} key={name}>
         <g transform={continentsPaths[className].transform}>
           <Link to={link}>
             <path
