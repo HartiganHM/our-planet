@@ -10,37 +10,37 @@ const continentMapData = {
   antarcticaArctic: {
     className: 'antarctica-arctic',
     displayName: 'Antarctica / Arctic',
-    link: '/continents/',
+    link: '/continents/Antarctica Arctic',
     name: 'Antarctica Arctic',
   },
   africa: {
     className: 'africa',
-    link: '/continents/',
+    link: '/continents/Africa',
     name: 'Africa',
   },
   asia: {
     className: 'asia',
-    link: '/continents/',
+    link: '/continents/Asia',
     name: 'Asia',
   },
   australia: {
     className: 'australia',
-    link: '/continents/',
+    link: '/continents/Australia',
     name: 'Australia',
   },
   europe: {
     className: 'europe',
-    link: '/continents/',
+    link: '/continents/Europe',
     name: 'Europe',
   },
   northAmerica: {
     className: 'north-america',
-    link: '/continents/north-america',
+    link: '/continents/North America',
     name: 'North America',
   },
   southAmerica: {
     className: 'south-america',
-    link: '/continents/',
+    link: '/continents/South America',
     name: 'South America',
   },
 };
