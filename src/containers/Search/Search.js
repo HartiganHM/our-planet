@@ -1,21 +1,25 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import { PropTypes } from 'prop-types';
+
 import FilterButtons from '../FilterButtons/FilterButtons';
 import * as actions from '../../actions';
-import { PropTypes } from 'prop-types';
+import copyContent from '../../data/copyContent';
+
 import './Search.scss';
 
-export const Search = props => {
-  const { searchAnimals, animals, setSearchValue, searchValue } = props;
-  const headerBox = (
+const { search } = copyContent;
+
+export const Search = ({
+  searchAnimals,
+  animals,
+  setSearchValue,
+  searchValue,
+}) => {
+  const renderHeaderBox = () => (
     <div className="header-box">
-      <div className="header-title">
-        Search for animals of all shapes and sizes
-      </div>
-      <div className="header-body">
-        Is your favorite animal endangered? Search below and click on an animal
-        to learn more about them!
-      </div>
+      <div className="header-title">{search.title}</div>
+      <div className="header-body">{search.description}</div>
     </div>
   );
 
@@ -26,35 +30,33 @@ export const Search = props => {
 
   return (
     <div className="Search" id="Search">
-      {headerBox}
+      {renderHeaderBox}
+
       <span className="wrapper">
         <input
           className="search-field"
           onChange={event => handleChange(event.target.value, animals, 'name')}
           type="text"
-          placeholder="Search"
+          placeholder={search.placeholder}
           value={searchValue}
         />
+
         <FilterButtons />
       </span>
     </div>
   );
 };
 
-export const mapStateToProps = store => {
-  return {
-    animals: store.animals,
-    searchValue: store.searchValue,
-  };
-};
+export const mapStateToProps = ({ animals, searchValue }) => ({
+  animals,
+  searchValue,
+});
 
-export const mapDispatchToProps = dispatch => {
-  return {
-    searchAnimals: (inputValue, animals, property) =>
-      dispatch(actions.searchAnimals(inputValue, animals, property)),
-    setSearchValue: inputValue => dispatch(actions.changeSearch(inputValue)),
-  };
-};
+export const mapDispatchToProps = dispatch => ({
+  searchAnimals: (inputValue, animals, property) =>
+    dispatch(actions.searchAnimals(inputValue, animals, property)),
+  setSearchValue: inputValue => dispatch(actions.changeSearch(inputValue)),
+});
 
 export default connect(mapStateToProps, mapDispatchToProps)(Search);
 
