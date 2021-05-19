@@ -13,20 +13,13 @@ describe('addPropertiesToContinent tests', () => {
   });
 
   it('Should add an image reference matching each continents name', () => {
-    const firstExpectedImage = 'africa';
-    const secondExpectedImage = 'antarctica arctic';
+    const firstExpectedImage =
+      'https://our-planet.s3-us-west-2.amazonaws.com/continents/africa.jpg';
+    const secondExpectedImage =
+      'https://our-planet.s3-us-west-2.amazonaws.com/continents/antarctica+arctic.jpg';
     const continentsArray = addPropertiesToContinent(mockContinentsArray);
 
     expect(continentsArray[0].image).toEqual(firstExpectedImage);
     expect(continentsArray[1].image).toEqual(secondExpectedImage);
-  });
-
-  it('Should remove foreign characters from the image name', () => {
-    const initialName = 'Antarctica / Arctic';
-    const expected = 'antarctica arctic';
-    const continentsArray = addPropertiesToContinent(mockContinentsArray);
-
-    expect(mockContinentsArray[1].name).toEqual(initialName);
-    expect(continentsArray[1].image).toEqual(expected);
   });
 });
