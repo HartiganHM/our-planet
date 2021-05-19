@@ -74,14 +74,18 @@ describe('CardContainer tests', () => {
     expect(renderedCardContainer.find(expectedElement).text()).toEqual(message);
   });
 
-  it('Should display a placehold if there are no animals', () => {
+  it('Should display a placeholder if there are no animals', () => {
     const expectedElement = '.content-placeholder';
     const message = 'That animal is not endangered!';
     expect(renderedCardContainer.find(expectedElement).length).toEqual(0);
 
+    const hiddenAnimals = mockAnimalsArray.map(animal => {
+      return { ...animal, display: false };
+    });
+
     renderedCardContainer = shallow(
       <CardContainer
-        animals={[]}
+        animals={hiddenAnimals}
         continents={mockContinentsArray}
         filter={mockFilter}
       />
