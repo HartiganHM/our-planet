@@ -22,20 +22,15 @@ export const ContinentPage = props => {
         'continent',
         'continents'
       );
-      const animals = matchContinentAnimals(continentData.id);
+      const animals = props.animals.filter(
+        animal => animal.continent_id === continentData.id
+      );
 
       updateContinentData(continentData);
       updateAnimals(animals);
       updateLoading(false);
     }
   }, [props]);
-
-  const matchContinentAnimals = continentId => {
-    const animals = props.animals.filter(
-      animal => animal.continent_id === continentId
-    );
-    return animals;
-  };
 
   if (isLoading) {
     return <LoadingContainer />;
