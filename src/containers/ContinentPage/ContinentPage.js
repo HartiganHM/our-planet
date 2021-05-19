@@ -14,7 +14,6 @@ export const ContinentPage = props => {
   const [isLoading, updateLoading] = useState(true);
 
   useEffect(() => {
-    console.log(props);
     if (props.continents.length) {
       window.scrollTo(0, 0);
       const continentData = matchObjectInStore(

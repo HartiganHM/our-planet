@@ -11,7 +11,6 @@ describe('InteractiveMap tests', () => {
   });
 
   it('Should match the snapshot', () => {
-    console.debug();
     expect(renderedMap).toMatchSnapshot();
   });
 

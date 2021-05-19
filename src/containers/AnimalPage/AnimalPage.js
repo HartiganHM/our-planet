@@ -64,7 +64,6 @@ export const AnimalPage = props => {
 
   const { name, image } = animalData;
   const { basicStats, longStats } = renderAnimalStats();
-  console.log(animalData);
 
   return (
     <div className="AnimalPage buffer">

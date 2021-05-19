@@ -15,7 +15,8 @@ export default [
     human_benefit:
       'The protection of the Arctic fox ensures the safety of a variety of other wildlife in the Arctic region.',
     continent_id: continentData[1].id,
-    image: 'butt',
+    image_url:
+      'https://our-planet.s3-us-west-2.amazonaws.com/animals/arctic+fox.jpg',
   },
   {
     name: 'Arctic Wolf',
@@ -31,7 +32,7 @@ export default [
     human_benefit:
       'Arctic wolves are carnivorous hunters. By nature they help to control the populations of other animals in the region like the musk ox, caribou and Arctic hares.',
     continent_id: continentData[1].id,
-    image:
+    image_url:
       'https://our-planet.s3-us-west-2.amazonaws.com/animals/arctic+wolf.jpg',
   },
 ];

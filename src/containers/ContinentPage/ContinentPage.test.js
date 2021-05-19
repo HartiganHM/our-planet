@@ -22,26 +22,6 @@ describe('ContinentPage tests', () => {
     expect(renderedContinentPage).toMatchSnapshot();
   });
 
-  it('matchContinentAnimals should match animals to a given continent id', () => {
-    const expected = mockAnimalsArray;
-    const mockContinentId = mockContinentsArray[1].id;
-    const result = renderedContinentPage
-      .instance()
-      .matchContinentAnimals(mockContinentId);
-
-    expect(result).toEqual(expected);
-  });
-
-  it('matchContinentAnimals returns an empty array if continent id does not match', () => {
-    const expected = [];
-    const mockContinentId = mockContinentsArray[0].id;
-    const result = renderedContinentPage
-      .instance()
-      .matchContinentAnimals(mockContinentId);
-
-    expect(result).toEqual(expected);
-  });
-
   describe('mapStateToProps tests', () => {
     it('Should pull animals from the store', () => {
       const mockStore = {
