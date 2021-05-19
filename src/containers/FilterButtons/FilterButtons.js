@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { connect } from 'react-redux';
 import { changeFilter } from '../../actions/index';
 import PropTypes from 'prop-types';

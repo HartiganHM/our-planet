@@ -10,7 +10,7 @@ import './Header.scss';
 export const Header = ({ location, populateData }) => {
   useEffect(() => {
     populateData();
-  }, []);
+  }, [populateData]);
 
   const aboutActive =
     location === '/about/' ? 'nav-button active' : 'nav-button';
