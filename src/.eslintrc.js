@@ -18,6 +18,7 @@ module.exports = {
     // e.g. "@typescript-eslint/explicit-function-return-type": "off",
     'no-use-before-define': ['error', { variables: false }],
     'react-hooks/rules-of-hooks': 'error',
+    'react-hooks/exhaustive-deps': 0,
   },
   settings: {
     react: {
