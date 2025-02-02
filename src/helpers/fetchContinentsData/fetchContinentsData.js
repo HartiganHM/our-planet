@@ -1,4 +1,5 @@
 import addPropertiesToContinent from '../addPropertiesToContinent/addPropertiesToContinent';
+import getApiRoot from '../getApiRoot/getApiRoot';
 
 const fetchContinentsData = async () => {
   try {
