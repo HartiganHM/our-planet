@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "77daadd0ea0840c2fbbfbc050193258e",
+    "revision": "df0a00ed90ed31ec86d2f3fac251f2d0",
     "url": "/our-planet/index.html"
   },
   {
-    "revision": "758a4a939a993b551546",
-    "url": "/our-planet/static/css/main.6574b4d7.chunk.css"
+    "revision": "6032994b2b32c143a06f",
+    "url": "/our-planet/static/css/main.e99559cf.chunk.css"
   },
   {
-    "revision": "8db5b544970c3daf4fff",
-    "url": "/our-planet/static/js/2.02ad3a3a.chunk.js"
+    "revision": "72cabc7f819279d6b71d",
+    "url": "/our-planet/static/js/2.88538865.chunk.js"
   },
   {
-    "revision": "9dcfe5275732e54b34374734ed7301d4",
-    "url": "/our-planet/static/js/2.02ad3a3a.chunk.js.LICENSE.txt"
+    "revision": "7c82383c5d2e2d4d56569579cce800bd",
+    "url": "/our-planet/static/js/2.88538865.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "758a4a939a993b551546",
-    "url": "/our-planet/static/js/main.3349968a.chunk.js"
+    "revision": "6032994b2b32c143a06f",
+    "url": "/our-planet/static/js/main.0f194d48.chunk.js"
   },
   {
-    "revision": "5dd7337cbacb54f142a5",
-    "url": "/our-planet/static/js/runtime-main.dba4a0bf.js"
+    "revision": "11977041f661f5b27505",
+    "url": "/our-planet/static/js/runtime-main.da725d28.js"
   },
   {
     "revision": "2496acff0bc6974eb7efe10a1d43d2a0",
