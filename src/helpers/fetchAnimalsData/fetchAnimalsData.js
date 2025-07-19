@@ -5,7 +5,7 @@ import sortAnimalsAlphabetically from '../sortAnimalsAlphabetically/sortAnimalsA
 const fetchAnimalsData = async () => {
   try {
     const apiRoot = getApiRoot();
-    const fetchedData = await fetch(`${apiRoot}/api/v1/animals`);
+    const fetchedData = await fetch(`${apiRoot}/v1/one-planet/animals`);
     const jsonData = await fetchedData.json();
     const newAnimals = addPropertiesToAnimal(jsonData);
     newAnimals._filter = 'default';
