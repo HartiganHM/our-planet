@@ -55,5 +55,8 @@
   "resolutions": {
     "minimatch": "^9.0.1",
     "cheerio": "1.0.0-rc.12"
+  },
+  "engines": {
+    "node": ">=16.20.0"
   }
 }
