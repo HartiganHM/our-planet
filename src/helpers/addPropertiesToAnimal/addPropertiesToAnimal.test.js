@@ -15,8 +15,10 @@ describe('addPropertiesToAnimal tests', () => {
   it('Should add an image reference matching each animals name', () => {
     expect(mockAnimalsArray[0].image).toEqual(undefined);
 
-    const firstExpectedImage = 'https://our-planet.s3-us-west-2.amazonaws.com/animals/arctic+fox.jpg';
-    const secondExpectedImage = 'https://our-planet.s3-us-west-2.amazonaws.com/animals/arctic+wolf.jpg';
+    const firstExpectedImage =
+      'https://our-planet.s3-us-west-2.amazonaws.com/animals/arctic+fox.jpg';
+    const secondExpectedImage =
+      'https://our-planet.s3-us-west-2.amazonaws.com/animals/arctic+wolf.jpg';
     const animalsArray = addPropertiesToAnimal(mockAnimalsArray);
 
     expect(animalsArray[0].image).toEqual(firstExpectedImage);
