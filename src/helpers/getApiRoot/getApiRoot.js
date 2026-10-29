@@ -1,5 +1,5 @@
 const LOCAL_API_ROOT = 'http://localhost:8080';
-const PROD_API_ROOT = 'https://hughmh-api.onrender.com';
+const PROD_API_ROOT = 'https://hughmh-api.vercel.app';
 
 const getApiRoot = () => {
   const { NODE_ENV } = process.env;
